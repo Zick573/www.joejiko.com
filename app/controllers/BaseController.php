@@ -207,8 +207,8 @@ class BaseController extends Controller {
       $site_footer_copy = Markdown::defaultTransform(file_get_contents($footer_copy_path));
     }
     $sharedViewData = array(
-      'logo' => file_get_contents(base_path().'/joejiko.com/assets/img/logo.svg'),
-      'triangle' => file_get_contents(base_path().'/joejiko.com/assets/img/triangle.svg'),
+      'logo' => file_get_contents(base_path().'/public/assets/img/logo.svg'),
+      'triangle' => file_get_contents(base_path().'/public/assets/img/triangle.svg'),
       'routeName' => Request::path(),
       'site_footer_copy' => $site_footer_copy,
       'user' => $this->user
