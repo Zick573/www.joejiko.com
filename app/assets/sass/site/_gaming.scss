@@ -1,0 +1,133 @@
+.page h1 {
+  color: #32004B;
+  font-size: 3rem;
+  line-height: 1;
+  text-shadow: 0 0 1px purple;
+}
+
+/* main page styles */
+.page.gaming {
+  h1 {
+    margin: 0 0 1rem;
+    padding: .25rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+  }
+  h2 {
+    line-height: 1;
+    margin: 0;
+  }
+  h3 {
+    font-size: 1.1rem;
+    font-style: italic;
+    line-height: 2;
+    margin: 0;
+  }
+}
+
+/* steam gaming page */
+.steam {
+  width: 60%;
+  display: inline-block;
+  vertical-align: top;
+}
+.steam-friends {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 20px;
+  margin-top: -2rem;
+}
+.steam-friends ul {
+  list-style: none;
+}
+
+.steam-friends .steam-game-img {
+    overflow: hidden;
+    width: 174px;
+}
+.feed-title {
+  display :block;
+  text-transform: capitalize;
+}
+.steam .steam-game,
+.steam-friends .steam-game {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: 5px;
+  padding-bottom: .75rem;
+  position: relative;
+}
+.steam .steam-game-name,
+.steam-friends .steam-game-name {
+  display: none;
+}
+.steam .steam-game-time,
+.steam-friends .steam-game-time {
+    background-color: rgba(255, 255, 255, 0.9);
+    bottom: 0;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 1.75;
+    margin: 0;
+    padding: 0 0.5rem;
+    position: absolute;
+    width: 100%;
+}
+.steam .loading-message,
+.steam-friends .loading-message {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    display: block;
+    position: absolute;
+    top: 8px;
+    width: 100%;
+}
+.steam-friends .tooltip {
+  font-size: .7rem !important;
+}
+
+/* steam widget */
+.steam-widget {
+    background-color: #FFFFFF;
+    text-align: center;
+    width: 195px;
+}
+.steam-widget-title {
+    background-color: purple;
+    color: #111;
+    font-size: .9rem;
+    margin: 0;
+    padding: .25rem;
+}
+.steam-widget .feed {
+    padding: 5px;
+}
+.steam-widget .steam-game {
+    position: relative;
+}
+.steam-widget li { list-style: none; }
+.steam-widget .steam-game-name { display: none; }
+.steam-widget .steam-game-time {
+    background-color: rgba(255, 255, 255, .9);
+    bottom: 0;
+    font-size: 0.6rem;
+    position: absolute;
+    width: 100%;
+}
+.steam-widget .footer {
+    background-color: rgba(0, 0, 0, .1);
+}
+/* shared */
+.steam-game { cursor: pointer; }
+.steam-game .tooltip {
+  bottom: 0;
+}
+
+.ffxiv {
+    background: none repeat scroll 0 0 #0C1B34;
+    display: block;
+    margin-bottom: 1em;
+    text-align: center;
+    width: 100%;
+}

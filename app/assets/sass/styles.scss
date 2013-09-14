@@ -1,0 +1,137 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+@import "global/partials/fonts";
+@import "global/partials/icons";
+@import "global/partials/buttons";
+
+@import "global/header";
+@import "global/search";
+@import "global/user";
+@import "global/main";
+@import "global/modal";
+@import "global/footer";
+
+@import "site/home";
+@import "site/contact";
+@import "site/gaming";
+@import "site/questions";
+@import "site/music-tracker";
+@import "site/thoughts";
+
+* { box-sizing: border-box; -moz-box-sizing: border-box; }
+body {
+    background: #f2f2f2; /* 95% white */
+    color: #111;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    margin: 0;
+    min-width: 1020px;
+    overflow: hidden;
+}
+a {
+    color: #FFF;
+    text-decoration: none;
+}
+i { font-style: normal; }
+
+h2 {
+    color: purple;
+    text-shadow: 0 1px 0 #f2f2f2;
+}
+textarea { resize: none; }
+ul { margin: 0; padding: 0; list-style-type: circle; }
+
+/* grid */
+.inline-col {
+    display: inline-block;
+    vertical-align: top;
+}
+.inline-col.expect-2 { width: 50%; }
+.inline-col.expect-4 { width: 25%; }
+
+/* lists */
+.list-diamonds li:before {
+    color: purple;
+    content: "◆ ";
+}
+
+/* */
+.module-link { color: #333; }
+.module-link:hover { color: #222; }
+
+.artwork {
+    > img {
+        cursor: pointer;
+        display: inline-block;
+        border: 3px solid #fff;
+        box-shadow: 0 0 2px rgba(0,0,0,.3);
+        margin-right: 3.33%;
+        margin-bottom: 10px;
+        width: 30%;
+        vertical-align: middle;
+        &:hover {
+            box-shadow: 0 0 2px rgba(50, 0, 75, 0.9);
+        }
+    }
+    > img.full {
+        width: auto;
+        max-width: 60%; }
+}
+.edge-triangle {
+    width: 120px;
+    height: 120px;
+    background: #dcdcdc;
+    display: block;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: -60px;
+    left: -91px;
+}
+.diamondMask {
+    background: #111111;
+    display: block;
+    height: 73px;
+    left: -50%;
+    position: absolute;
+    top: -16px;
+    transition: all 1s;
+    width: 200%;
+    z-index: 2;
+}
+.diamond {
+    background: rgba(50, 0, 75, 0.9);
+    display: block;
+    height: 130%;
+    left: -20px;
+    position: absolute;
+    top: -20px;
+    transform: rotate(45deg);
+    transition: all 1s;
+    -webkit-transform: rotate(45deg);
+    width: 130%;
+    z-index: 1;
+}
+
+.loading {position: relative; width: 100%; min-width: 48px; min-height: 48px; background: url(/assets/img/global/load/239_48.gif) no-repeat center top; border-radius: 50%; padding: 48px 0 0;}
+.loading-message { text-align: center; }
+.modal--active {
+    .site-logo {
+        height: 50%;
+        width: 50%;
+        padding: 5%;
+    }
+    .diamondMask {
+      top: -35%;
+    }
+    .diamond {
+        top: -110px;
+    }
+}
+
+.menu--active {
+    .site-logo {
+        height: 100%;
+        width: 100%;
+        padding: 10%;
+    }
+}

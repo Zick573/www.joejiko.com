@@ -1,0 +1,17 @@
+.home {
+  #content {}
+}
+
+.mission-list { font-size: .9rem; }
+.mission-list .inline-col {
+  padding: .25rem;
+}
+.mission-list .inline-col {
+  background: url(/assets/img/pages/home/mission.jpg) no-repeat 0 0 #fff;
+  height: 225px;
+}
+
+.mission-list .accomplish-goals { background-position: 25px 0; }
+.mission-list .easy-life {background-position: 55px -225px;}
+.mission-list .target-audience {background-position: 30px -450px;}
+.mission-list .solve-problems {background-position: 0 -675px;}

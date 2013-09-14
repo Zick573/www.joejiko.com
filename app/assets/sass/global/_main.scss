@@ -1,0 +1,283 @@
+  $break-small: 320px;
+  $break-medium-small: 800px;
+  $break-medium: 1000px;
+  $break-large: 1200px;
+  $break-xlarge: 1400px;
+.main-view {
+    overflow: hidden;
+}
+.site-sidebar, .site-sidebar-holder, .main, .main-article, .main-sidebar {
+    display: inline-block;
+    min-height: 100%;
+    vertical-align: top;
+}
+.main {
+    width: 75%;
+    opacity: 1;
+    overflow: auto;
+    padding: 8rem 0;
+    position: relative;
+    transition: all 1s;
+    @media screen and (max-width: $break-medium) {
+        padding-left: 70px;
+        width: 100%;
+    }
+}
+.main.dim {
+    opacity: .2;
+}
+.main-header {
+    background: rgba(239, 239, 239, .95);
+    height: 125px;
+    position: fixed;
+    right: 17px;
+    text-align: center;
+    top: 60px;
+    width: 75%;
+    @media screen and (max-width: $break-medium) {
+        right: 0;
+        width: 94%;
+    }
+}
+.main-content {
+    a, &:visited {
+        color: #004E77;
+        &:hover, &:active {
+            color: #009900; }
+    }
+}
+.main-article {
+    line-height: 2;
+    width: 100%;
+    max-width: 920px;
+    padding-bottom: 10rem;
+    @media screen and (max-width: $break-medium) {
+        width: 100%;
+    }
+}
+.main-sidebar {
+    // width: 30%; where did i decide this?
+    position: fixed;
+    right: 40px;
+    top: 185px;
+    @media screen and (max-width: $break-medium) {
+        right: 5px;
+    }
+    @media screen and (max-width: $break-medium-small) {
+        display: none;
+    }
+}
+.main-footer {
+    background: rgba(0,0,0,.1);
+    bottom: 0;
+    height: 4rem;
+    position: fixed;
+    right: 1%;
+    text-align: center;
+    width: 75%;
+    &:hover {
+        background: rgba(0,0,0,1);
+    }
+    @media screen and (max-width: $break-medium) {
+        right: 0;
+        width: 94%;
+    }
+}
+.limit-width--reading {
+    max-width: 35rem;
+}
+.site-sidebar-holder {
+    width: 24%;
+    margin-right: 1%;
+}
+.site-sidebar {
+    background: {
+        size: 150%;
+        image: url(/assets/img/artwork/jiko-face-3.jpg);
+        repeat: no-repeat;
+        position: left bottom;
+        color: #dcdcdc;}
+    margin: {
+        right: 1%;}
+    /*padding: 0 0 0 20px;*/
+    border: {
+        left: 60px solid #111;}
+    position: fixed;
+    width: 24%;
+    z-index: 99; /* below header */
+    &:hover {
+        // width: 50%;
+        .sidebar-module-wrapper {
+            overflow: auto;
+        }
+    }
+    .sidebar-module-wrapper {
+        background: rgba(0,0,0,.1);
+        display: inline-block;
+        opacity: .8;
+        overflow: hidden;
+        padding-left: 5px;
+        height: 100%;
+        width: 100%;
+        &:hover {
+            opacity: 1;
+            .sidebar-module {
+                background: rgba(255, 255, 255, .9);
+            }
+        }
+        @media screen and (max-width: $break-medium) {
+            display: none;
+        }
+    }
+    .sidebar-module {
+        background: none repeat scroll 0 0 rgba(0, 0, 0, 0.1);
+        margin-bottom: 10px;
+        padding: 10px;
+        min-width: 280px;
+        width: 100%;
+        display: inline-block;
+    }
+}
+.site-sidebar-holder, .site-sidebar {
+    @media screen and (max-width: $break-medium) {
+        width: 60px;
+    }
+}
+.site-nav-x {
+    height: 60px;
+    left: 24px;
+    padding: 6px 0 6px 8px;
+    position: absolute;
+    top: 0;
+    width: auto;
+    z-index: 110;
+    a {
+        &:nth-of-type(n+6) {
+            @media screen and (max-width: $break-medium) {
+                display: none;
+            }
+        }
+    }
+    .icon-home, .icon-notice {
+        color: rgba(255, 255, 255,.5);
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 1.5;
+        text-align: center;
+        vertical-align: top;
+    }
+}
+.site-navx-link {
+    display: inline-block;
+    height: 48px;
+    width: 48px;
+}
+.icon-notice, .icon-home {
+    &:hover {
+        color: #f2f2f2;
+        text-shadow: 0 0 3px #F2F2F2;
+    }
+}
+.sidebar-nav-x {
+    height: 60px;
+    left: -60px;
+    padding: 6px 0 6px 8px;
+    position: absolute;
+    top: -60px;
+    width: auto;
+    .icon-home, .icon-notice {
+        display: inline-block;
+        font-size: 2rem;
+        font-weight: bold;
+        height: 48px;
+        line-height: 1.5;
+        text-align: center;
+        vertical-align: top;
+        width: 48px;
+    }
+}
+.sidebar-nav-y {
+    display: inline-block;
+    width: 60px;
+    margin-left: -60px;
+    padding: 0 6px 6px;
+    vertical-align: top;
+    .icon-50 { margin-bottom: 2px; }
+    i {
+        opacity: .8;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+// user.connect
+.buttons-grid {
+    background: rgba(50, 0, 75, 0.1);
+    border-radius: 3px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.15) inset;
+    display: inline-block;
+    margin: 0;
+    padding: 0 2rem 4rem;
+    text-align: center;
+    vertical-align: top;
+    width: 55%;
+}
+.expects-3 .button-col {
+    display: inline-block;
+    width: 33.33%;
+}
+.connect-sidebar {
+    display: inline-block;
+    opacity: .6;
+    padding: .5rem 0 0 1rem;
+    vertical-align: top;
+    width: 45%;
+    transition: all 1s;
+    &:hover {
+        opacity: 1;
+    }
+}
+.modal-content {
+    .buttons-grid {
+        width: 100%;
+        padding-bottom: 0;
+    }
+    .button-col {
+        margin-bottom: 1rem;
+    }
+    .connect-sidebar {
+        display: block;
+        margin: 0 auto;
+        padding: 1rem 0 0;
+        text-align: center;
+        width: 100%;
+    }
+}
+.alt-signup-title {
+  margin: 0;
+}
+
+.existing-member-message {
+  margin: 0;
+}
+
+.existing-member {
+  margin-top: 1rem;
+}
+
+.user-connect .modal-content-wrap {
+    max-width: 480px;
+}
+.use-site-credentials {
+    font-size: 1rem;
+    margin-top: 0;
+}
+.lbl-connect {
+    display: inline-block;
+    width: 40%;
+}
+.input-connect {
+    display: inline-block;
+    width: 60%;
+}

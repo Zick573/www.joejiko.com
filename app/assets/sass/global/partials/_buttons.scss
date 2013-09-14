@@ -1,0 +1,123 @@
+a[class*="btn-"], button[class*="btn-"] {
+    border: {
+        radius: 3px;
+    }
+    box-shadow: 0 -2px 0 rgba(0,0,0,.5) inset;
+    padding: .5rem 1rem;
+    &:active { box-shadow: 0 2px 1px rgba(0,0,0,.6) inset;}
+}
+
+.btn-green {
+    background: {
+        color: #009900;
+    }
+    color: #fff !important;
+    &:hover { background: lighten(#009900, 10%); }
+}
+.btn-red {
+    background: {
+        color: #ccc;
+    }
+    &:hover { background: #f00; }
+}
+.btn-more, .btn-labs {
+  background: #f2f2f2;
+  border: 1px solid transparent;
+  box-shadow: none;
+  color: #222;
+  &:hover {
+    border: 1px solid darken(#004E77, 10%);
+    color: #004E77;
+  }
+}
+.btn-close {
+  background: #f2f2f2;
+  border: 1px solid transparent;
+  box-shadow: none;
+  color: #222;
+  &:hover {
+    border: 1px solid darken(#cc3732, 10%);
+    color: #cc3732;
+  }
+}
+
+a[class*="btn-connect-"], button[class*="btn-connect-"] {
+    border: none !important;
+    border-radius: 5px;
+    box-shadow: none;
+    color: #FFFFFF !important;
+    display: inline-block;
+    font-family: 'Roboto',sans-serif;
+    font-size: .75rem;
+    height: 2rem;
+    line-height: 3;
+    padding: 0 16px 0 0;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+    width: auto;
+    &:hover {
+      color: #FFFFFF !important;
+      box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.2) inset;
+    }
+    &:active {
+      color: #FFFFFF !important;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset;
+    }
+    i {
+      border-right: 1px solid rgba(0, 0, 0, 0.2);
+      display: block;
+      float: left;
+      height: 32px;
+      margin-right: 16px;
+      width: 32px;
+    }
+}
+
+.btn-connect-f {
+  background-color: #5B76A6;
+  &:hover {
+      background-color: #6C88B8;
+  }
+  &:active {
+      background-color: #3B5B99;
+  }
+  i {
+      background: url("/assets/img/vendor/facebook/btn_light.png") no-repeat 0 0;
+  }
+}
+
+
+.btn-connect-g {
+  background-color: #CC3732;
+  &:hover {
+    background-color: #E74B37;
+  }
+  &:active {
+    background-color: #C03D28;
+  }
+  i {
+    background: url("/assets/img/vendor/google/btn_red.png") no-repeat 0 0;
+  }
+}
+
+.btn-connect-t {
+  background-color: #39B2E6;
+  &:hover {
+    background-color: #4AC6FA;
+  }
+  &:active {
+    background-color: #2288CC;
+  }
+  i {
+    background: url("/assets/img/vendor/twitter/btn_light.png") no-repeat 0 0;
+  }
+}
+
+.modal .btn-connect-site {
+  background: none repeat scroll 0 0 #666666;
+  cursor: pointer;
+  font-size: 1.25rem;
+  height: 2rem;
+  line-height: 1.5;
+  padding: 0 1rem;
+  text-align: center;
+}

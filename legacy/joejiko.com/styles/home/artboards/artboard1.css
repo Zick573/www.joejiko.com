@@ -1,0 +1,137 @@
+/* joe jiko */
+#starburst {
+    background: url("/images/home/sprite-starburst.png") repeat scroll 0 0 transparent;
+    display: block;
+    height: 180px;
+    left: 252px;
+    position: absolute;
+    top: 250px;
+    width: 145px;
+    z-index: 101;
+}
+
+/* eyes */
+#jikoeyes {
+    background: url("/images/home/joejiko-eyes.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    display: block;
+    height: 55px;
+    left: 375px;
+    position: absolute;
+    top: 126px;
+    width: 145px;
+    z-index: 110;
+}
+#jikoeyes.eyesdefault {background-position: 0 0;}
+#jikoeyes.eyesdown {background-position: 0 -55px;}
+#jikoeyes.eyesright {background-position: 0 -110px;}
+#jikoeyes.eyesleft {background-position: 0 -165px;}
+#jikoeyes.eyesleft2 {background-position: 0 -220px;}
+#jikoeyes.eyesleft3 {background-position: 0 -275px;}
+#jikoeyes.crossed {background-position: 0 -330px;}
+#jikoeyes.eyesup {background-position: 0 -385px; }
+
+/* mouth */
+#jikomouth {
+    cursor: pointer;
+    display: block;
+    height: 72px;
+    left: 387px;
+    overflow: hidden;
+    position: absolute;
+    top: 186px;
+    width: 162px;
+    z-index: 111;
+}
+#jikomouth:hover img { margin-top: -72px; }
+#jikomouth:hover img.chomp { margin-top: 0; }
+
+/* accessories */
+#accessories {
+    position: absolute;
+    top: 324px;
+    z-index: 140;
+}
+#accessories figure { position: absolute; }
+.transformerprime {
+    left: 43px;
+    top: 0;
+}
+.transformerprime a { display: block; width: 239px; height: 175px; overflow: hidden; }
+.transformerprime a:hover img { margin-top: -175px; }
+.nosenergy {
+    left: 23px;
+    top: 55px;
+    z-index: 145;
+}
+.charizard {
+		background: url(/images/home/animated-pokemon-plush-charizard.png) repeat-x;
+    height: 180px;
+    left: 81px;
+    top: 36px;
+    width: 200px;
+}
+
+.charizard > img { position: absolute; top: 16px; left: 50px; }
+
+.andyandroid {
+    left: 829px;
+    top: 95px;
+    z-index: 147;
+}
+.droidx {
+    left: 755px;
+    top: 140px;
+    z-index: 146;
+}
+.wolfmoon {
+    left: 764px;
+    top: 0;
+}
+.intuos4 {
+    left: 594px;
+    top: 64px;
+    z-index: 141;
+}
+.click-map {
+    background: url("/images/home/click-map-dark.png") no-repeat scroll 0 0 transparent;
+    display: none;
+    height: 500px;
+    left: -10px;
+    position: absolute;
+    top: 47px;
+    width: 960px;
+    z-index: 115;
+}
+.clickme, .clickme2, .clickme3 {
+    background: url("/images/home/click-me.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 51px;
+    left: -40px;
+    position: absolute;
+    top: 297px;
+    display: none;
+    width: 128px;
+    z-index: 160;
+}
+.clickme2 {
+    left: 0;
+    top: 204px;
+}
+.clickme3 {
+    left: -20px;
+    top: 153px;
+}
+
+#hints {
+    border: 3px solid #000000;
+    border-radius: 15px 15px 15px 15px;
+    color: #000000;
+    cursor: pointer;
+    left: 263px;
+    line-height: 10px;
+    padding: 10px 15px;
+    position: absolute;
+    top: 11px;
+    z-index: 110;
+}

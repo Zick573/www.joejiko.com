@@ -1,0 +1,448 @@
+.question {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #EEEEEE #CCCCCC #CCCCCC #EEEEEE;
+    border-style: solid;
+    border-width: 1px 1px 2px;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 40px;
+    padding: 2px;
+    position: relative;
+        width: 100%;
+}
+.question-info {
+    background: url("/assets/img/pages/questions/circle-q.png") no-repeat scroll left center transparent;
+    height: 26px;
+    left: 5px;
+    line-height: 1;
+    padding-left: 30px;
+    position: absolute;
+    top: 5px;
+}
+.question-id {
+    display: inline-block;
+    margin: 0;
+}
+
+.question-text {
+    color: #000000;
+    display: block;
+    font-size: 25px;
+    line-height: 1.25em;
+    margin: 0;
+    padding: 1.75rem 1rem 0.75rem 2rem;
+}
+.question-asked-by {
+    color: rgba(0, 0, 0, 0.4);
+    display: inline-block;
+    margin: 0;
+}
+.response-text {
+    background: url("/assets/img/pages/questions/circle-a.png") no-repeat scroll 5px 15px #EEEEEE;
+    line-height: 1.5;
+    margin: 0;
+    padding: 10px 5px 20px 40px;
+}
+.time-data { display: none; }
+.date {
+    border-top: 1px dotted;
+    color: #999999;
+    font-size: 10px;
+    line-height: 1;
+    margin: 0;
+    padding: 2px 10px;
+    text-align: right;
+}
+.ask {
+    background: #999999;
+    display: inline-block;
+    padding: 4px;
+    position: relative;
+    vertical-align: top;
+}
+.ask a, .ask a:link, .ask a:visited {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #222222;
+    border-image: none;
+    border-radius: 10px 10px 10px 10px;
+    border-style: solid;
+    border-width: 1px 1px 5px;
+    color: #000000;
+    display: block;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 20;
+}
+.ask:hover {
+    padding-bottom: 5px;
+    padding-top: 7px;
+}
+.ask:hover a, .ask:hover a:link, .ask:hover a:visited {
+    border-bottom: 1px solid;
+}
+#clickthis {
+    left: 60px;
+    position: absolute;
+    top: 90px;
+    z-index: 10;
+}
+#clickthis span {
+    color: #000000;
+    position: absolute;
+}
+#clickthis .arrowhead {
+    font-size: 50px;
+    left: 64px;
+    top: 3px;
+}
+#clickthis .arrowshaft {
+    font-size: 58px;
+    left: 69px;
+    top: -35px;
+}
+#clickthis .clicktext {
+    font-size: 36px;
+    left: 1px;
+    text-align: center;
+    top: 20px;
+    width: 120px;
+}
+/*
+    ColorBox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; }
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width: none;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box;}
+
+/*
+    User Style:
+    Change the following styles to modify the appearance of ColorBox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay{background:#fff;}
+#colorbox{}
+    #cboxContent{margin-top:0;}
+        .cboxIframe{background:#fff;}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+#cboxLoadedContent {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 0 solid #000000;
+    box-shadow: 0 1px 2px #eee;
+}
+        #cboxTitle{position:absolute; top:-20px; left:0; color:#ccc;}
+        #cboxCurrent{position:absolute; top:-20px; right:0px; color:#ccc;}
+        #cboxSlideshow{position:absolute; top:-20px; right:90px; color:#fff;}
+        #cboxPrevious{position:absolute; top:50%; left:5px; margin-top:-32px; width:28px; height:65px; text-indent:-9999px;}
+        #cboxPrevious:hover{background-position:bottom left;}
+        #cboxNext{position:absolute; top:50%; right:5px; margin-top:-32px; width:28px; height:65px; text-indent:-9999px;}
+        #cboxNext:hover{background-position:bottom right;}
+        #cboxLoadingOverlay{background:#fff;}
+        #cboxLoadingGraphic{background:url(http://joejiko.com/images/loading/loading.gif) no-repeat center center;}
+#cboxClose {
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid transparent;
+    color: #EEEEEE;
+    display: block;
+    font-family: modernpics,sans-serif;
+    font-size: 40px;
+    height: 25px;
+    line-height: 5px;
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    text-transform: uppercase;
+    top: 0;
+}
+#cboxClose:hover {
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    color: red;
+    text-shadow: 0 1px 1px #ce0201;
+}
+/* ==========================================================================
+   Ask a question
+   ========================================================================== */
+/* Container
+   ========================================================================== */
+#question-ask {
+     margin: 0px auto;
+     padding: 20px;
+     width: 576px;
+     div {
+        display: none;
+     }
+}
+
+/* Layout
+   ========================================================================== */
+#question-author-info div { float: right; width: 19%; }
+// #question-ask hgroup * { display: inline-block; }
+// #question-ask h2 {
+//     background: none repeat scroll 0 0 #000000;
+//     color: #FFFFFF;
+//     margin-right: 30px;
+//     padding: 0.5em;
+// }
+// #question-ask h3 {
+//     color: #333;
+//     line-height: 24px;
+// }
+.question-status {
+    display: none;
+    font-family: modernpics,sans-serif;
+    font-size: 2em;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.ask .good { color: green; display: none; }
+.ask .bad { color: red; }
+.ask--valid .good { display: block; }
+.ask--valid .bad { display: none; }
+.ask .question-wrap {
+    display: block;
+    position: relative;
+    margin-bottom: 1em;
+}
+
+/* help/tooltip
+   ========================================================================== */
+.ask .help {
+    color: #666666;
+    font-size: 1em;
+    padding: 12px 0;
+    text-align: right;
+    width: 215px;
+    &:hover {
+        color: #222;
+        cursor: help;
+    }
+    span {
+        font-family: modernpics;
+        font-size: 2em;
+        display: block;
+        float: right;
+        margin-top: -7px;
+    }
+}
+.help-list
+{
+  padding: 10px;
+  list-style-type: square;
+}
+.help-list-item {
+    line-height: 25px;
+    width: 100%;
+    text-align: left;
+}
+
+.help .tooltip
+{
+  left: 315px;
+  top: 65px;
+}
+
+.ask .tooltip-message {
+    display: inline-block;
+    float: left;
+    font-size: 1.4em;
+    margin: -3px 10px 0 0;
+}
+
+.help .tooltip:before {
+  border-color: transparent transparent #000000 transparent;
+  border-width: 6px;
+  top: -12px;
+  left: auto;
+  right: 11%;
+}
+
+.help .tooltip a { color: #06C; }
+.help .tooltip a:hover { color: #06F; margin-bottom: 1px; }
+
+.character-count {
+    bottom: 0;
+    color: #CCCCCC;
+    font-size: 2em;
+    left: 10px;
+    position: absolute;
+}
+
+#question-ask #question-subscribe div label {
+     display: block;
+     float: left;
+     margin-left: 10px;
+     width: 40px;
+}
+
+#question-subscribe em {
+     display: block;
+     line-height: 20px;
+     padding: 10px;
+}
+/* Form
+   ========================================================================== */
+#question-ask textarea {
+    -webkit-box-sizing: border-box; /* Allow padding & borders on grids without breaking. IE8+ */
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 1em;
+    padding: 15px 25px 30px 15px;
+    width: 100%;
+}
+
+#question-ask fieldset {
+    border: 1px solid #EEEEEE;
+    margin-bottom: 1em;
+    padding: 20px;
+}
+
+#question-ask label {
+     display: inline-block;
+     margin-right: 20px;
+}
+
+#question-ask input[type="radio"] {
+     display: inline-block;
+}
+
+#question-subscribe > fieldset {
+     padding: 20px;
+     width: 536px;
+}
+
+#question-ask > button[type="submit"] {
+    background: none repeat scroll 0 0 #ccc;
+    border: medium none;
+    color: #FFFFFF;
+    padding: 10px 25px;
+}
+#question-ask.valid > button { background: #42d15d; }
+
+#question-subscribe input[type="email"] {
+     width: 300px;
+}
+
+/* Thanks
+   ========================================================================== */
+#question-ask .thanks {
+    display: block;
+}
+
+.thanks > p {
+    padding: 2em 1em;
+}
+
+/* No
+   ========================================================================== */
+
+.ask--valid .no { display: none; }
+.ask .no {
+    font-size: 3em;
+    right: 10%;
+    padding: 10px;
+    position: absolute;
+    bottom: 10%;
+}
+.no .message {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 700;
+    left: 80px;
+    position: absolute;
+    text-shadow: 3px 3px 0 #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+    top: 123px;
+    z-index: 10;
+}
+.no .stop-1 {
+    border-bottom: 104px solid transparent;
+    border-right: 60px solid #CC0000;
+    border-top: 104px solid transparent;
+    float: left;
+}
+.no .stop-2 {
+    background-color: #CC0000;
+    float: left;
+    height: 208px;
+    width: 120px;
+}
+.no .stop-3 {
+    border-bottom: 104px solid transparent;
+    border-left: 60px solid #CC0000;
+    border-top: 104px solid transparent;
+    float: left;
+}
+
+.ask .stops, .ask .stops * {
+     display: block;
+}
+.stops {
+    height: 300px;
+    left: -65px;
+    overflow: hidden;
+    position: absolute;
+    top: -60px;
+    z-index: 1;
+}
+
+.stops i {
+    color: red;
+    font-family: modernpics;
+    font-size: 10em;
+    font-style: normal;
+    margin-top: -180px;
+}
+
+.no .no-img {
+     left: 28px;
+     position: relative;
+     top: -7px;
+     z-index: 5;
+}
+
+
+.ask-question {
+    height: 7rem;
+    line-height: 4;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.btn-ask {
+    border: 1px solid #000000;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.ask {
+    width: 100%;
+}
+
+/** temp **/
+.ask-header { height: 5em; }
+.ask-h { margin: 0; }
+.ask .help {
+    padding: 1em 1em 0 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 445px;
+    &:hover {
+      .ask-tooltip { display: block; z-index: 9000; }
+    }
+}
+.ask .ask-tooltip { display: none; }

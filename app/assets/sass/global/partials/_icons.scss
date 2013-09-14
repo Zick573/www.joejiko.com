@@ -1,0 +1,61 @@
+.modernpics {
+  font-family: 'Modernpics';
+  font-size: 16px;
+  line-height: 1;
+  display: inline-block;
+  &:before {
+    content:attr(data-icon);
+  }
+}
+.modernpics--large { font-size: 32px; }
+.modernpics--huge { font-size: 64px; }
+.modernpics--natural { font-size: inherit; }
+
+.batch {
+    font-family:"Batch"; /*or whatever you've declared your font name as*/
+    font-size:16px;
+    line-height:1;
+    display:inline-block;
+    &:before {
+      content:attr(data-icon);
+    }
+}
+.batch--large { font-size:32px; }
+.batch--huge { font-size:64px; }
+.batch--natural { font-size:inherit; }
+
+.icon-placeholder {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: transparent;
+    margin-bottom: 1px;
+}
+
+[class*="icon-"] {
+	display: inline-block;
+	background: {
+		repeat: no-repeat;
+		position: 0 0;
+	}
+}
+.icon-50 { width: 50px; height: 50px; }
+.icon-50.icon-g {
+  background-image: url(/assets/img/vendor/google/g+48.png);
+  background-position: 1px 1px;
+}
+.icon-50.icon-tw {
+	background: {
+    image: url(/assets/img/vendor/twitter/tw-50.png);
+    color: #999;
+  }
+  border: {
+    radius: 3px;
+  }
+}
+.icon-50.icon-fb {
+	background-image: url(/assets/img/vendor/facebook/f-50.png);
+}
+.icon-50.icon-ig {
+  background-image: url(/assets/img/vendor/instagram/ig-50.png);
+}
