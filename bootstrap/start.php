@@ -23,7 +23,7 @@ $app->redirectIfTrailingSlash();
 |
 */
 $env = $app->detectEnvironment(array(
-  'local' => array('local.*', '127.0.0.1', 'dev.*', '*.dev'),
+  'local' => array('local.*', '127.0.0.1'),
   'staging' => array('staging.*'),
   'development' => array('198.20.249.169')
 ));
