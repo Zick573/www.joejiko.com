@@ -1,0 +1,4 @@
+[07-May-2013 01:28:59 UTC] PHP Warning:  Creating default object from empty value in /home1/yourown1/public_html/joejiko.com/blog/wp-content/themes/platform/includes/class.layout.php on line 164
+[27-Aug-2013 17:09:56 UTC] PHP Fatal error:  Call to a member function get_active_modules() on a non-object in /home1/yourown1/public_html/joejiko.com/blog/wp-content/plugins/jetpack/class.jetpack-heartbeat.php on line 76
+[03-Sep-2013 17:14:47 UTC] PHP Fatal error:  Call to a member function get_active_modules() on a non-object in /home1/yourown1/public_html/joejiko.com/blog/wp-content/plugins/jetpack/class.jetpack-heartbeat.php on line 76
+[10-Sep-2013 17:10:44 UTC] PHP Fatal error:  Call to a member function get_active_modules() on a non-object in /home1/yourown1/public_html/joejiko.com/blog/wp-content/plugins/jetpack/class.jetpack-heartbeat.php on line 76

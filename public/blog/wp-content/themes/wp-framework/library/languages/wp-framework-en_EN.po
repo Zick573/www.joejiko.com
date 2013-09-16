@@ -1,0 +1,1517 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Framework 0.3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-02-12 21:03-0500\n"
+"PO-Revision-Date: 2011-02-12 21:03-0500\n"
+"Last-Translator: Ptah Dunbar <m@ptahdunbar.com>\n"
+"Language-Team: Ptah Dunbar <m@ptahdunbar.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _e;__;_ex;_x;_n;_nx;_n_noop;_nx_noop;esc_attr_e;esc_attr__;esc_html_e;esc_html__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework\n"
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/404.php:34
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/loop-404.php:17
+msgid "This is somewhat embarrassing, isn&rsquo;t it?"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/404.php:38
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/loop-404.php:21
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching, or one of the links below, can help."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/404.php:45
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/loop-404.php:28
+msgid "Most Used Categories"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/404.php:52
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/loop-404.php:35
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/attachment.php:52
+#, php-format
+msgid "<span class=\"meta-prep meta-prep-entry-date\">Published </span> <span class=\"entry-date\"><abbr class=\"published\" title=\"%1$s\">%2$s</abbr></span>  at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%7$s</a>"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/attachment.php:117
+#, php-format
+msgid "Download &quot;%1$s&quot;"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/attachment.php:122
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/attachment.php:123
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/loop-archive.php:43
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/loop.php:48
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/page-full-width.php:37
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/page.php:50
+msgid "Pages:"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/attachment.php:128
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/loop-archive.php:48
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/loop.php:53
+msgid "Leave a comment"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/attachment.php:128
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/loop-archive.php:48
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/loop.php:53
+msgid "1 Comment"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/attachment.php:128
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/loop-archive.php:48
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/loop.php:53
+msgid "% Comments"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/attachment.php:129
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/loop-archive.php:49
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/loop.php:54
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/page-full-width.php:41
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/page.php:54
+msgid "Edit"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/comment-pingback.php:24
+#, php-format
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/comment-pingback.php:28
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/comment.php:36
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/comment-pingback.php:28
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/comment.php:36
+msgid "(Edit)"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/comment.php:28
+#, php-format
+msgid "<cite class=\"fn\">%s</cite> <span class=\"says\">says:</span>"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/comments.php:37
+#, php-format
+msgid "One Response to %2$s"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/custom-functions.php:114
+msgid "Asides"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/custom-functions.php:116
+msgid "Asides widget area."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/custom-functions.php:180
+msgid "Site Navigation"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/custom-functions.php:181
+msgid "Footer Links"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/footer.php:37
+msgid "Powered by WordPress"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/footer.php:37
+msgid "&amp;"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/footer.php:38
+msgid "Built on WP Framework"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/loop-archive.php:25
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/loop.php:30
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/loop-archive.php:29
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/loop.php:34
+#, php-format
+msgid "<span class=\"sep\">Posted on </span><a href=\"%1$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%2$s\" pubdate>%3$s</time></a> <span class=\"sep\"> by </span> <span class=\"author vcard\"><a class=\"url fn n\" href=\"%4$s\" title=\"%5$s\">%6$s</a></span>"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/loop-archive.php:34
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/loop.php:39
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/sidebar-buddypress.php:32
+msgid "Log Out"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/sidebar-buddypress.php:50
+msgid "To start connecting please log in first."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/sidebar-buddypress.php:52
+#, php-format
+msgid " You can also <a href=\"%s\" title=\"Create an account\">create an account</a>."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/sidebar-buddypress.php:57
+msgid "Username"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/sidebar-buddypress.php:60
+msgid "Password"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/sidebar-buddypress.php:63
+msgid "Remember Me"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/sidebar-buddypress.php:66
+msgid "Log In"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/sidebar-buddypress.php:78
+msgid "Forum Topic Tags"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/sidebar.php:34
+msgid "Pages"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/sidebar.php:39
+msgid "Archives"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/sidebar.php:46
+msgid "Meta"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/single.php:63
+#, php-format
+msgid "Bookmark the <a href=\"%s\" title=\"Permalink to %s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/activity-loop.php:38
+msgid "Load More"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/activity-loop.php:47
+msgid "Sorry, there was no activity found. Please try a different filter."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/entry.php:38
+msgid "Reply"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/entry.php:43
+msgid "Mark as Favorite"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/entry.php:43
+msgid "Favorite"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/entry.php:45
+msgid "Remove Favorite"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/entry.php:55
+msgid "In reply to"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/entry.php:56
+msgid "View Thread / Permalink"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/entry.php:56
+msgid "View"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/entry.php:73
+msgid "Post"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/entry.php:73
+msgid "or press esc to cancel."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/index.php:21
+msgid "Site Activity"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/index.php:36
+msgid "The public activity for everyone on this site."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/index.php:36
+#, php-format
+msgid "All Members (%s)"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/index.php:44
+msgid "The activity of my friends only."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/index.php:44
+#, php-format
+msgid "My Friends (%s)"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/index.php:52
+msgid "The activity of groups I am a member of."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/index.php:52
+#, php-format
+msgid "My Groups (%s)"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/index.php:59
+msgid "The activity I've marked as a favorite."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/index.php:59
+#, php-format
+msgid "My Favorites (<span>%s</span>)"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/index.php:64
+msgid "Activity that I have been mentioned in."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/index.php:64
+#, php-format
+msgid "@%s Mentions"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/index.php:64
+#, php-format
+msgid "(%s new)"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/index.php:74
+msgid "RSS Feed"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/index.php:74
+msgid "RSS"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/index.php:80
+msgid "No Filter"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/index.php:81
+msgid "Show Updates"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/index.php:84
+msgid "Show Blog Posts"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/index.php:85
+msgid "Show Blog Comments"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/index.php:89
+msgid "Show New Forum Topics"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/index.php:90
+msgid "Show Forum Replies"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/index.php:94
+msgid "Show New Groups"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/index.php:95
+msgid "Show New Group Memberships"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/index.php:99
+msgid "Show Friendship Connections"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/index.php:102
+msgid "Show New Members"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/post-form.php:15
+#, php-format
+msgid "You are mentioning %s in a new update, this user will be sent a notification of your message."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/post-form.php:26
+#, php-format
+msgid "What's new in %s, %s?"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/post-form.php:28
+#, php-format
+msgid "What's new %s?"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/post-form.php:40
+msgid "Post Update"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/post-form.php:45
+msgid "Post in"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/activity/post-form.php:48
+msgid "My Profile"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/blogs/blogs-loop.php:79
+msgid "Sorry, there were no blogs found."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/blogs/create.php:22
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/blogs/index.php:22
+msgid "Create a Blog"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/blogs/create.php:22
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/blogs/index.php:22
+msgid "Blogs Directory"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/blogs/create.php:32
+msgid "Blog registration is currently disabled"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/blogs/index.php:32
+#, php-format
+msgid "All Blogs (%s)"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/blogs/index.php:35
+#, php-format
+msgid "My Blogs (%s)"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/blogs/index.php:42
+msgid "Order By:"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/blogs/index.php:44
+msgid "Last Active"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/blogs/index.php:45
+msgid "Newest"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/blogs/index.php:46
+msgid "Alphabetical"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/forums/forums-loop.php:35
+msgid "Topic Title"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/forums/forums-loop.php:36
+msgid "Latest Poster"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/forums/forums-loop.php:39
+msgid "Posted In Group"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/forums/forums-loop.php:42
+msgid "Posts"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/forums/forums-loop.php:43
+msgid "Freshness"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/forums/forums-loop.php:56
+msgid "Permalink"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/forums/forums-loop.php:105
+msgid "Sorry, there were no forum topics found."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/forums/index.php:20
+msgid "Group Forums Directory"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/forums/index.php:20
+msgid "New Topic"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/forums/index.php:39
+msgid "Post a New Topic:"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/forums/index.php:41
+msgid "Title:"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/forums/index.php:44
+msgid "Content:"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/forums/index.php:47
+msgid "Tags (comma separated):"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/forums/index.php:50
+msgid "Post In Group Forum:"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/forums/index.php:70
+msgid "Post Topic"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/forums/index.php:71
+msgid "Cancel"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/forums/index.php:80
+#, php-format
+msgid "You are not a member of any groups so you don't have any group forums you can post in. To start posting, first find a group that matches the topic subject you'd like to start. If this group does not exist, why not <a href='%s'>create a new group</a>? Once you have joined or created the group you can post your topic in that group's forum."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/forums/index.php:91
+#, php-format
+msgid "All Topics (%s)"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/forums/index.php:94
+#, php-format
+msgid "My Topics (%s)"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/forums/index.php:104
+msgid "Most Posts"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/forums/index.php:105
+msgid "Unreplied"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/bp-ajax.php:57
+msgid "Search anything..."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/bp-ajax.php:125
+msgid "Please enter some content to post."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/bp-ajax.php:138
+msgid "There was a problem posting your update, please try again."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/bp-ajax.php:163
+msgid "Please do not leave the comment area blank."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/bp-ajax.php:168
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/bp-ajax.php:179
+msgid "There was an error posting that reply, please try again."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/bp-ajax.php:191
+#, php-format
+msgid "%s ago"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/bp-ajax.php:193
+msgid "Delete"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/bp-ajax.php:230
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/bp-ajax.php:263
+msgid "There was a problem when deleting. Please try again."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/bp-ajax.php:316
+msgid "Remove Invite"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/bp-ajax.php:342
+msgid "Friendship could not be canceled."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/bp-ajax.php:344
+msgid "Add Friend"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/bp-ajax.php:352
+msgid "Friendship could not be requested."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/bp-ajax.php:354
+msgid "Friendship Requested"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/bp-ajax.php:357
+msgid "Request Pending"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/bp-ajax.php:369
+msgid "There was a problem accepting that request. Please try again."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/bp-ajax.php:380
+msgid "There was a problem rejecting that request. Please try again."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/bp-ajax.php:406
+msgid "Error joining group"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/bp-ajax.php:408
+msgid "Leave Group"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/bp-ajax.php:416
+msgid "Error requesting membership"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/bp-ajax.php:418
+msgid "Membership Requested"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/bp-ajax.php:427
+msgid "Error leaving group"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/bp-ajax.php:430
+msgid "Join Group"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/bp-ajax.php:432
+msgid "Request Membership"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/bp-ajax.php:444
+msgid "There was a problem closing the notice."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/bp-ajax.php:469
+#, php-format
+msgid "Sent %s ago"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/bp-ajax.php:486
+msgid "There was a problem sending that reply. Please try again."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/bp-ajax.php:496
+msgid "There was a problem marking messages as unread."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/bp-ajax.php:512
+msgid "There was a problem marking messages as read."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/bp-ajax.php:528
+msgid "There was a problem deleting messages."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/bp-ajax.php:535
+msgid "Messages deleted."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/compatiblity.php:64
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf-admin-metabox.php:136
+msgid "Save Changes"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf-admin-metabox.php:167
+msgid "There are no registered options on this page."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf-admin-metabox.php:512
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf-metaboxes.php:85
+msgid "There are no options for this metabox."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf-admin-metabox.php:797
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf-metaboxes.php:609
+msgid "Preview"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf-admin-metabox.php:798
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf-metaboxes.php:610
+msgid "Media Library"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf-admin-metabox.php:799
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf-metaboxes.php:611
+msgid "Upload"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf-admin-metabox.php:826
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf-metaboxes.php:642
+msgid "Select a Color"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf-admin.php:125
+msgid "Settings saved."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf-admin.php:128
+msgid "Settings not saved."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf-bp.php:19
+msgid "BuddyPress Aside"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf-bp.php:21
+msgid "This widget area display only on BuddyPress pages."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf-bp.php:49
+msgid "My Favorites"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf-bp.php:50
+msgid "Accepted"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf-bp.php:51
+msgid "Rejected"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf-bp.php:52
+msgid "Show all comments for this thread"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf-bp.php:53
+msgid "Show all"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf-bp.php:54
+msgid "comments"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf-bp.php:55
+msgid "Close"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf-bp.php:59
+#, php-format
+msgid "%s is a unique identifier for %s that you can type into any message on this site. %s will be sent a notification and a link to your message any time you use it."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf-bp.php:162
+msgid "Acitivty"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf-bp.php:168
+msgid "Members"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf-bp.php:172
+msgid "Groups"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf-bp.php:177
+msgid "Forums"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf-bp.php:182
+msgid "Blogs"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf-theme-options.php:33
+#, php-format
+msgid "Theme Options for %s"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf-theme-options.php:34
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf-theme-options.php:46
+msgid "Theme Options"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:170
+msgid "Sorry, but you are looking for something that isn't here."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:172
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:173
+#, php-format
+msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Log out?</a>"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:174
+msgid "Your email address will not be published."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:175
+#, php-format
+msgid "You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags and attributes: %s"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:176
+#, php-format
+msgid "Required fields are marked %s"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:178
+msgid "Leave a Reply"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:179
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:180
+msgid "Cancel reply"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:181
+msgid "Post Comment"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:184
+msgid "Log in to leave a Comment"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:185
+#, php-format
+msgid "Comments are closed, but <a href=\"%1$s\" title=\"Trackback URL for this post\">trackbacks</a> and pingbacks are open."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:186
+msgid "No Comments."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:187
+msgid "Comments are closed."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:188
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:189
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:268
+msgid " for "
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:271
+msgid "404 Not Found"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:275
+#, php-format
+msgid "%1$s Page %2$s"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:392
+msgid ", "
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:394
+msgid ", and "
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:396
+msgid " and "
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:539
+#, php-format
+msgid "%s Archives<span class=\"meta-sep\">:</span> <span>%s</span>"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:543
+#, php-format
+msgid "Author Archives<span class=\"meta-sep\">:</span> <span>%s</span>"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:547
+#, php-format
+msgid "Daily Archives<span class=\"meta-sep\">:</span> <span>%s</span>"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:547
+msgid "F jS, Y"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:550
+#, php-format
+msgid "Weekly Archives<span class=\"meta-sep\">:</span> <span>%s</span> of <span>%1$s</span>"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:550
+msgid "W"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:553
+#, php-format
+msgid "Monthly Archives<span class=\"meta-sep\">:</span> <span>%s</span>"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:553
+msgid "F Y"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:556
+#, php-format
+msgid "Yearly Archives<span class=\"meta-sep\">:</span> <span>%s</span>"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:556
+msgid "Y"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:560
+#, php-format
+msgid "Search results for <span>&quot;%s&quot;</span>"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:696
+msgid "Page %CURRENT_PAGE% of %TOTAL_PAGES%"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:697
+msgid "First"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:698
+msgid "Last"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:699
+msgid "&laquo;"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:700
+msgid "&raquo;"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:712
+msgid "&larr;"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/framework/classes/wpf.php:713
+msgid "&rarr;"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/create.php:21
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/index.php:19
+msgid "Create a Group"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/create.php:21
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/index.php:19
+msgid "Groups Directory"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/create.php:40
+msgid "* Group Name"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/create.php:40
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/create.php:43
+msgid "(required)"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/create.php:43
+msgid "* Group Description"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/create.php:59
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:54
+msgid "Enable comment wire"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/create.php:66
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:64
+msgid "Enable discussion forum"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/create.php:71
+#, php-format
+msgid "<strong>Attention Site Admin:</strong> Group forums require the <a href=\"%s\">correct setup and configuration</a> of a bbPress installation."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/create.php:79
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:73
+msgid "Privacy Options"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/create.php:83
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:78
+msgid "This is a public group"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/create.php:85
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:80
+msgid "Any site member can join this group."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/create.php:86
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/create.php:95
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:81
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:91
+msgid "This group will be listed in the groups directory and in search results."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/create.php:87
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:82
+msgid "Group content and activity will be visible to any site member."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/create.php:92
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:88
+msgid "This is a private group"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/create.php:94
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:90
+msgid "Only users who request membership and are accepted can join the group."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/create.php:96
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/create.php:105
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:92
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:102
+msgid "Group content and activity will only be visible to members of the group."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/create.php:101
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:98
+msgid "This is a hidden group"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/create.php:103
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:100
+msgid "Only users who are invited can join the group."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/create.php:104
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:101
+msgid "This group will not be listed in the groups directory or search results."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/create.php:128
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:120
+msgid "Upload an image to use as an avatar for this group. The image will be shown on the main group page, and in search results."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/create.php:132
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:124
+msgid "Upload Image"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/create.php:136
+msgid "To skip the avatar upload process, hit the \"Next Step\" button."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/create.php:143
+msgid "Crop Group Avatar"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/create.php:145
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:144
+msgid "Avatar to crop"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/create.php:148
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:147
+msgid "Avatar preview"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/create.php:151
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:150
+msgid "Crop Image"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/create.php:188
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/send-invites.php:30
+msgid "Select people to invite from your friends list."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/create.php:217
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/send-invites.php:77
+msgid "Once you have built up friend connections you will be able to invite others to your group. You can send invites any time in the future by selecting the \"Send Invites\" option when viewing your new group."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/create.php:234
+msgid "Previous Step"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/create.php:239
+msgid "Next Step"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/create.php:244
+msgid "Create Group and Continue"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/create.php:249
+msgid "Finish"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/groups-loop.php:40
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/group-header.php:40
+#, php-format
+msgid "active %s ago"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/groups-loop.php:82
+msgid "There were no groups found."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/index.php:29
+#, php-format
+msgid "All Groups (%s)"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/index.php:42
+msgid "Most Members"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/index.php:43
+msgid "Newly Created"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:25
+msgid "Group Name"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:28
+msgid "Group Description"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:34
+msgid "Notify group members of changes via email"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:35
+msgid "Yes"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:36
+msgid "No"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:130
+msgid "If you'd like to remove the existing avatar but not upload a new one, please use the delete avatar button."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:132
+msgid "Delete Avatar"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:142
+msgid "Crop Avatar"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:170
+msgid "Administrators"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:177
+msgid "Moderators"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:213
+msgid "(banned)"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:219
+msgid "Unban this member"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:219
+msgid "Remove Ban"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:223
+msgid "Kick and ban this member"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:223
+msgid "Kick &amp; Ban"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:224
+msgid "Promote to Mod"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:225
+msgid "Promote to Admin"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:229
+msgid "Remove this member"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:229
+msgid "Remove from group"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:242
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/members.php:59
+msgid "This group has no members."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:271
+msgid "Accept"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:273
+msgid "Reject"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:285
+msgid "There are no pending membership requests."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:300
+msgid "WARNING: Deleting this group will completely remove ALL content associated with it. There is no way back, please be careful with this option."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:302
+msgid "I understand the consequences of deleting this group."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:307
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/admin.php:309
+msgid "Delete Group"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/forum.php:38
+msgid "You will auto join this group when you start a new topic."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/group-header.php:15
+msgid "Group Admins"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/group-header.php:23
+msgid "Group Mods"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/request-membership.php:13
+#, php-format
+msgid "You are requesting to become a member of the group '%s'."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/request-membership.php:16
+msgid "Comments (optional)"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/request-membership.php:21
+msgid "Send Request"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/send-invites.php:66
+msgid "Send Invites"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/forum/edit.php:18
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/forum/topic.php:30
+msgid "Group Forum"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/forum/edit.php:18
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/forum/topic.php:30
+msgid "Group Forum Directory"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/forum/edit.php:33
+msgid "Edit Topic:"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/forum/edit.php:55
+msgid "Edit Post:"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/forum/edit.php:75
+msgid "This topic does not exist."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/forum/topic.php:51
+#, php-format
+msgid "%s said %s ago:"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/forum/topic.php:65
+msgid "Permanent link to this post"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/forum/topic.php:96
+msgid "You will auto join this group when you reply to this topic."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/forum/topic.php:101
+msgid "Add a reply:"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/forum/topic.php:105
+msgid "Post Reply"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/forum/topic.php:114
+msgid "This topic is closed, replies are no longer accepted."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/groups/single/forum/topic.php:125
+msgid "There are no posts for this topic."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/members/index.php:20
+msgid "Members Directory"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/members/index.php:43
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/members/single/friends.php:21
+msgid "Newest Registered"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/members/members-loop.php:95
+msgid "Sorry, no members were found."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/members/single/friends/requests.php:44
+msgid "You have no pending friendship requests."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/members/single/groups/invites.php:20
+#, php-format
+msgid "%s members"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/members/single/groups/invites.php:42
+msgid "You have no outstanding group invites."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/members/single/messages/compose.php:14
+msgid "Send To (Username or Friend's Name)"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/members/single/messages/compose.php:23
+msgid "This is a notice to all users."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/members/single/messages/compose.php:26
+msgid "Subject"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/members/single/messages/compose.php:29
+msgid "Message"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/members/single/messages/compose.php:37
+msgid "Send Message"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/members/single/messages/messages-loop.php:40
+msgid "From:"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/members/single/messages/messages-loop.php:45
+msgid "To:"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/members/single/messages/messages-loop.php:51
+msgid "View Message"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/members/single/messages/messages-loop.php:59
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/members/single/messages/notices-loop.php:47
+msgid "Delete Message"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/members/single/messages/messages-loop.php:76
+msgid "Sorry, no messages were found."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/members/single/messages/notices-loop.php:40
+msgid "Sent:"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/members/single/messages/notices-loop.php:57
+msgid "Sorry, no notices were found."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/members/single/messages/single.php:20
+#, php-format
+msgid "Sent between %s and %s"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/members/single/messages/single.php:72
+msgid "Send a Reply"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/members/single/messages/single.php:88
+msgid "Send Reply"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/members/single/profile/change-avatar.php:10
+msgid "Change Avatar"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/members/single/profile/change-avatar.php:16
+msgid "Your avatar will be used on your profile and throughout the site. If there is a <a href=\"http://gravatar.com\">Gravatar</a> associated with your account email we will use that, or you can upload an image from your computer."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/members/single/profile/change-avatar.php:22
+msgid "Click below to select a JPG, GIF or PNG format photo from your computer and then click 'Upload Image' to proceed."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/members/single/profile/change-avatar.php:31
+msgid "If you'd like to delete your current avatar but not upload a new one, please use the delete avatar button."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/members/single/profile/change-avatar.php:32
+msgid "Delete My Avatar"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/members/single/profile/change-avatar.php:41
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/registration/register.php:264
+msgid "Crop Your New Avatar"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/members/single/profile/change-avatar.php:65
+msgid "Your avatar will be used on your profile and throughout the site. To change your avatar, please create an account with <a href=\"http://gravatar.com\">Gravatar</a> using the same email address as you used to register with this site."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/members/single/profile/edit.php:18
+#, php-format
+msgid "Editing '%s' Profile Group"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/members/single/profile/edit.php:61
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/members/single/profile/edit.php:74
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/registration/register.php:120
+msgid "Clear"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/registration/activate.php:24
+msgid "Account Activated"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/registration/activate.php:29
+msgid "Your account was activated successfully! Your account details have been sent to you in a separate email."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/registration/activate.php:31
+msgid "Your account was activated successfully! You can now log in with the username and password you provided when you signed up."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/registration/activate.php:36
+msgid "Activate your Account"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/registration/activate.php:40
+msgid "Please provide a valid activation key."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/registration/activate.php:44
+msgid "Activation Key:"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/registration/activate.php:47
+msgid "Activate"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/registration/register.php:24
+msgid "Create an Account"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/registration/register.php:28
+msgid "Registering for this site is easy, just fill in the fields below and we'll get a new account set up for you in no time."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/registration/register.php:36
+msgid "Account Details"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/registration/register.php:42
+msgid "Email Address"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/registration/register.php:46
+msgid "Choose a Password"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/registration/register.php:50
+msgid "Confirm Password"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/registration/register.php:66
+msgid "Profile Details"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/registration/register.php:184
+msgid "Blog Details"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/registration/register.php:186
+msgid "Yes, I'd like to create a new blog"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/registration/register.php:190
+msgid "Blog URL"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/registration/register.php:199
+msgid "Blog Title"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/registration/register.php:203
+msgid "I would like my blog to appear in search engines, and in public listings around this site"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/registration/register.php:219
+msgid "Complete Sign Up"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/registration/register.php:229
+msgid "Sign Up Complete!"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/registration/register.php:234
+msgid "You have successfully created your account! To begin using this site you will need to activate your account via the email we have just sent to your address."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/registration/register.php:236
+msgid "You have successfully created your account! Please log in using the username and password you have just created."
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/registration/register.php:243
+msgid "Your Current Avatar"
+msgstr ""
+
+#: /Users/ptah/Sites/wordpress/wp.trac/wp-content/themes/wp-framework/registration/register.php:244
+msgid "We've fetched an avatar for your new account. If you'd like to change this, why not upload a new one?"
+msgstr ""
+

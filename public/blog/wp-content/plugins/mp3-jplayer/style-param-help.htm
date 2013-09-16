@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Style Parameter Help</title>
+	<style type="text/css">
+		body { font-family: arial, Verdana, sans-serif; }
+		p, ul, ol { font-size: 14px; }
+		code, pre { font-size: 14px; background:#f0f0f0; line-height:21px; }
+		table td { padding:0px 10px 10px 0px; }
+		sup { font-size:0.7em; }
+	</style>
+</head>
+<body>
+
+<div style="width:700px; margin:50px auto 50px auto;">
+
+<h3><strong>Style Parameter Help - MP3-jPlayer</strong></h3>
+
+<br />
+
+<p>The <code>style</code> parameter gives you a way to modify the look of individual players. It takes a list of names separated by spaces (the names refer to css classes).</p>
+
+<p>Eg. <code>[mp3t style="bigger3" track="http://sjward.org/seven.mp3"]</code><br />
+	Eg. <code>[mp3-jplayer style="dark smaller" tracks="http://sjward.org/seven.mp3"]</code></p>
+
+<p>The table below shows a list of the available names that are ready to be used.</p>
+<br />
+<p>If you're comfortable writing css then you can define your own modifications in a custom stylesheet. Use the 'players-1-8-silver.css' 
+	file in the plugin's css folder as a starting point. Here's how to set it up:</p> 
+
+<ol>
+	<li>Copy 'players-1-8-silver.css' to a folder outside of the plugins folder on your domain.</li>
+	<li>Set the style option to 'Custom' on the plugin settings page, and point it to your css file using the 'uri' field.</li>
+</ol>
+
+<br /><br />
+
+<h3>Available Class Names For Use In <code>style</code> Parameter</h3>
+
+<table>
+<tr style="border-bottom:1px solid #bbb;">
+	<td style="width:140px;border-bottom:1px solid #bbb;"><strong>NAME</strong></td>
+	<td style="width:250px;border-bottom:1px solid #bbb;"><strong>EFFECT</strong></td>
+	<td style="width:250px;border-bottom:1px solid #bbb;"><strong>WORKS WITH</strong></td>
+</tr>
+<tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+</tr>
+<tr>
+	<td>bigger1</td>
+	<td>Makes player a bit bigger</td>
+	<td>[mp3t], [mp3j]</td>
+</tr>
+<tr>
+	<td>bigger2</td>
+	<td>A bit bigger still</td>
+	<td>[mp3t], [mp3j]</td>
+</tr>
+<tr>
+	<td>bigger3</td>
+	<td>Even bigger</td>
+	<td>[mp3t], [mp3j]</td>
+</tr>
+<tr>
+	<td>bigger4</td>
+	<td>Quite big</td>
+	<td>[mp3t], [mp3j]</td>
+</tr>
+<tr>
+	<td>bigger5</td>
+	<td>Big</td>
+	<td>[mp3t], [mp3j]</td>
+</tr>
+<tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+</tr>
+<tr>
+	<td>outline</td>
+	<td>Button graphic variation</td>
+	<td>[mp3j], [mp3-jplayer], [mp3-popout]</td>
+</tr>
+<tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+</tr>
+<tr>
+	<td>dark</td>
+	<td>Same as 'Dark' player style *<sup>1</sup></td>
+	<td>[mp3-jplayer], [mp3-popout]</td>
+</tr>
+<tr>
+	<td>silver</td>
+	<td>Same as 'Silver' player style *<sup>2</sup></td>
+	<td>[mp3-jplayer], [mp3-popout]</td>
+</tr>
+<tr>
+	<td>text</td>
+	<td>Similar to 'Text' player style *<sup>3</sup></td>
+	<td>[mp3-jplayer], [mp3-popout]</td>
+</tr>
+<tr>
+	<td>noscreen</td>
+	<td>removes titles, uses thin bars *<sup>4</sup></td>
+	<td>[mp3-jplayer], [mp3-popout]</td>
+</tr>
+<tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+</tr>
+<tr>
+	<td>nolistbutton</td>
+	<td>Removes playlist toggle button</td>
+	<td>[mp3-jplayer], [mp3-popout]</td>
+</tr>
+<tr>
+	<td>nopopoutbutton</td>
+	<td>Removes popout button</td>
+	<td>[mp3-jplayer], [mp3-popout]</td>
+</tr>
+<tr>
+	<td>nopn</td>
+	<td>Removes prev/next buttons</td>
+	<td>[mp3-jplayer], [mp3-popout]</td>
+</tr>
+<tr>
+	<td>nostop</td>
+	<td>Removes stop button</td>
+	<td>[mp3-jplayer], [mp3-popout]</td>
+</tr>
+<tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+</tr>
+<tr>
+	<td>smaller</td>
+	<td>Smaller fonts</td>
+	<td>[mp3-jplayer], [mp3-popout]</td>
+</tr>
+<tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+</tr>
+<tr>
+	<td>bars100</td>
+	<td>Moves bars/titles 100px to the right (eg. useful if using artwork images)</td>
+	<td>[mp3-jplayer], [mp3-popout]</td>
+</tr>
+<tr>
+	<td>bars150</td>
+	<td>Moves bars/titles 150px to the right (eg. useful if using artwork images)</td>
+	<td>[mp3-jplayer], [mp3-popout]</td>
+</tr>
+<tr>
+	<td>bars200</td>
+	<td>Moves bars/titles 200px to the right (eg. useful if using artwork images)</td>
+	<td>[mp3-jplayer], [mp3-popout]</td>
+</tr>
+<tr>
+	<td>bars250</td>
+	<td>Moves bars/titles 250px to the right (eg. useful if using artwork images)</td>
+	<td>[mp3-jplayer], [mp3-popout]</td>
+</tr>
+<tr>
+	<td>bars300</td>
+	<td>Moves bars/titles 300px to the right (eg. useful if using artwork images)</td>
+	<td>[mp3-jplayer], [mp3-popout]</td>
+</tr>
+<tr>
+	<td>bars350</td>
+	<td>Moves bars/titles 350px to the right (eg. useful if using artwork images)</td>
+	<td>[mp3-jplayer], [mp3-popout]]</td>
+</tr>
+<tr>
+	<td>bars400</td>
+	<td>Moves bars/titles 400px to the right (eg. useful if using artwork images)</td>
+	<td>[mp3-jplayer], [mp3-popout]</td>
+</tr>
+<tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+</tr>
+<tr>
+	<td>wtransbars</td>
+	<td>White very transparent bars (eg. useful if using waveform images)</td>
+	<td>[mp3-jplayer], [mp3-popout]</td>
+</tr>
+<tr>
+	<td>btransbars</td>
+	<td>Black very transparent bars (eg. useful if using waveform images))</td>
+	<td>[mp3-jplayer], [mp3-popout]</td>
+</tr>
+</table>
+
+
+<hr />
+
+<p>*<sup>1</sup> Available from 'Silver' style only.</p>
+
+<p>*<sup>2</sup> Available from 'Dark' style only.</p>
+
+<p>*<sup>3</sup> Available from 'Dark' and 'Silver' style only. There are some differences between using this and 
+	the actual 'Text' player style option on the settings page.</p>
+
+<p>*<sup>4</sup> Only works in conjunction with 'text' class at the moment, eg. <code>[mp3-jplayer style="text noscreen"]</code></p>
+
+
+
+<hr /><br /><br />
+</div>
+</body></html>

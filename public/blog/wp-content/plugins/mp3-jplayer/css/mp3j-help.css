@@ -1,0 +1,26 @@
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------- */
+
+a.fox_buttonlink { background:#eaf2fa; border:1px solid #afcfdb; padding:2px 12px 2px 10px; text-decoration:none; 
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px; }
+a.fox_buttonlink:hover { background:#dbeafa; border:1px solid #99bac7; color:#222; }
+
+a.bl2 { padding:0px 31px 0px 30px; }
+
+div#fox_library-list, div#fox_folder-list {
+	padding:10px 20px 10px 20px;
+	margin:10px 120px 10px 35px;
+	background:#f9f9f9;
+	border:1px solid #f1f1f1;
+}

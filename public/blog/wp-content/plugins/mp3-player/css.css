@@ -1,0 +1,197 @@
+
+
+/******************************************************************************/
+/* PLAYER                                                                     */
+/******************************************************************************/
+
+.playerclear {
+    font-size: 0px;
+    height:0px;
+    line-height:0px;
+    clear:both;
+    margin:0px;
+    padding:0px
+}
+.player {
+    float: left;
+    width: 200px;
+    margin: 1em;
+}
+.playerpreview {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.playercontroller {
+    background-color: none;
+    color: #000;
+    height: 20px;
+
+    border: solid 0px #ccc;
+    margin: 0 0 0 0;
+}
+.playercontroller .button {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: 2px 2px;
+    float: left;
+}
+.playercontroller .button a {
+    display: block;
+    height: 20px;
+    text-indent: -100em;
+    overflow: hidden;
+    background-image: none;
+}
+.playercontroller .timeline {
+    position: relative;
+}
+.info_bytes{
+    float:right;
+
+    font-size: 12px;
+}
+.playercontroller .timeline a {
+    position: absolute;
+    left: 40px;
+    display: block;
+    height: 20px;
+    width: 40px;
+    text-indent: -100em;
+    overflow: hidden;
+    background-image: url(images/control_slider.png);
+}
+.playercontroller .timeline a:visited {
+    background-image: url(images/control_slider.png);
+}
+.playercontroller .timeline a:hover {
+    background-image: url(images/control_slider_blue.png);
+}
+.playercontroller .play {
+    background-image: url(images/control_play.png);
+}
+.playercontroller .play:hover {
+    background-image: url(images/control_play_blue.png);
+}
+.playercontroller .pause {
+    background-image: url(images/control_pause.png);
+    display: none;
+}
+.playercontroller .pause:hover {
+    background-image: url(images/control_pause_blue.png);
+}
+.playercontroller .stop {
+    background-image: url(images/control_stop.png);
+}
+.playercontroller .stop:hover {
+    background-image: url(images/control_stop_blue.png);
+}
+
+/******************************************************************************/
+/* GENERATOR                                                                  */
+/******************************************************************************/
+#player {
+    margin: 10px 0;
+}
+#generator {
+    border: solid 1px #878bb4;
+    clear: both;
+}
+#generator h3 {
+    margin: 0;
+    background-color: #878bb4;
+    color: #fff;
+    font-size: 1em;
+    padding: 4px;
+}
+
+
+/**slider */
+.carpe_horizontal_slider_display_combo {
+    clear: left; margin: 0px
+}
+.carpe_vertical_slider_display_combo {
+    float: left; margin: 0px
+}
+.carpe_horizontal_slider_track {
+    padding-right: 4px; 
+    padding-left: 4px;
+    font-size: 0px; 
+    float: left;
+    padding-bottom: 4px; 
+    margin: 0px; 
+    width: 120px; 
+    color: #333;
+    line-height: 0px; 
+    padding-top: 4px;
+    background-color: none; 
+    text-align: left
+}
+.carpe_horizontal_slider_track .carpe_slider_slit {
+    border-right: #ddd 1px solid; 
+    border-top: #999 1px solid; 
+    z-index: z    ; 
+    margin: 4px 4px 2px;
+    border-left: #999 1px solid; 
+    width: 110px;
+    color: #ccc;
+    line-height: 0px; 
+    border-bottom: #ddd 1px solid;
+    position: absolute;
+    height: 2px; 
+    background-color: #333
+}
+.carpe_horizontal_slider_track .carpe_slider {
+    border-right: #333 2px solid;
+    border-top: #999 2px solid; 
+    font-size: 0px;
+    z-index: 1; 
+    margin: 0px;
+    border-left: #999 2px solid; 
+    width: 16px;
+    color: #333;
+    line-height: 0px;
+    border-bottom: #333 2px solid; 
+    position: relative;
+    height: 8px;
+    background-color: #fff;
+    text-align: left
+}
+.carpe_slider_display_holder {
+    border-right: #999 1px solid;
+    padding-right: 2px; 
+    border-top: #ddd 1px solid; 
+    padding-left: 0px; 
+    float: left;
+    padding-bottom: 0px;
+    margin: 0px; 
+    border-left: #ddd 1px solid; 
+    width: 34px;
+    color: #333;
+    padding-top: 0px;
+    border-bottom: #999 1px solid; 
+    height: 20px;
+    background-color: #bbb;
+    text-align: right
+}
+.carpe_slider_display {
+    border-top-width: 0px; 
+    padding-right: 1px;
+    padding-left: 0px;
+    font-weight: bold;
+    border-left-width: 0px;
+    font-size: 11px;
+    border-bottom-width: 0px; 
+    padding-bottom: 0px; 
+    width: 30px; 
+    cursor: default;
+    color: #333;
+    line-height: 10px;
+    padding-top: 3px; 
+    font-family: verdana, arial, helvetica, sans-serif;
+    background-color: #bbb;
+    text-align: right; 
+    border-right-width: 0px
+}
+

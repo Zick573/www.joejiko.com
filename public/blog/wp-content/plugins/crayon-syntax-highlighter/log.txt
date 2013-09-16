@@ -1,0 +1,62 @@
+
+[Crayon Syntax Highlighter Log Entry - 5:10:06 PM - 27 Aug 2013]
+
+ [SYSTEM LOG] 'Updated from 2.3.1 to 2.4.1'
+
+[Crayon Syntax Highlighter Log Entry - 5:10:06 PM - 27 Aug 2013]
+
+ [SYSTEM LOG] 'Updated from 2.3.1 to 2.4.1'
+
+[Crayon Syntax Highlighter Log Entry - 5:10:06 PM - 27 Aug 2013]
+
+ [SYSTEM LOG] 'Updated from 2.3.1 to 2.4.1'
+
+[Crayon Syntax Highlighter Log Entry - 9:24:56 AM - 28 Aug 2013]
+
+ [SYSTEM LOG] 'The resource directory is missing, should be at \'/home/yourown1/public_html/joejiko.com/blog/wp-content/uploads/crayon-syntax-highlighter/themes/\'.'
+ [SYSTEM LOG] 'The resource directory is missing, should be at \'/home/yourown1/public_html/joejiko.com/blog/wp-content/uploads/crayon-syntax-highlighter/fonts/\'.'
+
+[Crayon Syntax Highlighter Log Entry - 9:24:59 AM - 28 Aug 2013]
+
+ [SYSTEM LOG] 'The resource directory is missing, should be at \'/home/yourown1/public_html/joejiko.com/blog/wp-content/uploads/crayon-syntax-highlighter/themes/\'.'
+ [SYSTEM LOG] 'The resource directory is missing, should be at \'/home/yourown1/public_html/joejiko.com/blog/wp-content/uploads/crayon-syntax-highlighter/fonts/\'.'
+
+[Crayon Syntax Highlighter Log Entry - 9:25:03 AM - 28 Aug 2013]
+
+ [SYSTEM LOG] 'The resource directory is missing, should be at \'/home/yourown1/public_html/joejiko.com/blog/wp-content/uploads/crayon-syntax-highlighter/themes/\'.'
+ [SYSTEM LOG] 'The resource directory is missing, should be at \'/home/yourown1/public_html/joejiko.com/blog/wp-content/uploads/crayon-syntax-highlighter/fonts/\'.'
+
+[Crayon Syntax Highlighter Log Entry - 9:25:04 AM - 28 Aug 2013]
+
+ [SYSTEM LOG] 'The resource directory is missing, should be at \'/home/yourown1/public_html/joejiko.com/blog/wp-content/uploads/crayon-syntax-highlighter/themes/\'.'
+ [SYSTEM LOG] 'The resource directory is missing, should be at \'/home/yourown1/public_html/joejiko.com/blog/wp-content/uploads/crayon-syntax-highlighter/fonts/\'.'
+
+[Crayon Syntax Highlighter Log Entry - 9:25:05 AM - 28 Aug 2013]
+
+ [SYSTEM LOG] 'The resource directory is missing, should be at \'/home/yourown1/public_html/joejiko.com/blog/wp-content/uploads/crayon-syntax-highlighter/themes/\'.'
+ [SYSTEM LOG] 'The resource directory is missing, should be at \'/home/yourown1/public_html/joejiko.com/blog/wp-content/uploads/crayon-syntax-highlighter/fonts/\'.'
+
+[Crayon Syntax Highlighter Log Entry - 9:25:10 AM - 28 Aug 2013]
+
+ [SYSTEM LOG] 'The resource directory is missing, should be at \'/home/yourown1/public_html/joejiko.com/blog/wp-content/uploads/crayon-syntax-highlighter/themes/\'.'
+ [SYSTEM LOG] 'The resource directory is missing, should be at \'/home/yourown1/public_html/joejiko.com/blog/wp-content/uploads/crayon-syntax-highlighter/fonts/\'.'
+
+[Crayon Syntax Highlighter Log Entry - 9:54:37 AM - 03 Sep 2013]
+
+ [SYSTEM LOG] 'The resource directory is missing, should be at \'/home/yourown1/public_html/joejiko.com/blog/wp-content/uploads/crayon-syntax-highlighter/themes/\'.'
+ [SYSTEM LOG] 'The resource directory is missing, should be at \'/home/yourown1/public_html/joejiko.com/blog/wp-content/uploads/crayon-syntax-highlighter/fonts/\'.'
+
+[Crayon Syntax Highlighter Log Entry - 9:54:38 AM - 03 Sep 2013]
+
+ [SYSTEM LOG] 'The resource directory is missing, should be at \'/home/yourown1/public_html/joejiko.com/blog/wp-content/uploads/crayon-syntax-highlighter/themes/\'.'
+ [SYSTEM LOG] 'The resource directory is missing, should be at \'/home/yourown1/public_html/joejiko.com/blog/wp-content/uploads/crayon-syntax-highlighter/fonts/\'.'
+
+[Crayon Syntax Highlighter Log Entry - 9:35:00 AM - 10 Sep 2013]
+
+ [SYSTEM LOG] 'The resource directory is missing, should be at \'/home/yourown1/public_html/joejiko.com/blog/wp-content/uploads/crayon-syntax-highlighter/themes/\'.'
+ [SYSTEM LOG] 'The resource directory is missing, should be at \'/home/yourown1/public_html/joejiko.com/blog/wp-content/uploads/crayon-syntax-highlighter/fonts/\'.'
+
+[Crayon Syntax Highlighter Log Entry - 9:44:20 AM - 15 Sep 2013]
+
+ [SYSTEM LOG] 'The resource directory is missing, should be at \'/home/yourown1/public_html/joejiko.com/blog/wp-content/uploads/crayon-syntax-highlighter/themes/\'.'
+ [SYSTEM LOG] 'The resource directory is missing, should be at \'/home/yourown1/public_html/joejiko.com/blog/wp-content/uploads/crayon-syntax-highlighter/fonts/\'.'
