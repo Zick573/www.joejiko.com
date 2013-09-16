@@ -55,8 +55,8 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'yourown1_dev',
-			'username'  => 'yourown1',
+			'database'  => 'dev',
+			'username'  => 'joejiko',
 			'password'  => '3!ChrRYcxB',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
