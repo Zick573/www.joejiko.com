@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="labs no-js"> <!--<![endif]-->
 <!--
 Hello source reader!
 Let's be friends.
@@ -26,9 +26,9 @@ Leave your console open maybe?
   <meta name="description" content="Creepy, cute art and smart stuff. Join the team! Let's improve ourselves and the world together."/>
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/> -->
   @yield('page.meta')
-  {{ stylesheet() }}
-</head>
-<body>
+  {{ cdn_style_min() }}
+</head
+><body>
 <header class="site-header">
  @include('layouts.master.header')
 </header>
@@ -71,14 +71,15 @@ Leave your console open maybe?
   @include('layouts.master.footer')
 </footer>
 <!-- switched to AMD -->
-<script src="/assets/js/lib/require/require.js"></script>
-<script src="/assets/js/app.js" async="true"></script>
+<script src="{{ cdn() }}/js/libs/require/require.js"></script>
+<script src="{{ js_path() }}app.js" async="true"></script>
+
 @if(Session::has('user_connected'))
-<script src="/assets/js/user/connected.js" async="true"></script>
+<script src="{{ js_path() }}user/connected.js" async="true"></script>
 @endif
 
 @if(Session::has('user_disconnected'))
-<script src="/assets/js/user/disconnected.js" async="true"></script>
+<script src="{{ js_path() }}user/disconnected.js" async="true"></script>
 @endif
 <!-- dojo.. some day maybe
   <script src="//ajax.googleapis.com/ajax/libs/dojo/1.9.0/dojo/dojo.js"></script>

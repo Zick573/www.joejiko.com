@@ -1,4 +1,9 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+$cdn: "https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28";
+$cdn_img: "https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/shared";
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+@import "experiments/zoom";
+
 @import "global/partials/fonts";
 @import "global/partials/icons";
 @import "global/partials/buttons";
@@ -112,7 +117,7 @@ ul { margin: 0; padding: 0; list-style-type: circle; }
     z-index: 1;
 }
 
-.loading {position: relative; width: 100%; min-width: 48px; min-height: 48px; background: url(/assets/img/global/load/239_48.gif) no-repeat center top; border-radius: 50%; padding: 48px 0 0;}
+.loading {position: relative; width: 100%; min-width: 48px; min-height: 48px; background: url(#{$cdn_img}/global/load/239_48.gif) no-repeat center top; border-radius: 50%; padding: 48px 0 0;}
 .loading-message { text-align: center; }
 .modal--active {
     .site-logo {

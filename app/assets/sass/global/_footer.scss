@@ -1,5 +1,5 @@
 .site-footer {
-    background: url("/assets/img/wallpapers/jjcom-zeah-hd.jpg") no-repeat scroll right 0 / contain  #D6D6D6;
+    background: url(#{$cdn_img}/wallpapers/jjcom-zeah-hd.jpg) no-repeat scroll right 0 / contain  #D6D6D6;
     border-top: 5px solid #fff;
     opacity: 0;
     position: relative;

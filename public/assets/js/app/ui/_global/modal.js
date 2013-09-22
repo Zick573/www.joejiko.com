@@ -13,6 +13,19 @@ define(["jquery"], function($){
     };
   }
 
+  function modal_keypress_handler(evt)
+  {
+    console.log("modal keypress..which: "+evt.which);
+    if(0 == evt.which) {
+      destruct();
+      destruct_all();
+    }
+  }
+
+  function destruct_all() {
+    $(document).find('.modal').remove();
+  }
+
   function destruct() {
     if(!$modal) { return; }
     $modal.off('loaded');
@@ -20,6 +33,7 @@ define(["jquery"], function($){
     $(this).parents('.modal').remove();
     if(!$(document).find('.modal').length > -1) {
       $('body').removeClass('modal--active');
+      $(document).off('keypress', modal_keypress_handler);
     }
   }
 
@@ -40,10 +54,11 @@ define(["jquery"], function($){
         if(!$('body').hasClass('modal--active')) {
           $('body').addClass('modal--active');
         }
+        $(document).on('keypress', modal_keypress_handler);
       }
       $modal = $('<div class="modal modal--loading" />');
       $modal.append(
-        $('<div class="modal-positioning"><div class="modal-content-wrap"><div class="modal-close"><i class="modernpics" data-icon="✕"></i></div><div class="modal-content"><div class="loading"><span class="loading-message">loading content..</span></div></div></div></div>'),
+        $('<div class="modal-positioning"><div class="modal-content-wrap"><div class="modal-close"><span class="modal-close-message"></span><i class="modernpics modal-close-x" data-icon="✕"></i></div><div class="modal-content"><div class="loading"><span class="loading-message">loading content..</span></div></div></div></div>'),
         $('<div class="modal-mask"></div>')
       );
       $content = $modal.find('.modal-content');

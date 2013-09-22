@@ -93,7 +93,7 @@
 .site-sidebar {
     background: {
         size: 150%;
-        image: url(/assets/img/artwork/jiko-face-3.jpg);
+        image: url(#{$cdn}/img/artwork/jiko-face-3.jpg);
         repeat: no-repeat;
         position: left bottom;
         color: #dcdcdc;}
@@ -259,11 +259,11 @@
 }
 
 .existing-member-message {
-  margin: 0;
+  margin: 0 0 .5rem;
 }
 
 .existing-member {
-  margin-top: 1rem;
+  margin: 1rem 0;
 }
 
 .user-connect .modal-content-wrap {

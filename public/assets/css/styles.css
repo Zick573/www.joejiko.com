@@ -1,16 +1,39 @@
 @charset "IBM437";
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+.labs {
+  background-color: #2c2c2c;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s; }
+
+.labs .modal--active {
+  transform: scale(0.9);
+  transform-origin: 50% 50% 0;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+  height: 100%; }
+
+.labs .modal--active .site-header {
+  overflow: hidden; }
+
+.labs .modal--active .modal {
+  transform: scale(1.12);
+  z-index: 9998; }
+
+.labs .modal--active .modal-mask {
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0; }
+
 @font-face {
   font-family: Batch;
-  src: url("/assets/fonts/batch-icons-webfont.eot");
-  src: url("/assets/fonts/batch-icons-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/batch-icons-webfont.woff") format("woff"), url("/assets/fonts/batch-icons-webfont.ttf") format("truetype"), url("/assets/fonts/batch-icons-webfont.svg#batchregular") format("svg");
+  src: url("https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/fonts/batch-icons-webfont.eot");
+  src: url("https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/fonts/batch-icons-webfont.eot?#iefix") format("embedded-opentype"), url("https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/fonts/batch-icons-webfont.woff") format("woff"), url("https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/fonts/batch-icons-webfont.ttf") format("truetype"), url("https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/fonts/batch-icons-webfont.svg#batchregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: Modernpics;
-  src: url("/assets/fonts/modernpics.eot?73380523");
-  src: url("/assets/fonts/modernpics.eot?73380523#iefix") format("embedded-opentype"), url("/assets/fonts/modernpics.woff?73380523") format("woff"), url("/assets/fonts/modernpics.ttf?73380523") format("truetype"), url("/assets/fonts/modernpics.svg#modernpics") format("svg");
+  src: url("https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/fonts/modernpics.eot?73380523");
+  src: url("https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/fonts/modernpics.eot?73380523#iefix") format("embedded-opentype"), url("https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/fonts/modernpics.woff?73380523") format("woff"), url("https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/fonts/modernpics.ttf?73380523") format("truetype"), url("https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/fonts/modernpics.svg#modernpics") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -66,19 +89,19 @@
   height: 50px; }
 
 .icon-50.icon-g {
-  background-image: url(/assets/img/vendor/google/g+48.png);
+  background-image: url(https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/shared/vendor/google/g+48.png);
   background-position: 1px 1px; }
 
 .icon-50.icon-tw {
-  background-image: url(/assets/img/vendor/twitter/tw-50.png);
+  background-image: url(https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/shared/vendor/twitter/tw-50.png);
   background-color: #999;
   border-radius: 3px; }
 
 .icon-50.icon-fb {
-  background-image: url(/assets/img/vendor/facebook/f-50.png); }
+  background-image: url(https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/shared/vendor/facebook/f-50.png); }
 
 .icon-50.icon-ig {
-  background-image: url(/assets/img/vendor/instagram/ig-50.png); }
+  background-image: url(https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/shared/vendor/instagram/ig-50.png); }
 
 a[class*="btn-"], button[class*="btn-"] {
   border-radius: 3px;
@@ -150,7 +173,7 @@ a[class*="btn-connect-"], button[class*="btn-connect-"] {
   .btn-connect-f:active {
     background-color: #3B5B99; }
   .btn-connect-f i {
-    background: url("/assets/img/vendor/facebook/btn_light.png") no-repeat 0 0; }
+    background: url("$cdn_img/vendor/facebook/btn_light.png") no-repeat 0 0; }
 
 .btn-connect-g {
   background-color: #CC3732; }
@@ -195,7 +218,7 @@ a[class*="btn-connect-"], button[class*="btn-connect-"] {
   z-index: 16; }
 
 .app-menu--loading .site-logo {
-  background: url(/assets/img/loading/350_105.gif) #222222 no-repeat center center; }
+  background: url(https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/shared/loading/350_105.gif) #222222 no-repeat center center; }
   .app-menu--loading .site-logo #Logo {
     visibility: hidden; }
 
@@ -674,7 +697,7 @@ a[class*="btn-connect-"], button[class*="btn-connect-"] {
 
 .site-sidebar {
   background-size: 150%;
-  background-image: url(/assets/img/artwork/jiko-face-3.jpg);
+  background-image: url(https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/artwork/jiko-face-3.jpg);
   background-repeat: no-repeat;
   background-position: left bottom;
   background-color: #dcdcdc;
@@ -813,10 +836,10 @@ a[class*="btn-connect-"], button[class*="btn-connect-"] {
   margin: 0; }
 
 .existing-member-message {
-  margin: 0; }
+  margin: 0 0 .5rem; }
 
 .existing-member {
-  margin-top: 1rem; }
+  margin: 1rem 0; }
 
 .user-connect .modal-content-wrap {
   max-width: 480px; }
@@ -912,8 +935,47 @@ a[class*="btn-connect-"], button[class*="btn-connect-"] {
   background: none;
   overflow: hidden; }
 
+.photo-view .modal-close {
+  margin-right: .5rem;
+  width: auto; }
+.photo-view .modal-close-message {
+  color: #222;
+  margin-right: 2rem; }
+.photo-view .modal-content-wrap {
+  height: 90%;
+  max-height: 90%;
+  width: 90%;
+  max-width: 90%; }
+.photo-view .modal-content {
+  height: 100%; }
+.photo-view .photo-content {
+  background-color: rgba(255, 255, 255, 0.9);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 100%; }
+
+.photo-view-control {
+  font-size: 3rem;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 30%;
+  max-width: 5rem;
+  padding: 5rem 1rem 0; }
+  .photo-view-control:hover {
+    background: rgba(0, 0, 0, 0.1); }
+
+.photo-view-rewind {
+  left: 0; }
+
+.photo-view-forward {
+  text-align: right;
+  right: 0; }
+
 .site-footer {
-  background: url("/assets/img/wallpapers/jjcom-zeah-hd.jpg") no-repeat scroll right 0/contain #d6d6d6;
+  background: url(https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/shared/wallpapers/jjcom-zeah-hd.jpg) no-repeat scroll right 0/contain #d6d6d6;
   border-top: 5px solid #fff;
   opacity: 0;
   position: relative;
@@ -967,7 +1029,7 @@ a[class*="btn-connect-"], button[class*="btn-connect-"] {
   padding: .25rem; }
 
 .mission-list .inline-col {
-  background: url(/assets/img/pages/home/mission.jpg) no-repeat 0 0 white;
+  background: url(https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/shared/pages/home/mission.jpg) no-repeat 0 0 white;
   height: 225px; }
 
 .mission-list .accomplish-goals {
@@ -1164,7 +1226,7 @@ a[class*="btn-connect-"], button[class*="btn-connect-"] {
   width: 100%; }
 
 .question-info {
-  background: url("/assets/img/pages/questions/circle-q.png") no-repeat scroll left center transparent;
+  background: url("$cdn_img/pages/questions/circle-q.png") no-repeat scroll left center transparent;
   height: 26px;
   left: 5px;
   line-height: 1;
@@ -1190,7 +1252,7 @@ a[class*="btn-connect-"], button[class*="btn-connect-"] {
   margin: 0; }
 
 .response-text {
-  background: url("/assets/img/pages/questions/circle-a.png") no-repeat scroll 5px 15px #eeeeee;
+  background: url("$cdn_img/pages/questions/circle-a.png") no-repeat scroll 5px 15px #eeeeee;
   line-height: 1.5;
   margin: 0;
   padding: 10px 5px 20px 40px; }
@@ -1780,7 +1842,7 @@ a[class*="btn-connect-"], button[class*="btn-connect-"] {
   -moz-opacity: .5; }
 
 .tracker .dim .list {
-  background: url("//joejiko.com/images/loading/loading.gif") no-repeat center 10%;
+  background: url("$cdn_img/loading/loading.gif") no-repeat center 10%;
   min-height: 300px; }
 
 select {
@@ -1970,7 +2032,7 @@ ul {
   width: 100%;
   min-width: 48px;
   min-height: 48px;
-  background: url(/assets/img/global/load/239_48.gif) no-repeat center top;
+  background: url(https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/shared/global/load/239_48.gif) no-repeat center top;
   border-radius: 50%;
   padding: 48px 0 0; }
 

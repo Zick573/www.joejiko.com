@@ -15,7 +15,7 @@
 }
 .app-menu--loading {
     .site-logo {
-        background: url(/assets/img/loading/350_105.gif) #222222 no-repeat center center;
+        background: url(#{$cdn_img}/loading/350_105.gif) #222222 no-repeat center center;
         #Logo {
             visibility: hidden;
         }

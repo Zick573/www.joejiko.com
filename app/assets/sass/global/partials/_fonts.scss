@@ -1,21 +1,21 @@
 @font-face{
   font-family:Batch;
-  src:url('/assets/fonts/batch-icons-webfont.eot');
-  src:url('/assets/fonts/batch-icons-webfont.eot?#iefix') format('embedded-opentype'),
-    url('/assets/fonts/batch-icons-webfont.woff') format('woff'),
-    url('/assets/fonts/batch-icons-webfont.ttf') format('truetype'),
-    url('/assets/fonts/batch-icons-webfont.svg#batchregular') format('svg');
+  src:url('#{$cdn}/fonts/batch-icons-webfont.eot');
+  src:url('#{$cdn}/fonts/batch-icons-webfont.eot?#iefix') format('embedded-opentype'),
+    url('#{$cdn}/fonts/batch-icons-webfont.woff') format('woff'),
+    url('#{$cdn}/fonts/batch-icons-webfont.ttf') format('truetype'),
+    url('#{$cdn}/fonts/batch-icons-webfont.svg#batchregular') format('svg');
   font-weight:normal;
   font-style:normal;
 }
 
 @font-face {
   font-family: Modernpics;
-  src: url('/assets/fonts/modernpics.eot?73380523');
-  src: url('/assets/fonts/modernpics.eot?73380523#iefix') format('embedded-opentype'),
-       url('/assets/fonts/modernpics.woff?73380523') format('woff'),
-       url('/assets/fonts/modernpics.ttf?73380523') format('truetype'),
-       url('/assets/fonts/modernpics.svg#modernpics') format('svg');
+  src: url('#{$cdn}/fonts/modernpics.eot?73380523');
+  src: url('#{$cdn}/fonts/modernpics.eot?73380523#iefix') format('embedded-opentype'),
+       url('#{$cdn}/fonts/modernpics.woff?73380523') format('woff'),
+       url('#{$cdn}/fonts/modernpics.ttf?73380523') format('truetype'),
+       url('#{$cdn}/fonts/modernpics.svg#modernpics') format('svg');
   font-weight: normal;
   font-style: normal;
 }

@@ -11,7 +11,7 @@
         width: 100%;
 }
 .question-info {
-    background: url("/assets/img/pages/questions/circle-q.png") no-repeat scroll left center transparent;
+    background: url("$cdn_img/pages/questions/circle-q.png") no-repeat scroll left center transparent;
     height: 26px;
     left: 5px;
     line-height: 1;
@@ -38,7 +38,7 @@
     margin: 0;
 }
 .response-text {
-    background: url("/assets/img/pages/questions/circle-a.png") no-repeat scroll 5px 15px #EEEEEE;
+    background: url("$cdn_img/pages/questions/circle-a.png") no-repeat scroll 5px 15px #EEEEEE;
     line-height: 1.5;
     margin: 0;
     padding: 10px 5px 20px 40px;

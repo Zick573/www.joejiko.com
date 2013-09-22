@@ -7,7 +7,7 @@ requirejs.config({
       // load if CDN fails
       "jquery.min"
     ],
-    "require": "/assets/js/lib/require"
+    "require": "https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/js/libs/require"
   },
   waitSeconds: 30
 });

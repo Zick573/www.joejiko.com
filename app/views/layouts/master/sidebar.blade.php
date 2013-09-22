@@ -1,10 +1,10 @@
-<div class="sidebar-module" style="background: url(/assets/img/sidebar/module-zeah.png) no-repeat center 0; height: 280px;">
+<div class="sidebar-module" style="background: url({{ cdn_img() }}shared/sidebar/module-zeah.png) no-repeat center 0; height: 280px;">
   <a style="width: 100%; height: 100%; display: block;" href="/blog/?s=zeah">&nbsp;</a>
 </div>
-<div class="sidebar-module" style="background: url(/assets/img/sidebar/module-art-ironman.png) no-repeat center 0; height: 280px;">
+<div class="sidebar-module" style="background: url({{ cdn_img() }}shared/sidebar/module-art-ironman.png) no-repeat center 0; height: 280px;">
   <a style="width: 100%; height: 100%; display: block;" href="/artwork">&nbsp;</a>
 </div>
-<div class="sidebar-module" style="background: url(/assets/img/sidebar/module-pokehumons.png) no-repeat center 0; height: 280px;">
+<div class="sidebar-module" style="background: url({{ cdn_img() }}shared/sidebar/module-pokehumons.png) no-repeat center 0; height: 280px;">
   <a style="width: 100%; height: 100%; display: block;" href="/artwork">&nbsp;</a>
 </div>
 <!-- <div class="sidebar-module">

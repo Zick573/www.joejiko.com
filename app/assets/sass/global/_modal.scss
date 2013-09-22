@@ -83,3 +83,51 @@
         overflow: hidden;
     }
 }
+
+.photo-view {
+    .modal-close {
+        margin-right: .5rem;
+        width: auto;
+    }
+    .modal-close-message {
+        color: #222;
+        margin-right: 2rem;
+    }
+    .modal-content-wrap {
+        height: 90%;
+        max-height: 90%;
+        width: 90%;
+        max-width: 90%;
+    }
+    .modal-content {
+        height: 100%;
+    }
+    .photo-content {
+        background-color: rgba(255,255,255,.9);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.photo-view-control {
+    font-size: 3rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 30%;
+    max-width: 5rem;
+    padding: 5rem 1rem 0;
+    &:hover {
+        background: rgba(0,0,0,.1);
+    }
+}
+.photo-view-rewind {
+    left: 0;
+}
+.photo-view-forward {
+    text-align: right;
+    right: 0;
+}
