@@ -16,7 +16,8 @@
         "Respect\/Validation": "0.4.*",
         "codeguy/upload": "*",
         "mjaschen/phpgeo": "*",
-        "mobiledetect/mobiledetectlib": "*"
+        "mobiledetect/mobiledetectlib": "*",
+        "evert/google-api-php-client": "dev-master"
     },
     "require-dev": {
         "way/guard-laravel": "dev-master"
