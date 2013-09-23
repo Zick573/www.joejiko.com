@@ -4,6 +4,10 @@ class ContactController extends BaseController {
   {
     parent::__construct();
   }
+  /**
+   * [postSendMessage description]
+   * @return JSON [description]
+   */
   public function postSendMessage()
   {
     if(Input::has('email')) {
@@ -15,7 +19,6 @@ class ContactController extends BaseController {
           ->subject('message from contact form');
       });
     }
-    // return JSON
   }
 
   public function getMessage()
