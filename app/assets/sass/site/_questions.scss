@@ -11,7 +11,7 @@
         width: 100%;
 }
 .question-info {
-    background: url("$cdn_img/pages/questions/circle-q.png") no-repeat scroll left center transparent;
+    background: url(#{$cdn}/img/pages/questions/circle-q.png) no-repeat scroll left center transparent;
     height: 26px;
     left: 5px;
     line-height: 1;
@@ -38,7 +38,7 @@
     margin: 0;
 }
 .response-text {
-    background: url("$cdn_img/pages/questions/circle-a.png") no-repeat scroll 5px 15px #EEEEEE;
+    background: url(#{$cdn}/img/pages/questions/circle-a.png) no-repeat scroll 5px 15px #EEEEEE;
     line-height: 1.5;
     margin: 0;
     padding: 10px 5px 20px 40px;
@@ -150,7 +150,7 @@
         #cboxNext{position:absolute; top:50%; right:5px; margin-top:-32px; width:28px; height:65px; text-indent:-9999px;}
         #cboxNext:hover{background-position:bottom right;}
         #cboxLoadingOverlay{background:#fff;}
-        #cboxLoadingGraphic{background:url(http://joejiko.com/images/loading/loading.gif) no-repeat center center;}
+        #cboxLoadingGraphic{background:url(#{$cdn_img}/loading/loading.gif) no-repeat center center;}
 #cboxClose {
     border-bottom: 1px solid transparent;
     border-left: 1px solid transparent;

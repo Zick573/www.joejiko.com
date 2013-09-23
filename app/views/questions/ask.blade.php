@@ -65,7 +65,7 @@
     <button type="submit">send question</button>
     <div class="no">
       <span>NO</span>
-      <img src="/assets/img/pages/questions/ask/no.png" alt="no" />
+      <img src="{{ cdn_img() }}pages/questions/ask/no.png" alt="no" />
       <div class="stops">
         <i class="modernpics" data-icon="&#xE7B3;"></i>
         <div style="display: none;"><div class="stop-1"></div><div class="stop-2"></div><div class="stop-3"></div></div>

@@ -19,3 +19,13 @@
 }
 .labs .modal--active .modal { transform: scale(1.12); z-index: 9998; }
 .labs .modal--active .modal-mask { background-color: rgba(0,0,0,.8); top: 0; }
+
+.modal--active .modal-sub {
+    transform: scale(0.9) !important;
+}
+.modal-active .modal-sub .modal-mask {
+    background: none repeat scroll 0 0 transparent;
+}
+.modal--active .modal-sub .modal-mask {
+    background: none repeat scroll 0 0 transparent;
+}

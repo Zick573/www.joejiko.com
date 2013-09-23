@@ -2,7 +2,7 @@
 
 return array(
 
-  "base_url"   => "http://joejiko.com/user/connect/provider",
+  "base_url"   => 'http://'.$_SERVER['HTTP_HOST']."/user/connect/provider",
 
   "providers"  => array (
 

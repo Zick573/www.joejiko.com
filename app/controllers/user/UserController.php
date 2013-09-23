@@ -200,6 +200,30 @@ class UserController extends BaseController {
     // return View::make('user.connected');
   }
 
+  public function doConnectEmail()
+  {
+    if($user = User::where('email', Input::get('email'))->first()):
+        if(Hash::check(
+            Input::get('passwd'),
+            $user->password
+        )) {
+            Auth::loginUsingId($user->id);
+            return self::getConnected();
+        }
+    endif;
+
+    /** not working because not implementing a "username" column **/
+    // if(Auth::attempt(array(
+    //     'email' => Input::get('email'),
+    //     'password' => Input::get('passwd')
+    // ))) {
+    //     return self::connected();
+    // }
+
+    // failed
+    return View::make('user.connect')->with(array('error' => 'Invalid credentials. Try again maybe'));
+  }
+
   public function doConnect($method)
   {
     try {

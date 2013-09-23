@@ -11,6 +11,7 @@ return array(
     'AppController' => $baseDir . '/app/controllers/AppController.php',
     'App\\Controllers\\Admin\\AuthController' => $baseDir . '/app/controllers/admin/AuthController.php',
     'App\\Controllers\\Admin\\PostController' => $baseDir . '/app/controllers/admin/PostController.php',
+    'App\\Controllers\\Admin\\StaticContentController' => $baseDir . '/app/controllers/admin/StaticContentController.php',
     'App\\Controllers\\Post\\PostController' => $baseDir . '/app/controllers/PostController.php',
     'ArtController' => $baseDir . '/app/controllers/ArtController.php',
     'AuthProvider' => $baseDir . '/app/models/AuthProvider.php',

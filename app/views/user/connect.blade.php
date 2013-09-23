@@ -24,10 +24,12 @@
     --><aside class="connect-sidebar">
       <div>
         <h3 class="use-site-credentials">Or use your site credentials</h3>
+        <form action="/user/connect/email" method="post">
         <label class="lbl-connect">Email</label><!--
         --><input class="input-connect" type="email" name="email">
         <label class="lbl-connect">Password</label><!--
-        --><input class="input-connect" type="password" name="password">
+        --><input class="input-connect" type="password" name="passwd">
+        <button class="btn-connect-site">Sign in</button>
       </div>
     </aside>
   </div>

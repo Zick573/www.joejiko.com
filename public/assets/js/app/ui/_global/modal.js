@@ -15,25 +15,47 @@ define(["jquery"], function($){
 
   function modal_keypress_handler(evt)
   {
-    console.log("modal keypress..which: "+evt.which);
-    if(0 == evt.which) {
-      destruct();
-      destruct_all();
+    // console.log("modal keypress..which: "+evt.which);
+
+    // ESC (close all modals)
+    if(27 == evt.keyCode) {
+      destruct(true);
     }
   }
 
   function destruct_all() {
-    $(document).find('.modal').remove();
+    var modals = $(document).find('.modal');
+    modals.each(function(i, e){
+      $(e).off('loaded');
+      $(e).remove();
+    });
   }
 
-  function destruct() {
+  // @todo unbind all events
+  function destruct(evt, all) {
     if(!$modal) { return; }
     $modal.off('loaded');
-    // @todo unbind all events
-    $(this).parents('.modal').remove();
-    if(!$(document).find('.modal').length > -1) {
+
+    if(typeof(all) !== 'undefined') {
+      destruct_all();
+    } else {
+      // kill the current modal
+      $(this).parents('.modal').remove();
+    }
+
+    var modals = $(document).find('.modal'),
+        modalCount = modals.length;
+
+    // no modals left
+    if(0 == modalCount) {
       $('body').removeClass('modal--active');
       $(document).off('keypress', modal_keypress_handler);
+    }
+
+    if(0 < modalCount) {
+      modals.each(function(i, e){
+        $(e).removeClass('modal-sub');
+      });
     }
   }
 
@@ -50,12 +72,22 @@ define(["jquery"], function($){
 
     open: function(params) {
       var data = null;
-      if($(document).find('.modal').length > -1) {
-        if(!$('body').hasClass('modal--active')) {
-          $('body').addClass('modal--active');
-        }
+      var modalCount = $(document).find('.modal').length;
+      if(!$('body').hasClass('modal--active')) {
+        $('body').addClass('modal--active');
+      }
+
+      // first modal on page
+      if(0 == modalCount) {
         $(document).on('keypress', modal_keypress_handler);
       }
+
+      // sub-modals
+      if(modalCount > 0) {
+        $(document).find('.modal').addClass('modal-sub');
+      }
+
+      // create the new modal
       $modal = $('<div class="modal modal--loading" />');
       $modal.append(
         $('<div class="modal-positioning"><div class="modal-content-wrap"><div class="modal-close"><span class="modal-close-message"></span><i class="modernpics modal-close-x" data-icon="✕"></i></div><div class="modal-content"><div class="loading"><span class="loading-message">loading content..</span></div></div></div></div>'),

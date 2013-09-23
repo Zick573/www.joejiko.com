@@ -26,7 +26,7 @@
       </div>
       <div class="existing-member">
         <p class="existing-member-message">Already a JoeJiko.com member?</p>
-        <a class="btn-connect-site" href="/">Sign In</a>
+        <a class="btn-connect-site" href="/user/connect/email">Sign In</a>
     </aside>
   </div>
 @stop

@@ -23,6 +23,15 @@
   background-color: rgba(0, 0, 0, 0.8);
   top: 0; }
 
+.modal--active .modal-sub {
+  transform: scale(0.9) !important; }
+
+.modal-active .modal-sub .modal-mask {
+  background: none repeat scroll 0 0 transparent; }
+
+.modal--active .modal-sub .modal-mask {
+  background: none repeat scroll 0 0 transparent; }
+
 @font-face {
   font-family: Batch;
   src: url("https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/fonts/batch-icons-webfont.eot");
@@ -89,19 +98,19 @@
   height: 50px; }
 
 .icon-50.icon-g {
-  background-image: url(https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/shared/vendor/google/g+48.png);
+  background-image: url(https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/vendor/google/g+48.png);
   background-position: 1px 1px; }
 
 .icon-50.icon-tw {
-  background-image: url(https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/shared/vendor/twitter/tw-50.png);
+  background-image: url(https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/vendor/twitter/tw-50.png);
   background-color: #999;
   border-radius: 3px; }
 
 .icon-50.icon-fb {
-  background-image: url(https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/shared/vendor/facebook/f-50.png); }
+  background-image: url(https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/vendor/facebook/f-50.png); }
 
 .icon-50.icon-ig {
-  background-image: url(https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/shared/vendor/instagram/ig-50.png); }
+  background-image: url(https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/vendor/instagram/ig-50.png); }
 
 a[class*="btn-"], button[class*="btn-"] {
   border-radius: 3px;
@@ -109,6 +118,9 @@ a[class*="btn-"], button[class*="btn-"] {
   padding: .5rem 1rem; }
   a[class*="btn-"]:active, button[class*="btn-"]:active {
     box-shadow: 0 2px 1px rgba(0, 0, 0, 0.6) inset; }
+
+button.btn-green {
+  border: none; }
 
 .btn-green {
   background-color: #009900;
@@ -173,7 +185,7 @@ a[class*="btn-connect-"], button[class*="btn-connect-"] {
   .btn-connect-f:active {
     background-color: #3B5B99; }
   .btn-connect-f i {
-    background: url("$cdn_img/vendor/facebook/btn_light.png") no-repeat 0 0; }
+    background: url("https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/vendor/facebook/btn_light.png") no-repeat 0 0; }
 
 .btn-connect-g {
   background-color: #CC3732; }
@@ -182,7 +194,7 @@ a[class*="btn-connect-"], button[class*="btn-connect-"] {
   .btn-connect-g:active {
     background-color: #C03D28; }
   .btn-connect-g i {
-    background: url("/assets/img/vendor/google/btn_red.png") no-repeat 0 0; }
+    background: url("https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/vendor/google/btn_red.png") no-repeat 0 0; }
 
 .btn-connect-t {
   background-color: #39B2E6; }
@@ -191,7 +203,7 @@ a[class*="btn-connect-"], button[class*="btn-connect-"] {
   .btn-connect-t:active {
     background-color: #2288CC; }
   .btn-connect-t i {
-    background: url("/assets/img/vendor/twitter/btn_light.png") no-repeat 0 0; }
+    background: url("https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/vendor/twitter/btn_light.png") no-repeat 0 0; }
 
 .modal .btn-connect-site {
   background: none repeat scroll 0 0 #666666;
@@ -612,6 +624,36 @@ a[class*="btn-connect-"], button[class*="btn-connect-"] {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5) inset;
   padding: .5rem; }
 
+.user-disconnected .modal-content, .user-connected .modal-content {
+  padding: 2rem; }
+
+.user-disconnected .modal-content-wrap, .user-connected .modal-content-wrap {
+  max-width: 480px;
+  text-align: center; }
+
+.btn-user-disconnect {
+  background: #ccc; }
+  .btn-user-disconnect:hover {
+    background: #ff0000; }
+
+.user-connect-email .modal-content-wrap {
+  max-width: 480px; }
+
+.connect-email-form {
+  text-align: left;
+  padding-bottom: 1rem; }
+
+.connect-email-input {
+  display: block;
+  width: 100%;
+  padding: .5rem;
+  margin-bottom: 1rem; }
+
+.connect-email-link {
+  color: #ccc; }
+  .connect-email-link:hover {
+    color: blue; }
+
 .main-view {
   overflow: hidden; }
 
@@ -1029,7 +1071,7 @@ a[class*="btn-connect-"], button[class*="btn-connect-"] {
   padding: .25rem; }
 
 .mission-list .inline-col {
-  background: url(https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/shared/pages/home/mission.jpg) no-repeat 0 0 white;
+  background: url(https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/pages/home/mission.jpg) no-repeat 0 0 white;
   height: 225px; }
 
 .mission-list .accomplish-goals {
@@ -1226,7 +1268,7 @@ a[class*="btn-connect-"], button[class*="btn-connect-"] {
   width: 100%; }
 
 .question-info {
-  background: url("$cdn_img/pages/questions/circle-q.png") no-repeat scroll left center transparent;
+  background: url(https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/pages/questions/circle-q.png) no-repeat scroll left center transparent;
   height: 26px;
   left: 5px;
   line-height: 1;
@@ -1252,7 +1294,7 @@ a[class*="btn-connect-"], button[class*="btn-connect-"] {
   margin: 0; }
 
 .response-text {
-  background: url("$cdn_img/pages/questions/circle-a.png") no-repeat scroll 5px 15px #eeeeee;
+  background: url(https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/pages/questions/circle-a.png) no-repeat scroll 5px 15px #eeeeee;
   line-height: 1.5;
   margin: 0;
   padding: 10px 5px 20px 40px; }
@@ -1449,7 +1491,7 @@ a[class*="btn-connect-"], button[class*="btn-connect-"] {
   background: #fff; }
 
 #cboxLoadingGraphic {
-  background: url(http://joejiko.com/images/loading/loading.gif) no-repeat center center; }
+  background: url(https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/shared/loading/loading.gif) no-repeat center center; }
 
 #cboxClose {
   border-bottom: 1px solid transparent;

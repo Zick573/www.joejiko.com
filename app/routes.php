@@ -69,6 +69,7 @@ Route::controller('thought', 'ThoughtController');
 Route::get('user', array('as' => 'user.index', 'uses' => 'UserController@getIndex'));
 Route::get('user/debug', array('as' => 'user.debug', 'uses' => 'UserController@getDebug'));
 Route::get('user/connect', array('as' => 'connect', 'uses' => 'UserController@getConnect'));
+Route::post('user/connect/email', array('as' => 'connect.email', 'uses' => 'UserController@doConnectEmail'));
 Route::get('user/connect/{action?}', array("as" => "hybridauth", 'uses' => 'UserController@doConnect'));
 Route::get('user/connected', array('as' => 'connected', 'uses' => 'UserController@getConnected'));
 Route::get('user/connected/missing-required-info', array('as' => 'user.missing_required_info', 'uses' => 'UserController@getMissingInfo'));

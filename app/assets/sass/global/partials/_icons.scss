@@ -41,12 +41,12 @@
 }
 .icon-50 { width: 50px; height: 50px; }
 .icon-50.icon-g {
-  background-image: url(#{$cdn_img}/vendor/google/g+48.png);
+  background-image: url(#{$cdn}/img/vendor/google/g+48.png);
   background-position: 1px 1px;
 }
 .icon-50.icon-tw {
 	background: {
-    image: url(#{$cdn_img}/vendor/twitter/tw-50.png);
+    image: url(#{$cdn}/img/vendor/twitter/tw-50.png);
     color: #999;
   }
   border: {
@@ -54,8 +54,8 @@
   }
 }
 .icon-50.icon-fb {
-	background-image: url(#{$cdn_img}/vendor/facebook/f-50.png);
+	background-image: url(#{$cdn}/img/vendor/facebook/f-50.png);
 }
 .icon-50.icon-ig {
-  background-image: url(#{$cdn_img}/vendor/instagram/ig-50.png);
+  background-image: url(#{$cdn}/img/vendor/instagram/ig-50.png);
 }
