@@ -5,7 +5,7 @@ class ContactController extends BaseController {
     parent::__construct();
   }
   /**
-   * [postSendMessage description]
+   * Send email to me from form
    * @return JSON [description]
    */
   public function postSendMessage()
