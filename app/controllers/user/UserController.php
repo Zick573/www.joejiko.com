@@ -200,6 +200,11 @@ class UserController extends BaseController {
     // return View::make('user.connected');
   }
 
+  public function doRegisterEmail()
+  {
+    return View::make('user.register-email-disabled');
+  }
+
   public function doConnectEmail()
   {
     if($user = User::where('email', Input::get('email'))->first()):

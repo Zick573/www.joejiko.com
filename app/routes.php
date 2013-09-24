@@ -70,6 +70,7 @@ Route::get('user', array('as' => 'user.index', 'uses' => 'UserController@getInde
 Route::get('user/debug', array('as' => 'user.debug', 'uses' => 'UserController@getDebug'));
 Route::get('user/connect', array('as' => 'connect', 'uses' => 'UserController@getConnect'));
 Route::post('user/connect/email', array('as' => 'connect.email', 'uses' => 'UserController@doConnectEmail'));
+Route::any('user/register/email', array('as' => 'register.email', 'uses' => 'UserController@doRegisterEmail'));
 Route::get('user/connect/{action?}', array("as" => "hybridauth", 'uses' => 'UserController@doConnect'));
 Route::get('user/connected', array('as' => 'connected', 'uses' => 'UserController@getConnected'));
 Route::get('user/connected/missing-required-info', array('as' => 'user.missing_required_info', 'uses' => 'UserController@getMissingInfo'));
