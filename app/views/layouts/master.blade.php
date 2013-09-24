@@ -29,47 +29,49 @@ Leave your console open maybe?
   {{ cdn_style_min() }}
 </head
 ><body>
-<header class="site-header">
- @include('layouts.master.header')
-</header>
-<div class="main-view">
-  <aside class="site-sidebar">
-    <nav class="sidebar-nav-y">
-      <!-- inline-block grids are my new favorite thing -->
-      <a href="//jiko.us/XHoGuc" title="Joe Jiko on Google Plus"><i class="icon-50 icon-g"></i></a><!--
-      --><a href="//jiko.us/12ozDqb" target="_blank" title="@JoeJiko on Twitter"><i class="icon-50 icon-tw"></i></a><!--
-      --><a href="//on.fb.me/REuClh" target="_blank" class="Joe Jiko on Facebook"><i class="icon-50 icon-fb"></i></a><!--
-      --><a href="//jiko.us/Wx5y3G" class="@JoeJiko on Instagram" target="_blank"><i class="icon-50 icon-ig"></i></a><!--
-      --><a href="#"><i class="icon-placeholder"></i></a>
-    </nav><!--
-    --><div class="sidebar-module-wrapper">
-    @include('layouts.master.sidebar')
+<div class="app">
+  <header class="site-header">
+   @include('layouts.master.header')
+  </header>
+  <div class="main-view">
+    <aside class="site-sidebar">
+      <nav class="sidebar-nav-y">
+        <!-- inline-block grids are my new favorite thing -->
+        <a href="//jiko.us/XHoGuc" title="Joe Jiko on Google Plus"><i class="icon-50 icon-g"></i></a><!--
+        --><a href="//jiko.us/12ozDqb" target="_blank" title="@JoeJiko on Twitter"><i class="icon-50 icon-tw"></i></a><!--
+        --><a href="//on.fb.me/REuClh" target="_blank" class="Joe Jiko on Facebook"><i class="icon-50 icon-fb"></i></a><!--
+        --><a href="//jiko.us/Wx5y3G" class="@JoeJiko on Instagram" target="_blank"><i class="icon-50 icon-ig"></i></a><!--
+        --><a href="#"><i class="icon-placeholder"></i></a>
+      </nav><!--
+      --><div class="sidebar-module-wrapper">
+      @include('layouts.master.sidebar')
+      </div>
+    </aside><aside class="site-sidebar-holder">&nbsp;</aside><!--
+    --><div class="main" id="main">
+      @if(Session::has('flash_notice'))
+        <div class="notice">{{ Session::get('flash_notice') }}</div>
+      @endif
+      <section class="main-content" id="content">
+        <header class="main-header">
+          @yield('content.header')
+        </header>
+        <div class="main-article">
+          {{-- Content --}}
+          @yield('content')
+        </div><!--
+        --><aside class="main-sidebar">
+          @yield('content.sidebar')
+        </aside>
+        <footer class="main-footer">
+          @yield('content.footer')
+        </footer>
+      </section>
     </div>
-  </aside><aside class="site-sidebar-holder">&nbsp;</aside><!--
-  --><div class="main" id="main">
-    @if(Session::has('flash_notice'))
-      <div class="notice">{{ Session::get('flash_notice') }}</div>
-    @endif
-    <section class="main-content" id="content">
-      <header class="main-header">
-        @yield('content.header')
-      </header>
-      <div class="main-article">
-        {{-- Content --}}
-        @yield('content')
-      </div><!--
-      --><aside class="main-sidebar">
-        @yield('content.sidebar')
-      </aside>
-      <footer class="main-footer">
-        @yield('content.footer')
-      </footer>
-    </section>
   </div>
+  <footer class="site-footer">
+    @include('layouts.master.footer')
+  </footer>
 </div>
-<footer class="site-footer">
-  @include('layouts.master.footer')
-</footer>
 <!-- switched to AMD -->
 <script src="{{ cdn() }}/js/libs/require/require.js"></script>
 <script src="{{ js_path() }}app.js" async="true"></script>

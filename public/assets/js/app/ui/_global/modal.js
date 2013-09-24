@@ -19,7 +19,7 @@ define(["jquery"], function($){
 
     // ESC (close all modals)
     if(27 == evt.keyCode) {
-      destruct(true);
+      destruct(evt, true);
     }
   }
 
@@ -29,6 +29,7 @@ define(["jquery"], function($){
       $(e).off('loaded');
       $(e).remove();
     });
+    $('body').removeClass('modal--active-2 modal--active-3');
   }
 
   // @todo unbind all events
@@ -50,6 +51,16 @@ define(["jquery"], function($){
     if(0 == modalCount) {
       $('body').removeClass('modal--active');
       $(document).off('keypress', modal_keypress_handler);
+    }
+
+    // @todo move this to a function
+    // -- remove all classes matching modal--active-{$n}
+    if(1 == modalCount) {
+      $('body').removeClass('modal--active-2');
+    }
+
+    if(2 == modalCount) {
+      $('body').removeClass('modal--active-3');
     }
 
     if(0 < modalCount) {
@@ -85,6 +96,16 @@ define(["jquery"], function($){
       // sub-modals
       if(modalCount > 0) {
         $(document).find('.modal').addClass('modal-sub');
+        if(1 == modalCount) {
+          if(!$('body').hasClass('modal--active-2')) {
+            $('body').addClass('modal--active-2');
+          }
+        }
+        if(2 == modalCount) {
+          if(!$('body').hasClass('modal--active-3')) {
+            $('body').addClass('modal--active-3');
+          }
+        }
       }
 
       // create the new modal

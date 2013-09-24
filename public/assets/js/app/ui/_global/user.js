@@ -15,10 +15,10 @@ define(["jquery", "app/ui/_global/modal"], function($, Modal){
     });
   }
 
-  function openConnectEmailModal(context)
+  function openUserEmailModal(context, data)
   {
-    // @todo replace with actual content
-    var jqxhr = $.get('/api/ui', { "name": "ajax.user.connect-email"}, function(html){
+    // @todo consolidate like functions
+    var jqxhr = $.get('/api/ui', { "name": "ajax."+data.template }, function(html){
       context.empty().append(html);
     });
     jqxhr.done(function(){
@@ -46,12 +46,26 @@ define(["jquery", "app/ui/_global/modal"], function($, Modal){
     jqxhr.done(function(){
       console.log("jqxhr is done! (content should be loaded)");
       context.trigger('loaded');
-      $(document).find('.btn-connect-site').on({
+      $(document).find('[data-modal-open="user.register-email"]').on({
           'click': function(evt) {
             // open le modal
             Modal.open({
               className: "user-connect-email",
-              callback: openConnectEmailModal
+              callback: openUserEmailModal,
+              data: { template: $(this).attr('data-modal-open') }
+            });
+
+            evt.stopImmediatePropagation();
+            evt.preventDefault();
+          }
+      })
+      $(document).find('[data-modal-open="user.connect-email"]').on({
+          'click': function(evt) {
+            // open le modal
+            Modal.open({
+              className: "user-connect-email",
+              callback: openUserEmailModal,
+              data: { template: $(this).attr('data-modal-open') }
             });
 
             evt.stopImmediatePropagation();

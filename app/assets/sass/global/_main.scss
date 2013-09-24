@@ -247,9 +247,12 @@
         margin-bottom: 1rem;
     }
     .connect-sidebar {
+        background: rgba(50, 0, 75, .3);
+        box-shadow: 0 2px 0 rgba(0, 0, 0, .4) inset;
         display: block;
         margin: 0 auto;
-        padding: 1rem 0 0;
+        opacity: 1;
+        padding: 1rem 0;
         text-align: center;
         width: 100%;
     }
