@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "e3b920a463e7f8a0056631c640da9ed8",
+    "hash": "55fe335d7115f2347b283df60fbbb6b8",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -1448,12 +1448,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "65fb44410157839a012e9a9b8c11d38598484a0e"
+                "reference": "ca18e81f79484c552b6bac0e40e4ee3fd0161000"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/65fb44410157839a012e9a9b8c11d38598484a0e",
-                "reference": "65fb44410157839a012e9a9b8c11d38598484a0e",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/ca18e81f79484c552b6bac0e40e4ee3fd0161000",
+                "reference": "ca18e81f79484c552b6bac0e40e4ee3fd0161000",
                 "shasum": ""
             },
             "require": {
@@ -1503,7 +1503,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2013-09-17 13:26:34"
+            "time": "2013-09-24 08:48:58"
         },
         {
             "name": "mustache/mustache",
@@ -2046,12 +2046,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "cb7cca99e25cdb4fc96e331eb987204e9c0e8467"
+                "reference": "c69b5f7cf6c4f8d9afe700035af830b903eaf705"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/cb7cca99e25cdb4fc96e331eb987204e9c0e8467",
-                "reference": "cb7cca99e25cdb4fc96e331eb987204e9c0e8467",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/c69b5f7cf6c4f8d9afe700035af830b903eaf705",
+                "reference": "c69b5f7cf6c4f8d9afe700035af830b903eaf705",
                 "shasum": ""
             },
             "require": {
@@ -2090,7 +2090,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2013-09-19 09:45:20"
+            "time": "2013-09-22 18:04:39"
         },
         {
             "name": "symfony/css-selector",
@@ -2206,12 +2206,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/DomCrawler.git",
-                "reference": "56db2f7788c8a34e0250ba0d1bee50d63eabdfb7"
+                "reference": "a2e959551401722370bdf544e75549bc20fc9e4e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/DomCrawler/zipball/56db2f7788c8a34e0250ba0d1bee50d63eabdfb7",
-                "reference": "56db2f7788c8a34e0250ba0d1bee50d63eabdfb7",
+                "url": "https://api.github.com/repos/symfony/DomCrawler/zipball/a2e959551401722370bdf544e75549bc20fc9e4e",
+                "reference": "a2e959551401722370bdf544e75549bc20fc9e4e",
                 "shasum": ""
             },
             "require": {
@@ -2250,7 +2250,7 @@
             ],
             "description": "Symfony DomCrawler Component",
             "homepage": "http://symfony.com",
-            "time": "2013-09-19 09:45:20"
+            "time": "2013-09-22 18:04:39"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -2457,12 +2457,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpKernel.git",
-                "reference": "272eda47de6a5e05263c945c97332f41efecad3d"
+                "reference": "6ef21e31b845f33b500bacad3f349350eafabdd2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/272eda47de6a5e05263c945c97332f41efecad3d",
-                "reference": "272eda47de6a5e05263c945c97332f41efecad3d",
+                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/6ef21e31b845f33b500bacad3f349350eafabdd2",
+                "reference": "6ef21e31b845f33b500bacad3f349350eafabdd2",
                 "shasum": ""
             },
             "require": {
@@ -2519,7 +2519,7 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "http://symfony.com",
-            "time": "2013-09-19 10:49:28"
+            "time": "2013-09-23 15:56:30"
         },
         {
             "name": "symfony/process",
