@@ -12,7 +12,10 @@ if( $detect->isMobile() ) {
 */
 Route::group(array('prefix' => 'admin', 'before' => 'auth.admin'), function()
 {
-  Route::controller('/', 'AdminController');
+  // Route::controller('', 'AdminController');
+  // Route::get('content', array('as' => 'admin.content', 'uses' => 'Admin\ContentController@getIndex'));
+  Route::resource('content', 'Admin\ContentController');
+  Route::resource('questions', 'Admin\QuestionController');
 });
 /** API **/
 Route::group(array('prefix' => 'api/v1', 'before' => 'auth.basic'), function()

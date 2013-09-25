@@ -12,6 +12,7 @@
       .content { width: 70%; }
       .col { display: inline-block; vertical-align: top; }
     </style>
+    @yield('page.styles')
   </head>
 <body>
   <header class="admin-header">
@@ -19,6 +20,7 @@
   </header>
   <div class="main">
     <aside class="admin-controls col">
+      @yield('controls')
     </aside><!--
     --><div class="content col">
       @yield('content')

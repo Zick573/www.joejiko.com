@@ -7,11 +7,11 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'AdminController' => $baseDir . '/app/controllers/AdminController.php',
+    'Admin\\ContentController' => $baseDir . '/app/controllers/admin/ContentController.php',
+    'Admin\\QuestionController' => $baseDir . '/app/controllers/admin/QuestionController.php',
     'ApiController' => $baseDir . '/app/controllers/ApiController.php',
     'AppController' => $baseDir . '/app/controllers/AppController.php',
     'App\\Controllers\\Admin\\AuthController' => $baseDir . '/app/controllers/admin/AuthController.php',
-    'App\\Controllers\\Admin\\PostController' => $baseDir . '/app/controllers/admin/PostController.php',
-    'App\\Controllers\\Admin\\StaticContentController' => $baseDir . '/app/controllers/admin/StaticContentController.php',
     'App\\Controllers\\Post\\PostController' => $baseDir . '/app/controllers/PostController.php',
     'ArtController' => $baseDir . '/app/controllers/ArtController.php',
     'AuthProvider' => $baseDir . '/app/models/AuthProvider.php',
@@ -45,6 +45,7 @@ return array(
     'Post' => $baseDir . '/app/models/Post.php',
     'Question' => $baseDir . '/app/models/Question.php',
     'QuestionController' => $baseDir . '/app/controllers/QuestionController.php',
+    'Question\\Status' => $baseDir . '/app/models/question/Status.php',
     'SessionHandlerInterface' => $vendorDir . '/symfony/http-foundation/Symfony/Component/HttpFoundation/Resources/stubs/SessionHandlerInterface.php',
     'Steam' => $baseDir . '/app/models/Steam.php',
     'Steam\\Api' => $baseDir . '/app/libraries/steam/api.php',
