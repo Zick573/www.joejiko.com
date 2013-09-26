@@ -34,7 +34,7 @@ class ContactController extends BaseController {
   public function getIndex()
   {
     if($this->user->role < 2):
-      return View::make('contact.dev');
+      return View::make('contact');
     endif;
 
     return View::make('contact');
