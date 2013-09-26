@@ -1,4 +1,4 @@
-<div class="thanks">
+<div class="thanks" hidden>
   <header>
     <h2>Thanks!</h2>
   </header>

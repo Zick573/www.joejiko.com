@@ -1,50 +1,44 @@
 define(["jquery", "app/ui/_global/modal"], function($, Modal){
-
-  var valid = false,
-    options = {
-      subscribe: false,
-    },
-    msg = {
-      resp: "(this message will self-destruct..)"
-    },
-    // ui
-    $subscribe, $anonymous, $submit, $modal, $question,
-    $tooltip = $('<div class="ask-tooltip"></div>'),
-    $tooltipList = $('<ul />');
-  $tooltipList.append(
-    $('<li><span>!</span> must be at least 15 characters</li>'),
-    $('<li><span>!</span> No more than 255 characters</li>'),
-    $('<li><span>!</span> must be in question form <em>ex. end in a question mark. no periods</em></li>')
-  );
-  $tooltipList.appendTo($tooltip);
-  $tooltip.append($("<p>if you'd like to send me a message instead, visit the <a href='/contact'>contact page</a>"));
-
-  function questionIsValid()
+  function isValid(text)
   {
-    return this.valid;
+    // ends with ? and > 40 characters
+    if (/^(.[^\.\?]*)\?$/.test(text) && text.length > 15) {
+      return true;
+    }
+
+    return false;
   }
 
-  function setValid(trueOrFalse)
+  function displayCharacterCount(count)
   {
-    if(typeof(trueOrFalse) !== "undefined") {
+    var display = $(document).find('.character-count');
 
-      this.valid = trueOrFalse;
+    // update character count display
+    display.html( count );
 
-      if(this.valid) {
-        $modal.addClass('valid')
-        return;
-      }
-
-      $modal.removeClass('valid')
+    // colorize it
+    if(15 < count && 256 > count){
+      display.css('color', 'green');
       return;
     }
 
-    this.valid = false;
+    if(0 == count){
+      display.css('color', '#ccc');
+      return;
+    }
+
+    display.css('color', 'red');
   }
 
-  function askCompleteModalCallback(context)
-  {
-    // @todo
+  function questionIsValid(context) {
+    $parent = context.parents('.ask');
+
+    if(!isValid(context.prop('value'))){
+      $parent.removeClass('ask--valid');
+      return false;
+    }
+    $parent.addClass('ask--valid');
+    $(".no").hide('slow');
   }
 
   function askModalCallback(context)
@@ -54,12 +48,43 @@ define(["jquery", "app/ui/_global/modal"], function($, Modal){
     });
     jqxhr.done(function(){ context.trigger('loaded'); });
 
-    $subscribe = $(document).find('[name=subscribe]'),
-    $anonymous = $(document).find('[name=anonymous]'),
-    $submit = $(document).find('[data-action=ask-submit]'),
-    $modal = Modal.target,
-    $question = $(document).find('[name=question]');
+    // var btnSubmit = context.find('.btn-question-submit'),
+    //     txtQuestion = context.find('.question-textarea');
+    $(document).on('keyup change', '.question-textarea', function(evt){
+      displayCharacterCount($(this).prop('value').length);
+      questionIsValid($(this));
+    });
 
+    $(document).on('click', '.btn-question-submit', function(evt){
+      evt.preventDefault();
+
+      var txtQuestion = $(document).find('.question-textarea');
+
+      if(!questionIsValid(txtQuestion)){
+        $('.no').fadeIn('fast');
+        return false;
+      }
+
+      // submit
+      $.post(
+        "/questions/ask",
+        {
+          question: txtQuestion.prop("value"),
+          ask: true
+        },
+        function(html){
+          // @todo ask another question
+          // @todo resize modal?
+          // @todo timed close?
+      });
+    });
+  }
+
+  function askCompleteModalCallback(context)
+  {
+    // @todo
+    $subscribe = context.find('[name=subscribe]'),
+    $anonymous = context.find('[name=anonymous]');
     $subscribe.on('click', function(evt){
       var $this = $(this);
       options.subscribe = $this.is('checked');
@@ -72,91 +97,6 @@ define(["jquery", "app/ui/_global/modal"], function($, Modal){
       var $this = $(this);
       $this.parent().find("div").removeAttr('hidden').fadeIn('slow');
       // @todo resize modal?
-    });
-
-    $submit.on('click',function(evt){
-      evt.preventDefault();
-
-      var $this = $(this);
-
-      if(!questionIsValid()){ $('.no').fadeIn('fast'); return false; }
-
-      // submit
-      $.post(
-        "/questions/ask",
-        {
-          question: $("[name=question]").prop("value"),
-          email: $("[name=email]").prop("value"),
-          ask: true
-        },
-        function(html){
-
-          // success
-          var $message = $('<p />');
-          $message.append(msg.resp);
-          $modal.empty().append(html).append($message);
-
-          // @todo ask another question
-          // @todo resize modal?
-          // @todo timed close?
-      });
-    });
-
-    $question.on('change keyup', function()
-    {
-      validateCharacterCount($(this).prop('value'));
-    });
-
-    function displayCharacterCount(count)
-    {
-
-      var $chrDisplay = $(document).find('[data-label=character count]');
-
-      // update character count display
-      $chrDisplay.html( count );
-
-      // colorize it
-      if(chrcount > 15 && chrcount < 256)
-      {
-        $chrDisplay.css('color', 'green');
-        return;
-      }
-
-      if(chrcount == 0)
-      {
-        $chrDisplay.css('color', '#ccc');
-        return;
-      }
-
-      $chrDisplay.css('color', 'red');
-    }
-
-    function validateCharacterCount(text)
-    {
-      var count = text.length;
-      // ends with ? and > 40 characters
-      if (/^(.[^\.\?]*)\?$/.test($(this).prop('value')) && $(this).prop('value').length > 15) {
-        // success!
-        setValid(true);
-        $(".no").hide('slow');
-      }
-      else
-      {
-        setValid(false);
-      }
-
-      // fade in UI
-      $(".question-status").fadeIn('slow');
-    }
-
-    // help
-    $(".help").on({
-      "mouseenter": function(){
-      $(this).append($tooltip);
-      },
-      "mouseleave": function(){
-        $tooltip.remove();
-      }
     });
   }
 

@@ -23,7 +23,13 @@
         </h3>
         <h4 class="question-asked-by">
           asked by
-          <span itemprop="contributor">{{ $question->guest_name }}</span>
+          <span itemprop="contributor">
+          @if(!$question->guest_name || NULL == $question->guest_name)
+            Anonymous
+          @else
+            {{ $question->guest_name }}
+          @endif
+          </span>
         </h4>
       </div>
     </header>
