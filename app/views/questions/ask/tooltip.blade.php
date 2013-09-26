@@ -16,7 +16,7 @@
           </li>
       </ul>
       <p class="ask-tooltip-p">
-        if you'd like to send me a message instead, visit the <a href='/contact'>contact page</a>
+        if you'd like to send me a message instead, visit the <a class="help-link" href='/contact'>contact page</a>
       </p>
   </div>
 </aside>

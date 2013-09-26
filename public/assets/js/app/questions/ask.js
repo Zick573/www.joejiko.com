@@ -103,7 +103,11 @@ define(["jquery", "app/ui/_global/modal"], function($, Modal){
   function show(evt) {
     // show question modal
     evt.stopImmediatePropagation();
-    Modal.open({url: 'questions/ask', callback: askModalCallback});
+    Modal.open({
+      url: 'questions/ask',
+      callback: askModalCallback,
+      className: 'modal-ask'
+    });
   }
 
   return {

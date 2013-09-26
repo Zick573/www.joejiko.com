@@ -69,58 +69,58 @@
 
 /* help/tooltip
    ========================================================================== */
-.ask .help {
-    color: #666666;
-    font-size: 1em;
-    padding: 12px 0;
-    text-align: right;
-    width: 215px;
-    &:hover {
-        color: #222;
-        cursor: help;
-    }
-    span {
-        font-family: modernpics;
-        font-size: 2em;
-        display: block;
-        float: right;
-        margin-top: -7px;
-    }
-}
+// .ask .help {
+//     color: #666666;
+//     font-size: 1em;
+//     padding: 12px 0;
+//     text-align: right;
+//     width: 215px;
+//     &:hover {
+//         color: #222;
+//         cursor: help;
+//     }
+//     span {
+//         font-family: modernpics;
+//         font-size: 2em;
+//         display: block;
+//         float: right;
+//         margin-top: -7px;
+//     }
+// }
 .help-list
 {
   padding: 10px;
   list-style-type: square;
 }
 .help-list-item {
-    line-height: 25px;
+    line-height: 2;
     width: 100%;
     text-align: left;
 }
 
-.help .tooltip
-{
-  left: 315px;
-  top: 65px;
-}
+// .help .tooltip
+// {
+//   left: 315px;
+//   top: 65px;
+// }
 
-.ask .tooltip-message {
-    display: inline-block;
-    float: left;
-    font-size: 1.4em;
-    margin: -3px 10px 0 0;
-}
+// .ask .tooltip-message {
+//     display: inline-block;
+//     float: left;
+//     font-size: 1.4em;
+//     margin: -3px 10px 0 0;
+// }
 
-.help .tooltip:before {
-  border-color: transparent transparent #000000 transparent;
-  border-width: 6px;
-  top: -12px;
-  left: auto;
-  right: 11%;
-}
+// .help .tooltip:before {
+//   border-color: transparent transparent #000000 transparent;
+//   border-width: 6px;
+//   top: -12px;
+//   left: auto;
+//   right: 11%;
+// }
 
-.help .tooltip a { color: #06C; }
-.help .tooltip a:hover { color: #06F; margin-bottom: 1px; }
+// .help .tooltip a { color: #06C; }
+// .help .tooltip a:hover { color: #06F; margin-bottom: 1px; }
 
 #question-ask #question-subscribe div label {
      display: block;
@@ -157,7 +157,9 @@
 //      padding: 20px;
 //      width: 536px;
 // }
-
+.modal-ask {
+  .modal-close { right: -25px; }
+}
 /** header **/
 .ask {
   height: 100%;
@@ -193,9 +195,14 @@
     display: none;
     padding: 1rem;
 }
+.help-intro { text-align: right; cursor: help; }
 .help-list {
     list-style-type: square;
     padding: 10px;
+}
+.help-link {
+  color: #800080;
+  &:hover { color: lighten(#800080, 20%); }
 }
 
 /** form **/
