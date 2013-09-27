@@ -7,7 +7,16 @@
   <header>
   <h1>Artwork</h1>
   </header>
-  <img src="{{ cdn_img() }}artwork/armored-grump-3.jpg"><!--
+  <h2 class="artwork-category-title">Pok&eacute;humons</h2>
+  <img src="{{ cdn_img() }}artwork/pokehuman-002.jpg"><!--
+  --><img src="{{ cdn_img() }}artwork/jikomander.jpg"><!--
+  --><img src="{{ cdn_img() }}artwork/pokehuman-003.jpg"><!--
+  --><img src="{{ cdn_img() }}artwork/pokehuman-004.jpg"><!--
+  --><img src="{{ cdn_img() }}artwork/pokehuman-005.jpg"><!--
+  --><img src="{{ cdn_img() }}artwork/pokehuman-006.jpg"><!--
+  --><img src="{{ cdn_img() }}artwork/pokehuman-007.jpg"><!--
+  --><img src="{{ cdn_img() }}artwork/pokehuman-008.jpg"><!--
+  --><img src="{{ cdn_img() }}artwork/armored-grump-3.jpg"><!--
   --><img src="{{ cdn_img() }}artwork/grumpszilla.jpg"><!--
   --><img src="{{ cdn_img() }}artwork/joannabearr.jpg"><!--
   --><img src="{{ cdn_img() }}artwork/tattoo-artist-business-cards.jpg"><!--
@@ -19,16 +28,7 @@
   --><img src="{{ cdn_img() }}artwork/zeah-faces.jpg"><!--
   --><img src="{{ cdn_img() }}artwork/black-white-owl-zeah.jpg"><!--
   --><img src="{{ cdn_img() }}artwork/zombietart.jpg"><!--
-  --><img src="{{ cdn_img() }}artwork/zeah-nerd.jpg">
-  <h2 class="artwork-category-title">Pok&eacute;humons</h2>
-  <img src="{{ cdn_img() }}artwork/pokehuman-002.jpg"><!--
-  --><img src="{{ cdn_img() }}artwork/jikomander.jpg"><!--
-  --><img src="{{ cdn_img() }}artwork/pokehuman-003.jpg"><!--
-  --><img src="{{ cdn_img() }}artwork/pokehuman-004.jpg"><!--
-  --><img src="{{ cdn_img() }}artwork/pokehuman-005.jpg"><!--
-  --><img src="{{ cdn_img() }}artwork/pokehuman-006.jpg"><!--
-  --><img src="{{ cdn_img() }}artwork/pokehuman-007.jpg"><!--
-  --><img src="{{ cdn_img() }}artwork/pokehuman-008.jpg"><!--
+  --><img src="{{ cdn_img() }}artwork/zeah-nerd.jpg"><!--
   --><img src="{{ cdn_img() }}artwork/time-to-die.jpg"><!--
   --><img src="{{ cdn_img() }}artwork/jikowolf.jpg"><!--
   --><img src="{{ cdn_img() }}artwork/jikobot.jpg"><!--
