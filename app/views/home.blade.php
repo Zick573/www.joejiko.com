@@ -3,7 +3,7 @@
   Joe Jiko
 @stop
 @section('page.description')
-  Life, thoughts, and obsessions.s
+  Life, thoughts, and obsessions.
 @stop
 @section('content')
 <article class="home-article limit-width--reading">
