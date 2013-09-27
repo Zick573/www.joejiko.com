@@ -1,19 +1,11 @@
+<h1>Music</h1>
+<h2>&ldquo;If music be the food of love, play on.&rdquo; &mdash; William Shakespeare</h2>
 <article class="music-tracker">
   <section class="feed">
     <header>
       <h2 class="feed-header">Recently Played Tracks</h2>
     </header>
-    <ul class="feed-content">
-      <li>
-        <img class="spotify" title="" src="//joejiko.com/images/music/logo-spotify19.png">
-        <span class="track-info">
-          Artist &mdash;
-          <a class="track-title" href="//last.fm/music/artist/track" target="_blank">track title</a>
-        </span>
-        <time class="timeago play-timestamp" datetime="" title="">x time ago</time>
-        <a class="twitter-share" href="#">tweet</a>
-      </li>
-    </ul>
+    @include('music.tracker.feed')
     <footer class="feed-controls">
       <p>page <span class="page-current">1</span> of <span class="pages-total">4010</span></p>
       <nav class="pagination">

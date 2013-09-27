@@ -1,11 +1,11 @@
 <aside class="play-stats">
   <p class="total-tracks">
-    <strong>Total tracks played</strong>
-    <span>40097</span>
+    <strong class="total-tracks-title">Total tracks played</strong>
+    <span class="total-tracks-count">40097</span>
   </p>
   <p>
     <strong>Powered by</strong>
-    <img src="//joejiko.com/images/music/logo-lastfm.png" alt="lastfm">
+    <img src="{{ cdn_img() }}vendor/lastfm/logo-lastfm.png" alt="lastfm">
   </p>
   <p>
     <strong>Random</strong>

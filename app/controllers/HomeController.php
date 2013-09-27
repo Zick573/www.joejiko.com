@@ -45,6 +45,7 @@ class HomeController extends BaseController {
 
 	public function getMusic()
 	{
+    $tracks = Music::all();
 		return View::make('pages.music');
 	}
 
