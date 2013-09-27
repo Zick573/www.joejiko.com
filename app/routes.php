@@ -35,7 +35,7 @@ Route::get('about/me', array('as' => 'about', 'uses' => 'HomeController@getAbout
 Route::get('about/resume', array('as' => 'resume', 'uses' => 'HomeController@getResume'));
 Route::get('labs', array('as' => 'pages.labs', 'uses' => 'HomeController@getLabs'));
 Route::get('more', array('as' => 'pages.more', 'uses' => 'HomeController@getMore'));
-Route::get('music', array('as' => 'music', 'uses' => 'HomeController@getMusic'));
+Route::get('music', array('as' => 'music', 'uses' => 'MusicController@getIndex'));
 Route::controller('questions', 'QuestionController');
 Route::get('question/{id}', array('as' => 'question', 'uses' => 'QuestionController@getOne'));
 Route::get('subscribe', array('as' => 'pages.subscribe', 'uses' => 'HomeController@getSubscribe'));
