@@ -84,48 +84,53 @@ class Api
   public function output($type=NULL)
   {
     $content = file_get_contents($this->_url);
-
     // format for tracker
-    if(!is_null($type))
-    {
+    if(!is_null($type)):
       $tracksArr = array();
-      if($type=="tracker")
-      {
+      if($type=="tracker"):
         $content = json_decode($content, true);
-        $stats = array(
-          'page' => $content["@attr"]["page"],
-          'totalPages' => $content["@attr"]["totalPages"],
-          'total' => $content["@attr"]["total"]
-        );
-        foreach($content["recenttracks"]["track"] as $track)
-        {
-          if(array_key_exists("@attr", $track))
-          {
-            array_push($tracksArr, array(
+        if(array_key_exists("@attr", $content)):
+          $stats = array(
+            'page' => $content["@attr"]["page"],
+            'totalPages' => $content["@attr"]["totalPages"],
+            'total' => $content["@attr"]["total"]
+          );
+        else:
+          $stats = array(
+            'page' => NULL,
+            'totalPages' => NULL,
+            'total' => NULL
+          );
+        endif;
+        foreach($content["recenttracks"]["track"] as $track):
+          if(array_key_exists("@attr", $track)):
+            $track_formatted = array(
               "img" => $track["image"][1]["#text"],
               "name" => $track["name"],
               "artist" => $track["artist"]["#text"],
               "type" => "now playing"
-            ));
-          }
-          else
-          {
+            );
+            array_push($tracksArr, (object)$track_formatted);
+          else:
             // normal track
-            array_push($tracksArr, array(
+            $track_formatted = array(
               "artist" => $track["artist"]["#text"],
               "date" => $track["date"]["#text"],
               "name" => $track["name"],
               "type" => "track",
               "url" => $track["url"]
-            ));
-          }
-        }
-      }
-      return json_encode(array("tracks" => $tracksArr, "stats" => $stats));
-    }
-    else
-    {
-      return $content;
-    }
+            );
+            array_push($tracksArr, (object)$track_formatted);
+          endif;
+        endforeach;
+      endif;
+
+      return json_encode(array(
+        "tracks" => $tracksArr,
+        "stats" => (object)$stats
+      ));
+    endif;
+
+    return $content;
   }
 }

@@ -4,13 +4,7 @@
   <img class="spotify"
        title="{{ $track->name }}"
        src="{{ cdn_img() }}vendor/spotify/logo-spotify19.png" alt="spotify icon">
-  <span class="track-info">
-    {{ $track->artist }} &mdash;
-    <a class="track-title"
-       href="{{ $track->url }}" target="_blank">
-       {{ $track->title }}
-    </a>
-  </span>
+  <span class="track-info">{{ $track->artist }} &mdash; {{ $track->name }}</span>
   <time class="timeago play-timestamp"
         datetime="{{ date("c") }}">
     {{ date("c") }}
