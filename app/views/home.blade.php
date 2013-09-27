@@ -1,6 +1,9 @@
 @extends('layouts.master')
 @section('page.title')
-  Welcome!
+  Joe Jiko
+@stop
+@section('page.description')
+  Life, thoughts, and obsessions.s
 @stop
 @section('content')
 <article class="home-article limit-width--reading">
