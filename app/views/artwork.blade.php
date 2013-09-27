@@ -19,8 +19,9 @@
   --><img src="{{ cdn_img() }}artwork/zeah-faces.jpg"><!--
   --><img src="{{ cdn_img() }}artwork/black-white-owl-zeah.jpg"><!--
   --><img src="{{ cdn_img() }}artwork/zombietart.jpg"><!--
-  --><img src="{{ cdn_img() }}artwork/zeah-nerd.jpg"><!--
-  --><img src="{{ cdn_img() }}artwork/pokehuman-002.jpg"><!--
+  --><img src="{{ cdn_img() }}artwork/zeah-nerd.jpg">
+  <h2 class="artwork-category-title">Pok&eacute;humons</h2>
+  <img src="{{ cdn_img() }}artwork/pokehuman-002.jpg"><!--
   --><img src="{{ cdn_img() }}artwork/jikomander.jpg"><!--
   --><img src="{{ cdn_img() }}artwork/pokehuman-003.jpg"><!--
   --><img src="{{ cdn_img() }}artwork/pokehuman-004.jpg"><!--
