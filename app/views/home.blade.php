@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('page.title')
-  Joe Jiko
+  Joe Jiko Web & Design &mdash; Documentation of my life, thoughts, and obsessions.
 @stop
 @section('page.description')
   Life, thoughts, and obsessions.
