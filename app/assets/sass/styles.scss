@@ -14,6 +14,7 @@ $cdn_img: "https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/shared"
 @import "global/modal";
 @import "global/footer";
 
+@import "site/artwork";
 @import "site/home";
 @import "site/contact";
 @import "site/gaming";
@@ -63,25 +64,6 @@ ul { margin: 0; padding: 0; list-style-type: circle; }
 /* */
 .module-link { color: #333; }
 .module-link:hover { color: #222; }
-
-.artwork {
-    > img {
-        cursor: pointer;
-        display: inline-block;
-        border: 3px solid #fff;
-        box-shadow: 0 0 2px rgba(0,0,0,.3);
-        margin-right: 3.33%;
-        margin-bottom: 10px;
-        width: 30%;
-        vertical-align: middle;
-        &:hover {
-            box-shadow: 0 0 2px rgba(50, 0, 75, 0.9);
-        }
-    }
-    > img.full {
-        width: auto;
-        max-width: 60%; }
-}
 .edge-triangle {
     width: 120px;
     height: 120px;

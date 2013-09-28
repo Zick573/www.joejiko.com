@@ -957,6 +957,7 @@ a[class*="btn-connect-"], button[class*="btn-connect-"] {
 .modal--loading .modal-content-wrap {
   background: none;
   max-width: 240px;
+  padding: 0 !important;
   width: auto; }
 .modal--loading .modal-content {
   background: none;
@@ -1048,6 +1049,23 @@ a[class*="btn-connect-"], button[class*="btn-connect-"] {
   text-shadow: 0 1px 0 #f2f2f2;
   padding: 2rem;
   width: 60%; }
+
+.artwork {
+  padding: 0 5%; }
+  .artwork > img {
+    cursor: pointer;
+    display: inline-block;
+    border: 3px solid #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    margin-right: 3.33%;
+    margin-bottom: 10px;
+    width: 30%;
+    vertical-align: middle; }
+    .artwork > img:hover {
+      box-shadow: 0 0 2px rgba(50, 0, 75, 0.9); }
+  .artwork > img.full {
+    width: auto;
+    max-width: 60%; }
 
 .mission-list {
   font-size: .9rem; }
@@ -1839,21 +1857,6 @@ ul {
 
 .module-link:hover {
   color: #222; }
-
-.artwork > img {
-  cursor: pointer;
-  display: inline-block;
-  border: 3px solid #fff;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
-  margin-right: 3.33%;
-  margin-bottom: 10px;
-  width: 30%;
-  vertical-align: middle; }
-  .artwork > img:hover {
-    box-shadow: 0 0 2px rgba(50, 0, 75, 0.9); }
-.artwork > img.full {
-  width: auto;
-  max-width: 60%; }
 
 .edge-triangle {
   width: 120px;

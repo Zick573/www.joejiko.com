@@ -15,8 +15,9 @@
   --><img src="{{ cdn_img() }}artwork/pokehuman-005.jpg"><!--
   --><img src="{{ cdn_img() }}artwork/pokehuman-006.jpg"><!--
   --><img src="{{ cdn_img() }}artwork/pokehuman-007.jpg"><!--
-  --><img src="{{ cdn_img() }}artwork/pokehuman-008.jpg"><!--
-  --><img src="{{ cdn_img() }}artwork/armored-grump-3.jpg"><!--
+  --><img src="{{ cdn_img() }}artwork/pokehuman-008.jpg">
+  <h2 class="artwork-category-title">Uncategorized</h2>
+  <img src="{{ cdn_img() }}artwork/armored-grump-3.jpg"><!--
   --><img src="{{ cdn_img() }}artwork/grumpszilla.jpg"><!--
   --><img src="{{ cdn_img() }}artwork/joannabearr.jpg"><!--
   --><img src="{{ cdn_img() }}artwork/tattoo-artist-business-cards.jpg"><!--
