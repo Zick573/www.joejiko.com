@@ -1,5 +1,4 @@
 .user-nav {
-    background: #F2F2F2;
     cursor: pointer;
     line-height: 1;
     opacity: 0.8;
@@ -34,9 +33,9 @@
 }
 .user-controls {
   display: none;
-  padding: 10px;
+  padding: 2px;
   position: relative;
-  background: rgba(0, 0, 0, .1);
+  background: #fff;
   transition: all 1s;
   visibility: hidden;
 }
@@ -44,7 +43,8 @@
 .user-module:hover .user-controls {
   display: block;
   visibility: visible;
-  box-shadow: 0 2px 2px rgba(0,0,0,.8);
+  box-shadow: 0 1px 1px rgba(0,0,0,.4);
+  // box-shadow: 0 2px 2px rgba(0,0,0,.8);
 }
 
 .user-nav-link {
@@ -52,6 +52,9 @@
   line-height: 2;
   padding: 5px 10px;
   text-align: center;
+  color: #800080;
+  position: relative;
+  z-index: 5;
   &:hover {
     background: rgba(0, 0, 0, .1);
     color: rgba(50, 0, 75, .9);
@@ -62,10 +65,18 @@
   }
 }
 
-.user-module .btn-green { display: inline-block; margin: 5px 5px 0 0; }
-.user-module .btn-red { padding: 5px 10px; box-shadow: none; }
+.user-module {
+  .btn-green { display: inline-block; margin: 5px 5px 0 0; }
+  .btn-red { padding: 5px 10px; box-shadow: none; }
+  .btn-disconnect {
+    background: #eee;
+    margin: 1rem auto .5rem;
+    padding: 0;
+    width: 25%;
+  }
+}
 .user-module-triangle {
-    background: none repeat scroll 0 0 #DCDCDC;
+    background: #fff;
     display: block;
     height: 20px;
     left: 48%;

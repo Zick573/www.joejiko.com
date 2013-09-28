@@ -1,7 +1,12 @@
 <?php namespace Admin;
-class Deploy extends \BaseController
+use View;
+class DeployController extends \BaseController
 {
   public function getStart() {
+    return Redirect::to('/admin/deploy');
+  }
+
+  public function postStart() {
     $resp = array(
       'status' => 'fail',
       'output' => 'Failed.'
@@ -16,7 +21,6 @@ class Deploy extends \BaseController
 
     // password here
     $passwd = md5('D3ploy !');
-
     if (!md5($_POST['passwd']) == $passwd):
       header('HTTP/1.1 200 OK');
       header('Content-Type: application/json');

@@ -2,12 +2,11 @@ $cdn: "https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28";
 $cdn_img: "https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/shared";
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
-@import "experiments/zoom";
-
 @import "global/partials/fonts";
 @import "global/partials/icons";
 @import "global/partials/buttons";
 
+@import "global/base";
 @import "global/header";
 @import "global/search";
 @import "global/user";
@@ -21,6 +20,8 @@ $cdn_img: "https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/shared"
 @import "site/questions";
 @import "site/music-tracker";
 @import "site/thoughts";
+
+@import "experiments/zoom";
 
 * { box-sizing: border-box; -moz-box-sizing: border-box; }
 body {
@@ -54,7 +55,7 @@ ul { margin: 0; padding: 0; list-style-type: circle; }
 .inline-col.expect-4 { width: 25%; }
 
 /* lists */
-.list-diamonds li:before {
+.list-diamonds span:before {
     color: purple;
     content: "◆ ";
 }
@@ -140,3 +141,5 @@ ul { margin: 0; padding: 0; list-style-type: circle; }
         padding: 10%;
     }
 }
+
+@import "global/partials/overrides";

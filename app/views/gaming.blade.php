@@ -7,7 +7,7 @@
   <h1>Gaming</h1>
   <h2>Currently playing</h2>
   <a class="now-playing ffxiv" href="http://www.finalfantasyxiv.com/" target="_blank" title="FFXIV official site">
-    <img src="pages/gaming/xivlogo.png" alt="Final Fantasy XIV">
+    <img src="{{ cdn_img() }}pages/gaming/xivlogo.png" alt="Final Fantasy XIV">
   </a>
   <h2>Recently played games (on <a href="http://steamcommunity.com/id/joejiko" target="_blank">Steam</a>)</h2>
   <h3>Played within the past 2 weeks</h3>

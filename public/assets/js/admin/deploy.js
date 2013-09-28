@@ -3,7 +3,7 @@ requirejs.config({
   paths: {
     "app": "/assets/js/app",
     "jquery": [
-      "https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js",
+      "https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min",
       // load if CDN fails
       "jquery.min"
     ],
@@ -51,7 +51,7 @@ require(["require/domReady!"], function() {
     }
 
     function deploy_with_confirm() {
-      $.post('./auth.php', { passwd: $('#passwd').prop('value') }, function(resp) {
+      $.post('./start', { passwd: $('#passwd').prop('value') }, function(resp) {
         swap_bg_img({"id": resp.status, "set": true});
         confirm_deployment_close();
         $('.main').empty().append(resp.output);

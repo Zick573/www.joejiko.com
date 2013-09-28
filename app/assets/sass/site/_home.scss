@@ -1,17 +1,57 @@
+// v0.1
 .home {
   #content {}
 }
 
-.mission-list { font-size: .9rem; }
-.mission-list .inline-col {
-  padding: .25rem;
+.mission-list {
+  font-size: .9rem;
 }
+// .mission-list .inline-col {
+//   padding: .25rem;
+// }
 .mission-list .inline-col {
-  background: url(#{$cdn}/img/pages/home/mission.jpg) no-repeat 0 0 #fff;
+  // background: url(#{$cdn}/img/pages/home/mission.jpg) no-repeat 0 0 #fff;
+  background: {
+    position: center 0;
+    repeat: no-repeat;
+    size: contain;
+  }
   height: 225px;
 }
 
-.mission-list .accomplish-goals { background-position: 25px 0; }
-.mission-list .easy-life {background-position: 55px -225px;}
-.mission-list .target-audience {background-position: 30px -450px;}
-.mission-list .solve-problems {background-position: 0 -675px;}
+// .mission-list .accomplish-goals { background-position: 25px 0; }
+// .mission-list .easy-life {background-position: 55px -225px;}
+// .mission-list .target-audience {background-position: 30px -450px;}
+// .mission-list .solve-problems {background-position: 0 -675px;}
+
+// v0.2
+.home-article a { font-weight: bold; }
+.mission-list { text-align: left; }
+.mission-label {
+  background: rgba(0,0,0,.02);
+  font-weight: 700;
+  display: block;
+  text-align: center;
+  padding: .25rem;
+  width: 100%;
+}
+.mission-list .accomplish-goals {
+  background: {
+    image: url(#{$cdn}/img/pages/home/accomplish-goals.jpg);
+  }
+}
+.mission-list .easy-life {
+  background: {
+    image: url(#{$cdn}/img/pages/home/easy-life.jpg);
+  }
+}
+.mission-list .target-audience {
+  background: {
+    image: url(#{$cdn}/img/pages/home/target-audience.jpg);
+  }
+}
+.mission-list .solve-problems {
+  background: {
+    image: url(#{$cdn}/img/pages/home/problem-solving.jpg);
+  }
+}

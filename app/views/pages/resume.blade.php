@@ -4,7 +4,7 @@
 @stop
 
 @section('content')
-  <article id="page-resume" class="resume">
+  <article id="page-resume" class="base-article resume">
     <header class="grid-12">
       <h1>Résumé</h1>
       <h2>Need something done right?</h2>
@@ -22,20 +22,42 @@
         <h2>Objective</h2>
         <article>
           <p>To pursue a career in one or more of, but not limited to, the following fields of web application development, mobile applications, graphic design, computer science, artificial intelligence, voice recognition, illustration, information systems, space travel, warp field technology, or information technology (I like to do a lot of things!).</p>
+          <p><strong>TL;DR to pursue a career in making cool shit</strong></p>
+        </article>
+      </section>
+
+      <section id="expert">
+        <h2>Expert at</h2>
+        <h3>Latest versions of</h3>
+        <article>
+          <p>PHP</p>
+          <p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">Javascript</a>,
+            <a href="http://jquery.com/" target="_blank">jQuery</a>
+          </p>
+          <p>
+            <a href="http://www.w3schools.com/html/html5_intro.asp">HTML</a>
+          </p>
+          <p>
+            <a href="http://www.w3schools.com/css3/">CSS</a>
+          </p>
         </article>
       </section>
 
       <section id="proficiency">
         <h2>Proficient In</h2>
         <article>
-          <p>Microsoft Windows XP, Vista, 7, 8, Mac OS X, iOS, Android</p>
-          <p>Adobe Creative Suite: Photoshop, Illustrator (graphic design) Sublime Text 2, <a href="http://www.adobe.com/products/dreamweaver.html">Dreamweaver</a>, <a href="http://netbeans.org/">Netbeans</a>, <a href="http://www.jetbrains.com/phpstorm/">PHPstorm</a> (web design and web development), InDesign (layout)</p>
-          <p>Microsoft Office: Word, Excel, PowerPoint, Publisher, Outlook</p>
-          <p>PHP/MySQL, <a href="http://www.w3schools.com/html/html5_intro.asp">HTML5</a>, <a href="http://www.w3schools.com/css3/">CSS3</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript, <a href="http://jquery.com/">jQuery</a>, <a href="http://oauth.net/">oAUTH</a></p>
+          <p>Microsoft Windows XP, Vista, 7, 8, Mac OS, iOS, Android, Linux (ArchLinux, Ubuntu)</p>
+          <p>Adobe Creative Suite: Photoshop, Illustrator (graphic design), (web design and web development), InDesign (layout), <a href="http://www.adobe.com/products/dreamweaver.html">Dreamweaver</a></p>
+          <p>Sublime Text 2, <a href="http://netbeans.org/">Netbeans</a></p>
+          <p>Microsoft Office: Word, Excel, PowerPoint, Publisher, Outlook. Google Drive, Dropbox</p>
+          <p>Apache</p>
+          <p><a href="http://oauth.net/">oAUTH</a></p>
           <p>Facebook Graph API, Google APIs, Google analytics, Twitter API, etc.</li>
           <p>Smarty (templating engine)</p>
+          <p><strong>TL;DR all major and popular software used to produce for the web</strong></p>
         </article>
-        <h2>Other libraries and systems I've spent time with or like</h2>
+        <h2>Other libraries and systems I've spent time with</h2>
         <article>
           <ul>
             <li>ModX, Laravel 4</li>
@@ -50,8 +72,15 @@
       <section id="experience">
         <h2>Experience</h2>
         <article>
-          <h3>Web development, design at <a href="http://www.postcardmania.com">PostcardMania</a></h3>
-          <p>June 2012&mdash;<em>Present</em></p>
+          <h3>Web applications, internal development <a href="http://www.postcardmania.com">PostcardMania</a></h3>
+          <p>May 2013&mdash;<em>Current</em></p>
+          <ul>
+            <li>Super secret code stuff ;]</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Client web development, design at <a href="http://www.postcardmania.com">PostcardMania</a></h3>
+          <p>June 2012&mdash;<em>May 2013</em></p>
           <ul>
             <li>Set up reseller hosting account with Hostgator. Configured WHM packages and integrated with WHMCS</li>
             <li>Custom ecommerce layout design and functionality</li>
@@ -59,7 +88,7 @@
             <li>Mobile website design and development</li>
             <li>Web applications</li>
             <li>Custom front-end project management application (using JavaScript and jQuery)</li>
-            <li>Front-end interface and experience design<li>
+            <li>Front-end interface and experience design</li>
             <li>Designed, developed, and implemented a database driven cross-browser form submission system</li>
             <li>Developed a form and lead tracking system for use on landing pages</li>
             <li>Developed a dynamic form generating widget for anywhere. Pulls information from a local database and dynamically loads content.</li>
@@ -91,7 +120,7 @@
         </article>
 
         <article>
-          <h3>Freelance Web Developer, Graphic Designer, and IT Expert at Creative Spine &amp; <a href="/">JoeJiko.com</a> (JJCOM)</h3>
+          <h3>Freelance, Full Stack Web Developer, Graphic Designer, and IT Expert at Creative Spine &amp; <a href="/">JoeJiko.com</a> (JJCOM)</h3>
           <p>Since August 2006</p>
           <ul>
             <li>Designed unique logos.</li>
@@ -124,7 +153,7 @@
             <li>CMS theming &amp; customization: <a href="http://wordpress.org/">WordPress</a>, <a href="http://modx.com/">MODX</a>, <a href="http://www.joomla.org/">Joomla!</a>, <a href="http://prestashop.com">PrestaShop</a> (ecommerce), <a href="http://www.cs-cart.com/">CS-Cart</a> (ecommerce), <a href="http://www.shopify.com/">Shopify</a> (ecommerce), Etc.</li>
             <li>Web hosting &amp; server configuration</li>
             <li>Database planning</li>
-            <li>Cross-browser compatibility (except anything older than IE8)</li>
+            <li>Cross-browser compatibility (except anything older than IE9 because why bother?)</li>
             <li>PC troubleshooting, installations, and repair. Network installation &amp; configuration.</li>
             <li>Problem solving.</li>
             <li>There's more.. just <a href="/contact/questions">ask me</a>.</li>
@@ -141,7 +170,7 @@
     </article>
     <aside class="grid-4">
       <p>
-        <span>Ready to talk?</span> <a class="btn green" href="/contact">Contact me</a>
+        <span>Ready to talk?</span> <a class="btn green" href="/contact">Contact me now</a>
       </p>
     </aside>
   </article>

@@ -26,7 +26,7 @@ Leave your console open maybe?
   <meta name="description" content="Creepy, cute art & smart stuff. Join the team! Let's improve ourselves and the world together.">
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/> -->
   @yield('page.meta')
-  {{ cdn_style_min() }}
+  {{ dev_style_min() }}
 </head
 ><body>
 <div class="app">

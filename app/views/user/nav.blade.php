@@ -13,7 +13,7 @@
       <a class="user-nav-link" href="/team/join">Join the team</a>
       <a class="user-nav-link" href="/user/info">Update contact info</a>
       <a class="user-nav-link" href="/thought/create">Post something</a>
-      <a class="user-nav-link btn-red" href="/user/disconnect">Disconnect</a>
+      <a class="user-nav-link btn-disconnect" href="/user/disconnect">Disconnect</a>
     </div>
     @if (isset($user->role) && $user->role <= 2)
     <div class="team-controls">

@@ -1,6 +1,6 @@
 <!doctype html>
 <title>Deploy</title>
-<link rel="stylesheet" type="text/css" href="deploy.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/admin/styles.min.css">
 <section class="main">
   <h1 class="deploy-title">Deploy?</h1>
   <button id="forward" class="btn-style3 deploy-forward" type="submit" data-action="deploy">Okay</button>
@@ -19,4 +19,5 @@
   </div>
   <div class="dcm-mask"></div>
 </div>
+<script src="{{ cdn() }}/js/libs/require/require.js"></script>
 <script src="/assets/js/admin/deploy.js" async="true"></script>
