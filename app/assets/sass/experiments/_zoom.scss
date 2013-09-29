@@ -17,6 +17,7 @@
     transform-origin: 50% 50% 0;
     -webkit-transform-origin: 50% 50% 0;
     transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+    overflow: hidden;
 }
 .labs .modal--active-2 .app {
   transform: scale(.8);
@@ -27,10 +28,9 @@
   -webkit-transform: scale(.7);
 }
 // let's hope there aren't more than 3..
-
-.labs .modal--active .site-header {
-    overflow: hidden;
-}
+// .labs .modal--active .site-header {
+//     overflow: hidden;
+// }
 .labs .modal--active .modal { z-index: 9998; }
 .labs .modal--active .modal-mask { background-color: rgba(0,0,0,.8); top: 0; }
 

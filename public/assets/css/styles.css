@@ -182,10 +182,24 @@ a[class*="btn-connect-"], button[class*="btn-connect-"] {
   padding: 0 1rem;
   text-align: center; }
 
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
 .base-article, .base-content {
   max-width: 45rem;
   margin: 0 auto;
   text-align: left; }
+
+.inline-col {
+  display: inline-block;
+  vertical-align: top; }
+
+.inline-col.expect-2 {
+  width: 50%; }
+
+.inline-col.expect-4 {
+  width: 25%; }
 
 .site-header {
   background: #111;
@@ -957,11 +971,11 @@ a[class*="btn-connect-"], button[class*="btn-connect-"] {
 .modal--loading .modal-content-wrap {
   background: none;
   max-width: 240px;
-  padding: 0 !important;
   width: auto; }
 .modal--loading .modal-content {
   background: none;
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 0 !important; }
 
 .photo-view .modal-close {
   margin-right: .5rem;
@@ -1761,7 +1775,8 @@ select {
   -webkit-transform: scale(0.9);
   transform-origin: 50% 50% 0;
   -webkit-transform-origin: 50% 50% 0;
-  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s; }
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+  overflow: hidden; }
 
 .labs .modal--active-2 .app {
   transform: scale(0.8);
@@ -1770,9 +1785,6 @@ select {
 .labs .modal--active-3 .app {
   transform: scale(0.7);
   -webkit-transform: scale(0.7); }
-
-.labs .modal--active .site-header {
-  overflow: hidden; }
 
 .labs .modal--active .modal {
   z-index: 9998; }
@@ -1802,10 +1814,6 @@ select {
 .labs .modal--active .main {
   overflow: hidden; }
 
-* {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box; }
-
 body {
   background: #f2f2f2;
   /* 95% white */
@@ -1834,17 +1842,6 @@ ul {
   margin: 0;
   padding: 0;
   list-style-type: circle; }
-
-/* grid */
-.inline-col {
-  display: inline-block;
-  vertical-align: top; }
-
-.inline-col.expect-2 {
-  width: 50%; }
-
-.inline-col.expect-4 {
-  width: 25%; }
 
 /* lists */
 .list-diamonds span:before {
@@ -1904,20 +1901,6 @@ ul {
 
 .loading-message {
   text-align: center; }
-
-.modal--active .site-logo {
-  height: 50%;
-  width: 50%;
-  padding: 5%; }
-.modal--active .diamondMask {
-  top: -35%; }
-.modal--active .diamond {
-  top: -110px; }
-
-.menu--active .site-logo {
-  height: 100%;
-  width: 100%;
-  padding: 10%; }
 
 h2 {
   border-top: 1px solid;

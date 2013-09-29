@@ -7,6 +7,7 @@ $cdn_img: "https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/shared"
 @import "global/partials/buttons";
 
 @import "global/base";
+@import "global/grid";
 @import "global/header";
 @import "global/search";
 @import "global/user";
@@ -23,8 +24,6 @@ $cdn_img: "https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/shared"
 @import "site/thoughts";
 
 @import "experiments/zoom";
-
-* { box-sizing: border-box; -moz-box-sizing: border-box; }
 body {
     background: #f2f2f2; /* 95% white */
     color: #111;
@@ -46,14 +45,6 @@ h2 {
 }
 textarea { resize: none; }
 ul { margin: 0; padding: 0; list-style-type: circle; }
-
-/* grid */
-.inline-col {
-    display: inline-block;
-    vertical-align: top;
-}
-.inline-col.expect-2 { width: 50%; }
-.inline-col.expect-4 { width: 25%; }
 
 /* lists */
 .list-diamonds span:before {
@@ -102,26 +93,26 @@ ul { margin: 0; padding: 0; list-style-type: circle; }
 
 .loading {position: relative; width: 100%; min-width: 48px; min-height: 48px; background: url(#{$cdn_img}/global/load/239_48.gif) no-repeat center top; border-radius: 50%; padding: 48px 0 0;}
 .loading-message { text-align: center; }
-.modal--active {
-    .site-logo {
-        height: 50%;
-        width: 50%;
-        padding: 5%;
-    }
-    .diamondMask {
-      top: -35%;
-    }
-    .diamond {
-        top: -110px;
-    }
-}
+// .modal--active {
+//     .site-logo {
+//         height: 50%;
+//         width: 50%;
+//         padding: 5%;
+//     }
+//     .diamondMask {
+//       top: -35%;
+//     }
+//     .diamond {
+//         top: -110px;
+//     }
+// }
 
-.menu--active {
-    .site-logo {
-        height: 100%;
-        width: 100%;
-        padding: 10%;
-    }
-}
+// .menu--active {
+//     .site-logo {
+//         height: 100%;
+//         width: 100%;
+//         padding: 10%;
+//     }
+// }
 
 @import "global/partials/overrides";

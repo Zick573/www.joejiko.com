@@ -21,6 +21,10 @@ ClassLoader::addDirectories(array(
 
 ));
 
+Auth::extend('jiko', function($app){
+  return new Jiko\Auth\AuthUserProvider(new Illuminate\Hashing\BcryptHasher, Config::get('auth.model'), Config::get('hybridauth'));
+});
+
 /*
 |--------------------------------------------------------------------------
 | Application Error Logger

@@ -5,7 +5,17 @@
 @section('content')
 
   @if (isset($error))
-  <div class="ui-notice error">{{ $error }} </div>
+  <div class="ui-notice error">
+  @if (is_array($error))
+  <ul>
+    @foreach($error as $code => $message)
+      <li class="error-message">{{ $message }}</li>
+    @endforeach
+  </ul>
+  @else
+    {{ $error }}
+  @endif
+  </div>
   @endif
 
   <div class="ui-connect">

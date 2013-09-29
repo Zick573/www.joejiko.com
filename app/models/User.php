@@ -11,29 +11,29 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 
   public function getAuthIdentifier()
   {
-    return $this->getKey();
+    return $this->id;
   }
   public function getAuthPassword()
   {
-    return;
+    return $this->password;
   }
   public function getReminderEmail()
   {
     return;
   }
 
-  // public function connection()
-  // {
-  //   return $this->hasMany('UserConnection');
-  // }
+  public function connection()
+  {
+   return $this->hasMany('UserConnection');
+  }
 
   public function info()
   {
     return $this->hasMany('UserInfo');
   }
 
-  // public function authsession()
-  // {
-  //   return $this->hasMany('AuthSession');
-  // }
+  public function authsession()
+  {
+   return $this->hasMany('AuthSession');
+  }
 }

@@ -1,0 +1,6 @@
+.inline-col {
+    display: inline-block;
+    vertical-align: top;
+}
+.inline-col.expect-2 { width: 50%; }
+.inline-col.expect-4 { width: 25%; }

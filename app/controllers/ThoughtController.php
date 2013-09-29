@@ -1,6 +1,17 @@
 <?php
 
-class ThoughtController extends \BaseController {
+class ThoughtController extends BaseController {
+
+  protected $post;
+  protected $user;
+
+  public function __construct(Post $post, User $user)
+  {
+    parent::__construct();
+
+    $this->post = $post;
+    $this->user = $user;
+  }
 
   /**
    * Display a listing of the resource.
@@ -9,8 +20,9 @@ class ThoughtController extends \BaseController {
    */
   public function getIndex()
   {
-    $thoughts = Post::orderBy('created_at', 'desc')->get(); // where type=thoughts
-    return View::make('posts.thoughts.index')->with(array('posts' => $thoughts));
+    // where type=thoughts
+    $posts = $this->post->orderBy('created_at', 'desc')->get();
+    return View::make('posts.thoughts.index')->with(array('posts' => $posts));
   }
 
   /**
@@ -20,35 +32,36 @@ class ThoughtController extends \BaseController {
    */
   public function getCreate()
   {
-    if(Auth::check()){
-      return View::make('posts.thoughts.create');
-    }
-    return Redirect::to('thoughts');
+    if(!$this->user):
+      return Redirect::to('thoughts');
+    endif;
+
+    return View::make('posts.thoughts.create');
   }
 
   public function postCreate()
   {
-    if(!Input::has('post_content') || !Auth::check())
-    {
+    // Auth
+    if(!Input::has('post_content') || !$this->user):
       return Redirect::to('thoughts');
-    }
+    endif;
 
     $content = Input::get('post_content');
 
-    $thought = new Post;
-    $thought->user_id = $this->user->id;
-    $thought->user_name = $this->user->name;
-    $thought->content = $content;
-    $thought->type = "thought";
-    $thought->save();
+    $post = new $this->post;
+    $post->user_id = $this->user->id;
+    $post->user_name = $this->user->name;
+    $post->content = $content;
+    $post->type = "thought";
+    $result = $post->save();
 
-    return Redirect::to('thoughts');
+    return Redirect::to('thoughts')->with(array('result' => $result));
   }
 
   public function missingMethod($parameters)
   {
     // missing
-    return Redirect::to('thoughts');
+    return Redirect::to('thoughts')->flash('bad_request', $parameters);
   }
 
 }

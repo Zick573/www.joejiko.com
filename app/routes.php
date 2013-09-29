@@ -1,22 +1,35 @@
 <?php
-$detect = new Mobile_Detect;
-if( $detect->isMobile() ) {
-  header('Location: http://mobile.joejiko.com');
-  die();
-}
-
 /*
 |--------------------------------------------------------------------------
 | Application Routes
 |--------------------------------------------------------------------------
 */
+/** ------------------------------------------
+* Route model binding
+* ------------------------------------------
+*/
+// Route::model('user', 'User');
+// Route::model('comment', 'Comment');
+// Route::model('post', 'Post');
+// Route::model('role', 'Role');
+
+/** ------------------------------------------
+* Admin Routes
+* ------------------------------------------
+*/
 Route::group(array('prefix' => 'admin', 'before' => 'auth.admin'), function()
 {
   // Route::controller('', 'AdminController');
   // Route::get('content', array('as' => 'admin.content', 'uses' => 'Admin\ContentController@getIndex'));
+  # Deploy
   Route::controller('deploy', 'Admin\DeployController');
+
+  # Content management
   Route::resource('content', 'Admin\ContentController');
   Route::resource('questions', 'Admin\QuestionController');
+
+  # Dashboard
+  // Route::controller('/', 'AdminDashboardController');
 });
 /** API **/
 Route::group(array('prefix' => 'api/v1', 'before' => 'auth.basic'), function()
@@ -24,7 +37,6 @@ Route::group(array('prefix' => 'api/v1', 'before' => 'auth.basic'), function()
   Route::resource('thoughts', 'ThoughtsController');
 });
 /** **/
-Route::get('/', array('as' => 'home', 'uses' => 'HomeController@getIndex'));
 Route::get('home', function(){ return Redirect::to('/'); });
 Route::controller('api', 'ApiController');
 Route::get('artwork', array('as' => 'artwork', 'uses' => 'ArtController@getIndex'));
@@ -81,25 +93,6 @@ Route::get('user/connected/missing-required-info', array('as' => 'user.missing_r
 Route::get('user/disconnect', array('as' => "disconnect", 'uses' => 'UserController@getDisconnect'));
 Route::get('user/info', array('as' => 'profile', 'uses' => 'UserController@getInfo'));
 Route::get('web/clips', 'HomeController@getWeb');
+Route::get('test/{label}', 'TestController@getIndex');
 Route::get('{page}', array('uses' => 'HomeController@getAll'));
-// Route::get('thoughts', array('as' => 'thoughts', 'uses' => 'ThoughtController@index'));
-// Route::get('thought/create', array('as' => 'thoughts.create', 'uses' => 'ThoughtController@create'));
-// Route::post('thought/create', array('uses' => 'ThoughtController@createPost'));
-// Route::get('thoughts/{page}', 'ThoughtController@showPage');
-// $app->bind('ThoughtController', function($app) {
-//   $repository = new ThoughtRepository;
-//   $repository->setDatapath(base_path() . '/thoughts');
-
-//   return new ThoughtController($repository);
-// });
-// Route::get('user/connect/status', array('as' => 'status', 'uses' => 'UserController@check'));
-// $app->bind('UserController', function($app){
-//   $controller = new UserController(
-//     new Response,
-//     $app->make('request'),
-//     $app->make('validator'),
-//     $app->make('hash'),
-//     new User
-//   );
-//   return $controller;
-// });
+Route::get('/', array('as' => 'home', 'uses' => 'HomeController@getIndex'));

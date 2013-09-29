@@ -1,7 +1,8 @@
 <?php
 return [
-	'driver' => 'eloquent',
+	'driver' => 'jiko',
 	'model' => 'User',
+  'username' => 'email',
 	'table' => 'users',
 	'reminder' => [
 		'email' => 'emails.auth.reminder',
