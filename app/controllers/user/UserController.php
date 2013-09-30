@@ -249,7 +249,7 @@ class UserController extends DefaultController {
     try {
 
       # oauth cleanup
-      $oauth = new Hybrid_auth;
+      $oauth = new Hybrid_Auth;
       if(count($oauth->getConnectedProviders()) > 0):
         // save session
         $session = $oauth->getSessionData();
