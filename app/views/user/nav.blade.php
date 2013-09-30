@@ -1,7 +1,7 @@
 <div class="user-module">
-@if ($user && !$user->isGuest())
+@if (!Auth::guest())
     <div class="user-status">
-      @if (isset($user->info->photo_url))
+      @if (isset(Auth::user()->info->photo_url))
       <img class="user-status-photo" width="48" height="48" src="{{ $user->info->photo_url }}">
       @else
       <i class="batch" data-icon="&#xF046"></i>
@@ -16,13 +16,13 @@
       <a class="user-nav-link btn-disconnect" href="/user/disconnect">Disconnect</a>
     </div>
 
-    @if ($user->isTeam())
+    @if (Auth::user()->isTeam())
     <div class="team-controls">
       <a class="team-nav-link" href="/team">Team</a>
     </div>
     @endif
 
-    @if ($user->isAdmin())
+    @if (Auth::user()->isAdmin())
     <div class="admin-controls">
       <a class="admin-nav-link" href="/admin">Admin</a>
     </div>

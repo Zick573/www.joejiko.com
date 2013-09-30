@@ -34,12 +34,12 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 
   public function isAdmin()
   {
-    return 499 > $this->role;
+    return 499 < $this->role;
   }
 
   public function isTeam()
   {
-    return 249 > $this->role;
+    return 249 < $this->role;
   }
 
   public function isGuest()
