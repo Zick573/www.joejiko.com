@@ -37,10 +37,18 @@ Leave your console open maybe?
     <aside class="site-sidebar">
       <nav class="sidebar-nav-y">
         <!-- inline-block grids are my new favorite thing -->
-        <a href="//jiko.us/XHoGuc" title="Joe Jiko on Google Plus"><i class="icon-50 icon-g"></i></a><!--
-        --><a href="//jiko.us/12ozDqb" target="_blank" title="@JoeJiko on Twitter"><i class="icon-50 icon-tw"></i></a><!--
-        --><a href="//on.fb.me/REuClh" target="_blank" class="Joe Jiko on Facebook"><i class="icon-50 icon-fb"></i></a><!--
-        --><a href="//jiko.us/Wx5y3G" class="@JoeJiko on Instagram" target="_blank"><i class="icon-50 icon-ig"></i></a><!--
+        <a href="//plus.google.com/110880509059057751100?rel=author" title="Joe Jiko on Google Plus" target="_blank">
+          <i class="icon-50 icon-g"></i>
+        </a><!--
+        --><a href="//jiko.us/12ozDqb" target="_blank" title="@JoeJiko on Twitter">
+          <i class="icon-50 icon-tw"></i>
+        </a><!--
+        --><a href="//on.fb.me/REuClh" target="_blank" class="Joe Jiko on Facebook">
+          <i class="icon-50 icon-fb"></i>
+        </a><!--
+        --><a href="//jiko.us/Wx5y3G" class="@JoeJiko on Instagram" target="_blank">
+          <i class="icon-50 icon-ig"></i>
+        </a><!--
         --><a href="#"><i class="icon-placeholder"></i></a>
       </nav><!--
       --><div class="sidebar-module-wrapper">
