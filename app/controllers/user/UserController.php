@@ -161,8 +161,8 @@ class UserController extends DefaultController {
     self::OAuthValidateProvider($credentials);
 
     # actual OAuth attempt
-    if(!$provider = $oauth->authenticate($credentials);
-    $provider instanceof Hybrid_Provider_Adapter):
+    $provider = $oauth->authenticate($credentials);
+    if(!$provider instanceof Hybrid_Provider_Adapter):
       throw new Exception('Not a valid oauth provider.');
     endif;
 
