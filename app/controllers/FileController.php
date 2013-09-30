@@ -1,5 +1,5 @@
 <?php
-class FileController extends BaseController
+class FileController extends DefaultController
 {
   protected $upload_dir = "/home1/yourown1/UPLOAD/";
 

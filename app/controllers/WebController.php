@@ -1,6 +1,6 @@
 <?php
 
-class WebController extends \BaseController {
+class WebController extends DefaultController {
 
 	/**
 	 * Display a listing of the resource.

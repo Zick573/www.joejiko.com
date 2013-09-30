@@ -4,9 +4,8 @@ use Illuminate\Auth\Reminders\RemindableInterface;
 
 class User extends Eloquent implements UserInterface, RemindableInterface {
   protected $hidden = array('password');
-
   protected $table = 'users';
-
+  protected $hybridauth;
   protected $softDelete = true;
 
   public function getAuthIdentifier()
@@ -22,18 +21,29 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
     return;
   }
 
-  public function connection()
-  {
-   return $this->hasMany('UserConnection');
-  }
-
   public function info()
   {
     return $this->hasMany('UserInfo');
   }
 
-  public function authsession()
+  # Roles
+  public function isJiko()
   {
-   return $this->hasMany('AuthSession');
+    return 999 == $this->role;
+  }
+
+  public function isAdmin()
+  {
+    return 499 > $this->role;
+  }
+
+  public function isTeam()
+  {
+    return 249 > $this->role;
+  }
+
+  public function isGuest()
+  {
+    return 0 == $this->role;
   }
 }

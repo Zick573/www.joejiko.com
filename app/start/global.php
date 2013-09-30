@@ -57,6 +57,12 @@ App::error(function(Exception $exception, $code)
 	Log::error($exception);
 });
 
+// App::error(function(AuthException $e, $code)
+// {
+//   Log::error($exception);
+//   Redirect::to('user.connect')->with(array('error' => $e->getMessage()));
+// });
+
 /*
 |--------------------------------------------------------------------------
 | Maintenance Mode Handler

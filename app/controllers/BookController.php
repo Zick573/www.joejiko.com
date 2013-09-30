@@ -1,5 +1,5 @@
 <?php
-class BookController extends BaseController
+class BookController extends DefaultController
 {
   public function getIndex()
   {

@@ -1,5 +1,5 @@
 <?php
-class ContactController extends BaseController {
+class ContactController extends DefaultController {
   public function __construct()
   {
     parent::__construct();

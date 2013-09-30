@@ -1,5 +1,5 @@
 <?php
-class QuestionController extends BaseController {
+class QuestionController extends DefaultController {
   public function getIndex()
   {
     $questions = Question::where('status', '=', '1')

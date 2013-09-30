@@ -1,5 +1,5 @@
 <?php
-class ArtController extends BaseController {
+class ArtController extends DefaultController {
   public function getIndex()
   {
     return View::make('artwork');

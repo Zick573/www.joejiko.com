@@ -1,8 +1,5 @@
-<?php namespace App\Controllers\Post;
-
-use App\Models\Post;
-
-class PostController extends \BaseController {
+<?php
+class PostController extends DefaultController {
 
 	/**
 	 * Display a listing of the resource.

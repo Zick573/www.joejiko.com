@@ -6,4 +6,9 @@ class UserConnection extends Eloquent {
   protected $table = 'user_connections';
   public $incrementing = false;
 
+  public function user()
+  {
+    return $this->hasOne();
+  }
+
 }

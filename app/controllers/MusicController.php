@@ -1,6 +1,6 @@
 <?php
 use Lastfm\Api as LastfmApi;
-class MusicController extends BaseController {
+class MusicController extends DefaultController {
   protected function tracker($method='user.getRecentTracks', $user='joejiko', $page=1)
   {
       $music = new LastfmApi(array(

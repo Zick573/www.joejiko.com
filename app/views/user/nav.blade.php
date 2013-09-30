@@ -1,5 +1,5 @@
 <div class="user-module">
-@if (isset($user) && $user->name !== "Anonymous")
+@if ($user && !$user->isGuest())
     <div class="user-status">
       @if (isset($user->info->photo_url))
       <img class="user-status-photo" width="48" height="48" src="{{ $user->info->photo_url }}">
@@ -15,10 +15,14 @@
       <a class="user-nav-link" href="/thought/create">Post something</a>
       <a class="user-nav-link btn-disconnect" href="/user/disconnect">Disconnect</a>
     </div>
-    @if (isset($user->role) && $user->role <= 2)
+
+    @if ($user->isTeam())
     <div class="team-controls">
       <a class="team-nav-link" href="/team">Team</a>
     </div>
+    @endif
+
+    @if ($user->isAdmin())
     <div class="admin-controls">
       <a class="admin-nav-link" href="/admin">Admin</a>
     </div>

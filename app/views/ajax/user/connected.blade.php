@@ -1,6 +1,6 @@
 @extends('layouts.empty')
 @section('content')
-    @if(isset($user))
+    @if(Auth::check())
         <h1>You're connected!</h1>
     @else
         <h1>Something went wrong</h1>

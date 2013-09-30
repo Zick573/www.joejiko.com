@@ -1,5 +1,5 @@
 <?php
-class TeamController extends BaseController {
+class TeamController extends DefaultController {
   public function getIndex()
   {
     return View::make('team.index');

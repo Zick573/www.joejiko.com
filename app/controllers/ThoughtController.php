@@ -1,6 +1,6 @@
 <?php
 
-class ThoughtController extends BaseController {
+class ThoughtController extends DefaultController {
 
   protected $post;
   protected $user;

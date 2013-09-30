@@ -1,5 +1,5 @@
 <?php
-class TestController extends BaseController
+class TestController extends DefaultController
 {
   public function getIndex($label)
   {
