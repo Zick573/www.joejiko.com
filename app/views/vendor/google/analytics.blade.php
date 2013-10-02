@@ -13,7 +13,9 @@
   })();
 
 </script>
-{{-- The analytics.js snippet is part of Universal Analytics, which is currently in public beta. New users should use analytics.js. Existing ga.js users should create a new web property for analytics.js and dual tag their site. It is perfectly safe to include both ga.js and analytics.js snippets on the same page.}}
+{{--
+The analytics.js snippet is part of Universal Analytics, which is currently in public beta. New users should use analytics.js. Existing ga.js users should create a new web property for analytics.js and dual tag their site. It is perfectly safe to include both ga.js and analytics.js snippets on the same page.
+--}}
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
