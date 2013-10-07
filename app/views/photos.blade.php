@@ -9,7 +9,7 @@
 <p><a href="http://jiko.us/Wx5y3G" target="_blank">http://instagram.com/joejiko</a></p>
 <p>
   <a href="http://jiko.us/Wx5y3G" target="_blank">
-    <img src="/assets/img/profiles/instagram.jpg" alt="@joejiko on Instagram.com">
+    <img src="{{ cdn_img() }}shared/profiles/instagram.jpg" alt="@joejiko on Instagram.com">
   </a>
 </p>
 @stop
