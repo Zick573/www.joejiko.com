@@ -33,7 +33,7 @@ class ContactController extends DefaultController {
 
   public function getIndex()
   {
-    if($this->user->role < 2):
+    if(!Auth::guest()):
       return View::make('contact');
     endif;
 
