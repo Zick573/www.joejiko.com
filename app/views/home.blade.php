@@ -10,7 +10,7 @@
   <h1>"<em>Cute is a word for things that can't kill you</em>"</h1>
   <h2>I don't make websites.</h2>
   <div class="base-content">
-    <p class="base-p">I <strong>design &amp; code</strong> modern, interactive web applications that will enable you to&mdash;</p>
+    <p class="base-p">I <strong>design &amp; code</strong> modern, interactive web applications that will enable you to</p>
   </div>
   <ul class="mission-list list-diamonds">
     <li class="inline-col expect-4 accomplish-goals"><span class="mission-label">accomplish your goals</span></li><!--
