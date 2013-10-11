@@ -76,7 +76,7 @@ if ( ! function_exists('js_path'))
    * @param  string $path
    * @return string
    */
-  function js_path($path = '/assets/js/')
+  function js_path($path = '/js/')
   {
       return $path;
   }
