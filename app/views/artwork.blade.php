@@ -46,5 +46,5 @@
   Load more..
 @stop
 @section('scripts.footer')
-<script src="/assets/js/app/artwork/viewer.js" async="true"></script>
+<script src="/js/app/artwork/viewer.js" async="true"></script>
 @stop

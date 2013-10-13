@@ -1,7 +1,7 @@
 requirejs.config({
-  baseUrl: "/assets/js/lib",
+  baseUrl: "/js/lib",
   paths: {
-    "questions": "/assets/js/app/questions",
+    "questions": "/js/app/questions",
     "jquery": [
       "https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min",
       // load if CDN fails

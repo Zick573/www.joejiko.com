@@ -1,5 +1,10 @@
 $cdn: "https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28";
 $cdn_img: "https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/shared";
+$break-small: 320px;
+$break-medium-small: 800px;
+$break-medium: 1000px;
+$break-large: 1200px;
+$break-xlarge: 1400px;
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
 @import "global/partials/fonts";
@@ -8,7 +13,8 @@ $cdn_img: "https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/shared"
 
 @import "global/base";
 @import "global/grid";
-@import "global/header";
+// @import "global/header";
+@import "master/header";
 @import "global/search";
 @import "global/user";
 @import "global/main";
@@ -24,27 +30,6 @@ $cdn_img: "https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/shared"
 @import "site/thoughts";
 
 @import "experiments/zoom";
-body {
-    background: #f2f2f2; /* 95% white */
-    color: #111;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 100%;
-    margin: 0;
-    min-width: 1020px;
-    overflow: hidden;
-}
-a {
-    color: #FFF;
-    text-decoration: none;
-}
-i { font-style: normal; }
-
-h2 {
-    color: purple;
-    text-shadow: 0 1px 0 #f2f2f2;
-}
-textarea { resize: none; }
-ul { margin: 0; padding: 0; list-style-type: circle; }
 
 /* lists */
 .list-diamonds span:before {
@@ -66,31 +51,6 @@ ul { margin: 0; padding: 0; list-style-type: circle; }
     top: -60px;
     left: -91px;
 }
-.diamondMask {
-    background: #111111;
-    display: block;
-    height: 73px;
-    left: -50%;
-    position: absolute;
-    top: -16px;
-    transition: all 1s;
-    width: 200%;
-    z-index: 2;
-}
-.diamond {
-    background: rgba(50, 0, 75, 0.9);
-    display: block;
-    height: 130%;
-    left: -20px;
-    position: absolute;
-    top: -20px;
-    transform: rotate(45deg);
-    transition: all 1s;
-    -webkit-transform: rotate(45deg);
-    width: 130%;
-    z-index: 1;
-}
-
 .loading {position: relative; width: 100%; min-width: 48px; min-height: 48px; background: url(#{$cdn_img}/global/load/239_48.gif) no-repeat center top; border-radius: 50%; padding: 48px 0 0;}
 .loading-message { text-align: center; }
 // .modal--active {

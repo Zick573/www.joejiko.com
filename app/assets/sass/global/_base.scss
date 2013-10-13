@@ -1,3 +1,26 @@
 // used everywhere
 * { box-sizing: border-box; -moz-box-sizing: border-box; }
+body {
+    background: #f2f2f2; /* 95% white */
+    color: #111;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    margin: 0;
+    min-width: 1020px;
+    overflow: hidden;
+}
+a {
+    color: #FFF;
+    text-decoration: none;
+}
+i { font-style: normal; }
+
+h2 {
+    color: purple;
+    text-shadow: 0 1px 0 #f2f2f2;
+    // border-top: 1px solid;
+    padding-top: 1rem;
+}
+textarea { resize: none; }
+ul { margin: 0; padding: 0; list-style-type: circle; }
 .base-article, .base-content { max-width: 45rem; margin: 0 auto; text-align: left; }
