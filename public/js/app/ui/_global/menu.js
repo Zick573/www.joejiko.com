@@ -1,6 +1,7 @@
 define(["jquery"], function($) {
   var isVisible = false,
       _appui = {
+        app: $('.app'),
         header: $('.site-header'), //
         menu: $('.site-nav-wrap'), //
         logo: $('.site-logo'), //
@@ -13,9 +14,7 @@ define(["jquery"], function($) {
     this.isVisible = showOrHide;
   }
   function show() {
-    _appui.menu.addClass('show');
-    _appui.logo.addClass('active');
-    _appui.main.addClass('dim');
+    _appui.app.addClass('app-menu--active');
     setVisibility(true);
   }
 
@@ -29,9 +28,7 @@ define(["jquery"], function($) {
   }
 
   function hide() {
-    _appui.menu.removeClass('show');
-    _appui.logo.removeClass('active');
-    _appui.main.removeClass('dim');
+    _appui.app.removeClass('app-menu--active');
     setVisibility(false);
   }
 

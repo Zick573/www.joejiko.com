@@ -22,6 +22,8 @@ Route::group(array('prefix' => 'admin', 'before' => 'auth.admin'), function()
   // Route::controller('', 'AdminController');
   // Route::get('content', array('as' => 'admin.content', 'uses' => 'Admin\ContentController@getIndex'));
   # Deploy
+  Route::get('/', 'HomeController@getAdmin');
+  Route::controller('artwork', 'Admin\ArtworkController');
   Route::controller('deploy', 'Admin\DeployController');
 
   # Content management
@@ -39,19 +41,20 @@ Route::group(array('prefix' => 'api/v1', 'before' => 'auth.basic'), function()
 /** **/
 Route::get('home', function(){ return Redirect::to('/'); });
 Route::controller('api', 'ApiController');
-Route::get('artwork', array('as' => 'artwork', 'uses' => 'ArtController@getIndex'));
+Route::controller('oauth', 'OAuthController');
 Route::controller('books', 'BookController');
 Route::controller('contact', 'ContactController');
-Route::get('gaming', array('as' => 'gaming', 'uses' => 'HomeController@getGaming'));
 Route::controller('photos', 'PhotoController');
+Route::controller('questions', 'QuestionController');
+Route::get('question/{id}', array('as' => 'question', 'uses' => 'QuestionController@getOne'));
+Route::get('artwork', array('as' => 'artwork', 'uses' => 'HomeController@getArtwork'));
+Route::get('gaming', array('as' => 'gaming', 'uses' => 'HomeController@getGaming'));
 Route::get('about/me', array('as' => 'about', 'uses' => 'HomeController@getAbout'));
 Route::get('about/resume', array('as' => 'resume', 'uses' => 'HomeController@getResume'));
 Route::get('labs', array('as' => 'pages.labs', 'uses' => 'HomeController@getLabs'));
 Route::get('more', array('as' => 'pages.more', 'uses' => 'HomeController@getMore'));
-Route::get('music', array('as' => 'music', 'uses' => 'MusicController@getIndex'));
-Route::controller('questions', 'QuestionController');
-Route::get('question/{id}', array('as' => 'question', 'uses' => 'QuestionController@getOne'));
 Route::get('subscribe', array('as' => 'pages.subscribe', 'uses' => 'HomeController@getSubscribe'));
+Route::get('music', array('as' => 'music', 'uses' => 'MusicController@getIndex'));
 Route::get('subscribe', function() {
   View::make('forms.subscribe');
 });

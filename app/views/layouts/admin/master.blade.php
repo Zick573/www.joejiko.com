@@ -26,6 +26,7 @@
       @yield('content')
     </div>
   </div>
-  <footer class="admin-footer">foot</footer>
+  <footer class="admin-footer">@yield('footer')</footer>
+  @yield('page.scripts')
 </body>
 </html>

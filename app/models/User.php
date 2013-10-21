@@ -23,7 +23,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 
   public function info()
   {
-    return $this->hasMany('UserInfo');
+    return $this->hasOne('UserInfo');
   }
 
   # Roles

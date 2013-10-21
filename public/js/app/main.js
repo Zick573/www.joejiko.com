@@ -4,6 +4,7 @@ define(["require","jquery"], function(require, $) {
     resizeTimer: null
   }
   var _appui = {
+    app: $('.app'),
     main: $('.main'),
     sidebar: $('.site-sidebar')
   };
@@ -13,9 +14,10 @@ define(["require","jquery"], function(require, $) {
   }
 
   function ready() {
+    // alert('app is ready!');
     $.event.trigger({type: "app.ui.ready"});
-    var $appMenu = $('.app-menu--loading');
-    $appMenu.removeClass('app-menu--loading');
+    var $app = $('.app');
+    $app.removeClass('app--loading');
   }
 
   function resizeUi(){

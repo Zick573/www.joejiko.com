@@ -29,7 +29,7 @@ Leave your console open maybe?
   {{ dev_style_min() }}
 </head
 ><body>
-<div class="app">
+<div class="app app--loading">
   <header class="site-header">
    @include('layouts.master.header')
   </header>

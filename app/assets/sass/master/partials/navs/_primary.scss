@@ -1,3 +1,11 @@
+.app--loading {
+    .site-logo {
+        background: url(#{$cdn_img}/loading/350_105.gif) transparent no-repeat center center;
+        #Logo {
+            visibility: hidden;
+        }
+    }
+}
 .app-menu {
     display: inline-block;
     // display: none;
@@ -9,20 +17,12 @@
     // v.2
     margin-top: 10px;
 }
-.app-menu--loading {
-    .site-logo {
-        background: url(#{$cdn_img}/loading/350_105.gif) transparent no-repeat center center;
-        #Logo {
-            visibility: hidden;
-        }
-    }
-}
 .site-logo-bundle {
     display: inline-block;
     position: relative;
     width: 125px;
     height: 125px;
-    z-index: 15;
+    z-index: 14;
 }
 .site-logo {
     background: none #111;
@@ -38,7 +38,7 @@
     z-index: 11;
 }
 .app-menu:hover .diamond { background-color: #000; }
-.site-logo:hover, .site-logo.active {
+.site-logo:hover, .menu--active .site-logo {
   background: #000;
   // background-color: #290e37;
   box-shadow: 0 -5px 0 #32004b inset;
@@ -95,11 +95,6 @@
     }
 }
 
-.site-nav-wrap.show {
-    padding: 120px 0 280px;
-    opacity: 1;
-    overflow: visible;
-}
 .site-nav-labs {
     position: absolute;
     left: 5%;
@@ -270,14 +265,16 @@
   // z-index: 111;
   color: #EEEEEE;
   cursor: pointer;
+  display: inline-block;
   height: 60px;
-  left: 130px;
+  // left: 130px;
   line-height: 4;
-  position: absolute;
+  // position: absolute;
   text-align: left;
-  top: -10px;
-  width: 100px;
-  z-index: 1;
+  // top: -10px;
+  // width: 100px;
+  vertical-align: top;
+  z-index: 20;
   &:hover {
       text-shadow: 0 0 3px #F2F2F2;
   }
@@ -322,6 +319,7 @@
     height: 60px;
     background: #660099;
     padding-right: 1rem;
+    z-index: 100;
   }
   .batch {
     background: none repeat scroll 0 0 #660099;
@@ -348,5 +346,19 @@
     display: inline-block;
     height: 60px;
     position: relative;
-    width: 0;
+    z-index: 100;
+}
+
+.app-menu--active {
+  .menu-trigger > i {
+    opacity: 0;
+  }
+  .site-nav-wrap {
+    padding: 120px 0 280px;
+    opacity: 1;
+    overflow: visible;
+  }
+  .main {
+    opacity: .2;
+  }
 }

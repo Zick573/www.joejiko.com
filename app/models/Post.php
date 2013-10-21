@@ -3,8 +3,16 @@ class Post extends Eloquent {
   // material
   protected $table = 'posts';
 
-  public function author_info() {
-    return $this->hasOne('User', 'post_author');
+  public function author() {
+    return $this->hasOne('User', 'user_id');
+  }
+
+  public function category() {
+    return $this->hasOne('Category', 'category');
+  }
+
+  public function terms() {
+    return $this->hasMany('Terms');
   }
 
   public function getContentAttribute($value) {
@@ -13,8 +21,18 @@ class Post extends Eloquent {
     return $value;
   }
 
-  public function newest($query)
+  public function scopeRecent($query)
   {
-    return $query->where('*')->orderBy('created_at', 'desc');
+    return $query->orderBy('created_at', 'desc');
+  }
+
+  public function scopeThoughts($query)
+  {
+    return $query->where('type', '=', 'thought');
+  }
+
+  public function scopeArtwork($query)
+  {
+    return $query->where('type', '=', 'artwork');
   }
 }

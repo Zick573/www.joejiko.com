@@ -33,14 +33,9 @@ App::after(function($request, $response)
 */
 Route::filter('auth.admin', function()
 {
-	if(Auth::check()) {
-		$user = Auth::user();
-		if((int)$user->role <= 2) {
-			return;
-		}
-	}
-	return Redirect::to('/')
-	      ->with('flash_notice', 'Not authorized.');
+	if(Auth::guest() || !Auth::user()->isAdmin()):
+    return Redirect::to('/')->with('flash_notice', 'Not authorized.');
+  endif;
 });
 
 Route::filter('auth', function()
@@ -50,13 +45,6 @@ Route::filter('auth', function()
 		return Redirect::to('user/connect');
 	}
 });
-
-
-Route::filter('auth.basic', function()
-{
-	return Auth::basic();
-});
-
 /*
 |--------------------------------------------------------------------------
 | Guest Filter

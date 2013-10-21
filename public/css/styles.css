@@ -284,6 +284,11 @@ ul {
     vertical-align: top;
     width: 48px; }
 
+.app--loading .site-logo {
+  background: url(https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/shared/loading/350_105.gif) transparent no-repeat center center; }
+  .app--loading .site-logo #Logo {
+    visibility: hidden; }
+
 .app-menu {
   display: inline-block;
   position: relative;
@@ -293,17 +298,12 @@ ul {
   z-index: 16;
   margin-top: 10px; }
 
-.app-menu--loading .site-logo {
-  background: url(https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/shared/loading/350_105.gif) transparent no-repeat center center; }
-  .app-menu--loading .site-logo #Logo {
-    visibility: hidden; }
-
 .site-logo-bundle {
   display: inline-block;
   position: relative;
   width: 125px;
   height: 125px;
-  z-index: 15; }
+  z-index: 14; }
 
 .site-logo {
   background: none #111;
@@ -321,7 +321,7 @@ ul {
 .app-menu:hover .diamond {
   background-color: #000; }
 
-.site-logo:hover, .site-logo.active {
+.site-logo:hover, .menu--active .site-logo {
   background: #000;
   box-shadow: 0 -5px 0 #32004b inset;
   padding: 5%; }
@@ -369,11 +369,6 @@ ul {
     margin: 0 auto;
     padding: 0 1rem;
     z-index: 1; }
-
-.site-nav-wrap.show {
-  padding: 120px 0 280px;
-  opacity: 1;
-  overflow: visible; }
 
 .site-nav-labs {
   position: absolute;
@@ -510,14 +505,12 @@ ul {
 .menu-trigger {
   color: #EEEEEE;
   cursor: pointer;
+  display: inline-block;
   height: 60px;
-  left: 130px;
   line-height: 4;
-  position: absolute;
   text-align: left;
-  top: -10px;
-  width: 100px;
-  z-index: 1; }
+  vertical-align: top;
+  z-index: 20; }
   .menu-trigger:hover {
     text-shadow: 0 0 3px #F2F2F2; }
 
@@ -558,7 +551,8 @@ ul {
   left: 2.5rem;
   height: 60px;
   background: #660099;
-  padding-right: 1rem; }
+  padding-right: 1rem;
+  z-index: 100; }
 .menu-trigger .batch {
   background: none repeat scroll 0 0 #660099;
   color: #FFFFFF;
@@ -582,7 +576,16 @@ ul {
   display: inline-block;
   height: 60px;
   position: relative;
-  width: 0; }
+  z-index: 100; }
+
+.app-menu--active .menu-trigger > i {
+  opacity: 0; }
+.app-menu--active .site-nav-wrap {
+  padding: 120px 0 280px;
+  opacity: 1;
+  overflow: visible; }
+.app-menu--active .main {
+  opacity: .2; }
 
 .site-search-module {
   position: absolute;
@@ -806,9 +809,6 @@ ul {
     .main {
       padding-left: 70px;
       width: 100%; } }
-
-.main.dim {
-  opacity: .2; }
 
 .main-header {
   background: rgba(239, 239, 239, 0.95);
