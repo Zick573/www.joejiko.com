@@ -67,9 +67,15 @@ ul { list-style: none; margin: 0; padding: 0;}
 
 {{ Form::close() }}
 </header>
-  @if(count($artwork))
-    <h2>Collection</h2>
-    {{ $artwork->collection()->first()->terms() }}
+  @if(count($artworks))
+    <h2>Collections</h2>
+    @foreach($artworks as $artwork)
+    {{ $artwork->collection() }}
+    @endforeach
+
+    @foreach($artworks as $artwork)
+    {{ $artwork->tags() }}
+    @endforeach
   @else
     <p><em>no artwork added..</em></p>
   @endif

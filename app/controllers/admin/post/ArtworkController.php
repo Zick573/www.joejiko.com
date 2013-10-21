@@ -1,5 +1,5 @@
 <?php namespace Admin\Post;
-use Auth, Eloquent, Input, View, Post, Terms;
+use Auth, Eloquent, Input, View, Post, Term;
 class ArtworkController extends \DefaultController
 {
   protected $files;
@@ -77,10 +77,10 @@ class ArtworkController extends \DefaultController
   {
     // all files and folders in /artwork
     $drive_items = $this->files->listFiles(array('q' => "'0B_9a_WMIXbTteWxWRmloeWxac0k' in parents"))->getItems();
-    $artwork = Post::find(36);
+    $artworks = Post::all();
     return View::make('admin.pages.artwork.index')->with(array(
       'drive_items' => $drive_items,
-      'artwork' => $artwork
+      'artworks' => $artworks
       // 'artwork' => Post::artwork()->get()
     ));
   }

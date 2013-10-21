@@ -7,9 +7,4 @@ class Term extends Eloquent
   public $timestamps = false;
   // public $name;
   // public $slug;
-
-  public function taxonomy()
-  {
-    return $this->belongsTo('TermTaxonomy');
-  }
 }

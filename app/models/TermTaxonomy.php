@@ -6,8 +6,13 @@ class TermTaxonomy extends Eloquent
   protected $softDelete = false;
   public $timestamps = false;
 
+  public function name()
+  {
+    return $this->term->name;
+  }
+
   public function term()
   {
-    return $this->hasMany('Term');
+    return $this->hasOne('Term', 'term_id');
   }
 }
