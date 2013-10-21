@@ -1,5 +1,5 @@
 <?php
-class Term_Relationship extends Eloquent
+class TermRelationship extends Eloquent
 {
   protected $primaryKey = 'object_id';
   protected $table = 'term_relationships';

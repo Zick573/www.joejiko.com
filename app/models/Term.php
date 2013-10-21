@@ -1,5 +1,5 @@
 <?php
-class Terms extends Eloquent
+class Term extends Eloquent
 {
   protected $primaryKey = 'term_id';
   protected $table = 'terms';
@@ -10,7 +10,6 @@ class Terms extends Eloquent
 
   public function taxonomy()
   {
-    // taxonomy, description, parent, count
-    return $this->belongsToMany('Term_Taxonomy', 'term_relationships', 'term_id', 'term_taxonomy_id');
+    return $this->belongsTo('TermTaxonomy');
   }
 }

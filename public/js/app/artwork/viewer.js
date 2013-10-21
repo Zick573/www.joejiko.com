@@ -58,7 +58,7 @@ require(["require/domReady!"], function() {
         className: "photo-view",
         callback: openPhotoModal,
         data: {
-          img_src: $(this).prop('src')
+          img_src: $(this).attr('data-img-full')
         }
       });
     });

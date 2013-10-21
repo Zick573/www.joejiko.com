@@ -6,11 +6,30 @@
 <article class="artwork">
   <header>
   <h1>Artwork</h1>
+  @if(Auth::user()->isAdmin())
+  <a href="/admin/artwork">add artwork</a>
+  @endif
   </header>
   @if(count($artworks))
-  @foreach($artworks as $artwork)
-  <img src="{{ $artwork->guid }}" alt="{{ $artwork->title }}">
-  @endforeach
+  <div class="collections">
+    @foreach($artworks as $i => $artwork)
+    @if (0==$i)
+    <div class="art">
+    @else
+    --><div class="art">
+    @endif
+      @if($artwork->excerpt)
+      <img src="{{ $artwork->excerpt }}" alt="{{ $artwork->title }}" data-img-full="{{ $artwork->guid }}">
+      @else
+      <img src="{{ $artwork->guid }}" data-img-full="{{ $artwork->guid }}" alt="{{ $artwork->title }}">
+      @endif
+    @if ( count($artworks) !== ($i+1))
+    </div><!--
+    @else
+    </div>
+    @endif
+    @endforeach
+  </div>
   @else
     Nothing here :(
   @endif

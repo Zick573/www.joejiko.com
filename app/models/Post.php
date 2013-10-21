@@ -11,8 +11,16 @@ class Post extends Eloquent {
     return $this->hasOne('Category', 'category');
   }
 
-  public function terms() {
-    return $this->hasMany('Terms');
+  public function taxonomy() {
+    return $this->belongsToMany('TermTaxonomy', 'term_relationships', 'object_id', 'term_taxonomy_id');
+  }
+
+  public function collection() {
+    return $this->taxonomy()->where('taxonomy', '=', 'collection');
+  }
+
+  public function tag() {
+    return $this->taxonomy()->where('taxonomy', '=', 'tag');
   }
 
   public function getContentAttribute($value) {

@@ -1161,18 +1161,23 @@ ul {
 
 .artwork {
   padding: 0 5%; }
-  .artwork > img {
+  .artwork .art {
     cursor: pointer;
     display: inline-block;
     border: 3px solid #fff;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
     margin-right: 3.33%;
     margin-bottom: 10px;
-    width: 30%;
+    width: auto;
+    min-width: 10%;
+    max-width: 30%;
     vertical-align: middle; }
-    .artwork > img:hover {
+    .artwork .art:hover {
       box-shadow: 0 0 2px rgba(50, 0, 75, 0.9); }
-  .artwork > img.full {
+  .artwork .art img {
+    display: block;
+    width: 100%; }
+  .artwork .full {
     width: auto;
     max-width: 60%; }
 
