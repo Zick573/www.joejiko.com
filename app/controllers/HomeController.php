@@ -28,10 +28,22 @@ class HomeController extends DefaultController {
 		return View::make('errors.not-found')->with(array('request'=>$page));
 	}
 
+  public function getAdmin()
+  {
+    return View::make('admin.index');
+  }
+
 	public function getAbout()
 	{
 		return View::make('pages.about');
 	}
+
+  public function getArtwork()
+  {
+    return View::make('artwork')->with(array(
+      'artworks' => Post::artwork()->get()
+    ));
+  }
 
 	public function getGaming()
 	{

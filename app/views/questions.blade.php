@@ -45,5 +45,5 @@
 @stop
 
 @section('scripts.footer')
-  <script src="/assets/js/app/questions/app.js" async="true"></script>
+  <script src="/js/app/questions/app.js" async="true"></script>
 @stop

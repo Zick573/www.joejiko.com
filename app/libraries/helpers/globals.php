@@ -30,7 +30,7 @@ if ( ! function_exists('dev_style_min'))
   function dev_style_min($path = 'styles.min.css')
   {
       $publicDirName = "";
-      $cssDirName = "assets/css";
+      $cssDirName = "css";
 
       $path = "$publicDirName/$cssDirName/$path";
       return "<link rel='stylesheet' href='{$path}'>";
@@ -76,7 +76,7 @@ if ( ! function_exists('js_path'))
    * @param  string $path
    * @return string
    */
-  function js_path($path = '/assets/js/')
+  function js_path($path = '/js/')
   {
       return $path;
   }

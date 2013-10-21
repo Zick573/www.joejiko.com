@@ -11,7 +11,7 @@ return array(
   | directory. We've set a sensible default, but feel free to update it.
   |
   */
-  'js_path' => 'public/assets/js/app',
+  'js_path' => 'public/js/app',
 
   /*
   |--------------------------------------------------------------------------
@@ -22,7 +22,7 @@ return array(
   | directory. We've set a sensible default, but feel free to update it.
   |
   */
-  'css_path' => 'public/assets/css',
+  'css_path' => 'public/css',
 
   /*
   |--------------------------------------------------------------------------
@@ -34,7 +34,7 @@ return array(
   | leave this as it is.
   |
   */
-  'compile_path' => 'public/assets',
+  'compile_path' => 'public',
 
   /*
   |--------------------------------------------------------------------------

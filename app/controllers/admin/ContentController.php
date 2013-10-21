@@ -1,4 +1,4 @@
-<?php Namespace Admin;
+<?php namespace Admin;
 use View, Post;
 class ContentController extends \BaseController {
 

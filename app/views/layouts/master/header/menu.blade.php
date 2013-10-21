@@ -84,4 +84,4 @@
       </a>
     </div>
     </nav>
-    <span class="helpful-hint">touch below here or move your pointer down to close the menu</span>
+    <span class="helpful-hint">touch below here or move your pointer down to <em>close the menu</em></span>

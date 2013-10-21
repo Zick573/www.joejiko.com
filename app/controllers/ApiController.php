@@ -1,6 +1,5 @@
 <?php
 class ApiController extends BaseController {
-
   public function getConnect()
   {
     return json_encode(

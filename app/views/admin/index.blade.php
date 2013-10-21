@@ -4,4 +4,7 @@
 @stop
 @section('content')
   <h1>You can see this because you're an Admin!</h1>
+  <ul>
+    <li><a href="/admin/artwork">Artwork</a>
+  </ul>
 @stop

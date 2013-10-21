@@ -2,11 +2,11 @@
 @if (!Auth::guest())
     <div class="user-status">
       @if (isset(Auth::user()->info->photo_url))
-      <img class="user-status-photo" width="48" height="48" src="{{ $user->info->photo_url }}">
+      <img class="user-status-photo" width="48" height="48" src="{{ Auth::user()->info->photo_url }}">
       @else
       <i class="batch" data-icon="&#xF046"></i>
       @endif
-      <a class="user-status-link" href="/user"><strong>{{ $user->name }}</strong></a>
+      <a class="user-status-link" href="/user"><strong>{{ Auth::user()->name }}</strong></a>
     </div>
     <div class="user-controls">
       <div class="user-module-triangle">&nbsp;</div>

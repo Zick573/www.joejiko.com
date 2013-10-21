@@ -12,11 +12,13 @@
 			- [Decimal Degrees](#decimal-degrees)
 			- [Degrees/Minutes/Seconds (DMS)](#degreesminutesseconds-dms)
 			- [GeoJSON](#geojson)
+		- [Formatted output of polylines](#formatted-output-of-polylines)
+			- [GeoJSON](#geojson-1)
 	- [Credits](#credits)
 
 # phpgeo - A Simple Geo Library for PHP
 
-[![Build Status](https://travis-ci.org/mjaschen/phpgeo.png?branch=master)](https://travis-ci.org/mjaschen/phpgeo)
+[![Build Status](https://travis-ci.org/mjaschen/phpgeo.png?branch=master)](https://travis-ci.org/mjaschen/phpgeo) [![Latest Stable Version](https://poser.pugx.org/mjaschen/phpgeo/v/stable.png)](https://packagist.org/packages/mjaschen/phpgeo)
 
 phpgeo provides abstractions to geographical coordinates (including support for different ellipsoids) and allows you to calculate geographical distances between coordinates with high precision.
 
@@ -27,7 +29,7 @@ Using Composer, just add the following configuration to your `composer.json`:
 ```json
 {
     "require": {
-        "mjaschen/phpgeo": "*"
+        "mjaschen/phpgeo": "~0.2.1"
     }
 }
 ```
@@ -177,11 +179,34 @@ use Location\Formatter\Coordinate\GeoJSON;
 
 $coordinate = new Coordinate(18.911306, -155.678268); // South Point, HI, USA
 
-echo $coordinate->format(new GeoJSON()); // { "type" : "point" , "coordinates" : [ 18.911306, -155.678268 ] }
+echo $coordinate->format(new GeoJSON()); // { "type" : "point" , "coordinates" : [ -155.678268, 18.911306 ] }
+```
+
+### Formatted output of polylines
+
+You can format a polyline in different styles.
+
+#### GeoJSON
+
+```php
+<?php
+
+use Location\Coordinate;
+use Location\Polyline;
+use Location\Formatter\Polyline\GeoJSON;
+
+$polyline = new Polyline;
+$polyline->addPoint(new Coordinate(52.5, 13.5));
+$polyline->addPoint(new Coordinate(62.5, 14.5));
+
+$formatter = new GeoJSON;
+
+echo $formatter->format($polyline); // { "type" : "LineString" , "coordinates" : [ [ 13.5, 52.5 ], [ 14.5, 62.5 ] ] }
 ```
 
 ## Credits
 
-* Marcus T. Jaschen <mjaschen@gmail.com>
+* Marcus T. Jaschen <mail@marcusjaschen.de>
 * [Chris Veness](http://www.movable-type.co.uk/scripts/latlong-vincenty.html) - JavaScript implementation of the [Vincenty formula](http://en.wikipedia.org/wiki/Vincenty%27s_formulae) for distance calculation
 * Ersts,P.J., Horning, N., and M. Polin[Internet] Perpendicular Distance Calculator(version 1.2.2) [Documentation](http://biodiversityinformatics.amnh.org/open_source/pdc/documentation.php). American Museum of Natural History, Center for Biodiversity and Conservation. Available from http://biodiversityinformatics.amnh.org/open_source/pdc. Accessed on 2013-07-07.
+* [Richard Barnes](https://github.com/r-barnes) Polyline GeoJSON Formatter

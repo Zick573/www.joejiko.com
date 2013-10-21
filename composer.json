@@ -17,7 +17,8 @@
         "codeguy/upload": "*",
         "mjaschen/phpgeo": "*",
         "mobiledetect/mobiledetectlib": "*",
-        "evert/google-api-php-client": "dev-master"
+        "evert/google-api-php-client": "dev-master",
+        "soramugi/google-drive-client-php": "dev-master"
     },
     "require-dev": {
         "way/guard-laravel": "dev-master"

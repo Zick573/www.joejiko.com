@@ -2,27 +2,28 @@
 
 class ThoughtController extends DefaultController {
 
-  protected $post;
-  protected $user;
-
-  public function __construct(Post $post, User $user)
+  public function __construct()
   {
-    parent::__construct();
-
-    $this->post = $post;
-    $this->user = $user;
+    $this->beforeFilter('auth.admin', array('only' => array(
+      'getCreate',
+      'postCreate'
+    )));
   }
-
   /**
    * Display a listing of the resource.
    *
    * @return Response
    */
+  // public function content() {
+  //   return preg_replace('@(https?://([-\w\.]+[-\w])+(:\d+)?(/([\w/_\.#-]*(\?\S+)?[^\.\s])?)?)@', '<a href="$1" target="_blank">$1</a>', $this->content)
+  // }
   public function getIndex()
   {
     // where type=thoughts
-    $posts = $this->post->orderBy('created_at', 'desc')->get();
-    return View::make('posts.thoughts.index')->with(array('posts' => $posts));
+    // $posts = $this->post->orderBy('created_at', 'desc')->get();
+    return View::make('posts.thoughts.index')->with(array(
+      'posts' => Post::thoughts()->recent()->get()
+    ));
   }
 
   /**
@@ -32,30 +33,35 @@ class ThoughtController extends DefaultController {
    */
   public function getCreate()
   {
-    if(!$this->user):
-      return Redirect::to('thoughts');
-    endif;
-
     return View::make('posts.thoughts.create');
   }
 
   public function postCreate()
   {
-    // Auth
-    if(!Input::has('post_content') || !$this->user):
+    if(!Input::has('post_content')):
       return Redirect::to('thoughts');
     endif;
 
     $content = Input::get('post_content');
+    Eloquent::unguard();
+    $post = new Post(array(
+      'user_id' => Auth::user()->id,
+      'content' => $content,
+      //'title' => truncate($content, 70),
+      //'category' => $category_id,
+      //'excerpt' => truncate($content, 160),
+      'status' => 'publish',
+      //'comment_status' => 'open',
+      // 'name' => $slug,
+      // 'guid' => $raw_permalink
+      'type' => 'thought'
+    ));
+    $post->save();
+    if(!$post):
+      die('failed..');
+    endif;
 
-    $post = new $this->post;
-    $post->user_id = $this->user->id;
-    $post->user_name = $this->user->name;
-    $post->content = $content;
-    $post->type = "thought";
-    $result = $post->save();
-
-    return Redirect::to('thoughts')->with(array('result' => $result));
+    return Redirect::to('thoughts')->with(array('result' => $post));
   }
 
   public function missingMethod($parameters)
