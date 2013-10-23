@@ -23,7 +23,9 @@ Route::group(array('prefix' => 'admin', 'before' => 'auth.admin'), function()
   // Route::get('content', array('as' => 'admin.content', 'uses' => 'Admin\ContentController@getIndex'));
   # Deploy
   Route::get('/', 'HomeController@getAdmin');
-  Route::controller('artwork', 'Admin\ArtworkController');
+  Route::controller('artwork', 'Admin\Post\ArtworkController');
+  Route::controller('post', 'Admin\Post\PostController');
+  Route::controller('terms', 'Admin\Post\TermController');
   Route::controller('deploy', 'Admin\DeployController');
 
   # Content management

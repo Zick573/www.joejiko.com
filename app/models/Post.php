@@ -11,8 +11,25 @@ class Post extends Eloquent {
     return $this->hasOne('Category', 'category');
   }
 
-  public function terms() {
-    return $this->hasMany('Terms');
+  public function taxonomy() {
+    return $this->belongsToMany('TermTaxonomy', 'term_relationships', 'object_id', 'term_taxonomy_id');
+  }
+
+  public function term() {
+    return $this->taxonomy()->hasOne('Term');
+  }
+
+  public function collection() {
+    if($collection = $this->taxonomy()->where('taxonomy', '=', 'collection')->first()):
+      return $collection->name();
+    endif;
+
+    return NULL;
+  }
+
+
+  public function tags() {
+    return $this->taxonomy()->where('taxonomy', '=', 'tag')->get();
   }
 
   public function getContentAttribute($value) {
@@ -34,5 +51,10 @@ class Post extends Eloquent {
   public function scopeArtwork($query)
   {
     return $query->where('type', '=', 'artwork');
+  }
+
+  public function scopeOfType($query, $type)
+  {
+    return $query->where('type', '=', $type);
   }
 }

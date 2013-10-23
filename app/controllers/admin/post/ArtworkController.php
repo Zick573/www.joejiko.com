@@ -1,5 +1,5 @@
-<?php namespace Admin;
-use Input, View, Post;
+<?php namespace Admin\Post;
+use Auth, Eloquent, Input, View, Post, Term;
 class ArtworkController extends \DefaultController
 {
   protected $files;
@@ -37,17 +37,18 @@ class ArtworkController extends \DefaultController
     $artwork_uri_base = "https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/artwork/";
     $artwork = new Post(array(
       'user_id' => Auth::user()->id,
-      'user_name' => Auth::user()->name,
       'type' => 'artwork',
       'guid' => $artwork_uri_base.Input::get('title'),
-      'mime_type' => Input::get('mime_type'),
+      'mime_type' => Input::get('mimeType'),
       'title' => Input::get('title'),
-      'content' => Input::get('description')
+      'content' => Input::get('description'),
+      'excerpt' => Input::get('thumbnailLink')
     ));
+    $artwork->save();
 
     foreach(explode(',', Input::get('tags')) as $tag):
       $tag = trim($tag);
-      if(!$term = Terms::tag()->where('name', '=', trim(tag))):
+      if(!$term = Terms::tag()->where('name', '=', trim($tag))):
         // create a new tag
         $term = new Term(array(
           'name' => $tag,
@@ -76,9 +77,11 @@ class ArtworkController extends \DefaultController
   {
     // all files and folders in /artwork
     $drive_items = $this->files->listFiles(array('q' => "'0B_9a_WMIXbTteWxWRmloeWxac0k' in parents"))->getItems();
+    $artworks = Post::all();
     return View::make('admin.pages.artwork.index')->with(array(
       'drive_items' => $drive_items,
-      'artwork' => Post::artwork()->get()
+      'artworks' => $artworks
+      // 'artwork' => Post::artwork()->get()
     ));
   }
 
