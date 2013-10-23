@@ -6,6 +6,7 @@ define(["require","jquery"], function(require, $) {
   var _appui = {
     app: $('.app'),
     main: $('.main'),
+    mainSidebar: $('.main-sidebar'),
     sidebar: $('.site-sidebar')
   };
 
@@ -26,6 +27,9 @@ define(["require","jquery"], function(require, $) {
     _appui.main.animate({
       height: viewportHeight-65
     }, 500, function(){
+      _appui.mainSidebar.animate({
+        height: viewportHeight-125
+      }, 500);
       _appui.sidebar.animate({
         height: viewportHeight-65
       }, 500);

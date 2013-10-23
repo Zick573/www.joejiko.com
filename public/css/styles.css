@@ -220,6 +220,8 @@ ul {
   max-width: 45rem;
   margin: 0 auto;
   text-align: left; }
+  .base-article h1, .base-content h1 {
+    margin-top: 0; }
 
 .inline-col {
   display: inline-block;
@@ -235,15 +237,16 @@ ul {
   background-color: rgba(0, 0, 0, 0.8);
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
   height: 60px;
+  padding-left: 24%;
   position: relative;
-  text-align: center;
   z-index: 100; }
 
 .site-nav-x {
   height: 60px;
-  left: 24px;
-  padding: 6px 0 6px 8px;
+  left: 0;
+  padding: 6px 0 6px 32px;
   position: absolute;
+  text-align: center;
   top: 0;
   width: auto;
   z-index: 110; }
@@ -294,6 +297,7 @@ ul {
   position: relative;
   width: 125px;
   height: 125px;
+  margin-left: 35%;
   overflow: visible;
   z-index: 16;
   margin-top: 10px; }
@@ -608,6 +612,7 @@ ul {
   height: 60px;
   left: -5rem;
   position: absolute;
+  text-align: center;
   top: 0;
   transition: all 1s;
   width: 3rem;
@@ -827,8 +832,10 @@ ul {
 
 .site-sidebar, .site-sidebar-holder, .main, .main-article, .main-sidebar {
   display: inline-block;
-  min-height: 100%;
   vertical-align: top; }
+
+.site-sidebar, .site-sidebar-holder, .main, .main-article {
+  min-height: 100%; }
 
 .main {
   width: 76%;
@@ -871,12 +878,18 @@ ul {
 
 .main-sidebar {
   position: fixed;
-  right: 0;
-  padding-right: 40px;
+  right: 27px;
   top: 120px;
-  max-width: 240px; }
+  width: 207px; }
   .main-sidebar:hover {
-    overflow-y: auto; }
+    overflow-y: auto;
+    padding-right: 27px;
+    right: 0;
+    width: 234px; }
+  .main-sidebar:after {
+    content: "";
+    display: block;
+    margin-bottom: 60px; }
   @media screen and (max-width: 1000px) {
     .main-sidebar {
       right: 5px; } }

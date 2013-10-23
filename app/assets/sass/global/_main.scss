@@ -3,8 +3,10 @@
 }
 .site-sidebar, .site-sidebar-holder, .main, .main-article, .main-sidebar {
     display: inline-block;
-    min-height: 100%;
     vertical-align: top;
+}
+.site-sidebar, .site-sidebar-holder, .main, .main-article {
+  min-height: 100%;
 }
 .main {
     width: 76%;
@@ -49,13 +51,21 @@
 }
 .main-sidebar {
     // width: 30%; where did i decide this?
+    //
     position: fixed;
-    right: 0;
-    padding-right: 40px;
+    right: 27px;
     top: 120px;
-    max-width: 240px;
+    width: 207px;
     &:hover {
       overflow-y: auto;
+      padding-right: 27px;
+      right: 0;
+      width: 234px;
+    }
+    &:after {
+      content: "";
+      display: block;
+      margin-bottom: 60px;
     }
     @media screen and (max-width: $break-medium) {
         right: 5px;

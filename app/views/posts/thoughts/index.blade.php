@@ -10,6 +10,7 @@ I think..
 @endif
 @stop
 @section('content')
+<article class="base-article">
   @if(isset($result))
    {{ var_dump($result) }}
   @endif
@@ -25,4 +26,5 @@ I think..
       @endif
     @endif
   @endforeach
+</article>
 @stop

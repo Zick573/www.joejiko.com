@@ -23,4 +23,11 @@ h2 {
 }
 textarea { resize: none; }
 ul { margin: 0; padding: 0; list-style-type: circle; }
-.base-article, .base-content { max-width: 45rem; margin: 0 auto; text-align: left; }
+.base-article, .base-content {
+  max-width: 45rem;
+  margin: 0 auto;
+  text-align: left;
+  h1 {
+    margin-top: 0;
+  }
+}

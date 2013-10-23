@@ -63,7 +63,7 @@
     <li><a href="/artwork">Artwork</a>
     <li><a href="/blog">Blog</a>
   </ul>
-  <p>that's it for now..</p>
+  <p>that's it for now..<br><br>that's it for now..<br><br>that's it for now..<br><br>that's it for now..<br><br>that's it for now..<br><br>that's it for now..<br><br>that's it for now..<br><br>that's it for now..<br><br>that's it for now..<br><br>that's it for now..<br><br>that's it for now..<br><br>that's it for now..<br><br>that's it for now..<br><br>that's it for now..<br><br>that's it for now..<br><br>that's it for now..<br><br>that's it for now..<br><br>that's it for now..<br><br>that's it for now..<br><br>that's it for now..<br><br></p>
 @stop
 @section('content.footer')
   xoxoxo
