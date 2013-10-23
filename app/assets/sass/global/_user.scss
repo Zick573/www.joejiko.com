@@ -6,7 +6,7 @@
     right: 17px; /* because scrollbar.. */
     text-align: right;
     top: 60px;
-    min-height: 125px;
+    min-height: 60px;
     width: 23%;
     z-index: 250;
     &:hover {
@@ -14,8 +14,14 @@
     }
 }
 .user-status {
-  padding: 20px;
-  text-align: center;
+  padding-top: 2px;
+  text-align: left;
+  .control-triggers {
+    margin: 0 0 0 auto;
+    padding: 5px 10px 0 5px;
+    position: relative;
+    width: 180px;
+  }
 }
 .user-status-link {
   color: rgba(50, 0, 75, .9);
@@ -26,25 +32,55 @@
     color: rgba(50, 0, 75, .6);
   }
 }
+.control-triggers {
+  .admin-nav-link,
+  .team-nav-link {
+    position: absolute;
+    text-align: right;
+    &:hover {
+      background: #fff;
+    }
+  }
+  .team-nav-link {
+      left: -58px;
+      top: 35px;
+      transform: rotate(-5deg);
+      width: 46px;
+  }
+  .admin-nav-link {
+    left: -65px;
+    top: 7px;
+    transform: rotate(5deg);
+    width: 55px;
+  }
+}
 .user-status-photo {
   display: inline-block;
-  margin-right: 8px;
+  margin-right: 10px;
   vertical-align: middle;
+  border-radius: 50%;
 }
 .user-controls {
+  box-shadow: 0 1px 1px rgba(0,0,0,.4);
   display: none;
   padding: 2px;
+  min-width: 300px;
   position: relative;
   background: #fff;
   transition: all 1s;
   visibility: hidden;
 }
 
-.user-module:hover .user-controls {
-  display: block;
-  visibility: visible;
-  box-shadow: 0 1px 1px rgba(0,0,0,.4);
-  // box-shadow: 0 2px 2px rgba(0,0,0,.8);
+.user-module:hover {
+  .control-triggers {
+    background: #fff;
+    border-bottom: 5px solid #fff;
+  }
+  .user-controls {
+    display: inline-block;
+    visibility: visible;
+    // box-shadow: 0 2px 2px rgba(0,0,0,.8);
+  }
 }
 
 .user-nav-link {
@@ -73,6 +109,11 @@
     margin: 1rem auto .5rem;
     padding: 0;
     width: 25%;
+    min-width: 7rem;
+    &:hover {
+      background: #f00;
+      color: #fff;
+    }
   }
 }
 .user-module-triangle {

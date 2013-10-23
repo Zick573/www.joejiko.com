@@ -6,7 +6,7 @@
 <article class="artwork">
   <header>
   <h1>Artwork</h1>
-  @if(Auth::user()->isAdmin())
+  @if(!Auth::guest() && Auth::user()->isAdmin())
   <a href="/admin/artwork">add artwork</a>
   @endif
   </header>
@@ -19,7 +19,7 @@
     --><div class="art">
     @endif
       @if($artwork->excerpt)
-      <img src="{{ $artwork->excerpt }}" alt="{{ $artwork->title }}" data-img-full="{{ $artwork->guid }}">
+      <img src="{{ $artwork->guid }}" alt="{{ $artwork->title }}" data-img-full="{{ $artwork->guid }}">
       @else
       <img src="{{ $artwork->guid }}" data-img-full="{{ $artwork->guid }}" alt="{{ $artwork->title }}">
       @endif
@@ -35,7 +35,7 @@
   @endif
 @stop
 @section('content.footer')
-  Load more..
+
 @stop
 @section('scripts.footer')
 <script src="/js/app/artwork/viewer.js" async="true"></script>
