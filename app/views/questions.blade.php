@@ -3,12 +3,26 @@
   Ask a stupid question, get a smart answer!
 @stop
 
+@section('content.header')
+  <a class="btn btn-green btn-ask" data-trigger="modal" data-modal-name="ask">Ask a question</a>
+@stop
+
+@section('content.sidebar')
+@stop
+
 @section('content')
-  <header class="ask-question">
-    <a class="btn-ask" data-trigger="modal" data-modal-name="ask">Ask a question</a>
+  <header class="limit-width--reading">
+    <h1 class="inline">Questions</h1>
+    {{ Form::open(array('class' => 'inline')) }}
+      {{ Form::text('q', '', array(
+        'placeholder' => 'start typing to search..',
+        'class' => 'inline'
+      )) }}
+      {{ Form::button('Search', array('type' => 'submit', 'hidden' => true)) }}
+    {{ Form::close() }}
   </header>
   @foreach($questions as $question)
-  <article itemscope itemtype="http://schema.org/Article" class="question" data-question-id="{{ $question->id }}">
+  <article itemscope itemtype="http://schema.org/Article" class="question base-article" data-question-id="{{ $question->id }}">
     <meta itemprop="articleSection" content="Questions">
     <header class="question-header">
       <h2 itemprop="headline" class="question-text">

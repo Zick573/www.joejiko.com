@@ -80,6 +80,10 @@
 .icon-50.icon-ig {
   background-image: url(https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/vendor/instagram/ig-50.png); }
 
+.btn {
+  cursor: pointer;
+  display: inline-block; }
+
 a[class*="btn-"], button[class*="btn-"] {
   border-radius: 3px;
   box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.5) inset;
@@ -222,6 +226,45 @@ ul {
   text-align: left; }
   .base-article h1, .base-content h1 {
     margin-top: 0; }
+
+.col {
+  display: inline-block;
+  vertical-align: top; }
+
+.alert {
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.1); }
+
+.unauthorized:before {
+  background: none repeat scroll 0 0 #FF0000;
+  box-shadow: 0 -3px 1px rgba(0, 0, 0, 0.3) inset;
+  color: #FFFFFF;
+  content: "NOT AUTHORIZED";
+  display: block;
+  font-size: 2.5rem;
+  height: 3rem;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-shadow: none; }
+
+.unauthorized {
+  border: 1px solid #ccc;
+  background: #fff; }
+
+.unauthorized-bg {
+  background-image: url(https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/clips/not-authorized.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 0 5px #000000 inset;
+  color: #FFFFFF;
+  min-height: 300px;
+  text-align: center;
+  text-shadow: 2px 0 2px #000000; }
+
+.inline {
+  display: inline-block; }
 
 .inline-col {
   display: inline-block;
@@ -515,8 +558,6 @@ ul {
   text-align: left;
   vertical-align: top;
   z-index: 20; }
-  .menu-trigger:hover {
-    text-shadow: 0 0 3px #F2F2F2; }
 
 .diamond {
   background: rgba(50, 0, 75, 0.9);
@@ -581,6 +622,13 @@ ul {
   height: 60px;
   position: relative;
   z-index: 100; }
+  .menu-item--active:hover {
+    text-shadow: 0 0 3px #F2F2F2; }
+
+.menu-blog {
+  left: 99px; }
+  .menu-blog .menu-instructions, .menu-blog .batch {
+    background: none; }
 
 .app-menu--active .menu-trigger > i {
   opacity: 0; }
@@ -601,7 +649,8 @@ ul {
   z-index: 20; }
 
 .site-search-module.searching {
-  width: 25%; }
+  width: 25%;
+  z-index: 200; }
   .site-search-module.searching .site-search-icon {
     left: auto;
     right: 0;
@@ -722,10 +771,12 @@ ul {
   display: block;
   line-height: 2;
   padding: 5px 10px;
-  text-align: center;
   color: #800080;
   position: relative;
   z-index: 5; }
+  .user-nav-link .batch {
+    width: 2rem;
+    text-align: center; }
   .user-nav-link:hover {
     background: rgba(0, 0, 0, 0.1);
     color: rgba(50, 0, 75, 0.9); }
@@ -733,7 +784,7 @@ ul {
     background: 0, 0, 0, 0.3;
     color: rgba(50, 0, 75, 0.6); }
 
-.user-module .btn-green {
+.user-module .btn-green, .user-module .btn-purple {
   display: inline-block;
   margin: 5px 5px 0 0; }
 .user-module .btn-red {
@@ -743,8 +794,11 @@ ul {
   background: #eee;
   margin: 1rem auto .5rem;
   padding: 0;
-  width: 25%;
-  min-width: 7rem; }
+  max-width: 140px;
+  min-width: 7rem;
+  text-align: center; }
+  .user-module .btn-disconnect .batch {
+    width: auto; }
   .user-module .btn-disconnect:hover {
     background: #f00;
     color: #fff; }
@@ -852,11 +906,14 @@ ul {
 .main-header {
   background: rgba(239, 239, 239, 0.95);
   height: 60px;
+  padding: 10px 0 0 5px;
   position: fixed;
   right: 17px;
-  text-align: center;
   top: 60px;
   width: 75%; }
+  .main-header > .btn {
+    max-height: 40px;
+    font-size: 1rem; }
   @media screen and (max-width: 1000px) {
     .main-header {
       right: 0;
@@ -883,7 +940,7 @@ ul {
   width: 207px; }
   .main-sidebar:hover {
     overflow-y: auto;
-    padding-right: 27px;
+    padding-right: 10px;
     right: 0;
     width: 234px; }
   .main-sidebar:after {
@@ -1234,6 +1291,207 @@ ul {
     width: auto;
     max-width: 60%; }
 
+.art-widget .col {
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 33.33%;
+  height: 100px; }
+
+.art-widget .description {
+  display: none; }
+
+#about_content {
+  overflow: hidden;
+  margin-top: -8px; }
+
+#artboard {
+  width: 100%;
+  background: url(https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/artboard/1/bg-gradientplatform.jpg) 0 24px no-repeat;
+  height: 585px;
+  margin-top: -20px; }
+
+#artboard article {
+  float: left; }
+
+#introduction {
+  width: 306px;
+  padding-top: 20px; }
+
+#websitedesigner {
+  background: url("https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/artboard/1/creepy-art-anime-hair-web-geekery-2.jpg") no-repeat scroll 0 0 transparent;
+  height: 184px;
+  width: 317px;
+  z-index: 99; }
+
+#websitedesigner span {
+  display: none; }
+
+#joejiko-art {
+  width: 306px;
+  height: 577px;
+  margin: 0 0 0 20px; }
+
+.crazyjiko {
+  background: url(https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/artboard/1/crazy-joe-jiko-smiling-noeyes.png) no-repeat; }
+
+#thoughts {
+  width: 306px;
+  height: 360px;
+  background: url(https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/artboard/1/dialog-box-2.jpg) no-repeat;
+  float: right; }
+
+#thoughts p {
+  margin-top: 85px;
+  margin-left: 25px;
+  width: 245px;
+  height: 200px;
+  line-height: 65px;
+  text-align: center;
+  font-size: 20px;
+  font: Verdana, Geneva, sans-serif;
+  background: url(/images/public/music/music48.png) no-repeat bottom left; }
+
+#addtocircles {
+  width: 200px;
+  height: 70px;
+  margin-left: 300px;
+  margin-top: 70px; }
+
+#socialbtnwrap {
+  width: 545px;
+  height: 180px;
+  margin-left: -100px;
+  margin-top: -30px; }
+
+#socialbtnwrap a {
+  float: left;
+  display: block;
+  width: 200px;
+  height: 162px;
+  text-indent: -9999px; }
+
+a#jikofb {
+  margin-right: 45px;
+  background: url(https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/artboard/1/like-my-facebook2.png) no-repeat 0 0; }
+
+a#jikofb:hover {
+  background-position: 0 -162px; }
+
+a#jikotw {
+  width: 222px;
+  margin-left: 45px;
+  background: url(https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/artboard/1/tweet-at-me-bro3.png) no-repeat 0 0; }
+
+a#jikotw:hover {
+  background-position: 0 -162px; }
+
+#starburst {
+  display: block;
+  width: 145px;
+  height: 180px;
+  background: url(https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/artboard/1/sprite-starburst.png);
+  position: relative;
+  top: 20px;
+  left: -145px;
+  float: left;
+  z-index: 9999; }
+
+#jikoeyes {
+  display: block;
+  background: url(https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/artboard/1/joejiko-eyes.png) no-repeat 0 0;
+  width: 145px;
+  height: 55px;
+  margin-top: 146px;
+  margin-left: 75px; }
+
+#jikoeyes.eyesdefault {
+  background-position: 0 0; }
+
+#jikoeyes.eyesdown {
+  background-position: 0 -55px; }
+
+#jikoeyes.eyesright {
+  background-position: 0 -110px; }
+
+#jikoeyes.eyesleft {
+  background-position: 0 -165px; }
+
+#jikoeyes.eyesleft2 {
+  background-position: 0 -220px; }
+
+#jikoeyes.eyesleft3 {
+  background-position: 0 -275px; }
+
+#jikoeyes.crossed {
+  background-position: 0 -330px; }
+
+#jikoeyes.eyesup {
+  background-position: 0 -385px; }
+
+#jikomouth {
+  display: block;
+  background: url(https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/artboard/1/joejiko-mouth2.png) no-repeat 0 0;
+  width: 162px;
+  height: 72px;
+  margin-left: 88px;
+  margin-top: 2px; }
+
+#jikomouth:hover {
+  background-position: 0 -72px; }
+
+#about {
+  width: 100%;
+  padding-top: 20px; }
+
+#about article {
+  width: 306px;
+  float: left; }
+
+#about article p {
+  font-size: 16px;
+  line-height: 23px; }
+
+#about article.right {
+  float: right; }
+
+#about #introtext {
+  width: 296px;
+  padding-right: 10px; }
+
+#about h2 {
+  line-height: 33px; }
+
+#about #services {
+  width: 296px;
+  padding-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+#about #interests {
+  margin-right: 0; }
+
+#services a {
+  font-weight: bold; }
+
+#services p {
+  text-align: center; }
+
+#interests ul {
+  margin: 0;
+  padding: 0; }
+
+#interests li {
+  display: inline-block;
+  margin: 0;
+  padding: 0; }
+
+#interests li:before {
+  content: "\a0 \2666 \a0 \a0 ";
+  color: #83e4dc;
+  font-size: 0.8em;
+  line-height: 20px; }
+
 .mission-list {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   font-size: .9rem;
@@ -1397,7 +1655,7 @@ ul {
 .steam-widget {
   background-color: #FFFFFF;
   text-align: center;
-  width: 195px; }
+  width: 100%; }
 
 .steam-widget-title {
   background-color: purple;
@@ -1459,9 +1717,7 @@ ul {
   border-color: #EEEEEE #CCCCCC #CCCCCC #EEEEEE;
   border-style: solid;
   border-width: 1px 1px 2px;
-  display: inline-block;
   margin-bottom: 5px;
-  margin-right: 40px;
   padding: 2px;
   position: relative;
   width: 100%; }
@@ -1917,6 +2173,9 @@ select {
 
 .thought-item .author-info {
   color: rgba(0, 0, 0, 0.5); }
+
+.thought-widget .thought-item {
+  font-size: .7rem; }
 
 .labs {
   background: #DCDCDC;

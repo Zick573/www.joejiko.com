@@ -3,6 +3,7 @@
   User &mdash; Info
 @stop
 @section('content')
+<article class="base-article">
   <div class="user-info-contact">
     <div class="user-info-section">
       <span class="user-info-label">Name</span>
@@ -18,4 +19,5 @@
     <span class="user-info-label">Connected profiles</span>
     <p>???</p>
   </div> -->
+</article>
 @stop

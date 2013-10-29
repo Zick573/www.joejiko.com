@@ -13,10 +13,12 @@
       </div>
     </div>
     <div class="user-controls">
-      <a class="user-nav-link" href="/team/join">Join the team</a>
-      <a class="user-nav-link" href="/user/info">Update contact info</a>
-      <a class="user-nav-link" href="/thought/create">Post something</a>
-      <a class="user-nav-link btn-disconnect" href="/user/disconnect">Disconnect</a>
+      <a class="user-nav-link" href="/team/join">Join the team <i class="batch" data-icon="&#61509;"></i></a>
+      <a class="user-nav-link" href="/user/info">Update contact info <i class="batch" data-icon="&#61645;"></i></a>
+      <a class="user-nav-link" href="/thought/create">Post something <i class="batch" data-icon="&#61441;"></i></a>
+      <a class="user-nav-link btn-disconnect" href="/user/disconnect">
+        <i class="batch" data-icon="&#61545;"></i> Disconnect
+      </a>
     </div>
 
     @if (Auth::user()->isTeam())
@@ -27,6 +29,8 @@
     <div class="admin-controls"></div>
     @endif
 @else
-  <a class="user-nav-link btn-green btn-user-connect" href="/user/connect"><i class="batch" data-icon="&#xF046;"></i> sign in</a>
+  Hello lurker!
+  <a class="user-nav-link btn-purple" href="/team/join"><i class="batch" data-icon="&#61509;"></i> Join the team</a> or
+  <a class="user-nav-link btn-green btn-user-connect" href="/user/connect"><i class="batch" data-icon="&#xF046;"></i> connect</a>
 @endif
 </div>

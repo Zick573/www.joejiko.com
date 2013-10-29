@@ -9,7 +9,7 @@
 
 @section('content')
   @if(isset($question))
-  <article itemscope itemtype="http://schema.org/Article" class="question" data-question-id="{{ $question->id }}">
+  <article itemscope itemtype="http://schema.org/Article" class="base-article question" data-question-id="{{ $question->id }}">
     <meta itemprop="articleSection" content="Questions">
     <header class="question-header">
       <h2 itemprop="headline" class="question-text">

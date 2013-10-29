@@ -38,6 +38,11 @@ class HomeController extends DefaultController {
 		return View::make('pages.about');
 	}
 
+  public function getAboutPrivacy()
+  {
+    return View::make('pages.about.privacy');
+  }
+
   public function getArtwork()
   {
     return View::make('artwork')->with(array(

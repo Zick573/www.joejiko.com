@@ -276,9 +276,6 @@
   // width: 100px;
   vertical-align: top;
   z-index: 20;
-  &:hover {
-      text-shadow: 0 0 3px #F2F2F2;
-  }
 }
 .diamond {
     background: rgba(50, 0, 75, 0.9);
@@ -344,12 +341,20 @@
   }
 }
 .menu-item--active {
-    display: inline-block;
-    height: 60px;
-    position: relative;
-    z-index: 100;
+  display: inline-block;
+  height: 60px;
+  position: relative;
+  z-index: 100;
+  &:hover {
+      text-shadow: 0 0 3px #F2F2F2;
+  }
 }
-
+.menu-blog {
+    left: 99px;
+    .menu-instructions, .batch {
+      background: none;
+    }
+}
 .app-menu--active {
   .menu-trigger > i {
     opacity: 0;

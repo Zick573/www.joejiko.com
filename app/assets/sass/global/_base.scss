@@ -31,3 +31,34 @@ ul { margin: 0; padding: 0; list-style-type: circle; }
     margin-top: 0;
   }
 }
+
+.col { display: inline-block; vertical-align: top; }
+
+.alert { padding: 1rem; background: rgba(0,0,0,.1);}
+.unauthorized:before {
+    background: none repeat scroll 0 0 #FF0000;
+    box-shadow: 0 -3px 1px rgba(0, 0, 0, 0.3) inset;
+    color: #FFFFFF;
+    content: "NOT AUTHORIZED";
+    display: block;
+    font-size: 2.5rem;
+    height: 3rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-shadow: none;
+}
+.unauthorized { border: 1px solid #ccc; background: #fff; }
+.unauthorized-bg {
+    background-image: url(#{$cdn}/img/clips/not-authorized.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 0 5px #000000 inset;
+    color: #FFFFFF;
+    min-height: 300px;
+    text-align: center;
+    text-shadow: 2px 0 2px #000000;
+}
+
+.inline { display: inline-block; }

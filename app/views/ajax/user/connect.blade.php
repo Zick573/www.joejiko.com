@@ -17,7 +17,7 @@
       --><div class="button-col">
         <a class="btn-connect-t" href="/user/connect/twitter"><i class="sign-in-twitter"></i> Connect with Twitter</a>
       </div>
-      <p>Nothing will <em>ever</em> be posted to your accounts without your permission!</p>
+      <p>Nothing will <em>ever</em> be posted to your accounts without your permission! This site does not automatically post. <a href="/about/privacy">read the privacy policy</a></p>
     </div>
     <aside class="connect-sidebar">
       <div class="user-alt-signup">
@@ -25,7 +25,7 @@
         <a class="btn-connect-site" href="/user/register/email" data-modal-open="user.register-email">Connect with Email</a>
       </div>
       <div class="existing-member">
-        <p class="existing-member-message">Already a JoeJiko.com member?</p>
+        <p class="existing-member-message">Already connected to JoeJiko.com?</p>
         <a class="btn-connect-site" href="/user/connect/email" data-modal-open="user.connect-email">Sign in with your email</a>
     </aside>
   </div>

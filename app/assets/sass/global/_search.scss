@@ -9,6 +9,7 @@
 }
 .site-search-module.searching {
     width: 25%;
+    z-index: 200;
     .site-search-icon {
         left: auto;
         right: 0;

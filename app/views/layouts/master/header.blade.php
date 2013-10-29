@@ -14,8 +14,15 @@
         <i class="modernpics" data-icon="▾"></i><!--
         --><div class="menu-item--active">
           <i class="batch" data-icon="&#xF161;"></i><!--
-          --><span class="menu-instructions">Home </span>
+          --><span class="menu-instructions">Home</span>
+        </div>
+        <div class="menu-item--active menu-blog">
+          <a href="/blog">
+          <i class="batch" data-icon="&#61445;"></i><!--
+          --><span class="menu-instructions">Blog</span>
+          </a>
         </div>
   </div>
+
   <div class="site-search-module">@include('layouts.master.header.search')</div>
   <nav class="user-nav">@include('user.nav')</nav>

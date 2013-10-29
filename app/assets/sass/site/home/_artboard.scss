@@ -1,0 +1,52 @@
+#about_content { overflow: hidden; margin-top: -8px; }
+#artboard { width: 100%; background: url(#{$cdn}/img/artboard/1/bg-gradientplatform.jpg) 0 24px no-repeat; height: 585px; margin-top: -20px;}
+#artboard article { float: left; }
+#introduction { width: 306px; padding-top: 20px;}
+#websitedesigner {
+    background: url("#{$cdn}/img/artboard/1/creepy-art-anime-hair-web-geekery-2.jpg") no-repeat scroll 0 0 transparent;
+    height: 184px;
+    width: 317px;
+    z-index: 99;
+}
+#websitedesigner span { display: none; }
+
+#joejiko-art { width: 306px; height: 577px; margin: 0 0 0 20px; }
+.crazyjiko { background: url(#{$cdn}/img/artboard/1/crazy-joe-jiko-smiling-noeyes.png) no-repeat; }
+#thoughts { width: 306px; height: 360px; background: url(#{$cdn}/img/artboard/1/dialog-box-2.jpg) no-repeat; float: right;}
+#thoughts p { margin-top: 85px; margin-left: 25px; width: 245px; height: 200px; line-height: 65px; text-align: center; font-size: 20px; font: Verdana, Geneva, sans-serif; background: url(/images/public/music/music48.png) no-repeat bottom left;}
+#addtocircles {width: 200px; height: 70px; margin-left: 300px; margin-top: 70px; }
+#socialbtnwrap { width: 545px; height: 180px; margin-left: -100px; margin-top: -30px;}
+#socialbtnwrap a { float: left; display: block; width: 200px; height: 162px; text-indent: -9999px;}
+a#jikofb { margin-right: 45px; background: url(#{$cdn}/img/artboard/1/like-my-facebook2.png) no-repeat 0 0; }
+a#jikofb:hover { background-position: 0 -162px; }
+a#jikotw { width: 222px; margin-left: 45px; background: url(#{$cdn}/img/artboard/1/tweet-at-me-bro3.png) no-repeat 0 0; }
+a#jikotw:hover { background-position: 0 -162px; }
+
+#starburst { display: block; width: 145px; height: 180px; background: url(#{$cdn}/img/artboard/1/sprite-starburst.png); position: relative; top: 20px; left: -145px; float: left; z-index: 9999; }
+
+#jikoeyes { display: block; background: url(#{$cdn}/img/artboard/1/joejiko-eyes.png) no-repeat 0 0; width: 145px; height: 55px; margin-top: 146px; margin-left: 75px; }
+#jikoeyes.eyesdefault {background-position: 0 0;}
+#jikoeyes.eyesdown {background-position: 0 -55px;}
+#jikoeyes.eyesright {background-position: 0 -110px;}
+#jikoeyes.eyesleft {background-position: 0 -165px;}
+#jikoeyes.eyesleft2 {background-position: 0 -220px;}
+#jikoeyes.eyesleft3 {background-position: 0 -275px;}
+#jikoeyes.crossed {background-position: 0 -330px;}
+#jikoeyes.eyesup {background-position: 0 -385px; }
+#jikomouth { display: block; background: url(#{$cdn}/img/artboard/1/joejiko-mouth2.png) no-repeat 0 0; width: 162px; height: 72px; margin-left: 88px; margin-top: 2px;}
+#jikomouth:hover { background-position: 0 -72px; }
+
+#about { width: 100%; padding-top: 20px; }
+#about article { width: 306px; float: left; }
+#about article p { font-size: 16px; line-height: 23px; }
+#about article.right { float: right; }
+#about #introtext { width: 296px; padding-right: 10px; }
+#about h2 { line-height: 33px; }
+#about #services { width: 296px; padding-right: 10px; margin-left: 10px; margin-right: 10px; }
+#about #interests { margin-right: 0; }
+#services { }
+#services a { font-weight: bold; }
+#services p { text-align: center; }
+#interests ul { margin: 0; padding: 0; }
+#interests li { display: inline-block; margin: 0; padding: 0; }
+#interests li:before { content: "\a0 \2666 \a0 \a0 "; color: #83e4dc; font-size: 0.8em; line-height: 20px; }

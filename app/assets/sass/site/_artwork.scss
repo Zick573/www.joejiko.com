@@ -23,3 +23,14 @@
         width: auto;
         max-width: 60%; }
 }
+
+.art-widget .col {
+  background-position: left center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  width: 33.33%;
+  height: 100px;
+}
+.art-widget .description {
+  display: none;
+}

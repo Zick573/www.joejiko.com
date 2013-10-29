@@ -23,11 +23,15 @@
 .main-header {
     background: rgba(239, 239, 239, .95);
     height: 60px;
+    padding: 10px 0 0 5px;
     position: fixed;
     right: 17px;
-    text-align: center;
     top: 60px;
     width: 75%;
+    > .btn {
+      max-height: 40px;
+      font-size: 1rem;
+    }
     @media screen and (max-width: $break-medium) {
         right: 0;
         width: 94%;
@@ -58,7 +62,7 @@
     width: 207px;
     &:hover {
       overflow-y: auto;
-      padding-right: 27px;
+      padding-right: 10px;
       right: 0;
       width: 234px;
     }

@@ -3,6 +3,7 @@
   Your user info
 @stop
 @section('content')
+<article class="base-article">
 <h1>User info</h1>
 @if(isset($user))
   <p>
@@ -17,5 +18,6 @@
   You are {{ $user->name }}
 @endif
 
-<p>Would you like to <a href="/user/disconnect">disconnect</a>?</p>
+<p>Would you like to <a class="btn btn-disconnect" href="/user/disconnect"><i class="batch" data-icon="&#61545;"></i> disconnect</a>?</p>
+</article>
 @stop

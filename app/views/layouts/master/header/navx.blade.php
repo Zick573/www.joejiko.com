@@ -14,6 +14,6 @@
     --><a class="site-navx-link" data-tooltip="true" href="/thoughts" title="Read thoughts">
       <i class="icon-notice batch" data-icon="&#xF12C;"></i>
     </a><!--
-    --><a class="site-navx-link" data-tooltip="true" href="/questions" title="Frequently asked questions">
+    --><a class="site-navx-link" data-tooltip="true" href="/questions" title="Ask a question">
       <i class="icon-notice modernpics" data-icon="?"></i>
     </a>

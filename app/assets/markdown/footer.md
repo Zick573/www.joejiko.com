@@ -11,6 +11,6 @@ If you don't know what a [web browser](http://jiko.us/10kcGTT) is, please get of
 
 If you've got something to say, [send me a tweet](//twitter.com/joejiko) or [hangout with me](https://plus.google.com/110880509059057751100) on Google+.
 
-Except as otherwise noted, all [content](/sitemap) on this site is licensed under the [Creative Commons Attribution 3.0 License](http://creativecommons.org/licenses/by/3.0/), and code samples are licensed under the [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0).
+Except as otherwise noted, all [content](/sitemap) on this site is licensed under the [Creative Commons Attribution 3.0 License](http://creativecommons.org/licenses/by/3.0/), and code samples are licensed under the [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0). [Read the privacy policy](/about/privacy)
 
 **Thanks for visiting!**

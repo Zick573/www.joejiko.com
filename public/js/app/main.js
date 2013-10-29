@@ -103,6 +103,13 @@ define(["require","jquery"], function(require, $) {
               });
             }
 
+            if( $(document).find('#artboard').length ){
+              alert('artboard!');
+              require(['app/home/artboard'], function( Artboard ) {
+                console.log(JSON.stringify(Artboard));
+              });
+            }
+
             if( $(document).find('.steam-widget').length ) {
               require(['app/gaming/steam'], function ( Steam ) {
                 console.log(JSON.stringify(Steam));
