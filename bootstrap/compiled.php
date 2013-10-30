@@ -306,7 +306,7 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\HttpFoundation\RedirectResponse as SymfonyRedirect;
 class Application extends Container implements HttpKernelInterface, ResponsePreparerInterface
 {
-    const VERSION = '4.0.8';
+    const VERSION = '4.0.9';
     protected $booted = false;
     protected $bootingCallbacks = array();
     protected $bootedCallbacks = array();
@@ -318,8 +318,24 @@ class Application extends Container implements HttpKernelInterface, ResponsePrep
     public function __construct(Request $request = null)
     {
         $this['request'] = $this->createRequest($request);
+        $this->registerBaseServiceProviders();
+    }
+    protected function registerBaseServiceProviders()
+    {
+        foreach (array('Exception', 'Routing', 'Event') as $name) {
+            $this->{"register{$name}Provider"}();
+        }
+    }
+    protected function registerExceptionProvider()
+    {
         $this->register(new ExceptionServiceProvider($this));
+    }
+    protected function registerRoutingProvider()
+    {
         $this->register(new RoutingServiceProvider($this));
+    }
+    protected function registerEventProvider()
+    {
         $this->register(new EventServiceProvider($this));
     }
     protected function createRequest(Request $request = null)
@@ -746,7 +762,10 @@ class Request extends SymfonyRequest
     }
     public function hasFile($key)
     {
-        return $this->file($key) instanceof \SplFileInfo;
+        if (is_array($file = $this->file($key))) {
+            $file = head($file);
+        }
+        return $file instanceof \SplFileInfo;
     }
     public function header($key = null, $default = null)
     {
@@ -3296,7 +3315,8 @@ class ExceptionServiceProvider extends ServiceProvider
     }
     protected function getResourcePath()
     {
-        return 'C:\\Users\\Jiko\\web\\joejiko.com\\vendor\\laravel\\framework\\src\\Illuminate\\Exception' . '/resources';
+        $base = $this->app['path.base'];
+        return $base . '/vendor/laravel/framework/src/Illuminate/Exception/resources';
     }
 }
 namespace Illuminate\Routing;
@@ -4107,9 +4127,13 @@ class Filesystem
         }
         return $directories;
     }
-    public function makeDirectory($path, $mode = 511, $recursive = false)
+    public function makeDirectory($path, $mode = 511, $recursive = false, $force = false)
     {
-        return mkdir($path, $mode, $recursive);
+        if ($force) {
+            return @mkdir($path, $mode, $recursive);
+        } else {
+            return mkdir($path, $mode, $recursive);
+        }
     }
     public function copyDirectory($directory, $destination, $options = null)
     {
@@ -6280,7 +6304,7 @@ abstract class Model implements ArrayAccess, ArrayableInterface, JsonableInterfa
         if (is_numeric($value)) {
             return Carbon::createFromTimestamp($value);
         } elseif (preg_match('/^(\\d{4})-(\\d{2})-(\\d{2})$/', $value)) {
-            return Carbon::createFromFormat('Y-m-d', $value);
+            return Carbon::createFromFormat('Y-m-d', $value)->startOfDay();
         } elseif (!$value instanceof DateTime) {
             $format = $this->getDateFormat();
             return Carbon::createFromFormat($format, $value);
@@ -7019,9 +7043,9 @@ class Encrypter
         $beforePad = strlen($value) - $pad;
         return substr($value, $beforePad) == str_repeat(substr($value, -1), $pad);
     }
-    protected function invalidPayload(array $data)
+    protected function invalidPayload($data)
     {
-        return !isset($data['iv']) or !isset($data['value']) or !isset($data['mac']);
+        return !is_array($data) or !isset($data['iv']) or !isset($data['value']) or !isset($data['mac']);
     }
     protected function getIvSize()
     {
@@ -9392,7 +9416,7 @@ class Response
         $charset = $this->charset ?: 'UTF-8';
         if (!$headers->has('Content-Type')) {
             $headers->set('Content-Type', 'text/html; charset=' . $charset);
-        } elseif (0 === strpos($headers->get('Content-Type'), 'text/') && false === strpos($headers->get('Content-Type'), 'charset')) {
+        } elseif (0 === stripos($headers->get('Content-Type'), 'text/') && false === stripos($headers->get('Content-Type'), 'charset')) {
             $headers->set('Content-Type', $headers->get('Content-Type') . '; charset=' . $charset);
         }
         if ($headers->has('Transfer-Encoding')) {
