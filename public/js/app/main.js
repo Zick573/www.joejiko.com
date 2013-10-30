@@ -104,7 +104,6 @@ define(["require","jquery"], function(require, $) {
             }
 
             if( $(document).find('#artboard').length ){
-              alert('artboard!');
               require(['app/home/artboard'], function( Artboard ) {
                 console.log(JSON.stringify(Artboard));
               });

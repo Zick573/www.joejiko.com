@@ -1,30 +1,124 @@
-#about_content { overflow: hidden; margin-top: -8px; }
-#artboard { width: 100%; background: url(#{$cdn}/img/artboard/1/bg-gradientplatform.jpg) 0 24px no-repeat; height: 585px; margin-top: -20px;}
-#artboard article { float: left; }
+#about_content { margin-top: -8px; }
+#artboard {
+    background: url("#{$cdn}/img/artboard/1/bg-gradientplatform.png") no-repeat scroll 0 4px transparent;
+    height: 525px;
+    position: relative;
+    width: 950px;
+    text-align: left;
+    margin: 0 auto 20px;
+}
 #introduction { width: 306px; padding-top: 20px;}
-#websitedesigner {
-    background: url("#{$cdn}/img/artboard/1/creepy-art-anime-hair-web-geekery-2.jpg") no-repeat scroll 0 0 transparent;
-    height: 184px;
-    width: 317px;
+#jikosig {
+    cursor: pointer;
+    left: 248px;
+    margin: 0;
+    position: absolute;
+    top: 322px;
+    z-index: 190;
+}
+
+#introduction h2 {
+    background: url("#{$cdn}/img/artboard/1/thought-bubble.png") no-repeat scroll 0 0 transparent;
+    height: 285px;
+    left: -60px;
+    position: absolute;
+    top: -5px;
+    width: 413px;
     z-index: 99;
 }
-#websitedesigner span { display: none; }
+#introduction h2 img {
+    padding: 50px;
+}
 
-#joejiko-art { width: 306px; height: 577px; margin: 0 0 0 20px; }
-.crazyjiko { background: url(#{$cdn}/img/artboard/1/crazy-joe-jiko-smiling-noeyes.png) no-repeat; }
-#thoughts { width: 306px; height: 360px; background: url(#{$cdn}/img/artboard/1/dialog-box-2.jpg) no-repeat; float: right;}
-#thoughts p { margin-top: 85px; margin-left: 25px; width: 245px; height: 200px; line-height: 65px; text-align: center; font-size: 20px; font: Verdana, Geneva, sans-serif; background: url(/images/public/music/music48.png) no-repeat bottom left;}
-#addtocircles {width: 200px; height: 70px; margin-left: 300px; margin-top: 70px; }
-#socialbtnwrap { width: 545px; height: 180px; margin-left: -100px; margin-top: -30px;}
-#socialbtnwrap a { float: left; display: block; width: 200px; height: 162px; text-indent: -9999px;}
-a#jikofb { margin-right: 45px; background: url(#{$cdn}/img/artboard/1/like-my-facebook2.png) no-repeat 0 0; }
+#joejiko-art {}
+#jikoportrait {
+    cursor: pointer;
+    height: 577px;
+    left: 300px;
+    position: absolute;
+    top: 0;
+}
+#jikoportrait img {
+    margin-top: -20px;
+    position: relative;
+    z-index: 100;
+}
+#status {
+    background: url("#{$cdn}/img/artboard/1/status-update.png") no-repeat scroll 0 0 transparent;
+    height: 324px;
+    overflow: hidden;
+    padding: 60px 30px 60px;
+    position: absolute;
+    right: -20px;
+    top: -10px;
+    width: 380px;
+    z-index: 130;
+}
+#status .title {
+    background: #000000;
+    color: #FFFFFF;
+    line-height: 1;
+    opacity: .9;
+    margin: 0;
+    padding: 10px;
+    position: absolute;
+    right: 4px;
+    top: 7px;
+    transform: rotate(-3deg);
+}
+#status .text { line-height: 2; text-align: center; font-size: 20px; margin: 0;}
+#addtocircles {
+    height: 70px;
+    left: 604px;
+    position: absolute;
+    top: 306px;
+    width: 200px;
+    z-index: 150;
+}
+
+#socialbtnwrap {
+    position: absolute;
+    z-index: 152;
+}
+#socialbtnwrap a { display: block; width: 200px; height: 162px; text-indent: -9999px;}
+a#jikofb {
+    background: url("#{$cdn}/img/artboard/1/like-my-facebook2.png") no-repeat scroll 0 0 transparent;
+    left: 211px;
+    position: absolute;
+    top: 376px;
+}
 a#jikofb:hover { background-position: 0 -162px; }
-a#jikotw { width: 222px; margin-left: 45px; background: url(#{$cdn}/img/artboard/1/tweet-at-me-bro3.png) no-repeat 0 0; }
+a#jikotw {
+    background: url("#{$cdn}/img/artboard/1/tweet-at-me-bro3.png") no-repeat scroll 0 0 transparent;
+    left: 485px;
+    position: absolute;
+    top: 375px;
+    width: 222px;
+}
 a#jikotw:hover { background-position: 0 -162px; }
 
-#starburst { display: block; width: 145px; height: 180px; background: url(#{$cdn}/img/artboard/1/sprite-starburst.png); position: relative; top: 20px; left: -145px; float: left; z-index: 9999; }
+#starburst {
+    background: url("#{$cdn}/img/artboard/1/sprite-starburst.png") repeat scroll 0 0 transparent;
+    display: block;
+    height: 180px;
+    left: 252px;
+    position: absolute;
+    top: 250px;
+    width: 145px;
+    z-index: 101;
+}
 
-#jikoeyes { display: block; background: url(#{$cdn}/img/artboard/1/joejiko-eyes.png) no-repeat 0 0; width: 145px; height: 55px; margin-top: 146px; margin-left: 75px; }
+#jikoeyes {
+    background: url("#{$cdn}/img/artboard/1/joejiko-eyes.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    display: block;
+    height: 55px;
+    left: 375px;
+    position: absolute;
+    top: 126px;
+    width: 145px;
+    z-index: 110;
+}
 #jikoeyes.eyesdefault {background-position: 0 0;}
 #jikoeyes.eyesdown {background-position: 0 -55px;}
 #jikoeyes.eyesright {background-position: 0 -110px;}
@@ -33,20 +127,313 @@ a#jikotw:hover { background-position: 0 -162px; }
 #jikoeyes.eyesleft3 {background-position: 0 -275px;}
 #jikoeyes.crossed {background-position: 0 -330px;}
 #jikoeyes.eyesup {background-position: 0 -385px; }
-#jikomouth { display: block; background: url(#{$cdn}/img/artboard/1/joejiko-mouth2.png) no-repeat 0 0; width: 162px; height: 72px; margin-left: 88px; margin-top: 2px;}
-#jikomouth:hover { background-position: 0 -72px; }
+#jikomouth {
+    cursor: pointer;
+    display: block;
+    height: 72px;
+    left: 387px;
+    overflow: hidden;
+    position: absolute;
+    top: 186px;
+    width: 162px;
+    z-index: 111;
+}
+#jikomouth:hover img { margin-top: -72px; }
+#jikomouth:hover img.chomp { margin-top: 0; }
 
-#about { width: 100%; padding-top: 20px; }
+#about { width: 100%; padding-bottom: 20px; display: none; }
 #about article { width: 306px; float: left; }
 #about article p { font-size: 16px; line-height: 23px; }
 #about article.right { float: right; }
-#about #introtext { width: 296px; padding-right: 10px; }
-#about h2 { line-height: 33px; }
-#about #services { width: 296px; padding-right: 10px; margin-left: 10px; margin-right: 10px; }
+#about #introtext {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 286px;
+}
+#about h2 {
+    color: #111111;
+    line-height: 33px;
+    opacity: 1;
+    padding: 10px;
+}
+#about #services {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-right: 10px;
+    padding-top: 25px;
+    position: relative;
+    width: 296px;
+}
 #about #interests { margin-right: 0; }
-#services { }
+
+
 #services a { font-weight: bold; }
 #services p { text-align: center; }
+#services p em {
+    left: -70px;
+    position: absolute;
+    top: 390px;
+    width: 940px;
+}
 #interests ul { margin: 0; padding: 0; }
 #interests li { display: inline-block; margin: 0; padding: 0; }
 #interests li:before { content: "\a0 \2666 \a0 \a0 "; color: #83e4dc; font-size: 0.8em; line-height: 20px; }
+
+#primary_navigation { position: relative; }
+#jj_header #maintenance-mode {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 4px solid red;
+    color: red;
+    font-size: 24px;
+    line-height: 32px;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+  text-align: left;
+    top: 0;
+}
+
+#jj_body { background: url(/images/patterns/dust.png) transparent; }
+#posters { position: absolute; top: 40px; left: 0; z-index: 10; opacity: .8;}
+#accessories {
+    position: absolute;
+    top: 324px;
+    z-index: 140;
+}
+#accessories img {
+    position: absolute;
+}
+.transformerprime {
+    left: 43px;
+    top: 0;
+}
+.nosenergy {
+    left: 23px;
+    top: 55px;
+    z-index: 145;
+}
+.charizard {
+  cursor: pointer;
+  width: 200px;
+  height: 180px;
+  background-image: url(#{$cdn}/img/artboard/1/animated-pokemon-plush-charizard.png);
+}
+.charizard:hover {
+    -webkit-animation: play .7s steps(8) infinite;
+       -moz-animation: play .7s steps(8) infinite;
+        -ms-animation: play .7s steps(8) infinite;
+         -o-animation: play .7s steps(8) infinite;
+            animation: play .7s steps(8) infinite;
+}
+
+@-webkit-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -1600px;}
+}
+
+@-moz-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -1600px;}
+}
+
+@-ms-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -1600px;}
+}
+.charizard {
+    left: 81px;
+    position: absolute;
+    top: 36px;
+}
+.charizard img {
+  left: 51px;
+  top: 17px;
+  transition: all 1s;
+  opacity: 1;
+}
+.charizard:hover img {
+  opacity: 0;
+}
+
+.andyandroid {
+    left: 829px;
+    top: 95px;
+    z-index: 147;
+}
+.droidx {
+    left: 755px;
+    top: 140px;
+    z-index: 146;
+}
+.wolfmoon {
+    left: 764px;
+    top: 0;
+}
+.intuos4 {
+    left: 594px;
+    top: 64px;
+    z-index: 141;
+}
+.click-map {
+    background: url("#{$cdn}/img/artboard/1/click-map-dark.png") no-repeat scroll 0 0 transparent;
+    display: none;
+    height: 500px;
+    left: -10px;
+    position: absolute;
+    top: 47px;
+    width: 960px;
+    z-index: 115;
+}
+.clickme, .clickme2, .clickme3 {
+    background: url("#{$cdn}/img/artboard/1/click-me.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 51px;
+    left: -40px;
+    position: absolute;
+    top: 297px;
+    display: none;
+    width: 128px;
+    z-index: 160;
+}
+.clickme2 {
+    left: 0;
+    top: 204px;
+}
+.clickme3 {
+    left: -20px;
+    top: 153px;
+}
+
+
+#media {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: url("#{$cdn}/img/patterns/starring.png") repeat scroll 0 0 transparent;
+    border-color: #222222 -moz-use-text-color;
+    border-image: none;
+    border-style: solid none;
+    border-width: 3px medium;
+    height: 315px;
+    margin-left: -10px;
+    padding: 20px 30px;
+    width: 900px;
+}
+#artboard, #gallery img { display: none; }
+
+#gallery {
+    float: left;
+    height: 309px;
+    width: 460px;
+}
+#gallery h2 {
+    color: #EEEEEE;
+    margin-top: 10px;
+    opacity: 1;
+    padding: 10px;
+    text-indent: 17px;
+}
+#gallery article {
+    background: url("#{$cdn}/img/patterns/dust.png") repeat scroll 0 0 #FFFFFF;
+    box-shadow: 0 7px 7px #111111;
+    float: left;
+    height: 100px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    overflow: hidden;
+    text-align: center;
+    width: 100px;
+}
+#gallery article a { display: block; width: 100px; height: 100px; }
+#gallery article:first-of-type, #gallery article:nth-of-type(5){ margin-left: 0; }
+#gallery article:last-of-type { margin-right: 0;}
+#gallery span { display: none; }
+#gallery img { opacity: .9;}
+#gallery img:hover { opacity: 1; }
+
+
+#video {
+    float: right;
+    height: 315px;
+    position: relative;
+    width: 420px;
+}
+
+#video .tabs {
+     list-style-type: none;
+     margin: 0px;
+     padding: 0px;
+     position: absolute;
+     right: -60px;
+     top: 0px;
+     width: 60px;
+     z-index: 99;
+}
+
+#video .tabs li {
+     background: #222;
+     color: #FFFFFF;
+     margin-bottom: 1px;
+     padding: 5px;
+}
+
+#video .tabs li:hover { background: #ccc; cursor: pointer; }
+#video .tabs li.active { background: #000; }
+
+#services img {
+    position: absolute;
+}
+
+#recent-question { padding-top: 5px; }
+#recent-question h2 { cursor: pointer; }
+#recent-question h3 {
+    background: url("#{$cdn}/img/pages/questions/circle-q.png") no-repeat scroll left center transparent;
+    height: 26px;
+    padding-left: 30px;
+    text-align: left;
+}
+#recent-question article, #recent-question .answer,
+#recent-question a { font-size: 12px; line-height: 15px; display: block; padding-bottom: 10px; }
+#recent-question article { height: 110px; }
+#recent-question a { margin-bottom: 20px; }
+#recent-question a:hover { border-bottom: 1px dotted; color: #000; }
+#recent-question .question {
+    color: #000000;
+    font-size: 15px;
+    height: 110px;
+    line-height: 20px;
+}
+#recent-question .answer { background: url(#{$cdn}/img/pages/questions/circle-a.png) no-repeat left top; padding-left: 30px;}
+#recent-question .date {
+     border-top: 1px dotted;
+     color: #666666;
+     font-size: 12px;
+     line-height: 1;
+     padding-top: 10px;
+     text-align: right;
+}
+#table-edge {
+    background: none repeat scroll 0 0 #222222;
+    border-top: 1px solid #999999;
+    bottom: -4px;
+    box-shadow: 0 3px 5px #111111;
+    height: 5px;
+    left: 3px;
+    position: absolute;
+    width: 932px;
+}
+figure { margin: 0; padding: 0; }
+figcaption { display: none; }
+#hints {
+    border: 3px solid #000000;
+    border-radius: 15px 15px 15px 15px;
+    color: #000000;
+    cursor: pointer;
+    left: 263px;
+    line-height: 10px;
+    padding: 10px 15px;
+    position: absolute;
+    top: 11px;
+    z-index: 110;
+}

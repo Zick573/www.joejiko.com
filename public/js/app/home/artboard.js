@@ -1,133 +1,40 @@
 define(['jquery', 'jq/spritely/jquery.spritely-0.6.1', 'jq/waypoints/jquery.waypoints.min'], function($){
-    $(document).on('click',"#recent-question h2",function(){
-      //          _trackEvent(category, action, opt_label, opt_value, opt_noninteraction)
-      _gaq.push(['_trackEvent', 'home', 'click', 'highlight-ask me anything']);
-      $.colorbox({href:"/lupus/?questions",data:{ask:"ask"}});
-      return false;
-    });
+  // window load
+  $("#artboard").fadeIn();
+  // fn_loadGallery();
+  $("#services img").waypoint(function(event, direction){
+    console.log("zeah sees you");
+    zeah++;
+    animateZeah();
+  },{triggerOnce:true,offset:'100%'});
 
-    $(".more").on('click',function(){
-      $.colorbox({width: "960px", height: "500px", top: "10%;",inline:true,href:$(".more-details")});
-      _gaq.push(['_trackEvent', 'navigation', 'click', 'more']);
-      return false;
+  var headlines = setTimeout(function(){
+    $.getJSON('/lupus/?questions&view=1',function(response){
+      questionhtml = $("<p></p>");
+      questionhtml.attr('id','recent-question');
+      questionhtml.append("<h2>Ask me anything</h2>");
+      questionhtml.append($(response.feed));
+      questionhtml.hide();
+      $("#status").append(questionhtml);
+      $("#recent-question a").on('click',function(){
+        return false;
+      });
+      var switchstatus = setTimeout(function(){
+        $("#status p").fadeOut();
+        qtimeago = $.timeago($("#recent-question .date time").html());
+        $("#recent-question .date time").empty().append("asked "+qtimeago);
+        $("#recent-question").fadeIn('slow');
+      }, 3000);
     })
-    $(".question").on('click',function(evt){
-      _gaq.push(['_trackEvent', 'navigation', 'click', 'ask a question']);
-      $.colorbox({href:"/lupus/?questions",data:{ask:"ask"}});
+  }, 3000);
 
-      return false;
-    });
-
-      var id = '#dialog';
-
-      //Get the screen height and width
-      var maskHeight = $(document).height();
-      var maskWidth = $(window).width();
-
-      //Set heigth and width to mask to fill up the whole screen
-      $('#mask').css({'width':maskWidth,'height':maskHeight});
-
-      //transition effect
-      setTimeout(function(){
-        $('#mask').fadeIn(1000);
-        $('#mask').fadeTo("slow",0.8);
-
-        //Get the window height and width
-        var winH = $(window).height();
-        var winW = $(window).width();
-
-        //Set the popup window to center
-        $(id).css('top',  winH/2-$(id).height()/2);
-        $(id).css('left', winW/2-$(id).width()/2);
-
-        //transition effect
-        $(id).fadeIn(2000);
-      },15000);
-
-    //if close button is clicked
-    $('.window .close').click(function (e) {
-      //Cancel the link behavior
-      e.preventDefault();
-
-      $('#mask').hide();
-      $('.window').hide();
-    });
-
-    //if mask is clicked
-    $('#mask').click(function () {
-      $(this).hide();
-      $('.window').hide();
-    });
-  $(window).load(function(){
-    $("#artboard").fadeIn();
-    fn_loadGallery();
-    $("#services img").waypoint(function(event, direction){
-      console.log("zeah sees you");
-      zeah++;
-      animateZeah();
-    },{triggerOnce:true,offset:'100%'});
-
-    var headlines = setTimeout(function(){
-      $.getJSON('/lupus/?questions&view=1',function(response){
-        questionhtml = $("<p></p>");
-        questionhtml.attr('id','recent-question');
-        questionhtml.append("<h2>Ask me anything</h2>");
-        questionhtml.append($(response.feed));
-        questionhtml.hide();
-        $("#status").append(questionhtml);
-        $("#recent-question a").on('click',function(){
-          return false;
-        });
-        var switchstatus = setTimeout(function(){
-          $("#status p").fadeOut();
-          qtimeago = $.timeago($("#recent-question .date time").html());
-          $("#recent-question .date time").empty().append("asked "+qtimeago);
-          $("#recent-question").fadeIn('slow');
-        }, 3000);
-      })
-    }, 3000)
-  });
-  $(document).on('click','#video .tabs a', function(){
-    fn_loadVideoSrc($(this).attr('href'));
-    return false;
-  });
-  function fn_loadVideo(){
-    ytvideo = $('<article id="video"><iframe width="420" height="315" frameborder="0" allowfullscreen="" src=""></iframe></article>');
-    $('#media').append(ytvideo);
-    // intro video: 9dm0AjlRvkw
-    // vlog1: ?
-    // vlog2: wtI6TL516pU
-    fn_loadVideoSrc('wtI6TL516pU');
-    // add tabs
-    $(ytvideo).append('<ul class="tabs"><li><a href="9dm0AjlRvkw">Intro</a></li><li><a href="i_oo5RfbF-c">vlog #1</a></li><li class="active"><a href="wtI6TL516pU">vlog#2</a></li></ul>');
-    $('#media iframe').load(function(){
-      $("#media").fadeIn();
-    });
-  }
-
-  function fn_loadVideoSrc(vid){
-    $('#video iframe').attr('src','http://www.youtube.com/embed/'+vid);
-  }
-  //<!-- signature stars exploding -->
+  // <!-- signature stars exploding -->
   $('#jikosig').mouseover(function(){
     $("#starburst").sprite({fps: 10, no_of_frames: 5});
     stopburst = setTimeout(function(){ $("#starburst").spStop(true); }, 5000);
-    _gaq.push(['_trackEvent', 'home', 'animate', 'signature']);
+    // _gaq.push(['_trackEvent', 'home', 'animate', 'signature']);
   }).mouseout(function(){
     $("#starburst").spStop(true).destroy();
-  });
-  var stopflames = "";
-  $('.charizard').mouseover(function(){
-    $('.charizard img').stop(true,true).fadeOut('fast');
-    $('.charizard').sprite({
-      fps: 8,
-      no_of_frames: 8,
-      start_at_frame: 2
-    });
-    _gaq.push(['_trackEvent', 'home', 'animate', 'charizard']);
-  }).mouseout(function(){
-    $('.charizard').spStop(true).destroy();
-    $('.charizard img').stop(true,true).fadeIn('slow');
   });
 
   //<!-- eyes left -->
@@ -231,7 +138,7 @@ define(['jquery', 'jq/spritely/jquery.spritely-0.6.1', 'jq/waypoints/jquery.wayp
     // move zeah in from the left of the screen
   }
   $("#jikoeyes, .clickme3").click(function(){
-    _gaq.push(['_trackEvent', 'home', 'click', 'swap eyes']);
+    // _gaq.push(['_trackEvent', 'home', 'click', 'swap eyes']);
     $("#jikoeyes").css('background-image','url('+rotateEyes()+')');
   });
 
@@ -269,7 +176,7 @@ define(['jquery', 'jq/spritely/jquery.spritely-0.6.1', 'jq/waypoints/jquery.wayp
   });
 
   $("#jikomouth").click(function(){
-    _gaq.push(['_trackEvent', 'home', 'click', 'swap mouth']);
+    // _gaq.push(['_trackEvent', 'home', 'click', 'swap mouth']);
     if(mouth == 0){
       chomptimeout = setInterval(function(){chomp()},100);
     }
@@ -301,11 +208,11 @@ define(['jquery', 'jq/spritely/jquery.spritely-0.6.1', 'jq/waypoints/jquery.wayp
   }
 
   $("#jikoportrait img, .clickme").click(function(){
-    _gaq.push(['_trackEvent', 'home', 'click', 'swap clothing']);
+    // _gaq.push(['_trackEvent', 'home', 'click', 'swap clothing']);
     if(clothing==2){
       clothing=0;
       $("#jikoportrait img").fadeOut('fast',function(){
-        swapImage($("#jikoportrait img"),"/images/public/about/vampire-joe-jiko-smiling-noeyes-galaxy.png");
+        swapImage($("#jikoportrait img"),"https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/artboard/1/vampire-joe-jiko-smiling-noeyes-galaxy.png");
       });
     } else {
       swapImage($("#jikoportrait img"),rotateClothes());
@@ -319,7 +226,7 @@ define(['jquery', 'jq/spritely/jquery.spritely-0.6.1', 'jq/waypoints/jquery.wayp
 
   $("#hints,.hints").mouseenter(function(){
     $('.click-map').stop(true,true).fadeIn(function(){
-        _gaq.push(['_trackEvent', 'home', 'mouseenter', 'hints']);
+        // _gaq.push(['_trackEvent', 'home', 'mouseenter', 'hints']);
     });
   }).mouseleave(function(){
     $('.click-map').stop(true,true).fadeOut();
