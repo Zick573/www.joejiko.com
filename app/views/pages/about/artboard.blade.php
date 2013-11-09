@@ -11,7 +11,7 @@
         <figcaption hidden>animated exploding starburst sprite</figcaption>
       </figure>
     </div>
-    <img src="{{ cdn_img() }}artboard/1/thought-banner.png" alt="creepy art, fancy anime hair, & web geekery!">
+    <!-- <img src="{{ cdn_img() }}artboard/1/thought-banner.png" alt="creepy art, fancy anime hair, & web geekery!"> -->
   </article>
   <span class="click-map"></span>
   <article id="joejiko-art">

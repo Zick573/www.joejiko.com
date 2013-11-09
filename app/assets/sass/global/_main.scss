@@ -71,10 +71,7 @@
       display: block;
       margin-bottom: 60px;
     }
-    @media screen and (max-width: $break-medium) {
-        right: 5px;
-    }
-    @media screen and (max-width: $break-medium-small) {
+    @media screen and (max-width: $break-xlarge) {
         display: none;
     }
 }

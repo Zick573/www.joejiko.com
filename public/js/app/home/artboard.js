@@ -8,25 +8,25 @@ define(['jquery', 'jq/waypoints/jquery.waypoints.min', 'jq/timeago/jquery.timeag
     animateZeah();
   },{triggerOnce:true,offset:'100%'});
 
-  var headlines = setTimeout(function(){
-    $.getJSON('/api/questions',function(response){
-      questionhtml = $("<p></p>");
-      questionhtml.attr('id','recent-question');
-      questionhtml.append("<h2>Ask me anything</h2>");
-      questionhtml.append($(response.feed));
-      questionhtml.hide();
-      $("#status").append(questionhtml);
-      $("#recent-question a").on('click',function(){
-        return false;
-      });
-      var switchstatus = setTimeout(function(){
-        $("#status p").fadeOut();
-        qtimeago = $.timeago($("#recent-question .date time").html());
-        $("#recent-question .date time").empty().append("asked "+qtimeago);
-        $("#recent-question").fadeIn('slow');
-      }, 3000);
-    })
-  }, 3000);
+  // var headlines = setTimeout(function(){
+  //   $.getJSON('/api/questions',function(response){
+  //     questionhtml = $("<p></p>");
+  //     questionhtml.attr('id','recent-question');
+  //     questionhtml.append("<h2>Ask me anything</h2>");
+  //     questionhtml.append($(response.feed));
+  //     questionhtml.hide();
+  //     $("#status").append(questionhtml);
+  //     $("#recent-question a").on('click',function(){
+  //       return false;
+  //     });
+  //     var switchstatus = setTimeout(function(){
+  //       $("#status p").fadeOut();
+  //       qtimeago = $.timeago($("#recent-question .date time").html());
+  //       $("#recent-question .date time").empty().append("asked "+qtimeago);
+  //       $("#recent-question").fadeIn('slow');
+  //     }, 3000);
+  //   })
+  // }, 3000);
 
   //<!-- eyes left -->
   $("#jikosig, #starburst").mouseover(function(){

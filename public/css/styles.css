@@ -947,10 +947,7 @@ ul {
     content: "";
     display: block;
     margin-bottom: 60px; }
-  @media screen and (max-width: 1000px) {
-    .main-sidebar {
-      right: 5px; } }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1400px) {
     .main-sidebar {
       display: none; } }
 

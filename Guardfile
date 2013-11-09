@@ -1,5 +1,5 @@
 guard :concat, :type => "css", :files => %w[styles], :input_dir => "public/css", :output => "public/css/styles.min"
-guard :concat, :type => "js", :files => %w[main], :input_dir => "public/js", :output => "public/js/app/scripts.min"
+guard :concat, :type => "js", :files => %w[main], :input_dir => "public/js/app", :output => "public/js/app/scripts.min"
 
 module ::Guard
   class Refresher < Guard
@@ -39,3 +39,5 @@ guard :refresher do
     File.open(m[0], 'w') { |file| file.write(JSMin.minify(js)) }
   end
 end
+
+guard :sass, :input => 'app/assets/sass', :output => 'public/css', :compass => true
