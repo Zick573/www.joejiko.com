@@ -9,7 +9,7 @@ if ( !function_exists( 'jd_shorten_link' ) ) { // prep work for future plug-in r
 
 	function jd_shorten_link( $url, $thisposttitle, $post_ID, $testmode=false ) {
 		if ( WPT_DEBUG && function_exists( 'wpt_pro_exists' ) ) {
-			wp_mail( WPT_DEBUG_ADDRESS,"Initial Link Data: #$post_ID","$url, $thisposttitle, $post_ID, $testmode" ); // DEBUG
+			wpt_mail( "Initial Link Data: #$post_ID","$url, $thisposttitle, $post_ID, $testmode" ); // DEBUG
 		}
 			// filter link before sending to shortener or adding analytics
 			$url = apply_filters('wpt_shorten_link',$url,$post_ID );
@@ -71,9 +71,9 @@ if ( !function_exists( 'jd_shorten_link' ) ) { // prep work for future plug-in r
 					if ( !$shrink ) { $shrink = $url; }
 					break;
 				case 2: // updated to v3 3/31/2010
-					$bitlyapi =  trim ( get_option( 'bitlyapi' ) );
-					$bitlylogin =  trim ( strtolower( get_option( 'bitlylogin' ) ) );				
-					$decoded = jd_remote_json( "http://api.bitly.com/v3/shorten?longUrl=".$encoded."&login=".$bitlylogin."&apiKey=".$bitlyapi."&format=json" );
+					$bitlyapi = trim ( get_option( 'bitlyapi' ) );
+					$bitlylogin = trim ( strtolower( get_option( 'bitlylogin' ) ) );				
+					$decoded = jd_remote_json( "https://api-ssl.bitly.com/v3/shorten?longUrl=".$encoded."&login=".$bitlylogin."&apiKey=".$bitlyapi."&format=json" );
 					$error = '';
 					if ($decoded) {
 						if ($decoded['status_code'] != 200) {
@@ -122,12 +122,12 @@ if ( !function_exists( 'jd_shorten_link' ) ) { // prep work for future plug-in r
 					$yourlsapi = stripcslashes( get_option( 'yourlsapi' ) );					
 					$api_url = sprintf( get_option('yourlsurl') . '?username=%s&password=%s&url=%s&format=json&action=shorturl&keyword=%s',
 						$yourlslogin, $yourlsapi, $encoded, $keyword_format );
-					$json = jd_remote_json( $api_url, false );			
+					$json = jd_remote_json( $api_url, false );
 					if ($json) {
 						$shrink = $json->shorturl;
 					} else {
 						$shrink = false;
-					}	
+					}
 					break;
 				case 7:
 					$suprapi =  trim ( get_option( 'suprapi' ) );

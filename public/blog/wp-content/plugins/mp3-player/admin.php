@@ -22,24 +22,24 @@
     * @since 0.8
     */
     function mp3_player_settings_page_init() {
-        $mp3_player=new stdClass();
-        global $mp3_player;
+        
+        global $mp3_playe_settings_page;
 
         /* Create the theme settings page. */
-        $mp3_player->settings_page = add_options_page( __( 'Mp3 Player', 'mp3-player' ), __( 'Mp3 Player', 'mp3-player' ), 'edit_theme_options', 'mp3-player', 'mp3_player_settings_page' );
+        $mp3_playe_settings_page = add_options_page( __( 'Mp3 Player', 'mp3-player' ), __( 'Mp3 Player', 'mp3-player' ), 'edit_theme_options', 'mp3-player', 'mp3_player_settings_page' );
 
 
 
         /* Register the default theme settings meta boxes. */
-        add_action( "load-{$mp3_player->settings_page}", 'mp3_player_create_settings_meta_boxes' );
+        add_action( "load-{$mp3_playe_settings_page}", 'mp3_player_create_settings_meta_boxes' );
 
         /* Make sure the settings are saved. */
-        add_action( "load-{$mp3_player->settings_page}", 'mp3_player_load_settings_page' );
+        add_action( "load-{$mp3_playe_settings_page}", 'mp3_player_load_settings_page' );
 
         /* Load the JavaScript and stylehsheets needed for the theme settings. */
-        add_action( "load-{$mp3_player->settings_page}", 'mp3_player_settings_page_enqueue_script' );
-        add_action( "load-{$mp3_player->settings_page}", 'mp3_player_settings_page_enqueue_style' );
-        add_action( "admin_head-{$mp3_player->settings_page}", 'mp3_player_settings_page_load_scripts' );
+        add_action( "load-{$mp3_playe_settings_page}", 'mp3_player_settings_page_enqueue_script' );
+        add_action( "load-{$mp3_playe_settings_page}", 'mp3_player_settings_page_enqueue_style' );
+        add_action( "admin_head-{$mp3_playe_settings_page}", 'mp3_player_settings_page_load_scripts' );
     }
 
     /**
@@ -121,11 +121,11 @@
     * @since 0.8
     */
     function mp3_player_create_settings_meta_boxes() {
-        global $mp3_player;
+        global $mp3_playe_settings_page;
 
-        add_meta_box( 'mp3-player-about-meta-box', __( 'About Mp3 player', 'mp3-player' ), 'mp3_player_about_meta_box', $mp3_player->settings_page, 'normal', 'high' );
+        add_meta_box( 'mp3-player-about-meta-box', __( 'About Mp3 player', 'mp3-player' ), 'mp3_player_about_meta_box', $mp3_playe_settings_page, 'normal', 'high' );
 
-        add_meta_box( 'mp3-player-general-meta-box2', __( 'Mp3 player Setttings', 'mp3-player' ), 'mp3_player_general_meta_box', $mp3_player->settings_page, 'normal', 'high' );
+        add_meta_box( 'mp3-player-general-meta-box2', __( 'Mp3 player Setttings', 'mp3-player' ), 'mp3_player_general_meta_box', $mp3_playe_settings_page, 'normal', 'high' );
 
     }
 
@@ -188,7 +188,7 @@
     * @since 0.8
     */
     function mp3_player_settings_page() {
-        global $mp3_player;
+        global $mp3_playe_settings_page;
 
         $plugin_data = get_plugin_data( mp3_player_DIR . 'mp3_player.php' ); ?>
 
@@ -207,9 +207,9 @@
                 <?php wp_nonce_field( 'meta-box-order', 'meta-box-order-nonce', false ); ?>
 
                 <div class="metabox-holder">
-                    <div class="post-box-container column-1 normal"><?php do_meta_boxes( $mp3_player->settings_page, 'normal', $plugin_data ); ?></div>
-                    <div class="post-box-container column-2 advanced"><?php do_meta_boxes( $mp3_player->settings_page, 'advanced', $plugin_data ); ?></div>
-                    <div class="post-box-container column-3 side"><?php do_meta_boxes( $mp3_player->settings_page, 'side', $plugin_data ); ?></div>
+                    <div class="post-box-container column-1 normal"><?php do_meta_boxes( $mp3_playe_settings_page, 'normal', $plugin_data ); ?></div>
+                    <div class="post-box-container column-2 advanced"><?php do_meta_boxes( $mp3_playe_settings_page, 'advanced', $plugin_data ); ?></div>
+                    <div class="post-box-container column-3 side"><?php do_meta_boxes( $mp3_playe_settings_page, 'side', $plugin_data ); ?></div>
                 </div>
 
                 <p class="submit" style="clear: both;">
@@ -250,12 +250,12 @@
     * @since 0.8
     */
     function mp3_player_settings_page_load_scripts() {
-        global $mp3_player; ?>
+        global $mp3_playe_settings_page; ?>
     <script type="text/javascript">
         //<![CDATA[
         jQuery(document).ready( function($) {
             $('.if-js-closed').removeClass('if-js-closed').addClass('closed');
-            postboxes.add_postbox_toggles( '<?php echo $mp3_player->settings_page; ?>' );
+            postboxes.add_postbox_toggles( '<?php echo $mp3_playe_settings_page; ?>' );
         });
         //]]>
     </script><?php

@@ -81,7 +81,7 @@ Leave your console open maybe?
   </footer>
 </div>
 <!-- switched to AMD -->
-<script src="{{ cdn() }}/js/libs/require/require.js"></script>
+<script src="{{ cdn() }}js/libs/require/require.js"></script>
 <script src="{{ js_path() }}app.js" async="true"></script>
 
 @if(Session::has('user_connected'))

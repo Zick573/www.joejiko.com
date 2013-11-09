@@ -10,7 +10,7 @@
 
 require_once( 'wpt_twitter_oauth.php' );
 
-class StormTwitter {
+class WPT_TwitterFeed {
 
   private $defaults = array(
     'directory' => '',
@@ -82,17 +82,32 @@ class StormTwitter {
     return $hash;
   }
   
+  private function save_cache( $file, $cache ) {
+	  $is_writable = wpt_is_writable( $file );
+	  if ( $is_writable ) {
+		file_put_contents( $file,$cache );
+	  } else {
+		set_transient( 'wpt_cache', $cache, $this->defaults['cache_expire'] );
+	  }
+  }
+  
   private function checkValidCache($screenname,$options) {
     $file = $this->getCacheLocation();
-    if (is_file($file)) {
-      $cache = file_get_contents($file);
-      $cache = @json_decode($cache,true);
-      
-      if (!isset($cache)) {
-        unlink($file);
-        return false;
-      }
-           
+    if ( is_file( $file ) ) {
+		$cache = file_get_contents( $file );
+		$cache = @json_decode( $cache,true );
+		if (!isset($cache)) {
+			unlink($file);
+			return false;
+		}		
+    } else {
+		$cache = get_transient( 'wpt_cache' );
+		$cache = @json_decode( $cache, true );
+		if (!isset($cache)) {
+			return false;
+		}
+	}
+	
       $cachename = $screenname."-".$this->getOptionsHash($options);
       
       //Check if we have a cache for the user.
@@ -100,7 +115,7 @@ class StormTwitter {
       
       if (!isset($cache[$cachename]['time']) || !isset($cache[$cachename]['tweets'])) {
         unset($cache[$cachename]);
-        file_put_contents($file,json_encode($cache));
+        $this->save_cache($file,json_encode($cache));
         return false;
       }
       
@@ -111,9 +126,6 @@ class StormTwitter {
         }
       }
       return $cache[$cachename]['tweets'];
-    } else {
-      return false;
-    }
   }
   
   private function oauthGetTweets($screenname,$options) {
@@ -143,7 +155,7 @@ class StormTwitter {
       $cache[$cachename]['time'] = time();
       $cache[$cachename]['tweets'] = $result;
       $file = $this->getCacheLocation();
-      file_put_contents($file,json_encode($cache));
+	  $this->save_cache( $file,json_encode( $cache ) );
     } else {
       if (is_array($results) && isset($result['errors'][0]) && isset($result['errors'][0]['message'])) {
         $last_error = '['.date('r').'] Twitter error: '.$result['errors'][0]['message'];

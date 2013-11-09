@@ -66,6 +66,7 @@ class Container implements ArrayAccess
     protected $instances = array();
     protected $aliases = array();
     protected $resolvingCallbacks = array();
+    protected $globalResolvingCallbacks = array();
     public function bound($abstract)
     {
         return isset($this[$abstract]) or isset($this->instances[$abstract]);
@@ -149,7 +150,7 @@ class Container implements ArrayAccess
         if ($this->isShared($abstract)) {
             $this->instances[$abstract] = $object;
         }
-        $this->fireResolvingCallbacks($object);
+        $this->fireResolvingCallbacks($abstract, $object);
         return $object;
     }
     protected function getConcrete($abstract)
@@ -212,13 +213,24 @@ class Container implements ArrayAccess
             }
         }
     }
-    public function resolving(Closure $callback)
+    public function resolving($abstract, Closure $callback)
     {
-        $this->resolvingCallbacks[] = $callback;
+        $this->resolvingCallbacks[$abstract][] = $callback;
     }
-    protected function fireResolvingCallbacks($object)
+    public function resolvingAny(Closure $callback)
     {
-        foreach ($this->resolvingCallbacks as $callback) {
+        $this->globalResolvingCallbacks[] = $callback;
+    }
+    protected function fireResolvingCallbacks($abstract, $object)
+    {
+        if (isset($this->resolvingCallbacks[$abstract])) {
+            $this->fireCallbackArray($object, $this->resolvingCallbacks[$abstract]);
+        }
+        $this->fireCallbackArray($object, $this->globalResolvingCallbacks);
+    }
+    protected function fireCallbackArray($object, array $callbacks)
+    {
+        foreach ($callbacks as $callback) {
             call_user_func($callback, $object);
         }
     }
@@ -3502,7 +3514,8 @@ class Str
     }
     public static function finish($value, $cap)
     {
-        return rtrim($value, $cap) . $cap;
+        $quoted = preg_quote($cap, '/');
+        return preg_replace('/(?:' . $quoted . ')+$/', '', $value) . $cap;
     }
     public static function is($pattern, $value)
     {
@@ -3510,11 +3523,7 @@ class Str
             return true;
         }
         $pattern = preg_quote($pattern, '#');
-        if ($pattern !== '/') {
-            $pattern = str_replace('\\*', '.*', $pattern) . '\\z';
-        } else {
-            $pattern = '/$';
-        }
+        $pattern = str_replace('\\*', '.*', $pattern) . '\\z';
         return (bool) preg_match('#^' . $pattern . '#', $value);
     }
     public static function length($value)
@@ -6871,6 +6880,7 @@ abstract class Manager
     public function extend($driver, Closure $callback)
     {
         $this->customCreators[$driver] = $callback;
+        return $this;
     }
     public function getDrivers()
     {

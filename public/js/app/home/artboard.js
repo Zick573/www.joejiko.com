@@ -1,4 +1,4 @@
-define(['jquery', 'jq/spritely/jquery.spritely-0.6.1', 'jq/waypoints/jquery.waypoints.min'], function($){
+define(['jquery', 'jq/waypoints/jquery.waypoints.min', 'jq/timeago/jquery.timeago'], function($){
   // window load
   $("#artboard").fadeIn();
   // fn_loadGallery();
@@ -9,7 +9,7 @@ define(['jquery', 'jq/spritely/jquery.spritely-0.6.1', 'jq/waypoints/jquery.wayp
   },{triggerOnce:true,offset:'100%'});
 
   var headlines = setTimeout(function(){
-    $.getJSON('/lupus/?questions&view=1',function(response){
+    $.getJSON('/api/questions',function(response){
       questionhtml = $("<p></p>");
       questionhtml.attr('id','recent-question');
       questionhtml.append("<h2>Ask me anything</h2>");
@@ -27,15 +27,6 @@ define(['jquery', 'jq/spritely/jquery.spritely-0.6.1', 'jq/waypoints/jquery.wayp
       }, 3000);
     })
   }, 3000);
-
-  // <!-- signature stars exploding -->
-  $('#jikosig').mouseover(function(){
-    $("#starburst").sprite({fps: 10, no_of_frames: 5});
-    stopburst = setTimeout(function(){ $("#starburst").spStop(true); }, 5000);
-    // _gaq.push(['_trackEvent', 'home', 'animate', 'signature']);
-  }).mouseout(function(){
-    $("#starburst").spStop(true).destroy();
-  });
 
   //<!-- eyes left -->
   $("#jikosig, #starburst").mouseover(function(){
@@ -231,22 +222,6 @@ define(['jquery', 'jq/spritely/jquery.spritely-0.6.1', 'jq/waypoints/jquery.wayp
   }).mouseleave(function(){
     $('.click-map').stop(true,true).fadeOut();
   });
-
-  function fn_animateCloud(){
-    // to do.. separate cloud segments
-    // fadein small pieces and +=/-= 1
-    // +=/-= 5 on the large bubble
-    $("#introduction h2").animate({
-      top:'+=2'
-    }, 500, function(){
-      $("#introduction h2").animate({
-        top:'-=2'
-      }, 500, function(){
-        fn_animateCloud();
-      });
-    });
-  };
-//  fn_animateCloud();
 
   return {
     artboard: {

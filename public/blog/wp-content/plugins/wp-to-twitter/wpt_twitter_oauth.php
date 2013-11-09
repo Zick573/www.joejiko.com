@@ -160,7 +160,6 @@ class jd_TwitterOAuth {
    * @return boolean
    */
   function handleMediaRequest($url, $args = array()) {
-		// JCD TEST THIS
 		/* Load tmhOAuth for Media uploads only when needed: https://github.com/themattharris/tmhOAuth */
 		if ( !class_exists( 'tmhOAuth' ) ) {
 			require_once('tmhOAuth/tmhOAuth.php');
@@ -177,33 +176,44 @@ class jd_TwitterOAuth {
 			$acs = get_user_meta( $auth,'app_consumer_secret',true);
 			$ot = get_user_meta( $auth,'oauth_token',true);
 			$ots = get_user_meta( $auth,'oauth_token_secret',true);
-		} 
-		$connect = array( 'consumer_key'=>$ack, 'consumer_secret'=>$acs, 'user_token'=>$ot, 'user_secret'=>$ots );
-		$tmhOAuth = new tmhOAuth( $connect );
-		$attachment = wpt_post_attachment($args['id']);
-
-        if ($attachment == null) return false;
-        $img_medium = wp_get_attachment_image_src($attachment,'medium');
+		}
 		// when performing as a scheduled action, need to include file.php
 		if ( !function_exists( 'get_home_path' ) ) {
 			require_once( ABSPATH . 'wp-admin/includes/file.php' );
+		}		
+		$connect = array( 'consumer_key'=>$ack, 'consumer_secret'=>$acs, 'user_token'=>$ot, 'user_secret'=>$ots );
+		$tmhOAuth = new tmhOAuth( $connect );
+		$attachment = wpt_post_attachment($args['id']);
+		// if install is at root, can query src path. Otherwise, need to take full image.
+		$at_root = ( wp_make_link_relative( home_url() ) == home_url() || wp_make_link_relative( home_url() ) == '/' ) ? true : false ;
+		if ( $at_root ) {		
+			$upload = wp_get_attachment_image_src( $attachment, apply_filters( 'wpt_upload_image_size', 'medium' ) );
+			$path = get_home_path() . wp_make_link_relative( $upload[0] );
+			$subject = apply_filters( 'wpt_image_path', $path );
+			$image = str_replace( '//', '/', $subject );
+		} else {
+			$image = get_attached_file( $attachment );
 		}
-		// get_home_path() and make link relative both return slashed, so we have an extra.
-		$subject = get_home_path() . wp_make_link_relative($img_medium[0]);
-        $image = str_replace( '//', '/', $subject );
-
+		$mime_type = get_post_mime_type( $attachment );
+		if ( !$mime_type ) { $mime_type = 'image/jpeg'; }
         $code = $tmhOAuth->request(
             'POST',
              $url,
              array(
-              'media[]'  => "@{$image};type=image/jpeg;filename={$image}",
-              'status'   => $args['status'],
+				'media[]'  => "@{$image};type={$mime_type};filename={$image}",
+				'status'   => $args['status'],
              ),
              true, // use auth
              true  // multipart
         );
-
-        $response = $tmhOAuth->response['response'];
+		if ( WPT_DEBUG && function_exists( 'wpt_pro_exists' ) ) {
+			$debug = array(
+				'media[]'  => "@{$image};type={$mime_type};filename={$image}",
+				'status'   => $args['status']
+			);
+			 wpt_mail( "Media Submitted - Post ID #$args[id]", print_r( $debug, 1 ) );
+		}
+        $response = $tmhOAuth->response['response'];	
         if ( is_wp_error( $response ) ) return false;
 		
         $this->http_code = $code; 
@@ -220,7 +230,7 @@ class jd_TwitterOAuth {
   
     //Handle media requests using tmhOAuth library.
     if ($method == 'MEDIA') {
-      return $this->handleMediaRequest($url,$args);
+		return $this->handleMediaRequest($url,$args);		
     }    
   
     if (empty($method)) $method = empty($args) ? "GET" : "POST";

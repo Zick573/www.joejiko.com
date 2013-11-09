@@ -59,6 +59,10 @@ Go to WordPress backend and find the mp3-player admin page and insert your CLIEN
 ==Changelog ==
 
 
+= Version 0.9.7 =
+* Minor bug fix.
+
+
 = Version 0.9.6 =
 * Minor bug fix.
 

@@ -8,7 +8,7 @@
     Plugin Name: Mp3 Player
     Plugin URI: http://simonhans.dk
     Description: Renders an mp3 player from mp3-files in gallery
-    Version: 0.9.6
+    Version: 0.9.7
     Author: Simon Hansen
     Author URI: http://simonhans.dk
     License: GPLv2 or later

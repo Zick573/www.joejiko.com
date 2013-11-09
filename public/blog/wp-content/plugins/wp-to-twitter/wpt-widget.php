@@ -16,68 +16,37 @@ function wpt_get_user( $twitter_ID=false ) {
 	return json_decode($result);
 }
 
-class WPT_Latest_Tweets_Widget extends WP_Widget {
 
-/**
-* Holds widget settings defaults, populated in constructor.
-*
-* @var array
-*/
-protected $defaults;
-
-/**
-* Constructor. Set the default widget options and create widget.
-*
-* @since 0.1.8
-*/
-function __construct() {
-
-$this->defaults = array(
-'title' => '',
-'twitter_id' => '',
-'twitter_num' => '',
-'twitter_duration' => '',
-'twitter_hide_replies' => 0,
-'link_links'=>'',
-'link_mentions'=>'',
-'link_hashtags'=>'',
-'intents'=>'',
-'source'=>''
-);
-
-$widget_ops = array(
-'classname' => 'wpt-latest-tweets',
-'description' => __( 'Display a list of your latest tweets.', 'wp-to-twitter' ),
-);
-
-$control_ops = array(
-'id_base' => 'wpt-latest-tweets',
-'width' => 200,
-'height' => 250,
-);
-
-$this->WP_Widget( 'wpt-latest-tweets', __( 'WP to Twitter - Latest Tweets', 'wp-to-twitter' ), $widget_ops, $control_ops );
-
+add_shortcode( 'get_tweets', 'wpt_get_twitter_feed' );
+function wpt_get_twitter_feed( $atts, $content ) {
+	extract( shortcode_atts( array( 
+			'id' => false,
+			'num' => 10,
+			'duration' => 3600,
+			'replies' => 0,
+			'rts' => 1,
+			'links' => 1,
+			'mentions' => 1,
+			'hashtags' => 0,
+			'intents' => 1,
+			'source' => 0
+		), $atts, 'get_tweets' ) );
+		$instance = array( 
+			'twitter_id' => $id,
+			'twitter_num' => $num,
+			'twitter_duration' => $duration,
+			'twitter_hide_replice' => $replies,
+			'twitter_include_rts' => $rts,
+			'link_links' => $links,
+			'link_mentions' => $mentions,
+			'link_hashtags' => $hashtags,
+			'intents' => $intents,
+			'source' => $source );
+	return wpt_twitter_feed( $instance );
 }
 
-/**
-* Echo the widget content.
-*
-* @param array $args Display arguments including before_title, after_title, before_widget, and after_widget.
-* @param array $instance The settings for the particular instance of the widget
-*/
-
-function widget( $args, $instance ) {
-	extract( $args );
-	wp_enqueue_script( 'twitter-platform', "https://platform.twitter.com/widgets.js" );
-	wp_enqueue_style( 'wpt-twitter-feed' );
-	/** Merge with defaults */
-	$instance = wp_parse_args( (array) $instance, $this->defaults );
-	echo $before_widget;
-	if ( $instance['title'] ) {
-		echo $before_title . apply_filters( 'widget_title', $instance['title'], $instance, $this->id_base ) . $after_title;
-	}
-	echo '<div class="wpt-header">';
+function wpt_twitter_feed( $instance ) {
+	$return = '<div class="wpt-header">';
 		$user = wpt_get_user( $instance['twitter_id'] );
 		$avatar = $user->profile_image_url_https;
 		$name = $user->name;
@@ -86,14 +55,14 @@ function widget( $args, $instance ) {
 		$follow_alignment = ( is_rtl() )?'wpt-left':'wpt-right';
 		$follow_url = esc_url( 'https://twitter.com/'.$instance['twitter_id'] );
 		$follow_button = apply_filters ( 'wpt_follow_button', "<a href='$follow_url' class='twitter-follow-button $follow_alignment' data-width='30px' data-show-screen-name='false' data-size='large' data-show-count='false' data-lang='en'>Follow @$instance[twitter_id]</a>" );
-		echo "<p>
+		$return .= "<p>
 			$follow_button
 			<img src='$avatar' alt='' class='wpt-twitter-avatar $img_alignment' />
 			<span class='wpt-twitter-name'>$name</span><br />
 			<span class='wpt-twitter-id'><a href='$follow_url'>@$instance[twitter_id]</a></span>
 			</p>";
-	echo '</div>';
-	echo '<ul>' . "\n";
+	$return .= '</div>';
+	$return .= '<ul>' . "\n";
 
 	$options['exclude_replies'] = $instance['twitter_hide_replies'];
 	$options['include_rts'] = $instance['twitter_include_rts'];
@@ -103,7 +72,7 @@ function widget( $args, $instance ) {
 	$rawtweets = WPT_getTweets($instance['twitter_num'], $instance['twitter_id'], $options);
 
 	if ( isset( $rawtweets['error'] ) ) {
-		echo "<li>".$rawtweets['error']."</li>";
+		$return .= "<li>".$rawtweets['error']."</li>";
 	} else {
 		/** Build the tweets array */
 		$tweets = array();
@@ -127,10 +96,75 @@ function widget( $args, $instance ) {
 	}
 	if ( is_array( $tweets ) ) {
 		foreach( $tweets as $tweet ) {
-			echo $tweet;
+			$return .= $tweet;
 		}
 	}
-	echo '</ul>' . "\n";
+	$return .= '</ul>' . "\n";
+	return $return;
+}
+
+
+class WPT_Latest_Tweets_Widget extends WP_Widget {
+
+/**
+* Holds widget settings defaults, populated in constructor.
+*
+* @var array
+*/
+protected $defaults;
+
+/**
+* Constructor. Set the default widget options and create widget.
+*
+* @since 0.1.8
+*/
+function __construct() {
+
+	$this->defaults = array(
+		'title' => '',
+		'twitter_id' => '',
+		'twitter_num' => '',
+		'twitter_duration' => '',
+		'twitter_hide_replies' => 0,
+		'twitter_include_rts' => 0,
+		'link_links'=>'',
+		'link_mentions'=>'',
+		'link_hashtags'=>'',
+		'intents'=>'',
+		'source'=>''
+	);
+
+	$widget_ops = array(
+		'classname' => 'wpt-latest-tweets',
+		'description' => __( 'Display a list of your latest tweets.', 'wp-to-twitter' ),
+	);
+
+	$control_ops = array(
+		'id_base' => 'wpt-latest-tweets',
+		'width' => 200,
+		'height' => 250,
+	);
+	$this->WP_Widget( 'wpt-latest-tweets', __( 'WP to Twitter - Latest Tweets', 'wp-to-twitter' ), $widget_ops, $control_ops );
+}
+
+/**
+* Echo the widget content.
+*
+* @param array $args Display arguments including before_title, after_title, before_widget, and after_widget.
+* @param array $instance The settings for the particular instance of the widget
+*/
+
+function widget( $args, $instance ) {
+	extract( $args );
+	wp_enqueue_script( 'twitter-platform', "https://platform.twitter.com/widgets.js" );
+	wp_enqueue_style( 'wpt-twitter-feed' );
+	/** Merge with defaults */
+	$instance = wp_parse_args( (array) $instance, $this->defaults );
+	echo $before_widget;
+	if ( $instance['title'] ) {
+		echo $before_title . apply_filters( 'widget_title', $instance['title'], $instance, $this->id_base ) . $after_title;
+	}
+	echo wpt_twitter_feed( $instance );
 	echo $after_widget;
 }
 
@@ -258,7 +292,7 @@ function WPT_getTweets($count = 20, $username = false, $options = false) {
   if ($config['cache_expire'] < 1) $config['cache_expire'] = 3600;
   $config['directory'] = plugin_dir_path(__FILE__);
   
-  $obj = new StormTwitter($config);
+  $obj = new WPT_TwitterFeed($config);
   $res = $obj->getTweets($count, $username, $options);
   update_option('wpt_tdf_last_error',$obj->st_last_error);
   return $res;
@@ -269,7 +303,7 @@ function wpt_generate_classes( $tweet ) {
 	// take Tweet array and parse selected options into classes.
 	$classes[] = ( $tweet['favorited'] )?'favorited':'';
 	$clasees[] = ( $tweet['retweeted'] )?'retweeted':'';
-	$classes[] = ( $tweet['possibly_sensitive'] )?'sensitive':'';
+	$classes[] = ( isset( $tweet['possibly_sensitive'] ) )?'sensitive':'';
 	$classes[] = 'lang-'.$tweet['lang'];
 	$class = trim( implode( ' ', $classes ) );
 	return $class;

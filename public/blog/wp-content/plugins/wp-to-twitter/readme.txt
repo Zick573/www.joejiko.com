@@ -2,10 +2,10 @@
 Contributors: joedolson
 Donate link: http://www.joedolson.com/donate.php
 Tags: twitter, microblogging, su.pr, bitly, yourls, redirect, shortener, post, links
-Requires at least: 3.2.1
-Tested up to: 3.6
+Requires at least: 3.3.3
+Tested up to: 3.6.1
 License: GPLv2 or later
-Stable tag: trunk
+Stable tag: 2.7.4
 
 Auto-posts a Twitter update when you update your WordPress blog or blogroll, with your chosen URL shortening service.
 
@@ -41,7 +41,7 @@ Translations:
 Visit the [WP to Twitter translations page](http://translate.joedolson.com/projects/wp-to-twitter) to see how complete these are.
 
 Languages available (in order of completeness):
-Italian, French, Danish, Catalan, Dutch, Chinese, Portuguese, Japanese, Romanian, Estonian, Russian, German, Ukrainian, Lithuanian, Belarusian, Irish, Spanish, Turkish, Persian
+Italian, French, Danish, Catalan, Dutch, Portuguese, Chinese, Japanese, Romanian, Estonian, Spanish, German, Russian, Swedish, Irish, Ukrainian, Lithuanian, Belarusian, Turkish, Persian
 
 Translating my plug-ins is always appreciated. Visit <a href="http://translate.joedolson.com">my translations site</a> to start getting your language into shape!
 
@@ -50,6 +50,29 @@ Credits:
 Contributions by [Thor Erik](http://www.thorerik.net), Bill Berry and [Andrea Baccega](http://www.andreabaccega.com).  Some code previously contributed is no longer in this plug-in. Other bug fixes and related citations can be found in the changelog.
 
 == Changelog ==
+
+= 2.7.5 =
+
+* Setting a post to 'pending' or any custom status caused a Tweet to be published in 2.7.4
+
+= 2.7.4 =
+
+* Update API endpoint for Bit.ly
+* Added filter to modify "Tweet this" value during editing, based on $_POST data. ('wpt_tweet_this_edit')
+* Altered order of limits for determining whether to Tweet.
+* Deprecated upgrade routine for versions below 2.2.9. (Upgrade will still work.)
+* Added questions to support request form.
+* Added option to delete Tweet history for a post.
+* Made Twitter Feed available via shortcode [get_tweets id='twitter_username']
+* Debugging improvements.
+* Moved to save_post actions
+* Removed option to disable XMLRPC-based Tweeting.
+* Deprecated support for WP versions older than 3.3.3.
+* Renamed StormTwitter class for better namespacing and because it's substantively changed as I'm using it.
+* Modified Twitter feed caching to save as local file or as transient if file system not available.
+* Removed PHP < 5 warning, since I no longer support versions of WordPress that allow PHP 4.
+* #author# Template tag only worked if WP Tweets PRO installed.
+* Updated Portuguese Brazilian & added Swedish translations. (Partial)
 
 = 2.7.3 =
 

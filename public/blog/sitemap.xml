@@ -1,2467 +1,2600 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://joejiko.com/blog/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- generator="wordpress/3.6" -->
-<!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.2.9" -->
-<!-- generated-on="2013/09/12 4:55 AM" -->
-<!-- Debug: Total comment count: 53 -->
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://joejiko.com/blog/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- generator="wordpress/3.6.1" -->
+<!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.3" -->
+<!-- generated-on="2013/10/29 2:36 AM" -->
+<!-- Debug: Total comment count: 58 -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>http://joejiko.com/blog/</loc>
-		<lastmod>2013-09-12T04:54:57+00:00</lastmod>
+		<lastmod>2013-10-12T18:28:35+00:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
 <!-- Debug: Start Postings -->
-<!-- Debug: Priority report of postID 2715: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2828: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/uncategorized/expected-downtime/</loc>
-		<lastmod>2013-09-12T04:54:57+00:00</lastmod>
+		<loc>http://joejiko.com/blog/goodbye-time-embark-pokemon-journey/</loc>
+		<lastmod>2013-10-12T18:28:35+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2707: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2822: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/web-development/commands-setting-centos-linux/</loc>
-		<lastmod>2013-09-12T02:50:50+00:00</lastmod>
+		<loc>http://joejiko.com/blog/output-laravel-view-string/</loc>
+		<lastmod>2013-10-11T16:38:16+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2710: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2819: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/daily/brother-google-hangouts/</loc>
-		<lastmod>2013-09-08T02:24:25+00:00</lastmod>
+		<loc>http://joejiko.com/blog/legend-zelda-themed-wii-bundle-caught-attention/</loc>
+		<lastmod>2013-10-10T13:39:48+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2705: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1769: Comments: 1 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/art/jasontyler-singersongwriter/</loc>
+		<loc>http://joejiko.com/blog/iron-man-christmas-comic-successfully-privatized-world-peace-presents/</loc>
+		<lastmod>2013-10-04T17:48:52+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2813: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://joejiko.com/blog/great-comments/</loc>
+		<lastmod>2013-10-04T15:13:06+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 457: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://joejiko.com/blog/dream-log-3-dreams-cc-mandagoesrawr-m0llybee-thatchinesegrl/</loc>
+		<lastmod>2013-10-04T13:56:19+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2807: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://joejiko.com/blog/im-going-to-be-the-very-best-like-no-one-ever-was/</loc>
+		<lastmod>2013-10-04T13:47:54+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2804: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://joejiko.com/blog/choose/</loc>
+		<lastmod>2013-10-04T13:43:47+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2802: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://joejiko.com/blog/google-web-designer/</loc>
+		<lastmod>2013-10-02T00:04:03+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2799: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://joejiko.com/blog/black-mage-mermaid/</loc>
+		<lastmod>2013-09-29T23:48:36+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2791: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://joejiko.com/blog/loooove-boobs/</loc>
+		<lastmod>2013-09-29T21:22:36+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2763: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://joejiko.com/blog/steam-controller-shut-money/</loc>
+		<lastmod>2013-09-27T23:51:22+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2764: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://joejiko.com/blog/setting-web-deployment-github/</loc>
+		<lastmod>2013-09-27T19:19:53+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 1795: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://joejiko.com/blog/simple-placeholder-text-input-fields-jquery/</loc>
+		<lastmod>2013-09-27T19:15:04+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 541: Comments: 9 of 58 = 0.2 points -->
+	<url>
+		<loc>http://joejiko.com/blog/windows-boot-installing-motherboard-fixed/</loc>
+		<lastmod>2013-09-27T19:10:01+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 1691: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://joejiko.com/blog/wanna-cuddle-grumpy-cat-hd-desktop-wallpaper/</loc>
+		<lastmod>2013-09-27T19:07:05+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2018: Comments: 5 of 58 = 0.1 points -->
+	<url>
+		<loc>http://joejiko.com/blog/firefox-load-denied-xframeoptions/</loc>
+		<lastmod>2013-09-27T19:02:45+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 1148: Comments: 2 of 58 = 0 points -->
+	<url>
+		<loc>http://joejiko.com/blog/firebug-syntaxerror-syntax-error-break-error-doctype-html/</loc>
+		<lastmod>2013-09-27T18:53:52+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2761: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://joejiko.com/blog/life-ballad/</loc>
+		<lastmod>2013-09-27T02:22:14+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2758: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://joejiko.com/blog/free/</loc>
+		<lastmod>2013-09-27T01:07:59+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2755: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://joejiko.com/blog/bet-test-code-production/</loc>
+		<lastmod>2013-09-27T01:01:25+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2752: Comments: 2 of 58 = 0 points -->
+	<url>
+		<loc>http://joejiko.com/blog/comments-enabled/</loc>
+		<lastmod>2013-09-26T02:23:21+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 1589: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://joejiko.com/blog/track-friends/</loc>
+		<lastmod>2013-09-26T01:46:29+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 1712: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://joejiko.com/blog/good-morning-everyone-breakfast/</loc>
+		<lastmod>2013-09-26T01:45:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2707: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://joejiko.com/blog/commands-setting-centos-linux/</loc>
+		<lastmod>2013-09-26T01:42:30+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2726: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://joejiko.com/blog/dns-update/</loc>
+		<lastmod>2013-09-26T01:40:43+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2720: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://joejiko.com/blog/worked/</loc>
+		<lastmod>2013-09-26T01:40:19+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2719: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://joejiko.com/blog/kidding/</loc>
+		<lastmod>2013-09-26T01:40:07+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2715: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://joejiko.com/blog/expected-downtime/</loc>
+		<lastmod>2013-09-26T01:38:34+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2696: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://joejiko.com/blog/email-overheard/</loc>
+		<lastmod>2013-09-26T01:37:34+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2702: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://joejiko.com/blog/real-bot/</loc>
+		<lastmod>2013-09-26T01:34:59+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2691: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://joejiko.com/blog/kermerhermerhur/</loc>
+		<lastmod>2013-09-26T01:34:49+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2710: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://joejiko.com/blog/brother-google-hangouts/</loc>
+		<lastmod>2013-09-26T01:33:57+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2728: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://joejiko.com/blog/set-ssh-key-authentication-centos-64/</loc>
+		<lastmod>2013-09-26T01:26:29+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2416: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://joejiko.com/blog/closed-eyes/</loc>
+		<lastmod>2013-09-26T00:59:29+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 1853: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://joejiko.com/blog/8am-xanax-fix/</loc>
+		<lastmod>2013-09-26T00:55:24+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 1698: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://joejiko.com/blog/suggestions-joejikocom-uh-vlogs-video/</loc>
+		<lastmod>2013-09-26T00:41:37+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 2705: Comments: 0 of 58 = 0 points -->
+	<url>
+		<loc>http://joejiko.com/blog/jasontyler-singersongwriter/</loc>
 		<lastmod>2013-09-07T21:36:45+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2702: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 889: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/daily/real-bot/</loc>
-		<lastmod>2013-08-28T21:05:23+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 2696: Comments: 0 of 53 = 0 points -->
-	<url>
-		<loc>http://joejiko.com/blog/daily/email-overheard/</loc>
-		<lastmod>2013-08-27T16:48:16+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 889: Comments: 0 of 53 = 0 points -->
-	<url>
-		<loc>http://joejiko.com/blog/art/2-sketches-based-lyrics-senses-fail/</loc>
+		<loc>http://joejiko.com/blog/2-sketches-based-lyrics-senses-fail/</loc>
 		<lastmod>2013-08-20T17:27:03+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2691: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2685: Comments: 3 of 58 = 0.1 points -->
 	<url>
-		<loc>http://joejiko.com/blog/uncategorized/kermerhermerhur/</loc>
-		<lastmod>2013-08-19T14:41:26+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 2685: Comments: 0 of 53 = 0 points -->
-	<url>
-		<loc>http://joejiko.com/blog/software-applications/prevent-applications-stealing-focus-windows-8/</loc>
+		<loc>http://joejiko.com/blog/prevent-applications-stealing-focus-windows-8/</loc>
 		<lastmod>2013-08-10T19:18:34+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2678: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2678: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/videogames/played-games-steam/</loc>
+		<loc>http://joejiko.com/blog/played-games-steam/</loc>
 		<lastmod>2013-07-30T19:32:07+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2672: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2672: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/web-design/websites/</loc>
+		<loc>http://joejiko.com/blog/websites/</loc>
 		<lastmod>2013-07-27T04:35:56+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2673: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2673: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/web-design/ugly-form-redesign/</loc>
+		<loc>http://joejiko.com/blog/ugly-form-redesign/</loc>
 		<lastmod>2013-07-23T16:33:01+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1691: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2666: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/art/wanna-cuddle-grumpy-cat-hd-desktop-wallpaper/</loc>
-		<lastmod>2013-07-17T17:01:27+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 2666: Comments: 0 of 53 = 0 points -->
-	<url>
-		<loc>http://joejiko.com/blog/software-applications/bios-boot-windows-8-restart-fix-disk/</loc>
+		<loc>http://joejiko.com/blog/bios-boot-windows-8-restart-fix-disk/</loc>
 		<lastmod>2013-07-13T19:47:06+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2661: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2661: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/web-development/switched-git-workflow-site/</loc>
+		<loc>http://joejiko.com/blog/switched-git-workflow-site/</loc>
 		<lastmod>2013-07-08T14:23:26+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2649: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2649: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/hardware-mode-photos-weekend/</loc>
+		<loc>http://joejiko.com/blog/hardware-mode-photos-weekend/</loc>
 		<lastmod>2013-07-07T21:36:55+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2633: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2633: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/software-applications/launch-chrome-apps-windows-taskbar/</loc>
+		<loc>http://joejiko.com/blog/launch-chrome-apps-windows-taskbar/</loc>
 		<lastmod>2013-07-07T21:23:10+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2639: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2639: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/software-applications/create-shortcuts-chrome-apps/</loc>
+		<loc>http://joejiko.com/blog/create-shortcuts-chrome-apps/</loc>
 		<lastmod>2013-07-07T21:15:08+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2626: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2626: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/videogames/playing-dragons-dogma-x360/</loc>
+		<loc>http://joejiko.com/blog/playing-dragons-dogma-x360/</loc>
 		<lastmod>2013-06-12T14:53:40+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2623: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2623: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/software-applications/hellojiko-chrome-extension-updates/</loc>
+		<loc>http://joejiko.com/blog/hellojiko-chrome-extension-updates/</loc>
 		<lastmod>2013-05-30T18:20:17+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2619: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2619: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/web-development/permalink-current-milestone-screenshot-joejikocom/</loc>
+		<loc>http://joejiko.com/blog/permalink-current-milestone-screenshot-joejikocom/</loc>
 		<lastmod>2013-05-22T03:58:52+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2617: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2617: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/web-development/updating-homepage-layout-week/</loc>
+		<loc>http://joejiko.com/blog/updating-homepage-layout-week/</loc>
 		<lastmod>2013-05-20T06:06:35+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2614: Comments: 2 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2614: Comments: 2 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/internet/</loc>
+		<loc>http://joejiko.com/blog/internet/</loc>
 		<lastmod>2013-05-20T03:11:53+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2612: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2612: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/videogames/3ds-games-buy/</loc>
+		<loc>http://joejiko.com/blog/3ds-games-buy/</loc>
 		<lastmod>2013-05-18T21:35:49+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2608: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2608: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/android-2/verizon-galaxy-note-2-rooted-unlocked/</loc>
+		<loc>http://joejiko.com/blog/verizon-galaxy-note-2-rooted-unlocked/</loc>
 		<lastmod>2013-05-11T05:03:05+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2598: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2598: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/dead/</loc>
+		<loc>http://joejiko.com/blog/dead/</loc>
 		<lastmod>2013-05-02T03:54:31+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1756: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1756: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/design/iron-man-font-stark/</loc>
+		<loc>http://joejiko.com/blog/iron-man-font-stark/</loc>
 		<lastmod>2013-05-02T02:52:14+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2514: Comments: 7 of 53 = 0.1 points -->
+<!-- Debug: Priority report of postID 2514: Comments: 7 of 58 = 0.1 points -->
 	<url>
-		<loc>http://joejiko.com/blog/software-applications/chrome-error-103-neterrconnectionaborted-unknown-error/</loc>
+		<loc>http://joejiko.com/blog/chrome-error-103-neterrconnectionaborted-unknown-error/</loc>
 		<lastmod>2013-05-02T02:49:33+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2588: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2588: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/news-politics-society/generally-friends-fat-people/</loc>
+		<loc>http://joejiko.com/blog/generally-friends-fat-people/</loc>
 		<lastmod>2013-05-02T02:42:04+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2584: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2584: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/social/rotd-internet-relationships-real/</loc>
+		<loc>http://joejiko.com/blog/rotd-internet-relationships-real/</loc>
 		<lastmod>2013-04-28T02:02:22+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2578: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2578: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/software-applications/chrome-confirm-form-resubmission-viewing-source/</loc>
+		<loc>http://joejiko.com/blog/chrome-confirm-form-resubmission-viewing-source/</loc>
 		<lastmod>2013-04-25T16:39:47+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2577: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2577: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/pets-animals/zeah-lives/</loc>
+		<loc>http://joejiko.com/blog/zeah-lives/</loc>
 		<lastmod>2013-04-25T16:31:14+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1722: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1722: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/social/bsotd-spammy-band-guy/</loc>
+		<loc>http://joejiko.com/blog/bsotd-spammy-band-guy/</loc>
 		<lastmod>2013-04-11T16:42:50+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2569: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2569: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/social/bsotd-handtyped-spam/</loc>
+		<loc>http://joejiko.com/blog/bsotd-handtyped-spam/</loc>
 		<lastmod>2013-04-11T16:26:31+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2564: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2564: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/social/talk/</loc>
+		<loc>http://joejiko.com/blog/talk/</loc>
 		<lastmod>2013-04-04T16:37:40+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2561: Comments: 2 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2561: Comments: 2 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/social/crazy-questions/</loc>
+		<loc>http://joejiko.com/blog/crazy-questions/</loc>
 		<lastmod>2013-04-03T16:21:13+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2553: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2553: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/social/rotd-miserable-attention/</loc>
+		<loc>http://joejiko.com/blog/rotd-miserable-attention/</loc>
 		<lastmod>2013-03-17T16:34:36+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2540: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2540: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/software-applications/list-alternatives-google-reader-rip-june-1st/</loc>
+		<loc>http://joejiko.com/blog/list-alternatives-google-reader-rip-june-1st/</loc>
 		<lastmod>2013-03-14T20:44:25+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2517: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2517: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/web-development/google-sign-helpful-tips/</loc>
+		<loc>http://joejiko.com/blog/google-sign-helpful-tips/</loc>
 		<lastmod>2013-03-12T15:47:55+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2532: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2532: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/software-applications/shortcut-key-reopen-closed-tabs-chrome/</loc>
+		<loc>http://joejiko.com/blog/shortcut-key-reopen-closed-tabs-chrome/</loc>
 		<lastmod>2013-03-10T04:59:17+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2524: Comments: 2 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2524: Comments: 2 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/web-design/feng-office-theme-lupus/</loc>
+		<loc>http://joejiko.com/blog/feng-office-theme-lupus/</loc>
 		<lastmod>2013-03-09T06:53:42+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2519: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2519: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/web-development/upgrade-latest-version-feng-office-easy-version/</loc>
+		<loc>http://joejiko.com/blog/upgrade-latest-version-feng-office-easy-version/</loc>
 		<lastmod>2013-03-09T05:49:13+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 36: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 36: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/news-politics-society/young-brad-pitt/</loc>
+		<loc>http://joejiko.com/blog/young-brad-pitt/</loc>
 		<lastmod>2013-03-04T03:21:13+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 69: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 69: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/news-politics-society/michael-jackson-dead-19xx-2009/</loc>
+		<loc>http://joejiko.com/blog/michael-jackson-dead-19xx-2009/</loc>
 		<lastmod>2013-03-04T03:19:51+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 70: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 70: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/personal-quotes/</loc>
+		<loc>http://joejiko.com/blog/personal-quotes/</loc>
 		<lastmod>2013-03-04T03:19:38+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 86: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 86: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/video/japanese-scare-tactics/</loc>
+		<loc>http://joejiko.com/blog/japanese-scare-tactics/</loc>
 		<lastmod>2013-03-04T03:19:12+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 173: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 173: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/fashion-style/want-matt-nat-cosmo-nappa-style-wallet-photo/</loc>
+		<loc>http://joejiko.com/blog/want-matt-nat-cosmo-nappa-style-wallet-photo/</loc>
 		<lastmod>2013-03-04T02:59:33+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 178: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 178: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/social/twitter-profile-photos/</loc>
+		<loc>http://joejiko.com/blog/twitter-profile-photos/</loc>
 		<lastmod>2013-03-04T02:59:10+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 208: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 208: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/social/this-is-what-twitter-looks-like-for-me/</loc>
+		<loc>http://joejiko.com/blog/this-is-what-twitter-looks-like-for-me/</loc>
 		<lastmod>2013-03-04T02:57:10+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 298: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 298: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/daily/crazy-fat-frenchman-ill-show-you-hardcore/</loc>
+		<loc>http://joejiko.com/blog/crazy-fat-frenchman-ill-show-you-hardcore/</loc>
 		<lastmod>2013-03-04T02:56:21+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 319: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 319: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/pets-animals/gimme-all-your-tennis-balls-and-squirrels/</loc>
+		<loc>http://joejiko.com/blog/gimme-all-your-tennis-balls-and-squirrels/</loc>
 		<lastmod>2013-03-04T02:55:35+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 334: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 334: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/daily/caught-this-bitch-cheating-on-me-with-my-roommate-photo/</loc>
+		<loc>http://joejiko.com/blog/caught-this-bitch-cheating-on-me-with-my-roommate-photo/</loc>
 		<lastmod>2013-03-04T02:22:19+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 344: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 344: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/anthonyvanity-less-tweets-more-shirtless-twitpics-wish-granted/</loc>
+		<loc>http://joejiko.com/blog/anthonyvanity-less-tweets-more-shirtless-twitpics-wish-granted/</loc>
 		<lastmod>2013-03-04T02:22:17+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 346: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 346: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/daily/big-truck-photo-cc-jemapellemandie/</loc>
+		<loc>http://joejiko.com/blog/big-truck-photo-cc-jemapellemandie/</loc>
 		<lastmod>2013-03-04T02:21:58+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 376: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 376: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/memorial-day-photos/</loc>
+		<loc>http://joejiko.com/blog/memorial-day-photos/</loc>
 		<lastmod>2013-03-04T02:21:28+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 388: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 388: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/pets-animals/huge-evil-turtle-photo/</loc>
+		<loc>http://joejiko.com/blog/huge-evil-turtle-photo/</loc>
 		<lastmod>2013-03-04T02:21:09+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2482: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2482: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/social/hate-tomatoes-eat/</loc>
+		<loc>http://joejiko.com/blog/hate-tomatoes-eat/</loc>
 		<lastmod>2013-03-04T02:19:22+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2479: Comments: 1 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2479: Comments: 1 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/social/blame-feel/</loc>
+		<loc>http://joejiko.com/blog/blame-feel/</loc>
 		<lastmod>2013-03-04T02:15:01+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2477: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2477: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/social/emotions/</loc>
+		<loc>http://joejiko.com/blog/emotions/</loc>
 		<lastmod>2013-03-04T02:10:30+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2475: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2475: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/social/relationships-loss/</loc>
+		<loc>http://joejiko.com/blog/relationships-loss/</loc>
 		<lastmod>2013-03-04T02:07:56+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2473: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2473: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/social/upset-helps-questions/</loc>
+		<loc>http://joejiko.com/blog/upset-helps-questions/</loc>
 		<lastmod>2013-03-04T02:03:55+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 396: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 396: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/pets-animals/security-zeah/</loc>
+		<loc>http://joejiko.com/blog/security-zeah/</loc>
 		<lastmod>2013-03-02T03:56:00+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 404: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 404: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/not-sure-how-this-happened-but-ow/</loc>
+		<loc>http://joejiko.com/blog/not-sure-how-this-happened-but-ow/</loc>
 		<lastmod>2013-03-02T03:55:39+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 406: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 406: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/another-summer-morning-i-think-im-ready/</loc>
+		<loc>http://joejiko.com/blog/another-summer-morning-i-think-im-ready/</loc>
 		<lastmod>2013-03-02T03:55:25+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 418: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 418: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/social/my-mom-had-this-water-bottle-that-reminded-me-of-michelleewtf/</loc>
+		<loc>http://joejiko.com/blog/my-mom-had-this-water-bottle-that-reminded-me-of-michelleewtf/</loc>
 		<lastmod>2013-03-02T03:55:17+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 428: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 428: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/pets-animals/10-photos-of-zeah/</loc>
+		<loc>http://joejiko.com/blog/10-photos-of-zeah/</loc>
 		<lastmod>2013-03-02T03:54:46+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 453: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 453: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/videogames/break-play-league-legends-homies-2/</loc>
+		<loc>http://joejiko.com/blog/break-play-league-legends-homies-2/</loc>
 		<lastmod>2013-03-02T03:54:34+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 599: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 599: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/web-development/google-api-links-including-google/</loc>
+		<loc>http://joejiko.com/blog/google-api-links-including-google/</loc>
 		<lastmod>2013-03-02T03:50:21+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 623: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 623: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/goodnight-photo/</loc>
+		<loc>http://joejiko.com/blog/goodnight-photo/</loc>
 		<lastmod>2013-03-02T03:49:56+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 626: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 626: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/florida/what-kind-of-plants-are-these/</loc>
+		<loc>http://joejiko.com/blog/what-kind-of-plants-are-these/</loc>
 		<lastmod>2013-03-02T03:49:31+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 633: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 633: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/goodnight-face-d-2/</loc>
+		<loc>http://joejiko.com/blog/goodnight-face-d-2/</loc>
 		<lastmod>2013-03-02T03:49:09+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 469: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 469: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/social/texting/</loc>
+		<loc>http://joejiko.com/blog/texting/</loc>
 		<lastmod>2013-03-02T03:48:40+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 699: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 699: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/science-technology/call-recorded/</loc>
+		<loc>http://joejiko.com/blog/call-recorded/</loc>
 		<lastmod>2013-03-02T02:05:36+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 712: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 712: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/social/activity-tab-added-features-twittercom/</loc>
+		<loc>http://joejiko.com/blog/activity-tab-added-features-twittercom/</loc>
 		<lastmod>2013-03-02T02:05:33+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 734: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 734: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/rock-climbing-at-the-ymca/</loc>
+		<loc>http://joejiko.com/blog/rock-climbing-at-the-ymca/</loc>
 		<lastmod>2013-03-02T02:05:18+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 806: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 806: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/pets-animals/there-are-no-lies-behind-these-eyes/</loc>
+		<loc>http://joejiko.com/blog/there-are-no-lies-behind-these-eyes/</loc>
 		<lastmod>2013-03-02T02:05:04+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 975: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 975: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/news-politics-society/fat-children-dumber-hostile-normalweight-children-health/</loc>
+		<loc>http://joejiko.com/blog/fat-children-dumber-hostile-normalweight-children-health/</loc>
 		<lastmod>2013-03-02T02:04:20+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 815: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 815: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/florida/smart-car-police-lol/</loc>
+		<loc>http://joejiko.com/blog/smart-car-police-lol/</loc>
 		<lastmod>2013-03-02T01:38:24+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 824: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 824: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/installed-curtain-no-more-peeping-neighbors-photo/</loc>
+		<loc>http://joejiko.com/blog/installed-curtain-no-more-peeping-neighbors-photo/</loc>
 		<lastmod>2013-03-02T01:37:42+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 829: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 829: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/art/crazy-jiko-digital-art/</loc>
+		<loc>http://joejiko.com/blog/crazy-jiko-digital-art/</loc>
 		<lastmod>2013-03-02T01:37:32+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 838: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 838: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/pets-animals/zeah-knows-how-to-relax-it-up/</loc>
+		<loc>http://joejiko.com/blog/zeah-knows-how-to-relax-it-up/</loc>
 		<lastmod>2013-03-02T01:36:57+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 744: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 744: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/new-house-photos/</loc>
+		<loc>http://joejiko.com/blog/new-house-photos/</loc>
 		<lastmod>2013-03-02T01:24:51+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 787: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 787: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/social/creeper-chat-facebook-born-woke-memory/</loc>
+		<loc>http://joejiko.com/blog/creeper-chat-facebook-born-woke-memory/</loc>
 		<lastmod>2013-03-02T00:56:52+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 980: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 980: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/social/schedule-young-brad-pitt-photo-shoot/</loc>
+		<loc>http://joejiko.com/blog/schedule-young-brad-pitt-photo-shoot/</loc>
 		<lastmod>2013-03-02T00:37:50+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1057: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1057: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/social/facebook-changed-verbage-posting-status-update-save-post/</loc>
+		<loc>http://joejiko.com/blog/facebook-changed-verbage-posting-status-update-save-post/</loc>
 		<lastmod>2013-03-02T00:36:46+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1075: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1075: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/social/hovering-friends-facebook-shows-timeline-cover/</loc>
+		<loc>http://joejiko.com/blog/hovering-friends-facebook-shows-timeline-cover/</loc>
 		<lastmod>2013-03-02T00:35:22+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1287: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1287: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/social/reason-children-fat/</loc>
+		<loc>http://joejiko.com/blog/reason-children-fat/</loc>
 		<lastmod>2013-03-02T00:32:13+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2433: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2433: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/writing-2/prefer-makeup/</loc>
+		<loc>http://joejiko.com/blog/prefer-makeup/</loc>
 		<lastmod>2013-02-27T04:22:16+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2430: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2430: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/writing-2/realize-alive/</loc>
+		<loc>http://joejiko.com/blog/realize-alive/</loc>
 		<lastmod>2013-02-27T03:27:59+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2427: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2427: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/writing-2/publix-worker-explaining-coupon-system-laugh/</loc>
+		<loc>http://joejiko.com/blog/publix-worker-explaining-coupon-system-laugh/</loc>
 		<lastmod>2013-02-26T19:45:56+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2408: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2408: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/web-development/setting-photo-gallery-today/</loc>
+		<loc>http://joejiko.com/blog/setting-photo-gallery-today/</loc>
 		<lastmod>2013-02-26T05:35:26+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2421: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2421: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/suddenly-color/</loc>
+		<loc>http://joejiko.com/blog/suddenly-color/</loc>
 		<lastmod>2013-02-26T05:05:21+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2419: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2419: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/writing-2/dream-dream/</loc>
+		<loc>http://joejiko.com/blog/dream-dream/</loc>
 		<lastmod>2013-02-26T05:00:07+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2416: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2410: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/writing-2/closed-eyes/</loc>
-		<lastmod>2013-02-26T02:20:54+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 2410: Comments: 0 of 53 = 0 points -->
-	<url>
-		<loc>http://joejiko.com/blog/web-development/34000-tracks-played/</loc>
+		<loc>http://joejiko.com/blog/34000-tracks-played/</loc>
 		<lastmod>2013-02-25T18:54:47+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2405: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2405: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/videogames/playing-dfo-dungeon-fighter-online-steam/</loc>
+		<loc>http://joejiko.com/blog/playing-dfo-dungeon-fighter-online-steam/</loc>
 		<lastmod>2013-02-21T15:36:33+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2075: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2075: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/web-development/wordpress-plugin-twitconnect-crashed-blog/</loc>
+		<loc>http://joejiko.com/blog/wordpress-plugin-twitconnect-crashed-blog/</loc>
 		<lastmod>2013-02-20T15:45:00+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2396: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2396: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/social/unacceptable-instagram-limits-amount-photos-delete/</loc>
+		<loc>http://joejiko.com/blog/unacceptable-instagram-limits-amount-photos-delete/</loc>
 		<lastmod>2013-02-17T19:49:24+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1080: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1080: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/social/cool-facebook-adds-comment-editing/</loc>
+		<loc>http://joejiko.com/blog/cool-facebook-adds-comment-editing/</loc>
 		<lastmod>2013-02-17T06:52:35+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1091: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1091: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/social/retard-week-religion-fact-feel-good-people-sex/</loc>
+		<loc>http://joejiko.com/blog/retard-week-religion-fact-feel-good-people-sex/</loc>
 		<lastmod>2013-02-17T06:52:03+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1162: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1162: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/social/facebook-profile-section-paragraph-bands-friends/</loc>
+		<loc>http://joejiko.com/blog/facebook-profile-section-paragraph-bands-friends/</loc>
 		<lastmod>2013-02-17T06:51:20+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1251: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1251: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/social/defending-rape/</loc>
+		<loc>http://joejiko.com/blog/defending-rape/</loc>
 		<lastmod>2013-02-17T06:51:10+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1334: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1334: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/dream-log-talking-bible-theory/</loc>
+		<loc>http://joejiko.com/blog/dream-log-talking-bible-theory/</loc>
 		<lastmod>2013-02-17T06:50:04+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1494: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1494: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/social/answer-kind-model-model/</loc>
+		<loc>http://joejiko.com/blog/answer-kind-model-model/</loc>
 		<lastmod>2013-02-17T06:44:21+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1546: Comments: 7 of 53 = 0.1 points -->
+<!-- Debug: Priority report of postID 1546: Comments: 7 of 58 = 0.1 points -->
 	<url>
-		<loc>http://joejiko.com/blog/social/new-myspace-invite-httpinstagr-ampsr6ht_ttnv/</loc>
+		<loc>http://joejiko.com/blog/new-myspace-invite-httpinstagr-ampsr6ht_ttnv/</loc>
 		<lastmod>2013-02-17T06:43:13+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1541: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1541: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/science-technology/enable-facebook-messenger-firefox/</loc>
+		<loc>http://joejiko.com/blog/enable-facebook-messenger-firefox/</loc>
 		<lastmod>2013-02-17T06:40:09+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1576: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1576: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/6-photos-archives/</loc>
+		<loc>http://joejiko.com/blog/6-photos-archives/</loc>
 		<lastmod>2013-02-17T06:39:17+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1698: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1747: Comments: 2 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/daily/suggestions-joejikocom-uh-vlogs-video/</loc>
-		<lastmod>2013-02-17T06:35:58+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 1712: Comments: 0 of 53 = 0 points -->
-	<url>
-		<loc>http://joejiko.com/blog/daily/good-morning-everyone-breakfast/</loc>
-		<lastmod>2013-02-17T06:35:19+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 1747: Comments: 2 of 53 = 0 points -->
-	<url>
-		<loc>http://joejiko.com/blog/fashion-style/pokemon-boxers/</loc>
+		<loc>http://joejiko.com/blog/pokemon-boxers/</loc>
 		<lastmod>2013-02-17T06:32:04+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1769: Comments: 1 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1711: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/art/iron-man-christmas-comic-successfully-privatized-world-peace-presents/</loc>
-		<lastmod>2013-02-17T06:27:57+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 1711: Comments: 0 of 53 = 0 points -->
-	<url>
-		<loc>http://joejiko.com/blog/pets-animals/dogs-smarter-cats/</loc>
+		<loc>http://joejiko.com/blog/dogs-smarter-cats/</loc>
 		<lastmod>2013-02-17T06:22:09+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1941: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1941: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/moon-virgo/</loc>
+		<loc>http://joejiko.com/blog/moon-virgo/</loc>
 		<lastmod>2013-02-17T05:48:41+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1847: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1847: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/dream-log-moms-cookies/</loc>
+		<loc>http://joejiko.com/blog/dream-log-moms-cookies/</loc>
 		<lastmod>2013-02-17T05:42:01+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2092: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2092: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/art/joanna/</loc>
+		<loc>http://joejiko.com/blog/joanna/</loc>
 		<lastmod>2013-02-17T05:40:15+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2061: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2061: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/videogames/playing-bastion-steam/</loc>
+		<loc>http://joejiko.com/blog/playing-bastion-steam/</loc>
 		<lastmod>2013-02-17T03:00:37+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2064: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2064: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/web-development/happy-valentines-day-score/</loc>
+		<loc>http://joejiko.com/blog/happy-valentines-day-score/</loc>
 		<lastmod>2013-02-14T04:50:09+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2040: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2040: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/site-navigation-2/write-sex-stories/</loc>
+		<loc>http://joejiko.com/blog/write-sex-stories/</loc>
 		<lastmod>2013-02-14T03:17:54+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2053: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 2053: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/video/disco-car-dance/</loc>
+		<loc>http://joejiko.com/blog/disco-car-dance/</loc>
 		<lastmod>2013-02-11T21:34:08+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1475: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1475: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/daily/home-lonely-cuddle-public-stay-god/</loc>
+		<loc>http://joejiko.com/blog/home-lonely-cuddle-public-stay-god/</loc>
 		<lastmod>2013-02-10T23:23:23+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2005: Comments: 3 of 53 = 0.1 points -->
+<!-- Debug: Priority report of postID 2005: Comments: 3 of 58 = 0.1 points -->
 	<url>
-		<loc>http://joejiko.com/blog/web-design/designers-fail-elements-correctly-ribbon/</loc>
+		<loc>http://joejiko.com/blog/designers-fail-elements-correctly-ribbon/</loc>
 		<lastmod>2013-02-08T18:25:33+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 2018: Comments: 5 of 53 = 0.1 points -->
+<!-- Debug: Priority report of postID 1999: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/web-development/firefox-load-denied-xframeoptions/</loc>
-		<lastmod>2013-02-07T03:56:39+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 1999: Comments: 0 of 53 = 0 points -->
-	<url>
-		<loc>http://joejiko.com/blog/site-navigation-2/shhh-quiet-launch-joejikocom/</loc>
+		<loc>http://joejiko.com/blog/shhh-quiet-launch-joejikocom/</loc>
 		<lastmod>2013-02-04T15:50:18+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1988: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1988: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/social/goodbye-stickam-download-recorded-media-228/</loc>
+		<loc>http://joejiko.com/blog/goodbye-stickam-download-recorded-media-228/</loc>
 		<lastmod>2013-02-03T00:36:12+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1964: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1964: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/videogames/playing-planetside-2/</loc>
+		<loc>http://joejiko.com/blog/playing-planetside-2/</loc>
 		<lastmod>2013-02-02T23:01:25+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1972: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1972: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/science-technology/day-buy-windows-8-pro-upgrade-40/</loc>
+		<loc>http://joejiko.com/blog/day-buy-windows-8-pro-upgrade-40/</loc>
 		<lastmod>2013-01-31T16:03:15+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1946: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1946: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/videogames/starcraft-2-heart-swarm/</loc>
+		<loc>http://joejiko.com/blog/starcraft-2-heart-swarm/</loc>
 		<lastmod>2013-01-30T15:25:30+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1956: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1956: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/social/text-email/</loc>
+		<loc>http://joejiko.com/blog/text-email/</loc>
 		<lastmod>2013-01-27T20:15:05+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1819: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1819: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/social/preferred-methods-modern-communication/</loc>
+		<loc>http://joejiko.com/blog/preferred-methods-modern-communication/</loc>
 		<lastmod>2013-01-22T16:44:06+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 512: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 512: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/site-navigation-2/questions-app-feature-idea/</loc>
+		<loc>http://joejiko.com/blog/questions-app-feature-idea/</loc>
 		<lastmod>2013-01-22T16:37:12+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1931: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1931: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/daily/dodge-wrench-dodge-ball/</loc>
+		<loc>http://joejiko.com/blog/dodge-wrench-dodge-ball/</loc>
 		<lastmod>2013-01-22T16:24:00+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1853: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1857: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/daily/8am-xanax-fix/</loc>
-		<lastmod>2013-01-21T13:56:32+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 1857: Comments: 0 of 53 = 0 points -->
-	<url>
-		<loc>http://joejiko.com/blog/personal/anybody-need-saving/</loc>
+		<loc>http://joejiko.com/blog/anybody-need-saving/</loc>
 		<lastmod>2013-01-20T23:09:37+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1910: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1910: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/pets-animals/zeah-2/</loc>
+		<loc>http://joejiko.com/blog/zeah-2/</loc>
 		<lastmod>2013-01-20T20:41:07+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1906: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1906: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/daily/daydream-machine-cancels-ice-cream-truck-music/</loc>
+		<loc>http://joejiko.com/blog/daydream-machine-cancels-ice-cream-truck-music/</loc>
 		<lastmod>2013-01-20T20:17:23+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1858: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1858: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/social/remind-vampire/</loc>
+		<loc>http://joejiko.com/blog/remind-vampire/</loc>
 		<lastmod>2013-01-20T18:55:14+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1849: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1849: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/art/three-things-ill-never-be-too-old-for/</loc>
+		<loc>http://joejiko.com/blog/three-things-ill-never-be-too-old-for/</loc>
 		<lastmod>2013-01-20T09:42:34+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1856: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1856: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/lol-nurses-lol-moms/</loc>
+		<loc>http://joejiko.com/blog/lol-nurses-lol-moms/</loc>
 		<lastmod>2013-01-20T09:28:03+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 709: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 709: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/art/ready-thanksgiving-sketch/</loc>
+		<loc>http://joejiko.com/blog/ready-thanksgiving-sketch/</loc>
 		<lastmod>2013-01-20T09:24:02+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 843: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 843: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/art/twiko-joe-jiko-twitter-bird-concept-sketch/</loc>
+		<loc>http://joejiko.com/blog/twiko-joe-jiko-twitter-bird-concept-sketch/</loc>
 		<lastmod>2013-01-20T09:23:05+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 66: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 66: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/art/3-sketches/</loc>
+		<loc>http://joejiko.com/blog/3-sketches/</loc>
 		<lastmod>2013-01-20T09:20:13+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 827: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 827: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/art/jikobot-is-fueled-by-hearts-sketch/</loc>
+		<loc>http://joejiko.com/blog/jikobot-is-fueled-by-hearts-sketch/</loc>
 		<lastmod>2013-01-20T09:19:32+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 229: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 229: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/florida/pinellas-county-crime-viewer/</loc>
+		<loc>http://joejiko.com/blog/pinellas-county-crime-viewer/</loc>
 		<lastmod>2013-01-20T09:08:18+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 967: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 967: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/florida/3-haters-photo/</loc>
+		<loc>http://joejiko.com/blog/3-haters-photo/</loc>
 		<lastmod>2013-01-20T09:01:21+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1192: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1192: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/science-technology/godaddy-site-5-alternate-hosting-providers-suck/</loc>
+		<loc>http://joejiko.com/blog/godaddy-site-5-alternate-hosting-providers-suck/</loc>
 		<lastmod>2013-01-20T08:32:42+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 608: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 608: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/site-navigation-2/testing-yourls-shortening-wptwitter/</loc>
+		<loc>http://joejiko.com/blog/testing-yourls-shortening-wptwitter/</loc>
 		<lastmod>2013-01-20T08:32:04+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1129: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1129: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/daily/thinking-ways-fix-problems-act-bitching/</loc>
+		<loc>http://joejiko.com/blog/thinking-ways-fix-problems-act-bitching/</loc>
 		<lastmod>2013-01-20T08:31:31+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1173: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1173: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/daily/coyote-van-shakedown-sinker-album-download/</loc>
+		<loc>http://joejiko.com/blog/coyote-van-shakedown-sinker-album-download/</loc>
 		<lastmod>2013-01-20T08:30:58+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1037: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1037: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/social/facebook-unfriending-unfriending/</loc>
+		<loc>http://joejiko.com/blog/facebook-unfriending-unfriending/</loc>
 		<lastmod>2013-01-20T08:29:44+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1358: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1358: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/social/facebook-blocks-victim-bullying-violating-statement-rights-responsibilities-bullied/</loc>
+		<loc>http://joejiko.com/blog/facebook-blocks-victim-bullying-violating-statement-rights-responsibilities-bullied/</loc>
 		<lastmod>2013-01-20T08:29:14+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1839: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1839: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/web-development/idea-tweet-subscriptions/</loc>
+		<loc>http://joejiko.com/blog/idea-tweet-subscriptions/</loc>
 		<lastmod>2013-01-18T16:24:19+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1828: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1828: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/social/rotd-talk-shit-friends-kick-ass/</loc>
+		<loc>http://joejiko.com/blog/rotd-talk-shit-friends-kick-ass/</loc>
 		<lastmod>2013-01-14T19:51:48+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1804: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1804: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/daily/thought-punch/</loc>
+		<loc>http://joejiko.com/blog/thought-punch/</loc>
 		<lastmod>2013-01-11T18:57:09+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1805: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1805: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/web-development/simply-html-clean/</loc>
+		<loc>http://joejiko.com/blog/simply-html-clean/</loc>
 		<lastmod>2013-01-10T20:25:51+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1795: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1779: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/web-development/simple-placeholder-text-input-fields-jquery/</loc>
-		<lastmod>2013-01-09T21:12:08+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 1779: Comments: 0 of 53 = 0 points -->
-	<url>
-		<loc>http://joejiko.com/blog/personal/32-girlfriend-requirements/</loc>
+		<loc>http://joejiko.com/blog/32-girlfriend-requirements/</loc>
 		<lastmod>2013-01-02T07:02:48+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1773: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1773: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/relationships-friendship-love/</loc>
+		<loc>http://joejiko.com/blog/relationships-friendship-love/</loc>
 		<lastmod>2013-01-02T05:22:00+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1667: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1667: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/news-politics-society/communities-dead/</loc>
+		<loc>http://joejiko.com/blog/communities-dead/</loc>
 		<lastmod>2012-12-14T21:48:42+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1635: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1635: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/design/instagram-tablet-app-updated-looks-nice/</loc>
+		<loc>http://joejiko.com/blog/instagram-tablet-app-updated-looks-nice/</loc>
 		<lastmod>2012-12-11T03:05:58+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1625: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1625: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/daily/suckered-party-surprisingly-90-female-fatties/</loc>
+		<loc>http://joejiko.com/blog/suckered-party-surprisingly-90-female-fatties/</loc>
 		<lastmod>2012-12-09T16:26:17+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1364: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1364: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/daily/skinny-person-fat/</loc>
+		<loc>http://joejiko.com/blog/skinny-person-fat/</loc>
 		<lastmod>2012-12-09T16:20:32+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1589: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1572: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/daily/track-friends/</loc>
-		<lastmod>2012-12-01T01:14:13+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 1572: Comments: 0 of 53 = 0 points -->
-	<url>
-		<loc>http://joejiko.com/blog/daily/food-good/</loc>
+		<loc>http://joejiko.com/blog/food-good/</loc>
 		<lastmod>2012-11-28T17:32:30+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1504: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1504: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/web-development/switch-blog-systems-minimal-blog-platform/</loc>
+		<loc>http://joejiko.com/blog/switch-blog-systems-minimal-blog-platform/</loc>
 		<lastmod>2012-11-12T07:27:07+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1480: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1480: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/web-development/wayback-machine-nostalgia/</loc>
+		<loc>http://joejiko.com/blog/wayback-machine-nostalgia/</loc>
 		<lastmod>2012-11-10T03:55:25+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 222: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 222: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/news-politics-society/give-every-illegal-immigrant-a-gu/</loc>
+		<loc>http://joejiko.com/blog/give-every-illegal-immigrant-a-gu/</loc>
 		<lastmod>2012-11-09T23:56:50+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1342: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1342: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/social/rotd-johnnathan-burris-representing-retard-culture/</loc>
+		<loc>http://joejiko.com/blog/rotd-johnnathan-burris-representing-retard-culture/</loc>
 		<lastmod>2012-10-25T00:35:57+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1137: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1137: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/web-development/25-ways-webmaster-good/</loc>
+		<loc>http://joejiko.com/blog/25-ways-webmaster-good/</loc>
 		<lastmod>2012-10-14T14:46:44+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 389: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 389: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/fashion-style/wishlist-beastwares-fox-hat-largest-ears-6999/</loc>
+		<loc>http://joejiko.com/blog/wishlist-beastwares-fox-hat-largest-ears-6999/</loc>
 		<lastmod>2012-10-14T12:50:16+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1267: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1267: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/design/tattoo-artist-business-card-design/</loc>
+		<loc>http://joejiko.com/blog/tattoo-artist-business-card-design/</loc>
 		<lastmod>2012-10-14T12:45:18+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1274: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1274: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/daily/social-media-weaning/</loc>
+		<loc>http://joejiko.com/blog/social-media-weaning/</loc>
 		<lastmod>2012-10-13T17:28:56+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1262: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1262: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/art/vote-jared-hensley-darthxskull-artist-illustrator-raw-artists-indie-art-awards/</loc>
+		<loc>http://joejiko.com/blog/vote-jared-hensley-darthxskull-artist-illustrator-raw-artists-indie-art-awards/</loc>
 		<lastmod>2012-10-02T00:38:15+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 940: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 940: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/wearing-headphones-scooter-florida-law/</loc>
+		<loc>http://joejiko.com/blog/wearing-headphones-scooter-florida-law/</loc>
 		<lastmod>2012-09-28T21:06:43+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1252: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1252: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/100-truths-2009/</loc>
+		<loc>http://joejiko.com/blog/100-truths-2009/</loc>
 		<lastmod>2012-09-28T01:44:50+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1243: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1243: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/dream-log-weird-foreign-shop/</loc>
+		<loc>http://joejiko.com/blog/dream-log-weird-foreign-shop/</loc>
 		<lastmod>2012-09-25T09:07:28+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1236: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1236: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/site-navigation-2/opinion-ideas/</loc>
+		<loc>http://joejiko.com/blog/opinion-ideas/</loc>
 		<lastmod>2012-09-21T00:06:48+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1233: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1233: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/web-design/navigation/</loc>
+		<loc>http://joejiko.com/blog/navigation/</loc>
 		<lastmod>2012-09-20T21:16:11+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1228: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1228: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/web-development/joe-jiko-questions-coming-screenshot/</loc>
+		<loc>http://joejiko.com/blog/joe-jiko-questions-coming-screenshot/</loc>
 		<lastmod>2012-09-20T20:41:01+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1224: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1224: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/web-development/jquery-waypoints-throttledebounce/</loc>
+		<loc>http://joejiko.com/blog/jquery-waypoints-throttledebounce/</loc>
 		<lastmod>2012-09-20T13:29:33+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1222: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1222: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/web-development/section-uploaded-photos-intro-video/</loc>
+		<loc>http://joejiko.com/blog/section-uploaded-photos-intro-video/</loc>
 		<lastmod>2012-09-19T04:41:46+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1217: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1217: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/florida/support-learning-tampa-bay-vote-community-learning-center-chase-bank-giving-grant/</loc>
+		<loc>http://joejiko.com/blog/support-learning-tampa-bay-vote-community-learning-center-chase-bank-giving-grant/</loc>
 		<lastmod>2012-09-18T17:30:46+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1212: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1212: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/web-development/joejikocom-home-page-redesigned/</loc>
+		<loc>http://joejiko.com/blog/joejikocom-home-page-redesigned/</loc>
 		<lastmod>2012-09-16T22:50:52+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1210: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1210: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/web-design/preview-homepage-redesign/</loc>
+		<loc>http://joejiko.com/blog/preview-homepage-redesign/</loc>
 		<lastmod>2012-09-16T04:25:45+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1208: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1208: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/web-design/birds-eye-view-birdhouses-redesign/</loc>
+		<loc>http://joejiko.com/blog/birds-eye-view-birdhouses-redesign/</loc>
 		<lastmod>2012-09-15T02:11:36+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1205: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1205: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/web-development/error-occurred-processing-directive/</loc>
+		<loc>http://joejiko.com/blog/error-occurred-processing-directive/</loc>
 		<lastmod>2012-09-11T05:04:21+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1187: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1187: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/art/stop/</loc>
+		<loc>http://joejiko.com/blog/stop/</loc>
 		<lastmod>2012-09-10T06:05:05+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1166: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1166: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/video/zeah-space-invader/</loc>
+		<loc>http://joejiko.com/blog/zeah-space-invader/</loc>
 		<lastmod>2012-08-23T16:28:55+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1167: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1167: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/web-development/facebook-likecomment-inconsistency-json-response-graph-api/</loc>
+		<loc>http://joejiko.com/blog/facebook-likecomment-inconsistency-json-response-graph-api/</loc>
 		<lastmod>2012-08-18T04:41:08+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1155: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1155: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/daily/apparently-stormed-work/</loc>
+		<loc>http://joejiko.com/blog/apparently-stormed-work/</loc>
 		<lastmod>2012-08-16T23:05:06+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1148: Comments: 2 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1141: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/web-development/firebug-syntaxerror-syntax-error-break-error-doctype-html/</loc>
-		<lastmod>2012-08-15T15:41:34+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 1141: Comments: 0 of 53 = 0 points -->
-	<url>
-		<loc>http://joejiko.com/blog/daily/day-person-acknowledge-presented-facts-handle-difference-opinion/</loc>
+		<loc>http://joejiko.com/blog/day-person-acknowledge-presented-facts-handle-difference-opinion/</loc>
 		<lastmod>2012-08-09T18:34:28+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1133: Comments: 5 of 53 = 0.1 points -->
+<!-- Debug: Priority report of postID 1133: Comments: 5 of 58 = 0.1 points -->
 	<url>
-		<loc>http://joejiko.com/blog/daily/flattered-post-bitching/</loc>
+		<loc>http://joejiko.com/blog/flattered-post-bitching/</loc>
 		<lastmod>2012-08-07T20:09:20+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1117: Comments: 2 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1117: Comments: 2 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/web-development/cscart-301-design-mode-view-storefront-customization-mode-working-solved/</loc>
+		<loc>http://joejiko.com/blog/cscart-301-design-mode-view-storefront-customization-mode-working-solved/</loc>
 		<lastmod>2012-08-01T21:34:47+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1114: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1114: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/daily/day-poor-lady-wearing-lipstick/</loc>
+		<loc>http://joejiko.com/blog/day-poor-lady-wearing-lipstick/</loc>
 		<lastmod>2012-08-01T18:51:10+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1110: Comments: 3 of 53 = 0.1 points -->
+<!-- Debug: Priority report of postID 1110: Comments: 3 of 58 = 0.1 points -->
 	<url>
-		<loc>http://joejiko.com/blog/site-navigation-2/weird/</loc>
+		<loc>http://joejiko.com/blog/weird/</loc>
 		<lastmod>2012-08-01T17:26:09+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1106: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1106: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/daily/chance-system/</loc>
+		<loc>http://joejiko.com/blog/chance-system/</loc>
 		<lastmod>2012-08-01T01:15:30+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1102: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1102: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/videogames/playing-story/</loc>
+		<loc>http://joejiko.com/blog/playing-story/</loc>
 		<lastmod>2012-07-22T14:13:43+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1087: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1087: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/web-design/minor-joejikocom-antipation-secret/</loc>
+		<loc>http://joejiko.com/blog/minor-joejikocom-antipation-secret/</loc>
 		<lastmod>2012-07-03T05:02:33+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1062: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1062: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/web-development/omit-optional-html-tags/</loc>
+		<loc>http://joejiko.com/blog/omit-optional-html-tags/</loc>
 		<lastmod>2012-06-14T14:55:30+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1059: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1059: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/web-design/homepage-layout-updated-logo-klout-links-google-badge/</loc>
+		<loc>http://joejiko.com/blog/homepage-layout-updated-logo-klout-links-google-badge/</loc>
 		<lastmod>2012-06-13T16:36:51+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1044: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1044: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/buried-access-restricted-error-message-page-laugh/</loc>
+		<loc>http://joejiko.com/blog/buried-access-restricted-error-message-page-laugh/</loc>
 		<lastmod>2012-06-10T15:02:35+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1010: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1010: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/web-development/silly-mistake-jquery-css-id-web-development/</loc>
+		<loc>http://joejiko.com/blog/silly-mistake-jquery-css-id-web-development/</loc>
 		<lastmod>2012-06-06T03:18:01+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1027: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1027: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/art/drawn-pokemon/</loc>
+		<loc>http://joejiko.com/blog/drawn-pokemon/</loc>
 		<lastmod>2012-05-28T03:05:28+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1017: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1017: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/art/6-pokehumons-charmejohn-mewlex-madelicuno-kayporeon-jikolypuff-ariewtwo/</loc>
+		<loc>http://joejiko.com/blog/6-pokehumons-charmejohn-mewlex-madelicuno-kayporeon-jikolypuff-ariewtwo/</loc>
 		<lastmod>2012-05-28T02:56:07+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1015: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1015: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/video/wild-michael-jackson-appears/</loc>
+		<loc>http://joejiko.com/blog/wild-michael-jackson-appears/</loc>
 		<lastmod>2012-05-27T15:04:40+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1011: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1011: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/taylor-nichole-hewitt/</loc>
+		<loc>http://joejiko.com/blog/taylor-nichole-hewitt/</loc>
 		<lastmod>2012-05-25T18:32:28+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1008: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1008: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/video/entering-lair-jikoness-video/</loc>
+		<loc>http://joejiko.com/blog/entering-lair-jikoness-video/</loc>
 		<lastmod>2012-05-25T17:47:43+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 1000: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 1000: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/sex-husband-wife-retard-day-524/</loc>
+		<loc>http://joejiko.com/blog/sex-husband-wife-retard-day-524/</loc>
 		<lastmod>2012-05-25T15:33:54+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 993: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 993: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/retard-day-2-524-summer-rae-stephens/</loc>
+		<loc>http://joejiko.com/blog/retard-day-2-524-summer-rae-stephens/</loc>
 		<lastmod>2012-05-25T13:59:06+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 986: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 986: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/lunch-mom-family-sweet-tomatoes-photos/</loc>
+		<loc>http://joejiko.com/blog/lunch-mom-family-sweet-tomatoes-photos/</loc>
 		<lastmod>2012-05-14T05:13:15+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 971: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 971: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/automatic-sentence-warp-customer-vocab/</loc>
+		<loc>http://joejiko.com/blog/automatic-sentence-warp-customer-vocab/</loc>
 		<lastmod>2012-05-02T15:30:53+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 166: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 166: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/creative-process-photo/</loc>
+		<loc>http://joejiko.com/blog/creative-process-photo/</loc>
 		<lastmod>2012-04-29T16:50:34+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 963: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 963: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/love-poem/</loc>
+		<loc>http://joejiko.com/blog/love-poem/</loc>
 		<lastmod>2012-04-29T15:16:41+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 939: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 939: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/choices-poem/</loc>
+		<loc>http://joejiko.com/blog/choices-poem/</loc>
 		<lastmod>2012-04-26T17:31:42+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 912: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 912: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/curious-naked-n00ds/</loc>
+		<loc>http://joejiko.com/blog/curious-naked-n00ds/</loc>
 		<lastmod>2012-04-24T05:25:06+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 954: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 954: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/illegal-avoid-red-light-turning-parking-lot-traffic-laws/</loc>
+		<loc>http://joejiko.com/blog/illegal-avoid-red-light-turning-parking-lot-traffic-laws/</loc>
 		<lastmod>2012-04-24T05:09:21+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 946: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 946: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/girlfriend-required-love/</loc>
+		<loc>http://joejiko.com/blog/girlfriend-required-love/</loc>
 		<lastmod>2012-04-24T03:54:16+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 934: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 934: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/scooter-squads-encounter-rain/</loc>
+		<loc>http://joejiko.com/blog/scooter-squads-encounter-rain/</loc>
 		<lastmod>2012-04-24T03:37:46+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 930: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 930: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/daily/kill-minor-edit/</loc>
+		<loc>http://joejiko.com/blog/kill-minor-edit/</loc>
 		<lastmod>2012-04-19T16:12:27+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 927: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 927: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/art/sketches/927/</loc>
+		<loc>http://joejiko.com/blog/927/</loc>
 		<lastmod>2012-04-14T21:00:39+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 923: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 923: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/great-operation-raising-registered-sharthorn-cattle/</loc>
+		<loc>http://joejiko.com/blog/great-operation-raising-registered-sharthorn-cattle/</loc>
 		<lastmod>2012-04-06T22:14:32+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 920: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 920: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/warning-shoots-flaming-balls-photo/</loc>
+		<loc>http://joejiko.com/blog/warning-shoots-flaming-balls-photo/</loc>
 		<lastmod>2012-04-06T20:36:56+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 917: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 917: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/call-wahmbulance-conversation/</loc>
+		<loc>http://joejiko.com/blog/call-wahmbulance-conversation/</loc>
 		<lastmod>2012-04-06T14:52:58+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 877: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 877: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/bring-horizon-started-playing-halfway-lady-info-conversation/</loc>
+		<loc>http://joejiko.com/blog/bring-horizon-started-playing-halfway-lady-info-conversation/</loc>
 		<lastmod>2012-04-05T20:28:26+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 871: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 871: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/web-design/45-minute-website-redesign/</loc>
+		<loc>http://joejiko.com/blog/45-minute-website-redesign/</loc>
 		<lastmod>2012-03-27T02:53:38+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 874: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 874: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/wake-drunk-bitch-voicemail/</loc>
+		<loc>http://joejiko.com/blog/wake-drunk-bitch-voicemail/</loc>
 		<lastmod>2012-03-24T17:16:51+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 868: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 868: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/playing-repeat-work/</loc>
+		<loc>http://joejiko.com/blog/playing-repeat-work/</loc>
 		<lastmod>2012-03-21T20:18:18+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 866: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 866: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/graphic-designer-woes/</loc>
+		<loc>http://joejiko.com/blog/graphic-designer-woes/</loc>
 		<lastmod>2012-03-06T18:32:03+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 864: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 864: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/reads/</loc>
+		<loc>http://joejiko.com/blog/reads/</loc>
 		<lastmod>2012-02-27T22:16:28+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 862: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 862: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/worse-figure-design-instructions-foreigners/</loc>
+		<loc>http://joejiko.com/blog/worse-figure-design-instructions-foreigners/</loc>
 		<lastmod>2012-02-27T18:25:05+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 849: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 849: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/revision-nightmares/</loc>
+		<loc>http://joejiko.com/blog/revision-nightmares/</loc>
 		<lastmod>2012-02-24T17:11:31+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 855: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 855: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/art/happy-valentines-day-female-proximity-detected/</loc>
+		<loc>http://joejiko.com/blog/happy-valentines-day-female-proximity-detected/</loc>
 		<lastmod>2012-02-15T04:46:00+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 850: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 850: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/art/happy-valentines-day-procedural-object-oriented/</loc>
+		<loc>http://joejiko.com/blog/happy-valentines-day-procedural-object-oriented/</loc>
 		<lastmod>2012-02-14T05:08:17+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 847: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 847: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/science-technology/android-update-to-4-0-3-on-asus-transformer-prime/</loc>
+		<loc>http://joejiko.com/blog/android-update-to-4-0-3-on-asus-transformer-prime/</loc>
 		<lastmod>2012-02-10T01:12:48+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 834: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 834: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/science-technology/screenshot-wrong/</loc>
+		<loc>http://joejiko.com/blog/screenshot-wrong/</loc>
 		<lastmod>2012-02-02T21:26:43+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 832: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 832: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/pop/</loc>
+		<loc>http://joejiko.com/blog/pop/</loc>
 		<lastmod>2012-02-01T15:51:16+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 818: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 818: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/my-new-asus-toy/</loc>
+		<loc>http://joejiko.com/blog/my-new-asus-toy/</loc>
 		<lastmod>2012-01-30T02:38:22+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 811: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 811: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/science-technology/joe-jiko-chrome-extension-alpha/</loc>
+		<loc>http://joejiko.com/blog/joe-jiko-chrome-extension-alpha/</loc>
 		<lastmod>2012-01-29T10:34:58+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 803: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 803: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/start-dream-journal/</loc>
+		<loc>http://joejiko.com/blog/start-dream-journal/</loc>
 		<lastmod>2012-01-23T14:29:07+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 801: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 801: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/when-all-else-fails-i-still-have-zeah/</loc>
+		<loc>http://joejiko.com/blog/when-all-else-fails-i-still-have-zeah/</loc>
 		<lastmod>2012-01-17T14:28:07+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 782: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 782: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/science-technology/facebook-messenger-windows-released/</loc>
+		<loc>http://joejiko.com/blog/facebook-messenger-windows-released/</loc>
 		<lastmod>2012-01-15T07:10:08+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 790: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 790: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/conversations-work-lawlz/</loc>
+		<loc>http://joejiko.com/blog/conversations-work-lawlz/</loc>
 		<lastmod>2012-01-14T05:40:14+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 767: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 767: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/science-technology/software-web-application-download-tweets/</loc>
+		<loc>http://joejiko.com/blog/software-web-application-download-tweets/</loc>
 		<lastmod>2012-01-08T22:54:08+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 771: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 771: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/site-navigation-2/10-man-points/</loc>
+		<loc>http://joejiko.com/blog/10-man-points/</loc>
 		<lastmod>2012-01-02T02:30:23+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 768: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 768: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/robot-sex-talk-win/</loc>
+		<loc>http://joejiko.com/blog/robot-sex-talk-win/</loc>
 		<lastmod>2011-12-31T08:44:35+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 750: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 750: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/orlando-haircut/</loc>
+		<loc>http://joejiko.com/blog/orlando-haircut/</loc>
 		<lastmod>2011-12-30T23:25:19+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 761: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 761: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/page-2011/</loc>
+		<loc>http://joejiko.com/blog/page-2011/</loc>
 		<lastmod>2011-12-26T19:24:15+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 746: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 746: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/web-development/labjs-interesting-competition/</loc>
+		<loc>http://joejiko.com/blog/labjs-interesting-competition/</loc>
 		<lastmod>2011-12-26T18:18:06+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 753: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 753: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/news-politics-society/discussion-definition-cheating-analysis/</loc>
+		<loc>http://joejiko.com/blog/discussion-definition-cheating-analysis/</loc>
 		<lastmod>2011-12-25T01:58:53+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 748: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 748: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/postcard-project-update/</loc>
+		<loc>http://joejiko.com/blog/postcard-project-update/</loc>
 		<lastmod>2011-12-24T00:58:51+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 730: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 730: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/christmas-postcards-printer/</loc>
+		<loc>http://joejiko.com/blog/christmas-postcards-printer/</loc>
 		<lastmod>2011-12-23T02:43:33+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 724: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 724: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/gonna-lick-braaaaains/</loc>
+		<loc>http://joejiko.com/blog/gonna-lick-braaaaains/</loc>
 		<lastmod>2011-12-03T07:06:52+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 725: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 725: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/difference-geek-nerd/</loc>
+		<loc>http://joejiko.com/blog/difference-geek-nerd/</loc>
 		<lastmod>2011-11-26T07:11:59+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 718: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 718: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/bay-pointe-apartments-trifold-brochure-design/</loc>
+		<loc>http://joejiko.com/blog/bay-pointe-apartments-trifold-brochure-design/</loc>
 		<lastmod>2011-11-20T07:05:30+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 468: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 468: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/science-technology/google-highlights/</loc>
+		<loc>http://joejiko.com/blog/google-highlights/</loc>
 		<lastmod>2011-11-20T05:01:10+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 701: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 701: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/creative-personality-anonymous-palm-reading/</loc>
+		<loc>http://joejiko.com/blog/creative-personality-anonymous-palm-reading/</loc>
 		<lastmod>2011-11-20T02:31:11+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 683: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 683: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/art/star-wars-artwork-sale-artist-jacqueline-helwig/</loc>
+		<loc>http://joejiko.com/blog/star-wars-artwork-sale-artist-jacqueline-helwig/</loc>
 		<lastmod>2011-11-06T04:33:34+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 496: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 496: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/design/fat-eat-tshirt-concept/</loc>
+		<loc>http://joejiko.com/blog/fat-eat-tshirt-concept/</loc>
 		<lastmod>2011-10-31T00:51:46+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 519: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 519: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/breakfast-lol-photo/</loc>
+		<loc>http://joejiko.com/blog/breakfast-lol-photo/</loc>
 		<lastmod>2011-10-31T00:51:13+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 514: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 514: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/dear-boyfriend-girlfriend-scream-louder-sincerely-spiders-photo/</loc>
+		<loc>http://joejiko.com/blog/dear-boyfriend-girlfriend-scream-louder-sincerely-spiders-photo/</loc>
 		<lastmod>2011-10-31T00:48:19+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 505: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 505: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/sometimes-being-a-ninja-means-smashing-my-leg-on-a-concrete-wall-photo/</loc>
+		<loc>http://joejiko.com/blog/sometimes-being-a-ninja-means-smashing-my-leg-on-a-concrete-wall-photo/</loc>
 		<lastmod>2011-10-31T00:48:01+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 520: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 520: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/science-technology/there%e2%80%99s-data-suggesting-that-non-internet-users-are-paranoid/</loc>
+		<loc>http://joejiko.com/blog/there%e2%80%99s-data-suggesting-that-non-internet-users-are-paranoid/</loc>
 		<lastmod>2011-10-31T00:45:58+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 537: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 537: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/strange-mood-photo/</loc>
+		<loc>http://joejiko.com/blog/strange-mood-photo/</loc>
 		<lastmod>2011-10-31T00:45:09+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 546: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 546: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/i-feel-like-its-time-for-a-self-taken-photo-in-the-bathroom/</loc>
+		<loc>http://joejiko.com/blog/i-feel-like-its-time-for-a-self-taken-photo-in-the-bathroom/</loc>
 		<lastmod>2011-10-31T00:43:32+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 541: Comments: 9 of 53 = 0.2 points -->
+<!-- Debug: Priority report of postID 551: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/science-technology/windows-boot-installing-motherboard-fixed/</loc>
-		<lastmod>2011-10-31T00:43:09+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 551: Comments: 0 of 53 = 0 points -->
-	<url>
-		<loc>http://joejiko.com/blog/personal/what-a-bum-photo/</loc>
+		<loc>http://joejiko.com/blog/what-a-bum-photo/</loc>
 		<lastmod>2011-10-31T00:42:28+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 549: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 549: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/good-morning-beautiful/</loc>
+		<loc>http://joejiko.com/blog/good-morning-beautiful/</loc>
 		<lastmod>2011-10-31T00:42:17+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 552: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 552: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/science-technology/space-bar-crazy-solved/</loc>
+		<loc>http://joejiko.com/blog/space-bar-crazy-solved/</loc>
 		<lastmod>2011-10-31T00:41:41+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 555: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 555: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/science-technology/people-told-firefox-refer-fox-fire/</loc>
+		<loc>http://joejiko.com/blog/people-told-firefox-refer-fox-fire/</loc>
 		<lastmod>2011-10-31T00:41:32+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 559: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 559: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/grawwwwr-8-photo/</loc>
+		<loc>http://joejiko.com/blog/grawwwwr-8-photo/</loc>
 		<lastmod>2011-10-31T00:41:05+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 581: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 581: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/sign-awkward-hump-illustration-family-photo-design-fail/</loc>
+		<loc>http://joejiko.com/blog/sign-awkward-hump-illustration-family-photo-design-fail/</loc>
 		<lastmod>2011-10-31T00:40:43+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 586: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 586: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/remember-backspace-page-problem-google-chrome-solved/</loc>
+		<loc>http://joejiko.com/blog/remember-backspace-page-problem-google-chrome-solved/</loc>
 		<lastmod>2011-10-31T00:40:13+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 598: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 598: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/i-feel-kind-of-less-sick-today-need-to-get-my-eyebrows-done-____-photo-from-mobile/</loc>
+		<loc>http://joejiko.com/blog/i-feel-kind-of-less-sick-today-need-to-get-my-eyebrows-done-____-photo-from-mobile/</loc>
 		<lastmod>2011-10-31T00:39:16+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 604: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 604: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/good-morning-zeah/</loc>
+		<loc>http://joejiko.com/blog/good-morning-zeah/</loc>
 		<lastmod>2011-10-31T00:38:55+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 629: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 629: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/design/updated-facebook-artwork/</loc>
+		<loc>http://joejiko.com/blog/updated-facebook-artwork/</loc>
 		<lastmod>2011-10-24T02:32:48+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 639: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 639: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/doodles/</loc>
+		<loc>http://joejiko.com/blog/doodles/</loc>
 		<lastmod>2011-10-23T04:58:14+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 634: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 634: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/hector-free-design-donkey/</loc>
+		<loc>http://joejiko.com/blog/hector-free-design-donkey/</loc>
 		<lastmod>2011-10-21T03:40:24+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 620: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 620: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/graphic-design-mobile-eflyer/</loc>
+		<loc>http://joejiko.com/blog/graphic-design-mobile-eflyer/</loc>
 		<lastmod>2011-10-19T05:11:00+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 610: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 610: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/site-navigation-2/nice-error-handling-notification-system-helped-fix-bad-links/</loc>
+		<loc>http://joejiko.com/blog/nice-error-handling-notification-system-helped-fix-bad-links/</loc>
 		<lastmod>2011-10-02T01:29:27+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 611: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 611: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/science-technology/facebook-feature-smartlists-screenshots/</loc>
+		<loc>http://joejiko.com/blog/facebook-feature-smartlists-screenshots/</loc>
 		<lastmod>2011-09-18T01:16:14+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 94: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 94: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/goals-for-this-site/</loc>
+		<loc>http://joejiko.com/blog/goals-for-this-site/</loc>
 		<lastmod>2011-09-17T03:01:04+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 596: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 596: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/cant-wait-for-halloween/</loc>
+		<loc>http://joejiko.com/blog/cant-wait-for-halloween/</loc>
 		<lastmod>2011-09-14T02:37:15+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 538: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 538: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/people-unsupportive-hurt-support-work-people-obsessively-selfcentered-people/</loc>
+		<loc>http://joejiko.com/blog/people-unsupportive-hurt-support-work-people-obsessively-selfcentered-people/</loc>
 		<lastmod>2011-09-06T05:10:59+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 528: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 528: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/site-navigation-2/pages-updated-today-page-added-joejikocom/</loc>
+		<loc>http://joejiko.com/blog/pages-updated-today-page-added-joejikocom/</loc>
 		<lastmod>2011-08-15T03:34:06+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 507: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 507: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/site-navigation-2/joejikocom-ui-updates/</loc>
+		<loc>http://joejiko.com/blog/joejikocom-ui-updates/</loc>
 		<lastmod>2011-07-29T05:21:00+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 501: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 501: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/site-navigation-2/analytics-comparison/</loc>
+		<loc>http://joejiko.com/blog/analytics-comparison/</loc>
 		<lastmod>2011-07-23T21:14:31+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 484: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 484: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/google-home-find-httpjoejikocomprofilesgoogleplus/</loc>
+		<loc>http://joejiko.com/blog/google-home-find-httpjoejikocomprofilesgoogleplus/</loc>
 		<lastmod>2011-07-16T21:52:51+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 489: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 489: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/overheard-a-far-girl-talking-today-ill-try-to-recreate-the-conversation/</loc>
+		<loc>http://joejiko.com/blog/overheard-a-far-girl-talking-today-ill-try-to-recreate-the-conversation/</loc>
 		<lastmod>2011-07-16T04:59:57+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 486: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 486: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/site-navigation-2/joejikocom-priority-update-list-week-717/</loc>
+		<loc>http://joejiko.com/blog/joejikocom-priority-update-list-week-717/</loc>
 		<lastmod>2011-07-15T06:28:25+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 482: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 482: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/science-technology/nice-google-anayltics-ui-upgrade-photos/</loc>
+		<loc>http://joejiko.com/blog/nice-google-anayltics-ui-upgrade-photos/</loc>
 		<lastmod>2011-07-15T06:07:46+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 470: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 470: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/invite-women-google/</loc>
+		<loc>http://joejiko.com/blog/invite-women-google/</loc>
 		<lastmod>2011-07-14T06:02:38+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 479: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 479: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/art/spread-social-networking-site-google/</loc>
+		<loc>http://joejiko.com/blog/spread-social-networking-site-google/</loc>
 		<lastmod>2011-07-14T05:57:52+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 475: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 475: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/uncategorized/webcam-stay-google-hangouts-photo/</loc>
+		<loc>http://joejiko.com/blog/webcam-stay-google-hangouts-photo/</loc>
 		<lastmod>2011-07-14T05:31:07+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 465: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 465: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/plans-tonight-bike-ride-john-roommate-twitter-working/</loc>
+		<loc>http://joejiko.com/blog/plans-tonight-bike-ride-john-roommate-twitter-working/</loc>
 		<lastmod>2011-07-12T00:48:08+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 460: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 460: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/site-navigation-2/joejikocom-interface-upgrade-pages-photos/</loc>
+		<loc>http://joejiko.com/blog/joejikocom-interface-upgrade-pages-photos/</loc>
 		<lastmod>2011-07-09T16:56:12+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 457: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 448: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/dream-log-3-dreams-cc-mandagoesrawr-m0llybee-thatchinesegrl/</loc>
-		<lastmod>2011-07-09T16:03:01+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.2</priority>
-	</url>
-<!-- Debug: Priority report of postID 448: Comments: 0 of 53 = 0 points -->
-	<url>
-		<loc>http://joejiko.com/blog/site-navigation-2/working-joejikocom-agenda-tonight/</loc>
+		<loc>http://joejiko.com/blog/working-joejikocom-agenda-tonight/</loc>
 		<lastmod>2011-07-09T04:20:01+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 444: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 444: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/site-navigation-2/call-free-joejikocom/</loc>
+		<loc>http://joejiko.com/blog/call-free-joejikocom/</loc>
 		<lastmod>2011-07-09T02:50:32+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 441: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 441: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/joe-girl-computer-question-conversation/</loc>
+		<loc>http://joejiko.com/blog/joe-girl-computer-question-conversation/</loc>
 		<lastmod>2011-07-02T20:40:26+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 435: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 435: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/design/zeah-wallpaper-zeah-friends/</loc>
+		<loc>http://joejiko.com/blog/zeah-wallpaper-zeah-friends/</loc>
 		<lastmod>2011-06-26T01:57:34+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 429: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 429: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/people-think-its-funny-when-i-call-protective-cases-for-phones-phone-condoms/</loc>
+		<loc>http://joejiko.com/blog/people-think-its-funny-when-i-call-protective-cases-for-phones-phone-condoms/</loc>
 		<lastmod>2011-06-25T23:00:00+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 414: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 414: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/planning-trip-sunday-626-fort-desoto-dog-park-mandagoesrawr-zeah/</loc>
+		<loc>http://joejiko.com/blog/planning-trip-sunday-626-fort-desoto-dog-park-mandagoesrawr-zeah/</loc>
 		<lastmod>2011-06-24T02:08:41+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 410: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 410: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/cool-day-marija-bosnian-girl-owns-told/</loc>
+		<loc>http://joejiko.com/blog/cool-day-marija-bosnian-girl-owns-told/</loc>
 		<lastmod>2011-06-24T01:28:41+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 407: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 407: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/i-had-a-dream-some-black-boy-stole-my-phone-i-tried-to-chase-him-but-i-was-in-a-black-people-mall-and-they-all-looked-the-same-mandagoesrawr/</loc>
+		<loc>http://joejiko.com/blog/i-had-a-dream-some-black-boy-stole-my-phone-i-tried-to-chase-him-but-i-was-in-a-black-people-mall-and-they-all-looked-the-same-mandagoesrawr/</loc>
 		<lastmod>2011-06-24T01:17:51+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 386: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 386: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/crash-boom/</loc>
+		<loc>http://joejiko.com/blog/crash-boom/</loc>
 		<lastmod>2011-06-01T17:21:12+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 381: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 381: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/hey-you-you-need-a-haircut-see-this-is-a-haircut-shows-balding-crewcut/</loc>
+		<loc>http://joejiko.com/blog/hey-you-you-need-a-haircut-see-this-is-a-haircut-shows-balding-crewcut/</loc>
 		<lastmod>2011-06-01T16:00:00+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 382: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 382: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/so-did-you-hear-i-got-that-job/</loc>
+		<loc>http://joejiko.com/blog/so-did-you-hear-i-got-that-job/</loc>
 		<lastmod>2011-06-01T15:06:47+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 380: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 380: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/good-job-on-the-girlfriend-joe-shes-beautiful-smart-respectful-personable-and-shes-got-eyes-straight-out-of-a-disney-movie/</loc>
+		<loc>http://joejiko.com/blog/good-job-on-the-girlfriend-joe-shes-beautiful-smart-respectful-personable-and-shes-got-eyes-straight-out-of-a-disney-movie/</loc>
 		<lastmod>2011-06-01T12:50:13+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 379: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 379: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/i-have-a-15-off-coupon-that-says-valid-by-online-or-phone-order-only-will-you-still-take-it-in-the-store/</loc>
+		<loc>http://joejiko.com/blog/i-have-a-15-off-coupon-that-says-valid-by-online-or-phone-order-only-will-you-still-take-it-in-the-store/</loc>
 		<lastmod>2011-06-01T12:40:28+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 355: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 355: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/who-wants-to-go-shopping-for-me-find-me-a-sexy-swimsuit-to-buy-kthx-%e2%99%a5-examples/</loc>
+		<loc>http://joejiko.com/blog/who-wants-to-go-shopping-for-me-find-me-a-sexy-swimsuit-to-buy-kthx-%e2%99%a5-examples/</loc>
 		<lastmod>2011-05-30T18:27:14+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 351: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 351: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/art/happy-memorial-day-2011/</loc>
+		<loc>http://joejiko.com/blog/happy-memorial-day-2011/</loc>
 		<lastmod>2011-05-30T14:57:50+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 348: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 348: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/my-agenda-today-what-are-you-doing-today/</loc>
+		<loc>http://joejiko.com/blog/my-agenda-today-what-are-you-doing-today/</loc>
 		<lastmod>2011-05-30T14:55:17+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 336: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 336: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/art/have-you-seen-my-new-twitter-profile-background-httptwitter-comjoejiko/</loc>
+		<loc>http://joejiko.com/blog/have-you-seen-my-new-twitter-profile-background-httptwitter-comjoejiko/</loc>
 		<lastmod>2011-05-27T21:06:52+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 332: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 332: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/scene-of-murder-still-no-suspects-photo/</loc>
+		<loc>http://joejiko.com/blog/scene-of-murder-still-no-suspects-photo/</loc>
 		<lastmod>2011-05-22T18:43:53+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 321: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 321: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/science-technology/organizing-my-google-reader-feeds-anybody-else-use-this-amazing-service-photo/</loc>
+		<loc>http://joejiko.com/blog/organizing-my-google-reader-feeds-anybody-else-use-this-amazing-service-photo/</loc>
 		<lastmod>2011-05-12T01:34:16+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 320: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 320: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/site-navigation-2/time-for-sleep-have-some-thoughts/</loc>
+		<loc>http://joejiko.com/blog/time-for-sleep-have-some-thoughts/</loc>
 		<lastmod>2011-05-11T08:00:39+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 311: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 311: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/what-has-100-ears-but-cant-hear/</loc>
+		<loc>http://joejiko.com/blog/what-has-100-ears-but-cant-hear/</loc>
 		<lastmod>2011-05-10T19:02:22+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 309: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 309: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/mothers-day-photos/</loc>
+		<loc>http://joejiko.com/blog/mothers-day-photos/</loc>
 		<lastmod>2011-05-09T18:25:55+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 303: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 303: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/pop-ice-i-really-wish-they-made-a-box-of-just-blue-ones-photo/</loc>
+		<loc>http://joejiko.com/blog/pop-ice-i-really-wish-they-made-a-box-of-just-blue-ones-photo/</loc>
 		<lastmod>2011-05-08T02:58:07+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 295: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 295: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/rejected-by-tacobell-okay-fine-my-boycott-starts-today/</loc>
+		<loc>http://joejiko.com/blog/rejected-by-tacobell-okay-fine-my-boycott-starts-today/</loc>
 		<lastmod>2011-05-01T03:21:12+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 291: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 291: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/dear-lexmark-your-printer-instructions-are-fail/</loc>
+		<loc>http://joejiko.com/blog/dear-lexmark-your-printer-instructions-are-fail/</loc>
 		<lastmod>2011-04-30T16:19:38+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 279: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 279: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/social/unfriend-responses-and-analysis-collection-1/</loc>
+		<loc>http://joejiko.com/blog/unfriend-responses-and-analysis-collection-1/</loc>
 		<lastmod>2011-04-26T04:47:07+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 275: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 275: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/i-dont-hug-fat-chicks-lol/</loc>
+		<loc>http://joejiko.com/blog/i-dont-hug-fat-chicks-lol/</loc>
 		<lastmod>2011-04-26T04:02:48+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 272: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 272: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/tattoo-concept-1-godzilla-destroying-tokyo/</loc>
+		<loc>http://joejiko.com/blog/tattoo-concept-1-godzilla-destroying-tokyo/</loc>
 		<lastmod>2011-04-19T00:35:15+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 269: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 269: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/omnomnomnom/</loc>
+		<loc>http://joejiko.com/blog/omnomnomnom/</loc>
 		<lastmod>2011-04-16T00:34:12+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 255: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 255: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/design/new-creativespine-qr-code-business-card/</loc>
+		<loc>http://joejiko.com/blog/new-creativespine-qr-code-business-card/</loc>
 		<lastmod>2011-03-24T03:31:48+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 251: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 251: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/science-technology/firefox4-released/</loc>
+		<loc>http://joejiko.com/blog/firefox4-released/</loc>
 		<lastmod>2011-03-22T16:17:30+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 246: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 246: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/dear-popsicle-what-happened-to-swirlwinds-can-i-have-them-back-please/</loc>
+		<loc>http://joejiko.com/blog/dear-popsicle-what-happened-to-swirlwinds-can-i-have-them-back-please/</loc>
 		<lastmod>2011-03-12T04:24:11+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 242: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 242: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/site-navigation-2/to-do-list-march/</loc>
+		<loc>http://joejiko.com/blog/to-do-list-march/</loc>
 		<lastmod>2011-03-11T02:26:28+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 235: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 235: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/site-navigation-2/update-joejiko-com-facebook-plugins-embedded/</loc>
+		<loc>http://joejiko.com/blog/update-joejiko-com-facebook-plugins-embedded/</loc>
 		<lastmod>2011-03-10T05:44:40+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 203: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 203: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/thought-cloud-of-attractive-and-unattractive-qualities-in-women-or-people-in-general/</loc>
+		<loc>http://joejiko.com/blog/thought-cloud-of-attractive-and-unattractive-qualities-in-women-or-people-in-general/</loc>
 		<lastmod>2011-03-07T03:59:32+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 198: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 198: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/green-tea-time-photos/</loc>
+		<loc>http://joejiko.com/blog/green-tea-time-photos/</loc>
 		<lastmod>2011-03-04T21:55:05+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 194: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 194: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/site-navigation-2/joejiko-com-layout-update-screenshot/</loc>
+		<loc>http://joejiko.com/blog/joejiko-com-layout-update-screenshot/</loc>
 		<lastmod>2011-03-04T09:51:55+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 192: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 192: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/i-seriously-hate-guys-who-wear-makeup/</loc>
+		<loc>http://joejiko.com/blog/i-seriously-hate-guys-who-wear-makeup/</loc>
 		<lastmod>2011-03-04T07:15:23+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 189: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 189: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/art/amand-aid-art/</loc>
+		<loc>http://joejiko.com/blog/amand-aid-art/</loc>
 		<lastmod>2011-03-03T02:18:40+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 163: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 163: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/is-that-your-escort/</loc>
+		<loc>http://joejiko.com/blog/is-that-your-escort/</loc>
 		<lastmod>2011-02-27T05:54:37+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 157: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 157: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/you-are-a-woman-you-should-be-offering-to-do-my-dishes/</loc>
+		<loc>http://joejiko.com/blog/you-are-a-woman-you-should-be-offering-to-do-my-dishes/</loc>
 		<lastmod>2011-02-26T18:51:00+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 150: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 150: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/valentines-day-cards-photo/</loc>
+		<loc>http://joejiko.com/blog/valentines-day-cards-photo/</loc>
 		<lastmod>2011-02-22T23:16:19+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 139: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 139: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/birthday-weekend-success-with-photos/</loc>
+		<loc>http://joejiko.com/blog/birthday-weekend-success-with-photos/</loc>
 		<lastmod>2011-02-22T23:11:28+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 133: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 133: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/got-my-thinking-cap-on/</loc>
+		<loc>http://joejiko.com/blog/got-my-thinking-cap-on/</loc>
 		<lastmod>2011-02-09T03:56:38+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 128: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 128: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/go-steelers-bumper-sticker/</loc>
+		<loc>http://joejiko.com/blog/go-steelers-bumper-sticker/</loc>
 		<lastmod>2011-02-06T23:39:15+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 111: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 111: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/zeahs-middle-name/</loc>
+		<loc>http://joejiko.com/blog/zeahs-middle-name/</loc>
 		<lastmod>2011-02-06T06:11:16+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 108: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 108: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/i-might-be-a-sociopath/</loc>
+		<loc>http://joejiko.com/blog/i-might-be-a-sociopath/</loc>
 		<lastmod>2010-02-01T20:00:46+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 104: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 104: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/mechanical-bullshit/</loc>
+		<loc>http://joejiko.com/blog/mechanical-bullshit/</loc>
 		<lastmod>2010-01-30T18:33:59+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 76: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 76: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/tea-vs-coffee/</loc>
+		<loc>http://joejiko.com/blog/tea-vs-coffee/</loc>
 		<lastmod>2009-07-13T15:52:45+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 56: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 56: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/samsung-sch-r450-messager-failed/</loc>
+		<loc>http://joejiko.com/blog/samsung-sch-r450-messager-failed/</loc>
 		<lastmod>2009-06-11T19:51:12+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 50: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 50: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/strange-dream-aim-conversation/</loc>
+		<loc>http://joejiko.com/blog/strange-dream-aim-conversation/</loc>
 		<lastmod>2009-06-11T19:10:35+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 53: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 53: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/cant-sleep-at-home/</loc>
+		<loc>http://joejiko.com/blog/cant-sleep-at-home/</loc>
 		<lastmod>2009-06-11T19:04:00+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 47: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 47: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/personal/rock-crusher/</loc>
+		<loc>http://joejiko.com/blog/rock-crusher/</loc>
 		<lastmod>2009-05-04T05:04:13+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 11: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 11: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/design/6-myspace-headers/</loc>
+		<loc>http://joejiko.com/blog/6-myspace-headers/</loc>
 		<lastmod>2009-05-03T02:34:46+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>
 	</url>
-<!-- Debug: Priority report of postID 3: Comments: 0 of 53 = 0 points -->
+<!-- Debug: Priority report of postID 3: Comments: 0 of 58 = 0 points -->
 	<url>
-		<loc>http://joejiko.com/blog/video/3-videos-uploaded-to-youtube/</loc>
+		<loc>http://joejiko.com/blog/3-videos-uploaded-to-youtube/</loc>
 		<lastmod>2009-04-30T23:58:55+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.2</priority>

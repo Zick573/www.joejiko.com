@@ -861,12 +861,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/Seldaek/monolog.git",
-            "reference": "0f3c054dff866aa687ab07572b731fb2ba32e703"
+            "reference": "a5010756d905264ea2b3f7f27c7df22fb9a3bd8e"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/Seldaek/monolog/zipball/0f3c054dff866aa687ab07572b731fb2ba32e703",
-            "reference": "0f3c054dff866aa687ab07572b731fb2ba32e703",
+            "url": "https://api.github.com/repos/Seldaek/monolog/zipball/a5010756d905264ea2b3f7f27c7df22fb9a3bd8e",
+            "reference": "a5010756d905264ea2b3f7f27c7df22fb9a3bd8e",
             "shasum": ""
         },
         "require": {
@@ -886,7 +886,7 @@
             "mlehner/gelf-php": "Allow sending log messages to a GrayLog2 server",
             "raven/raven": "Allow sending log messages to a Sentry server"
         },
-        "time": "2013-10-28 09:41:17",
+        "time": "2013-11-04 08:48:35",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1309,55 +1309,6 @@
         "keywords": [
             "mustache",
             "templating"
-        ]
-    },
-    {
-        "name": "predis/predis",
-        "version": "0.8.x-dev",
-        "version_normalized": "0.8.9999999.9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/nrk/predis.git",
-            "reference": "4824af15631f6a80a939cdc58104d03e0aadd17a"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/nrk/predis/zipball/4824af15631f6a80a939cdc58104d03e0aadd17a",
-            "reference": "4824af15631f6a80a939cdc58104d03e0aadd17a",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.2"
-        },
-        "suggest": {
-            "ext-curl": "Allows access to Webdis when paired with phpiredis",
-            "ext-phpiredis": "Allows faster serialization and deserialization of the Redis protocol"
-        },
-        "time": "2013-08-31 08:51:10",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-0": {
-                "Predis": "lib/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Daniele Alessandri",
-                "email": "suppakilla@gmail.com",
-                "homepage": "http://clorophilla.net"
-            }
-        ],
-        "description": "Flexible and feature-complete PHP client library for Redis",
-        "homepage": "http://github.com/nrk/predis",
-        "keywords": [
-            "nosql",
-            "predis",
-            "redis"
         ]
     },
     {
@@ -1940,59 +1891,6 @@
         "homepage": "http://symfony.com"
     },
     {
-        "name": "patchwork/utf8",
-        "version": "v1.1.13",
-        "version_normalized": "1.1.13.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/nicolas-grekas/Patchwork-UTF8.git",
-            "reference": "92376c92e7edc281a2ca4e3384f3da9237415db6"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/nicolas-grekas/Patchwork-UTF8/zipball/92376c92e7edc281a2ca4e3384f3da9237415db6",
-            "reference": "92376c92e7edc281a2ca4e3384f3da9237415db6",
-            "shasum": ""
-        },
-        "require": {
-            "lib-pcre": "*",
-            "php": ">=5.3.0"
-        },
-        "suggest": {
-            "ext-mbstring": "Use Mbstring for best performance",
-            "lib-iconv": "Use iconv for best performance",
-            "lib-icu": "Use Intl for best performance"
-        },
-        "time": "2013-10-12 09:48:20",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-0": {
-                "Patchwork": "class/",
-                "Normalizer": "class/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "(Apache-2.0 or GPL-2.0)"
-        ],
-        "authors": [
-            {
-                "name": "Nicolas Grekas",
-                "email": "p@tchwork.com",
-                "role": "Developer"
-            }
-        ],
-        "description": "Extensive, portable and performant handling of UTF-8 and grapheme clusters for PHP",
-        "homepage": "https://github.com/nicolas-grekas/Patchwork-UTF8",
-        "keywords": [
-            "i18n",
-            "unicode",
-            "utf-8",
-            "utf8"
-        ]
-    },
-    {
         "name": "bitgandtter/google-api",
         "version": "0.6.2",
         "version_normalized": "0.6.2.0",
@@ -2182,64 +2080,6 @@
         ]
     },
     {
-        "name": "fabpot/goutte",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/fabpot/Goutte.git",
-            "reference": "aea51354c70e1244d887c54a12e49cd6aa41beb4"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/fabpot/Goutte/zipball/aea51354c70e1244d887c54a12e49cd6aa41beb4",
-            "reference": "aea51354c70e1244d887c54a12e49cd6aa41beb4",
-            "shasum": ""
-        },
-        "require": {
-            "ext-curl": "*",
-            "guzzle/http": ">=3.0.5,<3.8-dev",
-            "php": ">=5.3.0",
-            "symfony/browser-kit": "~2.1",
-            "symfony/css-selector": "~2.1",
-            "symfony/dom-crawler": "~2.1",
-            "symfony/finder": "~2.1",
-            "symfony/process": "~2.1"
-        },
-        "require-dev": {
-            "guzzle/plugin-history": ">=3.0.5,<3.8-dev",
-            "guzzle/plugin-mock": ">=3.0.5,<3.8-dev"
-        },
-        "time": "2013-10-19 07:57:09",
-        "type": "application",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.0-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-0": {
-                "Goutte": "."
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            }
-        ],
-        "description": "A simple PHP Web Scraper",
-        "homepage": "https://github.com/fabpot/Goutte",
-        "keywords": [
-            "scraper"
-        ]
-    },
-    {
         "name": "symfony/event-dispatcher",
         "version": "2.3.x-dev",
         "version_normalized": "2.3.9999999.9999999-dev",
@@ -2411,60 +2251,6 @@
         ],
         "description": "Symfony Routing Component",
         "homepage": "http://symfony.com"
-    },
-    {
-        "name": "mobiledetect/mobiledetectlib",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/serbanghita/Mobile-Detect.git",
-            "reference": "28df44903eb07cb896fe0336fb17c8fee136800e"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/28df44903eb07cb896fe0336fb17c8fee136800e",
-            "reference": "28df44903eb07cb896fe0336fb17c8fee136800e",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.0.0"
-        },
-        "require-dev": {
-            "phpunit/phpunit": "*"
-        },
-        "time": "2013-10-02 08:24:15",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "classmap": [
-                "Mobile_Detect.php"
-            ],
-            "psr-0": {
-                "Detection": "namespaced/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Serban Ghita",
-                "email": "serbanghita@gmail.com",
-                "homepage": "http://mobiledetect.net",
-                "role": "Developer"
-            }
-        ],
-        "description": "Mobile_Detect is a lightweight PHP class for detecting mobile devices. It uses the User-Agent string combined with specific HTTP headers to detect the mobile environment.",
-        "homepage": "https://github.com/serbanghita/Mobile-Detect",
-        "keywords": [
-            "detect mobile devices",
-            "mobile",
-            "mobile detect",
-            "mobile detector",
-            "php mobile detect"
-        ]
     },
     {
         "name": "doctrine/cache",
@@ -2757,173 +2543,6 @@
         "homepage": "http://symfony.com"
     },
     {
-        "name": "symfony/http-foundation",
-        "version": "2.3.x-dev",
-        "version_normalized": "2.3.9999999.9999999-dev",
-        "target-dir": "Symfony/Component/HttpFoundation",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/HttpFoundation.git",
-            "reference": "1bee3412d9ff603a9ed1cce305c0becbd735c307"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/1bee3412d9ff603a9ed1cce305c0becbd735c307",
-            "reference": "1bee3412d9ff603a9ed1cce305c0becbd735c307",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.3"
-        },
-        "time": "2013-10-30 08:28:22",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.3-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-0": {
-                "Symfony\\Component\\HttpFoundation\\": ""
-            },
-            "classmap": [
-                "Symfony/Component/HttpFoundation/Resources/stubs"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "http://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony HttpFoundation Component",
-        "homepage": "http://symfony.com"
-    },
-    {
-        "name": "laravel/framework",
-        "version": "4.0.x-dev",
-        "version_normalized": "4.0.9999999.9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/laravel/framework.git",
-            "reference": "dfd88c5078dc9cbc846a7f8d40f6b083a3f00e2a"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/laravel/framework/zipball/dfd88c5078dc9cbc846a7f8d40f6b083a3f00e2a",
-            "reference": "dfd88c5078dc9cbc846a7f8d40f6b083a3f00e2a",
-            "shasum": ""
-        },
-        "require": {
-            "classpreloader/classpreloader": "1.0.*",
-            "doctrine/dbal": "2.4.*",
-            "filp/whoops": "1.0.7",
-            "ircmaxell/password-compat": "1.0.*",
-            "jeremeamia/superclosure": "1.0.*",
-            "monolog/monolog": "1.6.*",
-            "nesbot/carbon": "1.*",
-            "patchwork/utf8": "1.1.*",
-            "php": ">=5.3.0",
-            "predis/predis": "0.8.*",
-            "swiftmailer/swiftmailer": "5.0.*",
-            "symfony/browser-kit": "2.3.*",
-            "symfony/console": "2.3.*",
-            "symfony/css-selector": "2.3.*",
-            "symfony/debug": "2.3.*",
-            "symfony/dom-crawler": "2.3.*",
-            "symfony/event-dispatcher": "2.3.*",
-            "symfony/finder": "2.3.*",
-            "symfony/http-foundation": "2.3.*",
-            "symfony/http-kernel": "2.3.*",
-            "symfony/process": "2.3.*",
-            "symfony/routing": "2.3.*",
-            "symfony/translation": "2.3.*"
-        },
-        "replace": {
-            "illuminate/auth": "self.version",
-            "illuminate/cache": "self.version",
-            "illuminate/config": "self.version",
-            "illuminate/console": "self.version",
-            "illuminate/container": "self.version",
-            "illuminate/cookie": "self.version",
-            "illuminate/database": "self.version",
-            "illuminate/encryption": "self.version",
-            "illuminate/events": "self.version",
-            "illuminate/exception": "self.version",
-            "illuminate/filesystem": "self.version",
-            "illuminate/foundation": "self.version",
-            "illuminate/hashing": "self.version",
-            "illuminate/html": "self.version",
-            "illuminate/http": "self.version",
-            "illuminate/log": "self.version",
-            "illuminate/mail": "self.version",
-            "illuminate/pagination": "self.version",
-            "illuminate/queue": "self.version",
-            "illuminate/redis": "self.version",
-            "illuminate/routing": "self.version",
-            "illuminate/session": "self.version",
-            "illuminate/support": "self.version",
-            "illuminate/translation": "self.version",
-            "illuminate/validation": "self.version",
-            "illuminate/view": "self.version",
-            "illuminate/workbench": "self.version"
-        },
-        "require-dev": {
-            "aws/aws-sdk-php": "2.4.*",
-            "iron-io/iron_mq": "1.4.*",
-            "mockery/mockery": "0.8.0",
-            "pda/pheanstalk": "2.1.*",
-            "phpunit/phpunit": "3.7.*"
-        },
-        "time": "2013-10-29 20:05:47",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "4.0-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "classmap": [
-                [
-                    "src/Illuminate/Queue/IlluminateQueueClosure.php"
-                ]
-            ],
-            "files": [
-                "src/Illuminate/Support/helpers.php"
-            ],
-            "psr-0": {
-                "Illuminate": "src/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Taylor Otwell",
-                "email": "taylorotwell@gmail.com",
-                "homepage": "https://github.com/taylorotwell",
-                "role": "Developer"
-            }
-        ],
-        "description": "The Laravel Framework.",
-        "keywords": [
-            "framework",
-            "laravel"
-        ]
-    },
-    {
         "name": "kriswallsmith/assetic",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
@@ -3068,5 +2687,386 @@
         ],
         "description": "Symfony HttpKernel Component",
         "homepage": "http://symfony.com"
+    },
+    {
+        "name": "patchwork/utf8",
+        "version": "v1.1.14",
+        "version_normalized": "1.1.14.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/nicolas-grekas/Patchwork-UTF8.git",
+            "reference": "af1d74b154bc62fab79b428877a9b5ab15f9418a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/nicolas-grekas/Patchwork-UTF8/zipball/af1d74b154bc62fab79b428877a9b5ab15f9418a",
+            "reference": "af1d74b154bc62fab79b428877a9b5ab15f9418a",
+            "shasum": ""
+        },
+        "require": {
+            "lib-pcre": "*",
+            "php": ">=5.3.0"
+        },
+        "suggest": {
+            "ext-mbstring": "Use Mbstring for best performance",
+            "lib-iconv": "Use iconv for best performance",
+            "lib-icu": "Use Intl for best performance"
+        },
+        "time": "2013-11-04 16:58:59",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Patchwork": "class/",
+                "Normalizer": "class/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "(Apache-2.0 or GPL-2.0)"
+        ],
+        "authors": [
+            {
+                "name": "Nicolas Grekas",
+                "email": "p@tchwork.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "Extensive, portable and performant handling of UTF-8 and grapheme clusters for PHP",
+        "homepage": "https://github.com/nicolas-grekas/Patchwork-UTF8",
+        "keywords": [
+            "i18n",
+            "unicode",
+            "utf-8",
+            "utf8"
+        ]
+    },
+    {
+        "name": "predis/predis",
+        "version": "0.8.x-dev",
+        "version_normalized": "0.8.9999999.9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/nrk/predis.git",
+            "reference": "62f8730f1aa0e6a6879eaee73819a3a0b57f8dab"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/nrk/predis/zipball/62f8730f1aa0e6a6879eaee73819a3a0b57f8dab",
+            "reference": "62f8730f1aa0e6a6879eaee73819a3a0b57f8dab",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.2"
+        },
+        "suggest": {
+            "ext-curl": "Allows access to Webdis when paired with phpiredis",
+            "ext-phpiredis": "Allows faster serialization and deserialization of the Redis protocol"
+        },
+        "time": "2013-11-07 17:48:53",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Predis": "lib/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Daniele Alessandri",
+                "email": "suppakilla@gmail.com",
+                "homepage": "http://clorophilla.net"
+            }
+        ],
+        "description": "Flexible and feature-complete PHP client library for Redis",
+        "homepage": "http://github.com/nrk/predis",
+        "keywords": [
+            "nosql",
+            "predis",
+            "redis"
+        ]
+    },
+    {
+        "name": "fabpot/goutte",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/fabpot/Goutte.git",
+            "reference": "6db1a02449c82f5d7957c5be9d43389306b7468e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/fabpot/Goutte/zipball/6db1a02449c82f5d7957c5be9d43389306b7468e",
+            "reference": "6db1a02449c82f5d7957c5be9d43389306b7468e",
+            "shasum": ""
+        },
+        "require": {
+            "ext-curl": "*",
+            "guzzle/http": ">=3.0.5,<3.8-dev",
+            "php": ">=5.3.0",
+            "symfony/browser-kit": "~2.1",
+            "symfony/css-selector": "~2.1",
+            "symfony/dom-crawler": "~2.1",
+            "symfony/finder": "~2.1",
+            "symfony/process": "~2.1"
+        },
+        "require-dev": {
+            "guzzle/plugin-history": ">=3.0.5,<3.8-dev",
+            "guzzle/plugin-mock": ">=3.0.5,<3.8-dev"
+        },
+        "time": "2013-10-31 08:53:55",
+        "type": "application",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Goutte": "."
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            }
+        ],
+        "description": "A simple PHP Web Scraper",
+        "homepage": "https://github.com/fabpot/Goutte",
+        "keywords": [
+            "scraper"
+        ]
+    },
+    {
+        "name": "mobiledetect/mobiledetectlib",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/serbanghita/Mobile-Detect.git",
+            "reference": "db6b1d616184251888941c06f9ef683383a6b47f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/db6b1d616184251888941c06f9ef683383a6b47f",
+            "reference": "db6b1d616184251888941c06f9ef683383a6b47f",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.0.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "*"
+        },
+        "time": "2013-11-01 20:50:59",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "Mobile_Detect.php"
+            ],
+            "psr-0": {
+                "Detection": "namespaced/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Serban Ghita",
+                "email": "serbanghita@gmail.com",
+                "homepage": "http://mobiledetect.net",
+                "role": "Developer"
+            }
+        ],
+        "description": "Mobile_Detect is a lightweight PHP class for detecting mobile devices. It uses the User-Agent string combined with specific HTTP headers to detect the mobile environment.",
+        "homepage": "https://github.com/serbanghita/Mobile-Detect",
+        "keywords": [
+            "detect mobile devices",
+            "mobile",
+            "mobile detect",
+            "mobile detector",
+            "php mobile detect"
+        ]
+    },
+    {
+        "name": "symfony/http-foundation",
+        "version": "2.3.x-dev",
+        "version_normalized": "2.3.9999999.9999999-dev",
+        "target-dir": "Symfony/Component/HttpFoundation",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/HttpFoundation.git",
+            "reference": "796619f49371629db8f5ef5ce82f2f52e4fdfd9d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/796619f49371629db8f5ef5ce82f2f52e4fdfd9d",
+            "reference": "796619f49371629db8f5ef5ce82f2f52e4fdfd9d",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "time": "2013-11-04 06:09:51",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.3-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Symfony\\Component\\HttpFoundation\\": ""
+            },
+            "classmap": [
+                "Symfony/Component/HttpFoundation/Resources/stubs"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "http://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony HttpFoundation Component",
+        "homepage": "http://symfony.com"
+    },
+    {
+        "name": "laravel/framework",
+        "version": "4.0.x-dev",
+        "version_normalized": "4.0.9999999.9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/laravel/framework.git",
+            "reference": "5076824d4c0d4299522010ddb0bf03e7c96278ec"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/laravel/framework/zipball/5076824d4c0d4299522010ddb0bf03e7c96278ec",
+            "reference": "5076824d4c0d4299522010ddb0bf03e7c96278ec",
+            "shasum": ""
+        },
+        "require": {
+            "classpreloader/classpreloader": "1.0.*",
+            "doctrine/dbal": "2.4.*",
+            "filp/whoops": "1.0.7",
+            "ircmaxell/password-compat": "1.0.*",
+            "jeremeamia/superclosure": "1.0.*",
+            "monolog/monolog": "1.6.*",
+            "nesbot/carbon": "1.*",
+            "patchwork/utf8": "1.1.*",
+            "php": ">=5.3.0",
+            "predis/predis": "0.8.*",
+            "swiftmailer/swiftmailer": "5.0.*",
+            "symfony/browser-kit": "2.3.*",
+            "symfony/console": "2.3.*",
+            "symfony/css-selector": "2.3.*",
+            "symfony/debug": "2.3.*",
+            "symfony/dom-crawler": "2.3.*",
+            "symfony/event-dispatcher": "2.3.*",
+            "symfony/finder": "2.3.*",
+            "symfony/http-foundation": "2.3.*",
+            "symfony/http-kernel": "2.3.*",
+            "symfony/process": "2.3.*",
+            "symfony/routing": "2.3.*",
+            "symfony/translation": "2.3.*"
+        },
+        "replace": {
+            "illuminate/auth": "self.version",
+            "illuminate/cache": "self.version",
+            "illuminate/config": "self.version",
+            "illuminate/console": "self.version",
+            "illuminate/container": "self.version",
+            "illuminate/cookie": "self.version",
+            "illuminate/database": "self.version",
+            "illuminate/encryption": "self.version",
+            "illuminate/events": "self.version",
+            "illuminate/exception": "self.version",
+            "illuminate/filesystem": "self.version",
+            "illuminate/foundation": "self.version",
+            "illuminate/hashing": "self.version",
+            "illuminate/html": "self.version",
+            "illuminate/http": "self.version",
+            "illuminate/log": "self.version",
+            "illuminate/mail": "self.version",
+            "illuminate/pagination": "self.version",
+            "illuminate/queue": "self.version",
+            "illuminate/redis": "self.version",
+            "illuminate/routing": "self.version",
+            "illuminate/session": "self.version",
+            "illuminate/support": "self.version",
+            "illuminate/translation": "self.version",
+            "illuminate/validation": "self.version",
+            "illuminate/view": "self.version",
+            "illuminate/workbench": "self.version"
+        },
+        "require-dev": {
+            "aws/aws-sdk-php": "2.4.*",
+            "iron-io/iron_mq": "1.4.*",
+            "mockery/mockery": "0.8.0",
+            "pda/pheanstalk": "2.1.*",
+            "phpunit/phpunit": "3.7.*"
+        },
+        "time": "2013-11-05 01:52:53",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "4.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                [
+                    "src/Illuminate/Queue/IlluminateQueueClosure.php"
+                ]
+            ],
+            "files": [
+                "src/Illuminate/Support/helpers.php"
+            ],
+            "psr-0": {
+                "Illuminate": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Taylor Otwell",
+                "email": "taylorotwell@gmail.com",
+                "homepage": "https://github.com/taylorotwell",
+                "role": "Developer"
+            }
+        ],
+        "description": "The Laravel Framework.",
+        "keywords": [
+            "framework",
+            "laravel"
+        ]
     }
 ]

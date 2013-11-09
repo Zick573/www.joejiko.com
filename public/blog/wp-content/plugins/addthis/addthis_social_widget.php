@@ -23,7 +23,7 @@
 * Plugin Name: AddThis Social Bookmarking Widget
 * Plugin URI: http://www.addthis.com
 * Description: Help your visitor promote your site! The AddThis Social Bookmarking Widget allows any visitor to bookmark your site easily with many popular services. Sign up for an AddThis.com account to see how your visitors are sharing your content--which services they're using for sharing, which content is shared the most, and more. It's all free--even the pretty charts and graphs.
-* Version: 3.5.1
+* Version: 3.5.2
 *
 * Author: The AddThis Team
 * Author URI: http://www.addthis.com/blog
@@ -379,69 +379,71 @@ function addthis_custom_toolbox($options, $url, $title)
     if (isset($options['size']) && $options['size'] == '32')
         $outerClasses .= ' addthis_32x32_style';
 
-    $button = '<div class="'.$outerClasses.'" '.$identifier.' >'; 
+    if (isset($options['type']) && $options['type'] != 'custom_string') {
+	    $button = '<div class="'.$outerClasses.'" '.$identifier.' >'; 
+	    
+	    if (isset($options['addthis_options']) && $options['addthis_options'] != "") {
+	    	$addthis_options = split(',', $options['addthis_options']);
+	    	foreach ($addthis_options as $option) {
+	            $option = trim($option);  
+	            if ($option != 'more') {
+	                $button .= '<a class="addthis_button_'.$option.'"></a>';
+	            }
+	        }
+	    }
+	    else if (isset($options['services']) ) {
+	        $services = explode(',', $options['services']);
+	        foreach ($services as $service)
+	        {
+	            $service = trim($service);
+	            if ($service == 'more' || $service == 'compact') {
+	            	if (isset($options['type']) && $options['type'] != 'fb_tw_p1_sc') {
+	            		$button .= '<a class="addthis_button_compact"></a>';
+	            	}
+	            }
+	            else if ($service == 'counter') {
+	            	if (isset($options['type']) && $options['type'] == 'fb_tw_p1_sc') {
+	            		$button .= '<a class="addthis_counter addthis_pill_style"></a>';
+	            	}
+	            	else {
+	            		$button .= '<a class="addthis_counter addthis_bubble_style"></a>';
+	            	}
+	            }
+	            else if ($service == 'google_plusone') {
+	            	$button .= '<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>';
+	            }
+	            else
+	                $button .= '<a class="addthis_button_'.strtolower($service).'"></a>';
+	        }
+	    }
     
-    if (isset($options['addthis_options']) && $options['addthis_options'] != "") {
-    	$addthis_options = split(',', $options['addthis_options']);
-    	foreach ($addthis_options as $option) {
-            $option = trim($option);  
-            if ($option != 'more') {
-                $button .= '<a class="addthis_button_'.$option.'"></a>';
-            }
-        }
-    }
-    else if (isset($options['services']) ) {
-        $services = explode(',', $options['services']);
-        foreach ($services as $service)
-        {
-            $service = trim($service);
-            if ($service == 'more' || $service == 'compact') {
-            	if (isset($options['type']) && $options['type'] != 'fb_tw_p1_sc') {
-            		$button .= '<a class="addthis_button_compact"></a>';
-            	}
-            }
-            else if ($service == 'counter') {
-            	if (isset($options['type']) && $options['type'] == 'fb_tw_p1_sc') {
-            		$button .= '<a class="addthis_counter addthis_pill_style"></a>';
-            	}
-            	else {
-            		$button .= '<a class="addthis_counter addthis_bubble_style"></a>';
-            	}
-            }
-            else if ($service == 'google_plusone') {
-            	$button .= '<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>';
-            }
-            else
-                $button .= '<a class="addthis_button_'.strtolower($service).'"></a>';
-        }
-    }
-    
-    if (isset($options['preferred']) && is_numeric($options['preferred']))
-    {
-        for ($a = 1; $a <= $options['preferred']; $a++)
-        {
-            $button .= '<a class="addthis_button_preferred_'.$a.'"></a>';
-        }
-    }
+	    if (isset($options['preferred']) && is_numeric($options['preferred']))
+	    {
+	        for ($a = 1; $a <= $options['preferred']; $a++)
+	        {
+	            $button .= '<a class="addthis_button_preferred_'.$a.'"></a>';
+	        }
+	    }
 
-    if (isset($options['more']) && $options['more'] == true)
-    {
-            $button .= '<a class="addthis_button_compact"></a>';
-    }
+	    if (isset($options['more']) && $options['more'] == true)
+	    {
+	            $button .= '<a class="addthis_button_compact"></a>';
+	    }
 
-    if (isset($options['counter']) && ($options['counter'] != "") && ($options['counter'] !== false))
-    {
-        if ($options['counter'] === true)
-        {  //no style was specified
-           $button .= '<a class="addthis_counter"></a>';
-        }
-        else
-        {  //a specific style was specified such as pill_style or bubble_style
-            $button .= '<a class="addthis_counter addthis_'.$options['counter'].'"></a>';
-        }
+	    if (isset($options['counter']) && ($options['counter'] != "") && ($options['counter'] !== false))
+	    {
+	        if ($options['counter'] === true)
+	        {  //no style was specified
+	           $button .= '<a class="addthis_counter"></a>';
+	        }
+	        else
+	        {  //a specific style was specified such as pill_style or bubble_style
+	            $button .= '<a class="addthis_counter addthis_'.$options['counter'].'"></a>';
+	        }
+	    }
+	    
+	    $button .= '</div>';
     }
-    
-    $button .= '</div>';
 
     return $button;
 
@@ -595,10 +597,8 @@ function addthis_render_dashboard_widget() {
         echo 'No Password entered';
         return false;
     }
-    $domain = get_home_url();
-   
 
-    $domain = str_replace(array('http://', 'https://'), '', $domain);
+    $domain = str_ireplace('www.', '', parse_url(get_home_url(), PHP_URL_HOST));
   
     if (isset($options['profile']))
         $profile = '&pubid='.urlencode($options['profile']);
@@ -1439,7 +1439,21 @@ function addthis_display_social_widget($content, $filtered = true, $below_excerp
     {
         if (isset ($styles[$options['above']]))
         {
-           	$above = apply_filters('addthis_above_content',  $styles[$options['above']]['src']);
+	        if (isset ($options['above_chosen_list']) && strlen($options['above_chosen_list']) != 0) {
+	        	if (isset ($options['above']) && $options['above'] == 'large_toolbox') {
+	        		$aboveOptions['size'] = '32';
+	        	}
+	        	elseif (isset ($options['above']) && $options['above'] == 'small_toolbox') {
+	        		$aboveOptions['size'] = '16';
+	        	}
+	        	$aboveOptions['type'] = $options['above'];
+	        	$aboveOptions['services'] = $options['above_chosen_list'];
+	        	$aboveOptions['addthis_options'] = $options['addthis_options'];
+	        	$above = apply_filters('addthis_above_content',  addthis_custom_toolbox($aboveOptions, $url, $title) );
+	        }
+	        else {
+           		$above = apply_filters('addthis_above_content',  $styles[$options['above']]['src']);
+	        }
         }
         elseif ($options['above'] == 'custom')
         {
@@ -1457,19 +1471,6 @@ function addthis_display_social_widget($content, $filtered = true, $below_excerp
             $custom = preg_replace( '/<\s*div\s*/', '<div %s ', $options['above_custom_string'] );
             $above = apply_filters('addthis_above_content', $custom);
         }
-        
-        if (isset ($options['above_chosen_list']) && strlen($options['above_chosen_list']) != 0) {
-        	if (isset ($options['above']) && $options['above'] == 'large_toolbox') {
-        		$aboveOptions['size'] = '32';
-        	}
-        	elseif (isset ($options['above']) && $options['above'] == 'small_toolbox') {
-        		$aboveOptions['size'] = '16';
-        	}
-        	$aboveOptions['type'] = $options['above'];
-        	$aboveOptions['services'] = $options['above_chosen_list'];
-        	$aboveOptions['addthis_options'] = $options['addthis_options'];
-        	$above = apply_filters('addthis_above_content',  addthis_custom_toolbox($aboveOptions, $url, $title) );
-        }
     }
     elseif ($display)
         $above = apply_filters('addthis_above_content','' );
@@ -1480,7 +1481,21 @@ function addthis_display_social_widget($content, $filtered = true, $below_excerp
     {
         if (isset ($styles[$options['below']]))
         {    
-            $below = apply_filters('addthis_below_content', $styles[$options['below']]['src']);
+	        if (isset ($options['below_chosen_list']) && strlen($options['below_chosen_list']) != 0) {
+	        	if (isset ($options['below']) && $options['below'] == 'large_toolbox') {
+	        		$belowOptions['size'] = '32';
+	        	}
+	        	elseif (isset ($options['below']) && $options['below'] == 'small_toolbox') {
+	        		$belowOptions['size'] = '16';
+	        	}
+	        	$belowOptions['type'] = $options['below'];
+	        	$belowOptions['services'] = $options['below_chosen_list'];
+	        	$belowOptions['addthis_options'] = $options['addthis_options'];
+	        	$below = apply_filters('addthis_above_content',  addthis_custom_toolbox($belowOptions, $url, $title) );
+	        }
+	        else {
+            	$below = apply_filters('addthis_below_content', $styles[$options['below']]['src']);
+	        }
         }
         elseif ($options['below'] == 'custom')
         {
@@ -1495,19 +1510,6 @@ function addthis_display_social_widget($content, $filtered = true, $below_excerp
         {
             $custom = preg_replace( '/<\s*div\s*/', '<div %s ', $options['below_custom_string'] );
             $below = apply_filters('addthis_below_content', $custom);
-        }
-
-        if (isset ($options['below_chosen_list']) && strlen($options['below_chosen_list']) != 0) {
-        	if (isset ($options['below']) && $options['below'] == 'large_toolbox') {
-        		$belowOptions['size'] = '32';
-        	}
-        	elseif (isset ($options['below']) && $options['below'] == 'small_toolbox') {
-        		$belowOptions['size'] = '16';
-        	}
-        	$belowOptions['type'] = $options['below'];
-        	$belowOptions['services'] = $options['below_chosen_list'];
-        	$belowOptions['addthis_options'] = $options['addthis_options'];
-        	$below = apply_filters('addthis_above_content',  addthis_custom_toolbox($belowOptions, $url, $title) );
         }
     }
     elseif ($below_excerpt && $display && $options['below'] != 'none'  )
@@ -1526,14 +1528,14 @@ function addthis_display_social_widget($content, $filtered = true, $below_excerp
     {
         if ( isset($above) )
         {
-            if ($options['above'] == 'custom')
+            if ($options['above'] == 'custom' || $options['above'] == 'custom_string')
                 $content = $above . $content;
             else
                 $content = sprintf($above, $url_above) . $content;
         }
         if ( isset($below) )
         {
-            if ($options['below'] == 'custom')
+            if ($options['below'] == 'custom' || $options['below'] == 'custom_string')
                 $content = $content . $below;
             else
                 $content = $content . sprintf($below, $url_below); 

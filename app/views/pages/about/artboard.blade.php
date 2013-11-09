@@ -4,8 +4,14 @@
   <img alt="godzilla zelda pirates and naruto posters" src="{{ cdn_img() }}artboard/1/background-posters.png" />
   </article>
   <article id="introduction">
-    <h1 id="jikosig"><img src="{{ cdn_img() }}artboard/1/joejiko-signature.png" alt="Joe Jiko" /></h1>
-    <h2><img src="{{ cdn_img() }}artboard/1/thought-banner.png" alt="creepy art, fancy anime hair, and web geekery!" /></h2>
+    <div id="jikosig">
+      <img src="{{ cdn_img() }}artboard/1/joejiko-signature.png" alt="Joe Jiko signature">
+      <!-- pewpewpew -->
+      <figure class="starburst">
+        <figcaption hidden>animated exploding starburst sprite</figcaption>
+      </figure>
+    </div>
+    <img src="{{ cdn_img() }}artboard/1/thought-banner.png" alt="creepy art, fancy anime hair, & web geekery!">
   </article>
   <span class="click-map"></span>
   <article id="joejiko-art">
@@ -16,10 +22,6 @@
   </figure>
       <span class="whites"></span>
     </div>
-    <!-- pewpewpew -->
-    <figure class="starburst">
-      <figcaption hidden>exploding stars animated sprite</figcaption>
-    </figure>
     <span id="jikoeyes"></span><!-- forward left left2 left3 left4 bottom bottom2 right -->
     <span id="jikomouth"><figure><img alt="open vampire mouth" src="{{ cdn_img() }}artboard/1/joejiko-mouth2.png" /><figcaption hidden>open vampire mouth</figcaption></figure></span><!-- invisible by default -->
     <div id="addtocircles"><script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script><div class="g-plus" data-href="https://plus.google.com/110880509059057751100" rel="author" data-width="170" data-height="69"></div></div>

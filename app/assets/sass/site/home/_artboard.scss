@@ -212,6 +212,49 @@ a#jikotw:hover { background-position: 0 -162px; }
     top: 55px;
     z-index: 145;
 }
+.starburst {
+  display: none;
+  cursor: pointer;
+  width: 145px;
+  height: 180px;
+  background-image: url(#{$cdn}/img/artboard/1/sprite-starburst.png);
+  position: absolute;
+  left: -40px;
+  top: -70px;
+}
+#jikosig:hover .starburst {
+  display: block;
+    -webkit-animation: starburst 1s steps(5) infinite;
+       -moz-animation: starburst 1s steps(5) infinite;
+        -ms-animation: starburst 1s steps(5) infinite;
+         -o-animation: starburst 1s steps(5) infinite;
+            animation: starburst 1s steps(5) infinite;
+}
+
+@-webkit-keyframes starburst {
+   from { background-position:    0px; }
+     to { background-position: -725px; }
+}
+
+@-moz-keyframes starburst {
+   from { background-position:    0px; }
+     to { background-position: -725px; }
+}
+
+@-ms-keyframes starburst {
+   from { background-position:    0px; }
+     to { background-position: -725px; }
+}
+
+@-o-keyframes starburst {
+   from { background-position:    0px; }
+     to { background-position: -725px; }
+}
+
+@keyframes starburst {
+   from { background-position:    0px; }
+     to { background-position: -725px; }
+}
 .charizard {
   cursor: pointer;
   width: 200px;

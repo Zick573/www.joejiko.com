@@ -86,10 +86,12 @@ jQuery(document).ready(function($) {
         if ( aboveCustom.is(':checked'))
         {
             $('.above_option_custom').removeClass('hidden');
+            $('#above .personalizedMessage').addClass('hidden');
         }
         else
         {
             $('.above_option_custom').addClass('hidden');
+            $('#above .personalizedMessage').removeClass('hidden');
         }
     };
 
@@ -98,10 +100,12 @@ jQuery(document).ready(function($) {
         if ( belowCustom.is(':checked'))
         {
             $('.below_option_custom').removeClass('hidden');
+            $('#below .personalizedMessage').addClass('hidden');
         }
         else
         {
             $('.below_option_custom').addClass('hidden');
+            $('#below .personalizedMessage').removeClass('hidden');
         }
     };
 
@@ -130,10 +134,12 @@ jQuery(document).ready(function($) {
         if ( aboveCustomString.is(':checked'))
         {
             $('.above_custom_string_input').removeClass('hidden');
+            $('#above .personalizedMessage').addClass('hidden');
         }
         else
         {
             $('.above_custom_string_input').addClass('hidden');
+            $('#above .personalizedMessage').removeClass('hidden');
         }
     };
 
@@ -142,10 +148,12 @@ jQuery(document).ready(function($) {
         if ( belowCustomString.is(':checked'))
         {
             $('.below_custom_string_input').removeClass('hidden');
+            $('#below .personalizedMessage').addClass('hidden');
         }
         else
         {
             $('.below_custom_string_input').addClass('hidden');
+            $('#below .personalizedMessage').removeClass('hidden');
         }
     };
 

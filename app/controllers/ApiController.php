@@ -121,6 +121,13 @@ class ApiController extends BaseController {
     return $response;
   }
 
+  public function getQuestions()
+  {
+    $params = $_GET;
+    $limit = (isset($params['limit']) && is_numeric($params['limit'])) ? $params['limit'] : 3;
+    return Response::json(Question::orderBy('response_created_at', 'desc')->take($limit)->get());
+  }
+
   public function missingMethod($parameters)
   {
     // missing
