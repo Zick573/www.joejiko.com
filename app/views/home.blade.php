@@ -83,7 +83,7 @@
 </div>
 <h3>Thoughts</h3>
 <div class="thought-widget">
-@foreach(Post::thoughts()->take(3)->get() as $i => $post)
+@foreach(Post::thoughts()->orderBy('created_at', 'DESC')->take(3)->get() as $i => $post)
 <p class="thought-item">
   {{ $post->content }}
   @if(isset($post->user_name))

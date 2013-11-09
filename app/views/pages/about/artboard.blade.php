@@ -17,7 +17,9 @@
       <span class="whites"></span>
     </div>
     <!-- pewpewpew -->
-    <span id="starburst"></span><!-- background crazy jiko art -->
+    <figure class="starburst">
+      <figcaption hidden>exploding stars animated sprite</figcaption>
+    </figure>
     <span id="jikoeyes"></span><!-- forward left left2 left3 left4 bottom bottom2 right -->
     <span id="jikomouth"><figure><img alt="open vampire mouth" src="{{ cdn_img() }}artboard/1/joejiko-mouth2.png" /><figcaption hidden>open vampire mouth</figcaption></figure></span><!-- invisible by default -->
     <div id="addtocircles"><script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script><div class="g-plus" data-href="https://plus.google.com/110880509059057751100" rel="author" data-width="170" data-height="69"></div></div>
@@ -43,12 +45,12 @@
       <figcaption hidden>asus transformer prime tablet with intagram app for android loaded on the screen</figcaption>
     </figure>
     <figure class="charizard">
-      <img alt="charizard pokemon plush" src="{{ cdn_img() }}artboard/1/pokemon-plush-charizard.png" />
+      <img class="placeholder" alt="charizard pokemon plush" src="{{ cdn_img() }}artboard/1/pokemon-plush-charizard.png" />
       <figcaption hidden>charizard pokemon #006 plush doll. it shoots fire if you hover over it!</figcaption>
     </figure>
-    <figure>
-      <img alt="wolf howling at the moon" class="wolfmoon" src="{{ cdn_img() }}artboard/1/wolf-howling-moon.png" />
-      <figcaption hidden>silhouette of a wolf howling at the moon</figcaption>
+    <figure class="wolfmoon">
+      <img class="placeholder" alt="wolf howling at the moon" src="{{ cdn_img() }}artboard/1/wolf-howling.png" />
+      <figcaption hidden>animated silhouette of a wolf howling at the moon</figcaption>
     </figure>
     <figure>
       <img alt="andy the android figurine" class="andyandroid" src="{{ cdn_img() }}artboard/1/andy-android.png" />
