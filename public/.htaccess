@@ -1,3 +1,4 @@
+# oops
 php_admin_value open_basedir none
 
 <IfModule mod_rewrite.c>
