@@ -1,4 +1,4 @@
-php_admin_value open_basedir none
+# php_admin_value open_basedir none
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
