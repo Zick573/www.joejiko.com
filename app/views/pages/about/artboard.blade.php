@@ -23,8 +23,16 @@
       <span class="whites"></span>
     </div>
     <span id="jikoeyes"></span><!-- forward left left2 left3 left4 bottom bottom2 right -->
-    <span id="jikomouth"><figure><img alt="open vampire mouth" src="{{ cdn_img() }}artboard/1/joejiko-mouth2.png" /><figcaption hidden>open vampire mouth</figcaption></figure></span><!-- invisible by default -->
-    <div id="addtocircles"><script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script><div class="g-plus" data-href="https://plus.google.com/110880509059057751100" rel="author" data-width="170" data-height="69"></div></div>
+    <span id="jikomouth">
+      <figure>
+        <img alt="open vampire mouth" src="{{ cdn_img() }}artboard/1/joejiko-mouth2.png">
+        <figcaption hidden>open vampire mouth</figcaption>
+      </figure>
+    </span><!-- invisible by default -->
+    <div id="addtocircles">
+      <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+      <div class="g-plus" data-href="https://plus.google.com/110880509059057751100" rel="author" data-width="170" data-height="69"></div>
+    </div>
     <div id="socialbtnwrap">
       <a id="jikofb" href="http://on.fb.me/REuClh" target="_blank">Like my artist page</a>
       <a id="jikotw" href="http://jiko.us/12ozDqb" target="_blank">Tweet at me bro</a>
@@ -41,8 +49,8 @@
       <figcaption hidden>nos energy drink 16oz can</figcaption>
     </figure>
     <figure>
-      <a href="http://jiko.us/ig">
-      <img alt="asus transformer prime tablet displaying instagram app for android" class="transformerprime" src="{{ cdn_img() }}artboard/1/transformer-prime-instagram.png" />
+      <a href="http://jiko.us/Wx5y3G" target="_blank">
+        <img alt="asus transformer prime tablet displaying instagram app for android" class="transformerprime" src="{{ cdn_img() }}artboard/1/transformer-prime-instagram.png" />
       </a>
       <figcaption hidden>asus transformer prime tablet with intagram app for android loaded on the screen</figcaption>
     </figure>
