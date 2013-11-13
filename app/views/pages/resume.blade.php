@@ -21,8 +21,8 @@
       <section id="objective">
         <h2>Objective</h2>
         <article>
-          <p>To pursue a career in one or more of, but not limited to, the following fields of web application development, mobile applications, graphic design, computer science, artificial intelligence, voice recognition, illustration, information systems, space travel, warp field technology, or information technology (I like to do a lot of things!).</p>
           <p><strong>TL;DR to pursue a career in making cool shit</strong></p>
+          <p>To pursue a career in one or more of, but not limited to, the following fields of web application development, mobile applications, graphic design, computer science, artificial intelligence, voice recognition, illustration, information systems, space travel, warp field technology, or information technology (I like to do a lot of things!).</p>
         </article>
       </section>
 
@@ -47,6 +47,7 @@
       <section id="proficiency">
         <h2>Proficient In</h2>
         <article>
+          <p><strong>TL;DR all major and popular software used to produce for the web</strong></p>
           <p>Microsoft Windows XP, Vista, 7, 8, Mac OS, iOS, Android, Linux (ArchLinux, Ubuntu)</p>
           <p>Adobe Creative Suite: Photoshop, Illustrator (graphic design), (web design and web development), InDesign (layout), <a href="http://www.adobe.com/products/dreamweaver.html">Dreamweaver</a></p>
           <p>Sublime Text 2, <a href="http://netbeans.org/">Netbeans</a></p>
@@ -55,7 +56,6 @@
           <p><a href="http://oauth.net/">oAUTH</a></p>
           <p>Facebook Graph API, Google APIs, Google analytics, Twitter API, etc.</li>
           <p>Smarty (templating engine)</p>
-          <p><strong>TL;DR all major and popular software used to produce for the web</strong></p>
         </article>
         <h2>Other libraries and systems I've spent time with</h2>
         <article>
