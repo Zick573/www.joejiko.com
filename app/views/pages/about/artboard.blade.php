@@ -26,8 +26,8 @@
     <span id="jikomouth"><figure><img alt="open vampire mouth" src="{{ cdn_img() }}artboard/1/joejiko-mouth2.png" /><figcaption hidden>open vampire mouth</figcaption></figure></span><!-- invisible by default -->
     <div id="addtocircles"><script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script><div class="g-plus" data-href="https://plus.google.com/110880509059057751100" rel="author" data-width="170" data-height="69"></div></div>
     <div id="socialbtnwrap">
-      <a id="jikofb" href="http://jiko.us/fb" target="_blank">Like my artist page</a>
-      <a id="jikotw" href="http://jiko.us/tw" target="_blank">Tweet at me bro</a>
+      <a id="jikofb" href="http://on.fb.me/REuClh" target="_blank">Like my artist page</a>
+      <a id="jikotw" href="http://jiko.us/12ozDqb" target="_blank">Tweet at me bro</a>
     </div>
   </article>
   <article id="status">

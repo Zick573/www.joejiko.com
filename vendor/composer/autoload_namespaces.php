@@ -11,6 +11,7 @@ return array(
     'Way\\Generators' => array($vendorDir . '/way/generators/src'),
     'Way' => array($vendorDir . '/way/guard-laravel/src'),
     'Upload' => array($vendorDir . '/codeguy/upload/src'),
+    'Unirest' => array($baseDir . '/lib', $vendorDir . '/mashape/unirest-php/lib'),
     'Symfony\\Component\\Translation\\' => array($vendorDir . '/symfony/translation'),
     'Symfony\\Component\\Routing\\' => array($vendorDir . '/symfony/routing'),
     'Symfony\\Component\\Process\\' => array($vendorDir . '/symfony/process'),

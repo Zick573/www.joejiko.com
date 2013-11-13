@@ -739,7 +739,7 @@ class Request extends SymfonyRequest
     }
     public function all()
     {
-        return $this->input() + $this->files->all();
+        return array_merge_recursive($this->input(), $this->files->all());
     }
     public function input($key = null, $default = null)
     {
@@ -5943,8 +5943,16 @@ abstract class Model implements ArrayAccess, ArrayableInterface, JsonableInterfa
     }
     protected function setKeysForSaveQuery(Builder $query)
     {
-        $query->where($this->getKeyName(), '=', $this->getKey());
+        $query->where($this->getKeyName(), '=', $this->getKeyForSaveQuery());
         return $query;
+    }
+    protected function getKeyForSaveQuery()
+    {
+        if (isset($this->original[$this->getKeyName()])) {
+            return $this->original[$this->getKeyName()];
+        } else {
+            return $this->getAttribute($this->getKeyName());
+        }
     }
     public function touch()
     {
@@ -7576,11 +7584,15 @@ class RotatingFileHandler extends StreamHandler
     protected $maxFiles;
     protected $mustRotate;
     protected $nextRotation;
+    protected $filenameFormat;
+    protected $dateFormat;
     public function __construct($filename, $maxFiles = 0, $level = Logger::DEBUG, $bubble = true)
     {
         $this->filename = $filename;
         $this->maxFiles = (int) $maxFiles;
         $this->nextRotation = new \DateTime('tomorrow');
+        $this->filenameFormat = '{filename}-{date}';
+        $this->dateFormat = 'Y-m-d';
         parent::__construct($this->getTimedFilename(), $level, $bubble);
     }
     public function close()
@@ -7589,6 +7601,11 @@ class RotatingFileHandler extends StreamHandler
         if (true === $this->mustRotate) {
             $this->rotate();
         }
+    }
+    public function setFilenameFormat($filenameFormat, $dateFormat)
+    {
+        $this->filenameFormat = $filenameFormat;
+        $this->dateFormat = $dateFormat;
     }
     protected function write(array $record)
     {
@@ -7608,12 +7625,7 @@ class RotatingFileHandler extends StreamHandler
         if (0 === $this->maxFiles) {
             return;
         }
-        $fileInfo = pathinfo($this->filename);
-        $glob = $fileInfo['dirname'] . '/' . $fileInfo['filename'] . '-*';
-        if (!empty($fileInfo['extension'])) {
-            $glob .= '.' . $fileInfo['extension'];
-        }
-        $logFiles = glob($glob);
+        $logFiles = glob($this->getGlobPattern());
         if ($this->maxFiles >= count($logFiles)) {
             return;
         }
@@ -7629,11 +7641,20 @@ class RotatingFileHandler extends StreamHandler
     protected function getTimedFilename()
     {
         $fileInfo = pathinfo($this->filename);
-        $timedFilename = $fileInfo['dirname'] . '/' . $fileInfo['filename'] . '-' . date('Y-m-d');
+        $timedFilename = str_replace(array('{filename}', '{date}'), array($fileInfo['filename'], date($this->dateFormat)), $fileInfo['dirname'] . '/' . $this->filenameFormat);
         if (!empty($fileInfo['extension'])) {
             $timedFilename .= '.' . $fileInfo['extension'];
         }
         return $timedFilename;
+    }
+    protected function getGlobPattern()
+    {
+        $fileInfo = pathinfo($this->filename);
+        $glob = str_replace(array('{filename}', '{date}'), array($fileInfo['filename'], '*'), $fileInfo['dirname'] . '/' . $this->filenameFormat);
+        if (!empty($fileInfo['extension'])) {
+            $glob .= '.' . $fileInfo['extension'];
+        }
+        return $glob;
     }
 }
 namespace Monolog\Handler;

@@ -18,7 +18,8 @@
         "mjaschen/phpgeo": "*",
         "mobiledetect/mobiledetectlib": "*",
         "evert/google-api-php-client": "dev-master",
-        "soramugi/google-drive-client-php": "dev-master"
+        "soramugi/google-drive-client-php": "dev-master",
+        "mashape/unirest-php": "dev-master"
     },
     "require-dev": {
         "way/guard-laravel": "dev-master"
@@ -33,6 +34,7 @@
             "app/database/seeds",
             "app/tests/TestCase.php"
         ],
+        "psr-0": {"Unirest":"lib/"},
         "files": [
             "app/libraries/helpers/globals.php"
         ]
