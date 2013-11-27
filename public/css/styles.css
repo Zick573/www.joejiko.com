@@ -1582,7 +1582,7 @@ a#jikotw:hover {
 
 .starburst {
   display: none;
-  cursor: pointer;
+  cursor: progress;
   width: 145px;
   height: 180px;
   background-image: url(https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/artboard/1/sprite-starburst.png);
@@ -1634,7 +1634,7 @@ a#jikotw:hover {
     background-position: -725px; } }
 
 .charizard {
-  cursor: pointer;
+  cursor: progress;
   width: 200px;
   height: 180px;
   background-image: url(https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/artboard/1/animated-pokemon-plush-charizard.png);
@@ -1671,7 +1671,7 @@ a#jikotw:hover {
     background-position: -1600px; } }
 
 .wolfmoon {
-  cursor: pointer;
+  cursor: progress;
   left: 764px;
   top: 0;
   position: absolute;
@@ -1739,10 +1739,45 @@ a#jikotw:hover {
 .charizard:hover .placeholder {
   opacity: 0; }
 
-.andyandroid {
+.andy {
   left: 829px;
   top: 95px;
+  position: absolute;
   z-index: 147; }
+
+.andy {
+  cursor: progress;
+  width: 85px;
+  height: 83px;
+  background-image: url(https://googledrive.com/host/0B_9a_WMIXbTtckZkaU1PY3dFZE0/andy-android-wave.png); }
+
+.andy:hover {
+  -webkit-animation: andy-wave 0.7s steps(7) infinite;
+  -moz-animation: andy-wave 0.7s steps(7) infinite;
+  -ms-animation: andy-wave 0.7s steps(7) infinite;
+  -o-animation: andy-wave 0.7s steps(7) infinite;
+  animation: andy-wave 0.7s steps(7) infinite; }
+
+@-webkit-keyframes andy-wave {
+  from {
+    background-position: 0px; }
+
+  to {
+    background-position: -595px; } }
+
+@-moz-keyframes andy-wave {
+  from {
+    background-position: 0px; }
+
+  to {
+    background-position: -595px; } }
+
+@-ms-keyframes andy-wave {
+  from {
+    background-position: 0px; }
+
+  to {
+    background-position: -595px; } }
 
 .droidx {
   left: 755px;
@@ -1755,14 +1790,14 @@ a#jikotw:hover {
   z-index: 141; }
 
 .click-map {
-  background: url("https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/artboard/1/click-map-dark.png") no-repeat scroll 0 0 transparent;
+  background: url("https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/artboard/1/click-map-dark-2.png") no-repeat scroll 0 0 transparent;
   display: none;
   height: 500px;
   left: -10px;
   position: absolute;
   top: 47px;
   width: 960px;
-  z-index: 115; }
+  z-index: 145; }
 
 .clickme, .clickme2, .clickme3 {
   background: url("https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/artboard/1/click-me.png") no-repeat scroll 0 0 transparent;

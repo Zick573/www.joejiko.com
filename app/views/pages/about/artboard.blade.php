@@ -62,9 +62,8 @@
       <img class="placeholder" alt="wolf howling at the moon" src="{{ cdn_img() }}artboard/1/wolf-howling.png" />
       <figcaption hidden>animated silhouette of a wolf howling at the moon</figcaption>
     </figure>
-    <figure>
-      <img alt="andy the android figurine" class="andyandroid" src="{{ cdn_img() }}artboard/1/andy-android.png" />
-      <figcaption hidden>a plastic model of andy the android</figcaption>
+    <figure class="andy">
+        <figcaption hidden="">a plastic model of andy the android waving</figcaption>
     </figure>
     <figure>
       <img alt="motorola droidx android phone" class="droidx" src="{{ cdn_img() }}artboard/1/droidx.png" />
