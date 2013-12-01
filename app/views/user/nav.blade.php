@@ -7,9 +7,16 @@
         @else
         <i class="batch" data-icon="&#xF046"></i>
         @endif
+
         <a class="user-status-link" href="/user"><strong>{{ Auth::user()->name }}</strong></a>
+
+        @if (Auth::user()->isTeam())
         <a class="team-nav-link" href="/team">Team</a>
+        @endif
+
+        @if (Auth::user()->isAdmin())
         <a class="admin-nav-link" href="/admin">Admin</a>
+        @endif
       </div>
     </div>
     <div class="user-controls">
