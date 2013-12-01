@@ -86,9 +86,16 @@ class HomeController extends DefaultController {
       die();
     endif;
 
+    $wishlist_html = View::make('pages.support.wishlist')
+      ->with('wishlist_data', $wishlist_data)
+      ->render();
+
     return
-    View::make('pages.support.wishlist')
-      ->with('wishlist_data', $wishlist_data);
+    View::make('layouts.base.html')
+      ->with(array(
+        'title' => "Joe Jiko's Wishlist",
+        'content' => $wishlist_html
+      ));
   }
 
   public function getSupport()

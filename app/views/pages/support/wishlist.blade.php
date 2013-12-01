@@ -1,15 +1,13 @@
 <style>
-  * { box-sizing: border-box; -moz-box-sizing: border-box; }
-  body { margin: 0; }
-  .amazon-wishlist { letter-spacing: -.25rem; }
-  .amazon-wishlist .item-link { letter-spacing: normal; }
-  .item-link { display: inline-block; width: 25%; vertical-align: top; background: #eee; padding: 1em; padding: 1rem; }
-  .item-prop-list { list-style: none; padding: 0; margin: 0; }
+.amazon-wishlist { letter-spacing: -1em; letter-spacing: -1rem; background: #eee; }
+.amazon-wishlist .item-link { letter-spacing: normal; }
+.item-link { display: inline-block; width: 24.99%; vertical-align: top; padding: 1em; padding: 1rem;}
+.item-prop-list { list-style: none; padding: 0; margin: 0; }
 </style>
-<h1>Wishlist ({{ count($wishlist_data) }} items)</h1>
+<h1><a href="/support/wishlist">Wishlist</a> (on <a href="http://www.amazon.com/registry/wishlist/10KWZ5ON6VU4N" target="_blank">Amazon</a>) [{{ count($wishlist_data) }} items] updated {{ $wishlist_data[0]['date-added'] }}</h1>
 <div class="amazon-wishlist">
 @foreach($wishlist_data as $item)
-<a class="item-link" href="{{ $item['link'] }}">
+<a class="item-link" href="{{ $item['link'] }}" target="_blank">
   <ul class="item item-prop-list">
     <li class="prop date">
       {{ $item['date-added'] }}
