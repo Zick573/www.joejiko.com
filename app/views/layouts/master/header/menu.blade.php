@@ -17,7 +17,7 @@
         <i data-icon="&#xF046;" class="batch"></i> About me
       </a>
       <a class="site-nav-link" href="{{{ URL::to('support') }}}">
-        <i data-icon="&#xF04B;" class="batch"></i> Support
+        <i data-icon="&#xF04B;" class="batch"></i> Support me
       </a>
       <a class="site-nav-link" href="{{{ URL::to('questions') }}}">
         <i data-icon="&#63;" class="modernpics"></i> Ask a Question
