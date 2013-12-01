@@ -20,7 +20,8 @@
         "evert/google-api-php-client": "dev-master",
         "soramugi/google-drive-client-php": "dev-master",
         "mashape/unirest-php": "dev-master",
-        "liebig/cron": "dev-master"
+        "liebig/cron": "dev-master",
+        "duvanmonsa/php-query": "dev-master"
     },
     "require-dev": {
         "way/guard-laravel": "dev-master"

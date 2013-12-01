@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'phpQuery' => array($vendorDir . '/duvanmonsa/php-query/src'),
     'Whoops' => array($vendorDir . '/filp/whoops/src'),
     'Way\\Tests' => array($vendorDir . '/way/laravel-test-helpers/src'),
     'Way\\Generators' => array($vendorDir . '/way/generators/src'),

@@ -84,7 +84,8 @@ Route::post('subscribe', function() {
   }
 
 });
-Route::get('support', array('as' => 'pages.support', 'uses' => 'HomeController@getSupport'));
+Route::get('support', array('as' => 'support', 'uses' => 'HomeController@getSupport'));
+Route::get('support/wishlist', array('as' => 'support/wishlist', 'uses' => 'HomeController@getSupportWishlist'));
 Route::controller('team', 'TeamController');
 Route::controller('thoughts', 'ThoughtController');
 Route::controller('thought', 'ThoughtController');
