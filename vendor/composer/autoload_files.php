@@ -9,7 +9,6 @@ return array(
     $vendorDir . '/swiftmailer/swiftmailer/lib/swift_required.php',
     $vendorDir . '/ircmaxell/password-compat/lib/password.php',
     $vendorDir . '/laravel/framework/src/Illuminate/Support/helpers.php',
-    $vendorDir . '/way/guard-laravel/src/Way/globals.php',
     $vendorDir . '/kriswallsmith/assetic/src/functions.php',
     $baseDir . '/app/libraries/helpers/globals.php',
 );

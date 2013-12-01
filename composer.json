@@ -19,7 +19,8 @@
         "mobiledetect/mobiledetectlib": "*",
         "evert/google-api-php-client": "dev-master",
         "soramugi/google-drive-client-php": "dev-master",
-        "mashape/unirest-php": "dev-master"
+        "mashape/unirest-php": "dev-master",
+        "liebig/cron": "dev-master"
     },
     "require-dev": {
         "way/guard-laravel": "dev-master"
