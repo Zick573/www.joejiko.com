@@ -3077,7 +3077,53 @@
             "time": "2013-09-13 16:53:25"
         }
     ],
-    "packages-dev": null,
+    "packages-dev": [
+        {
+            "name": "way/guard-laravel",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JeffreyWay/Laravel-Guard.git",
+                "reference": "396a6d656ca072bc29b637601c79896c9bfaceeb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JeffreyWay/Laravel-Guard/zipball/396a6d656ca072bc29b637601c79896c9bfaceeb",
+                "reference": "396a6d656ca072bc29b637601c79896c9bfaceeb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "illuminate/config": "4.1.x",
+                "illuminate/console": "4.1.x",
+                "illuminate/support": "4.1.x",
+                "mockery/mockery": "dev-master",
+                "symfony/finder": "2.3.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Way": "src/"
+                },
+                "files": [
+                    "src/Way/globals.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Jeffrey Way",
+                    "email": "jeffrey@jeffrey-way.com",
+                    "homepage": "http://jeffrye-way.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Easy asset management in Laravel.",
+            "time": "2013-08-31 21:50:40"
+        }
+    ],
     "aliases": [
 
     ],

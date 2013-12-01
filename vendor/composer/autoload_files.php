@@ -10,5 +10,6 @@ return array(
     $vendorDir . '/ircmaxell/password-compat/lib/password.php',
     $vendorDir . '/laravel/framework/src/Illuminate/Support/helpers.php',
     $vendorDir . '/kriswallsmith/assetic/src/functions.php',
+    $vendorDir . '/way/guard-laravel/src/Way/globals.php',
     $baseDir . '/app/libraries/helpers/globals.php',
 );

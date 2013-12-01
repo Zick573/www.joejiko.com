@@ -9,6 +9,7 @@ return array(
     'Whoops' => array($vendorDir . '/filp/whoops/src'),
     'Way\\Tests' => array($vendorDir . '/way/laravel-test-helpers/src'),
     'Way\\Generators' => array($vendorDir . '/way/generators/src'),
+    'Way' => array($vendorDir . '/way/guard-laravel/src'),
     'Upload' => array($vendorDir . '/codeguy/upload/src'),
     'Unirest' => array($baseDir . '/lib', $vendorDir . '/mashape/unirest-php/lib'),
     'Symfony\\Component\\Translation\\' => array($vendorDir . '/symfony/translation'),

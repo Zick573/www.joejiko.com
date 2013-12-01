@@ -113,9 +113,9 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
-    'Jiko\Auth\AuthServiceProvider',
-		'Way\Console\GuardLaravelServiceProvider',
-		'Way\Generators\GeneratorsServiceProvider'
+    'Jiko\Auth\AuthServiceProvider'
+		// 'Way\Console\GuardLaravelServiceProvider'
+		// 'Way\Generators\GeneratorsServiceProvider'
 	),
 
 	/*
