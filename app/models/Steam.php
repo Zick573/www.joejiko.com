@@ -10,7 +10,7 @@ class Steam {
 
     if(array_key_exists('module', $config)) {
       if($config['module'] === "friends") {
-        $this->data = self::getFriendGames();
+        $this->data = $this->friends_games();
         return $this;
       }
     }
@@ -25,19 +25,33 @@ class Steam {
     return $this;
   }
 
-  public function getFriendGames()
+  public function friend_games($steam_id)
   {
-    $friend_ids = array(
+    $steam = new \Steam\Api(array(
+      "steamid" => $steam_id
+    ));
+
+    return json_decode($steam->output(), true);
+  }
+
+  public function friend_ids()
+  {
+    return [
       "gimp" => "76561198032148118",
       "vashton" => "76561197969364176",
       "bekah" => "76561198099283523",
       "zach" => "76561198079545715"
-    );
+    ];
+  }
+
+  public function friends_games()
+  {
+    $friend_ids = $this->friend_ids();
 
     $data = array();
-    foreach($friend_ids as $label => $steamid):
-      $steam = new \Steam\Api(array(
-        "steamid" => $steamid
+    foreach($friend_ids as $label => $steam_id):
+      $steam = new \Steam\Api(array
+        "steamid" => $steam_id
       ));
       $steamarr = json_decode($steam->output(), true);
       $friend = array("friend" => $label);

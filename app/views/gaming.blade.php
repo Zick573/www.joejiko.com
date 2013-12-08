@@ -3,7 +3,7 @@
   Game over, man.
 @stop
 @section('content')
-<article class="page gaming">
+<article class="base-article page gaming">
   <h1>Gaming</h1>
   <h2>Currently playing</h2>
   <a class="now-playing ffxiv" href="http://www.finalfantasyxiv.com/" target="_blank" title="FFXIV official site">

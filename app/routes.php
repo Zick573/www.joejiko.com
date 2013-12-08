@@ -51,6 +51,7 @@ Route::controller('questions', 'QuestionController');
 Route::get('question/{id}', array('as' => 'question', 'uses' => 'QuestionController@getOne'));
 Route::get('artwork', array('as' => 'artwork', 'uses' => 'HomeController@getArtwork'));
 Route::get('gaming', array('as' => 'gaming', 'uses' => 'HomeController@getGaming'));
+Route::get('gaming/friends/{key}', array('as' => 'gaming/friend', 'uses' => 'HomeController@getGamingFriend'));
 Route::get('about/me', array('as' => 'about', 'uses' => 'HomeController@getAbout'));
 Route::get('about/privacy', array('as' => 'privacy', 'uses' => 'HomeController@getAboutPrivacy'));
 Route::get('about/resume', array('as' => 'resume', 'uses' => 'HomeController@getResume'));
