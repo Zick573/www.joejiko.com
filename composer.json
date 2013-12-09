@@ -21,7 +21,9 @@
         "soramugi/google-drive-client-php": "dev-master",
         "mashape/unirest-php": "dev-master",
         "liebig/cron": "dev-master",
-        "duvanmonsa/php-query": "dev-master"
+        "duvanmonsa/php-query": "dev-master",
+        "imagine/imagine": "~0.5.0",
+        "swiftmailer/swiftmailer": "*"
     },
     "require-dev": {
         "way/guard-laravel": "dev-master"
@@ -37,7 +39,10 @@
             "app/database/seeds",
             "app/tests/TestCase.php"
         ],
-        "psr-0": {"Unirest":"lib/"},
+        "psr-0": {
+          "Jiko": "app",
+          "Unirest":"lib/"
+        },
         "files": [
             "app/libraries/helpers/globals.php"
         ]

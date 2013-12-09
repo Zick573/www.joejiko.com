@@ -89,6 +89,7 @@ Route::get('support', array('as' => 'support', 'uses' => 'HomeController@getSupp
 Route::get('support/wishlist', array('as' => 'support/wishlist', 'uses' => 'HomeController@getSupportWishlist'));
 Route::controller('team', 'TeamController');
 Route::controller('thoughts', 'ThoughtController');
+Route::controller('posts', 'PostController');
 Route::controller('thought', 'ThoughtController');
 Route::get('user', array('as' => 'user.index', 'uses' => 'UserController@getIndex'));
 Route::get('user/debug', array('as' => 'user.debug', 'uses' => 'UserController@getDebug'));

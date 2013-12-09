@@ -9,6 +9,7 @@ $env = $app->detectEnvironment([
 ]);
 
 $app->bindInstallPaths(require __DIR__.'/paths.php');
+
 $framework = $app['path.base'].'/vendor/laravel/framework/src';
 
 require $framework.'/Illuminate/Foundation/start.php';
@@ -21,6 +22,10 @@ if(!Session::has('isMobile')):
     echo 'Mobile detection exception: ' . $e->getMessage();
   }
 endif;
+
+App::bind('PostRepositoryInterface', function(){
+  return new DbPostRepository;
+});
 
 // Session::put('isMobile', true);
 

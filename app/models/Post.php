@@ -3,12 +3,36 @@ class Post extends Eloquent {
   // material
   protected $table = 'posts';
 
+  /**
+   * The attributes that are mass assignable
+   *
+   * @var array
+   */
+  protected $fillable = [
+    'content',
+    'title',
+    'category',
+    'excerpt',
+    'status',
+    'comment_status',
+    'password',
+    'name',
+    'parent',
+    'guid',
+    'menu_order',
+    'type',
+    'mime_type',
+    'comment_count'
+  ];
+
   public function author() {
-    return $this->hasOne('User', 'user_id');
+    // return $this->hasOne('User', 'user_id');
+    return $this->belongsTo('User');
   }
 
   public function category() {
-    return $this->hasOne('Category', 'category');
+    // return $this->hasOne('Category', 'category');
+    return $this->belongsTo('Category');
   }
 
   public function taxonomy() {
@@ -27,7 +51,6 @@ class Post extends Eloquent {
     return NULL;
   }
 
-
   public function tags() {
     return $this->taxonomy()->where('taxonomy', '=', 'tag')->get();
   }
@@ -43,14 +66,19 @@ class Post extends Eloquent {
     return $query->orderBy('created_at', 'desc');
   }
 
-  public function scopeThoughts($query)
+  public function scopeMicro($query)
   {
-    return $query->where('type', '=', 'thought');
+    return $query->where('type', '=', 'artwork')->where('type', '=', 'thought')->orderBy('created_at', 'desc');
   }
 
   public function scopeArtwork($query)
   {
     return $query->where('type', '=', 'artwork');
+  }
+
+  public function scopeThoughts($query)
+  {
+    return $query->where('type', '=', 'thought');
   }
 
   public function scopeOfType($query, $type)

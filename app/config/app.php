@@ -113,7 +113,12 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
-    'Jiko\Auth\AuthServiceProvider'
+
+    'Jiko\Auth\AuthServiceProvider',
+    'Jiko\Repo\RepoServiceProvider',
+    'Jiko\Service\Form\FormServiceProvider',
+    'Jiko\Service\Notification\NotificationServiceProvider',
+    'Jiko\Exception\ExceptionServiceProvider'
 		// 'Way\Console\GuardLaravelServiceProvider'
 		// 'Way\Generators\GeneratorsServiceProvider'
 	),
