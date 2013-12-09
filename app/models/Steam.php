@@ -4,25 +4,18 @@ class Steam {
   protected $config;
   protected $data;
 
-  public function __construct($config=array())
+  public function __construct($module=null, $ids=[])
   {
-    $this->defaults();
+    $config = \Config::get('jiko::steam');
 
-    if(array_key_exists('module', $config)) {
-      if($config['module'] === "friends") {
-        $this->data = $this->friends_games();
-        return $this;
-      }
-    }
+    if($module === "friends") return $this->getFriendGames($ids);
 
     try {
-      $steam = new \Steam\Api($this->config);
+      $steam = new \Steam\Api($module, $ids);
       $this->data = $steam->output();
     } catch (Exception $e) {
       $this->data = $e->getMessage();
     }
-
-    return $this;
   }
 
   public function friend_games($steam_id)
@@ -34,19 +27,9 @@ class Steam {
     return json_decode($steam->output(), true);
   }
 
-  public function friend_ids()
-  {
-    return [
-      "gimp" => "76561198032148118",
-      "vashton" => "76561197969364176",
-      "bekah" => "76561198099283523",
-      "zach" => "76561198079545715"
-    ];
-  }
-
   public function friends_games()
   {
-    $friend_ids = $this->friend_ids();
+    $friend_ids = \Config::get('jiko::steam.friend_ids');
 
     $data = array();
     foreach($friend_ids as $label => $steam_id):

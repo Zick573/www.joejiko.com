@@ -8,9 +8,9 @@ class EloquentPost extends RepoAbstract implements PostInterface {
   protected $post;
   protected $tag;
 
-  public function __construct(Model $article, TagInterface $tag)
+  public function __construct(Model $post, TagInterface $tag)
   {
-    $this->article = $article;
+    $this->post = $post;
     $this->tag = $tag;
   }
 

@@ -15,11 +15,11 @@ class NotificationServiceProvider extends ServiceProvider {
 
       $notifier = new EmailNotifier( $emailer );
 
-      $notifier->from( $config['emailer.from'] )
-        ->to( $config['emailer.to'] );
+      $notifier->from( $config['jiko::notification.from'] )
+        ->to( $config['jiko::notification.to'] );
 
       return $notifier;
-    })
+    });
   }
 
   public function provides()
