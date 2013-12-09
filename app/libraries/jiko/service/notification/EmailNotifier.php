@@ -1,6 +1,6 @@
 <?php namespace Jiko\Service\Notification;
 
-class SmsNotifier implements NotifierInterface {
+class EmailNotifier implements NotifierInterface {
   protected $to;
 
   protected $from;

@@ -32,7 +32,6 @@
         "classmap": [
             "app/commands",
             "app/controllers",
-            "app/interfaces",
             "app/libraries",
             "app/models",
             "app/database/migrations",
@@ -40,7 +39,7 @@
             "app/tests/TestCase.php"
         ],
         "psr-0": {
-          "Jiko": "app",
+          "Jiko": "app/",
           "Unirest":"lib/"
         },
         "files": [

@@ -45,5 +45,12 @@ class RepoServiceProvider extends ServiceProvider {
         new Status
       );
     });
+
+    $app->bind('Jiko\Repo\Amazon\WishlistInterface', function($app)
+    {
+      return new ScraperWishlist(
+        new Wishlist
+      );
+    });
   }
 }
