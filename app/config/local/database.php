@@ -6,7 +6,8 @@ return [
       'host'      => 'localhost',
       'database'  => 'jiko',
       'username'  => 'root',
-      'password'  => 'skittles',
+      // 'password'  => 'skittles',
+      'password' => '',
       'charset'   => 'utf8',
       'collation' => 'utf8_unicode_ci',
       'prefix'    => ''
