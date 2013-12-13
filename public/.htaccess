@@ -2,12 +2,19 @@
 # php_admin_value open_basedir none
 
 <IfModule mod_rewrite.c>
-  Options -MultiViews
+  <IfModule mod_negotiation.c>
+    Options -MultiViews
+  </IfModule>
+
   RewriteEngine On
 
   #RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
   #RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
 
+  # Redirect Trailing Slashes...
+  RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+  RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteRule ^ index.php [L]
 </IfModule>

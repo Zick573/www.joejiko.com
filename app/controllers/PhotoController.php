@@ -210,7 +210,7 @@ class PhotoController extends FileController {
     var_dump($thumbnail);
   }
 
-  public function missingMethod($parameters)
+  public function missingMethod($method, $parameters=[])
   {
     // missing
     return Redirect::to('photos');

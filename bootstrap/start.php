@@ -1,12 +1,19 @@
 <?php
 $app = new Illuminate\Foundation\Application;
-$app->redirectIfTrailingSlash();
 
-$env = $app->detectEnvironment([
-  'local' => ['local.*', '127.0.0.1', 'jjcom.dev'],
-  'staging' => ['staging.*'],
-  'development' => ['198.20.249.169']
-]);
+// $env = $app->detectEnvironment([
+//   'local' => ['local.*', '127.0.0.1', 'jjcom.dev'],
+//   'staging' => ['staging.*'],
+//   'development' => ['198.20.249.169']
+// ]);
+
+// changed in 4.1
+$env = $app->detectEnvironment(function()
+{
+
+  return getenv('JIKO_ENV') ?: 'local';
+
+});
 
 $app->bindInstallPaths(require __DIR__.'/paths.php');
 
