@@ -1982,12 +1982,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nrk/predis.git",
-                "reference": "ecf1cc07e517c9cd8509be65ec47ecef05f0974d"
+                "reference": "09cb6677e241feecb165f417e1b3ea9709e1b173"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nrk/predis/zipball/ecf1cc07e517c9cd8509be65ec47ecef05f0974d",
-                "reference": "ecf1cc07e517c9cd8509be65ec47ecef05f0974d",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/09cb6677e241feecb165f417e1b3ea9709e1b173",
+                "reference": "09cb6677e241feecb165f417e1b3ea9709e1b173",
                 "shasum": ""
             },
             "require": {
@@ -2021,7 +2021,7 @@
                 "predis",
                 "redis"
             ],
-            "time": "2013-12-09 11:22:42"
+            "time": "2013-12-11 12:10:05"
         },
         {
             "name": "psr/log",
@@ -2389,12 +2389,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "6027e11bf64235b1d8b9b4a58640256c0c73fdc4"
+                "reference": "f77c13a6b542941075b3faacc5199c9ba9070d75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/6027e11bf64235b1d8b9b4a58640256c0c73fdc4",
-                "reference": "6027e11bf64235b1d8b9b4a58640256c0c73fdc4",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/f77c13a6b542941075b3faacc5199c9ba9070d75",
+                "reference": "f77c13a6b542941075b3faacc5199c9ba9070d75",
                 "shasum": ""
             },
             "require": {
@@ -2433,7 +2433,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2013-11-25 14:49:41"
+            "time": "2013-12-12 16:08:59"
         },
         {
             "name": "symfony/css-selector",
@@ -2493,12 +2493,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Debug.git",
-                "reference": "b4ea949b41f7d01d70a54c9aaae6e17d9f1546ee"
+                "reference": "93f26330c7750628772e074c90dacf27ddf48b6b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Debug/zipball/b4ea949b41f7d01d70a54c9aaae6e17d9f1546ee",
-                "reference": "b4ea949b41f7d01d70a54c9aaae6e17d9f1546ee",
+                "url": "https://api.github.com/repos/symfony/Debug/zipball/93f26330c7750628772e074c90dacf27ddf48b6b",
+                "reference": "93f26330c7750628772e074c90dacf27ddf48b6b",
                 "shasum": ""
             },
             "require": {
@@ -2540,7 +2540,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "http://symfony.com",
-            "time": "2013-11-28 16:41:31"
+            "time": "2013-12-12 16:08:59"
         },
         {
             "name": "symfony/dom-crawler",
@@ -2800,12 +2800,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpKernel.git",
-                "reference": "36578f3ad3dac980c841bf7921b2a1df6b156f8e"
+                "reference": "e6f1920ee06a89fee7810fcd112211599f5f7445"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/36578f3ad3dac980c841bf7921b2a1df6b156f8e",
-                "reference": "36578f3ad3dac980c841bf7921b2a1df6b156f8e",
+                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/e6f1920ee06a89fee7810fcd112211599f5f7445",
+                "reference": "e6f1920ee06a89fee7810fcd112211599f5f7445",
                 "shasum": ""
             },
             "require": {
@@ -2862,7 +2862,7 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "http://symfony.com",
-            "time": "2013-12-05 07:46:04"
+            "time": "2013-12-12 16:08:12"
         },
         {
             "name": "symfony/process",

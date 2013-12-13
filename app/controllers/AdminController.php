@@ -1,12 +1,15 @@
 <?php
 class AdminController extends BaseController {
+
+  protected $files;
+
   public function getIndex()
   {
     return View::make('admin.index')->with(array('user' => $this->user));
 
   }
 
-  public function getStatic()
+  public function getStatic(FilesInterface $files)
   {
     $result = array();
     $pageToken = NULL;

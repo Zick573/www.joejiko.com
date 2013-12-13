@@ -1,8 +1,7 @@
 <?php namespace Jiko\Repo;
-
-use Tag;
-use Status;
 use Post;
+use Status;
+use Tag;
 use Jiko\Repo\Tag\EloquentTag;
 use Jiko\Service\Cache\LaravelCache;
 use Jiko\Repo\Status\EloquentStatus;
@@ -14,6 +13,13 @@ class RepoServiceProvider extends ServiceProvider {
   public function register()
   {
     $app = $this->app;
+
+    $app->bind('Jiko\Repo\File\CloudFileInterface', function($app)
+    {
+      $file = new GoogleDriveFile(
+        new File
+      );
+    });
 
     $app->bind('Jiko\Repo\Post\PostInterface', function($app)
     {
