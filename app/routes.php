@@ -85,6 +85,7 @@ Route::post('subscribe', function() {
   }
 
 });
+Route::get('/', array('as' => 'home', 'uses' => 'HomeController@getIndex'));
 Route::get('support', array('as' => 'support', 'uses' => 'HomeController@getSupport'));
 Route::get('support/wishlist', array('as' => 'support/wishlist', 'uses' => 'HomeController@getSupportWishlist'));
 Route::controller('team', 'TeamController');
@@ -103,5 +104,4 @@ Route::get('user/disconnect', array('as' => "disconnect", 'uses' => 'UserControl
 Route::get('user/info', array('as' => 'profile', 'uses' => 'UserController@getInfo'));
 Route::get('web/clips', 'HomeController@getWeb');
 Route::get('test/{label}', 'TestController@getIndex');
-Route::get('{page}', array('uses' => 'HomeController@getAll'));
-Route::get('/', array('as' => 'home', 'uses' => 'HomeController@getIndex'));
+Route::get('/{slug}', array('uses' => 'ContentController@page'));

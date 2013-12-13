@@ -1,15 +1,16 @@
 <?php
 
-use Jiko\Repo\Post\PostInterface;
+use Jiko\Repo\Page\PageInterface;
 
 class ContentController extends BaseController {
-  protected $layout = 'layout';
 
-  protected $post;
+  protected $layout = 'page.layout';
 
-  public function __construct(PostInterface $post)
+  protected $page;
+
+  public function __construct(PageInterface $page)
   {
-    $this->post = $post;
+    $this->page = $page;
   }
 
   /**
@@ -30,15 +31,18 @@ class ContentController extends BaseController {
   }
 
   /**
-   * Single post
+   * Single page
    * GET /{slug}
    */
-  public function post($slug)
+  public function page($slug)
   {
-    $post = $this->post->bySlug($slug);
+    $page = $this->page->bySlug($slug);
 
-    if(!$post) App:abort(404);
+    if(!$page) App:abort(404);
 
-    $this->layout->content = View::make('post')->with('post', $post);
+    $this->layout->content = View::make('page')->with([
+      'layout' => $page->layout
+    ]);
   }
+
 }

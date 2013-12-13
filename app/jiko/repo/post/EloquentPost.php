@@ -23,6 +23,16 @@ class EloquentPost extends RepoAbstract implements PostInterface {
       ->first();
   }
 
+  public function bySlug($slug)
+  {
+
+  }
+
+  public function byTag($tag, $page=1, $limit=10)
+  {
+
+  }
+
   public function byPage($page=1, $limit=10, $all=false)
   {
     $result = [
