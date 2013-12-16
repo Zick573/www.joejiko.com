@@ -89,47 +89,6 @@ class HomeController extends DefaultController {
     return View::make('pages.subscribe');
   }
 
-  public function getSupportWishlist()
-  {
-    $wishlist = new Jiko\Wishlist\AmazonWishlist;
-    $wishlist_id = Config::get("jiko.amazon.wishlist.default_id");
-    $contents = $wishlist->byId($wishlist_id);
-
-    var_dump($contents);
-    exit();
-
-    // $wishlist = new Amazon\Wishlist\Wishlist();
-    // $wishlist_data = $wishlist->output();
-
-    // if(array_key_exists('raw', $_GET)):
-    //   var_dump($wishlist_data);
-    //   die();
-    // endif;
-
-    // $wishlist_html = View::make('pages.support.wishlist')
-    //   ->with('wishlist_data', $wishlist_data)
-    //   ->render();
-
-    // return
-    // View::make('layouts.base.html')
-    //   ->with(array(
-    //     'title' => "Joe Jiko's Wishlist",
-    //     'content' => $wishlist_html
-    //   ));
-  }
-
-  public function getSupport()
-  {
-    $wishlist = new Amazon\Wishlist\Wishlist();
-    $wishlist_data = $wishlist->output();
-    $wishlist_html = View::make('pages.support.wishlist')
-      ->with('wishlist_data', $wishlist_data)
-      ->render();
-
-    return
-    View::make('pages.support')->with('amazon_wishlist', $wishlist_html);
-  }
-
   public function getTeamJiko()
   {
     return View::make('team.join');

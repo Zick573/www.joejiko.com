@@ -1,9 +1,17 @@
 <?php namespace Jiko\WebScraper;
+
+use Illuminate\Database\Eloquent\Model;
+
 /**
  * @todo cache data for at least 6 hours
  */
-class AmazonWebScraper implements WebScraperInterface
+class AmazonWishlistWebScraper implements WebScraperInterface
 {
+
+  public function __construct(Model $wishlist)
+  {
+    $this->wishlist = $wishlist;
+  }
 
   /**
    * Updated Dec. 1, 2013

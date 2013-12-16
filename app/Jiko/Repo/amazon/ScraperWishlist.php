@@ -5,7 +5,7 @@ class ScraperWishlist implements WishlistInterface
 
   protected $wishlist;
 
-  public function __construct(AmazonWebScraper $wishlist)
+  public function __construct(AmazonWishlistWebScraper $wishlist)
   {
     $this->wishlist = $wishlist;
   }

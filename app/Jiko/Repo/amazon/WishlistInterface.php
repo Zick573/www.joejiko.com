@@ -4,5 +4,5 @@ interface WishlistInterface
 {
   public function all();
 
-  public function byId();
+  public function byId($id);
 }
