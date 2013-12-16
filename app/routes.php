@@ -107,6 +107,6 @@ Route::get('test/{label}', 'TestController@getIndex');
 Route::post('/queue', function()
 {
   return Queue::marshal();
-}
+});
 
 Route::get('/{slug}', array('uses' => 'ContentController@page'));
