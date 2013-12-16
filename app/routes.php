@@ -104,4 +104,9 @@ Route::get('user/disconnect', array('as' => "disconnect", 'uses' => 'UserControl
 Route::get('user/info', array('as' => 'profile', 'uses' => 'UserController@getInfo'));
 Route::get('web/clips', 'HomeController@getWeb');
 Route::get('test/{label}', 'TestController@getIndex');
+Route::post('/queue', function()
+{
+  return Queue::marshal();
+}
+
 Route::get('/{slug}', array('uses' => 'ContentController@page'));

@@ -1,5 +1,5 @@
 @section('content')
 
-Hiya :)
+{{ $page->layout }}
 
 @stop

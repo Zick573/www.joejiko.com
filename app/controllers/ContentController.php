@@ -19,15 +19,17 @@ class ContentController extends BaseController {
    */
   public function home()
   {
-    $page = Input::get('page', 1);
+    // $page = Input::get('page', 1);
 
-    $perPage = 3;
+    // $perPage = 3;
 
-    $pagiData = $this->post->byPage($page, $perPage);
+    // $pagiData = $this->post->byPage($page, $perPage);
 
-    $posts = Paginator::make($pagiData->items, $pagiData->totalItems, $perPage);
+    // $posts = Paginator::make($pagiData->items, $pagiData->totalItems, $perPage);
 
-    $this->layout->content = View::make('home')->with('posts', $posts);
+    // $this->layout->content = View::make('home')->with('posts', $posts);
+
+    return "nothing";
   }
 
   /**

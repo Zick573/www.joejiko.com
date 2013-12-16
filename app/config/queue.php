@@ -15,7 +15,7 @@ return array(
 	|
 	*/
 
-	'default' => 'sync',
+	'default' => 'iron',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -50,9 +50,9 @@ return array(
 
 		'iron' => array(
 			'driver'  => 'iron',
-			'project' => 'your-project-id',
-			'token'   => 'your-token',
-			'queue'   => 'your-queue-name',
+			'project' => '52ae223e2ca8c10009000029',
+			'token'   => 'GzgGFPbInl42SA6iwz-hP0M__2M',
+			'queue'   => 'joejiko.com',
 		),
 
 	),

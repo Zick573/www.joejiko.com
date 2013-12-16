@@ -272,4 +272,12 @@ class UserController extends DefaultController {
 
     return Redirect::route('home')->with('user_disconnected', true);
   }
+
+  public function store()
+  {
+
+    Event::fire('store method called');
+
+    return 'store method called';
+  }
 }
