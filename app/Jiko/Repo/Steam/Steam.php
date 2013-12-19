@@ -1,28 +1,66 @@
 <?php namespace Jiko\Repo\Steam;
 
-use Jiko\Api\SteamApi;
+class Steam {
 
-class Steam implements SteamInterface
-{
-  protected $games;
+  /**
+   * stores steam methods, keys, ids
+   *
+   * @var array
+   */
+  protected $config;
 
-  public function __construct(SteamApi $games) {
-    $this->games = $games;
-  }
-
-  public function all()
+  public function __construct($config=[])
   {
-    return $this->games->all();
+    $this->config = $config;
   }
 
   /**
-   * get specific game
+   * JSON response from steam
    *
-   * @param  [type] $id [description]
-   * @return [type]     [description]
+   * @param  boolean $args       [description]
+   * @param  string  $methodName [description]
+   * @return JSON array
    */
-  public function byId($id)
+  public function get($args=false, $methodName="RecentlyPlayedGames")
   {
-    return $this->games->find($id);
+    if(!$args) {
+      $args = [
+        'steamid' => $this->config['ids']['me']
+      ];
+    }
+
+    try {
+
+      if(!is_array($args) || !array_key_exists('steamid', $args)) {
+
+        throw new SteamException('Missing Steam ID');
+
+      }
+
+      if(!$endpoint = $this->config['methods'][$methodName]) {
+        throw new SteamException('Missing endpoint in Config');
+      }
+
+    } catch (SteamException $e) {
+
+      return $e->getMessage();
+
+    }
+
+    $query_string = http_build_query(array_merge(
+      [
+        'key' => $this->config['api_key'],
+        'format' => 'json'
+      ],
+      $args
+    ));
+
+    $url = sprintf("%s?%s", $endpoint, $query_string);
+
+    $recently_played_games = file_get_contents($url);
+
+    return $recently_played_games;
+
   }
+
 }

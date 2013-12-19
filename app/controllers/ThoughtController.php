@@ -17,7 +17,7 @@ class ThoughtController extends DefaultController {
   // public function content() {
   //   return preg_replace('@(https?://([-\w\.]+[-\w])+(:\d+)?(/([\w/_\.#-]*(\?\S+)?[^\.\s])?)?)@', '<a href="$1" target="_blank">$1</a>', $this->content)
   // }
-  public function getIndex()
+  public function index()
   {
     // where type=thoughts
     // $posts = $this->post->orderBy('created_at', 'desc')->get();
@@ -31,8 +31,10 @@ class ThoughtController extends DefaultController {
    *
    * @return Response
    */
-  public function getCreate()
+  public function create()
   {
+    if(Input::has('post_content')) return $this->postCreate();
+
     return View::make('posts.thoughts.create');
   }
 
@@ -62,6 +64,27 @@ class ThoughtController extends DefaultController {
     endif;
 
     return Redirect::to('thoughts')->with(array('result' => $post));
+  }
+
+  public function onWeb()
+  {
+    return View::make('posts.thoughts.index')->with(array(
+      'posts' => Post::thoughts()->recent()->get()
+    ));
+  }
+
+  public function onDesign()
+  {
+    return View::make('posts.thoughts.index')->with(array(
+      'posts' => Post::thoughts()->recent()->get()
+    ));
+  }
+
+  public function onStuff()
+  {
+    return View::make('posts.thoughts.index')->with(array(
+      'posts' => Post::thoughts()->recent()->get()
+    ));
   }
 
   public function missingMethod($method, $parameters=[])

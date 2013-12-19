@@ -1,7 +1,9 @@
 <?php namespace Jiko\Repo;
 use Post;
 use Status;
+use Steam;
 use Tag;
+use Wishlist;
 use Jiko\Repo\Tag\EloquentTag;
 use Jiko\Service\Cache\LaravelCache;
 use Jiko\Repo\Status\EloquentStatus;
@@ -56,6 +58,13 @@ class RepoServiceProvider extends ServiceProvider {
     {
       return new ScraperWishlist(
         new Wishlist
+      );
+    });
+
+    $app->bind('Jiko\Repo\Steam\SteamInterface', function($app)
+    {
+      return new RecentlyPlayedGames(
+        new Steam
       );
     });
   }

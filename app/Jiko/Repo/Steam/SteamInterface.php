@@ -3,13 +3,15 @@
 interface SteamInterface {
 
   /**
-   * get steam games for all Ids
+   * get steam games for all steam users in config
    * @return array
    */
   public function all();
 
   /**
-   * get steam games for specific user
+   * results from a single user
    */
-  public function byId();
+  public function find($id);
+
+  public function get();
 }

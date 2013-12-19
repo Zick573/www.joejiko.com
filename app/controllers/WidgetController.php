@@ -9,7 +9,7 @@ class WidgetController extends DefaultController
 
   public function steam()
   {
-
+    return 'hello!';
   }
 
   public function steamFriends()

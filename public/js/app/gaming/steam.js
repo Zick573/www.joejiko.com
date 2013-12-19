@@ -1,12 +1,12 @@
 define(['jquery', 'app/ui/_global/tooltip'], function($, Tooltip){
   var steam = {
     data: {},
-    endpoint: "/api/steam"
+    endpoint: "/steam/recently-played-games"
   };
   function getInfo(context, options) {
     var widget = false, $feed = context.find('.feed'), $loadMsg = context.find('.loading-message');
     $loadMsg.empty().append('Gathering data from Steam...');
-    $.get(steam.endpoint, steam.data, function(json){
+    $.get(steam.endpoint+'/me', steam.data, function(json){
       var $recentlyPlayed = $("<ul />"), $game, limit;
       if(typeof(options) !== "undefined") {
         // set options
@@ -51,7 +51,7 @@ define(['jquery', 'app/ui/_global/tooltip'], function($, Tooltip){
 
   function loadFriendGames(context) {
     $feed = context.find('.feed'), $loadMsg = context.find('.loading-message');
-    $.get(steam.endpoint, {module: "friends"}, function(json){
+    $.get(steam.endpoint+'/friends', function(json){
       var $friendGames = $("<ul />"), $recentlyPlayed, $game, limit;
       $(json).each(function(index, friends){
         $(friends).each(function(j, data){
