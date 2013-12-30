@@ -37,6 +37,13 @@ Route::group(array('prefix' => 'admin', 'before' => 'auth.admin'), function()
   # Dashboard
   // Route::controller('/', 'AdminDashboardController');
 });
+
+Route::group(['prefix' => 'archive'], function(){
+
+  Route::any('twitter', 'Archive\TwitterArchiveController@search');
+
+});
+
 /** API **/
 Route::group(array('prefix' => 'api/v1', 'before' => 'auth.basic'), function()
 {
