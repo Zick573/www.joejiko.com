@@ -37,6 +37,7 @@ return array(
     'Freebase' => $baseDir . '/app/models/google/Freebase.php',
     'FreebaseBook' => $baseDir . '/app/models/google/FreebaseBook.php',
     'GoogleController' => $baseDir . '/app/controllers/admin/GoogleController.php',
+    'GoogleOAuthController' => $baseDir . '/app/controllers/oauth/GoogleOAuthController.php',
     'Google\\Api\\Freebase' => $baseDir . '/app/libraries/google/api/freebase.php',
     'Google_About' => $vendorDir . '/bitgandtter/google-api/src/contrib/Google_DriveService.php',
     'Google_AboutAdditionalRoleInfo' => $vendorDir . '/bitgandtter/google-api/src/contrib/Google_DriveService.php',
@@ -990,5 +991,6 @@ return array(
     'Way\\Generators\\Generators\\TestGenerator' => $vendorDir . '/way/generators/src/Way/Generators/Generators/TestGenerator.php',
     'Way\\Generators\\Generators\\ViewGenerator' => $vendorDir . '/way/generators/src/Way/Generators/Generators/ViewGenerator.php',
     'WebController' => $baseDir . '/app/controllers/WebController.php',
+    'WidgetController' => $baseDir . '/app/controllers/WidgetController.php',
     'googleApcCache' => $vendorDir . '/bitgandtter/google-api/src/cache/Google_ApcCache.php',
 );
