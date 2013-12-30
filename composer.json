@@ -25,7 +25,8 @@
         "liebig/cron": "dev-master",
         "duvanmonsa/php-query": "dev-master",
         "imagine/imagine": "~0.5.0",
-        "swiftmailer/swiftmailer": "*"
+        "swiftmailer/swiftmailer": "*",
+        "keboola/csv": "1.0.*"
     },
     "require-dev": {
         "way/guard-laravel": "dev-master"

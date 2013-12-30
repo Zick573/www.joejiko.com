@@ -43,6 +43,7 @@ return array(
     'Location' => array($vendorDir . '/mjaschen/phpgeo/src'),
     'Liebig\\Cron' => array($vendorDir . '/liebig/cron/src'),
     'Knp\\Snappy' => array($vendorDir . '/knplabs/knp-snappy/src'),
+    'Keboola\\Csv' => array($vendorDir . '/keboola/csv/src'),
     'Jiko' => array($baseDir . '/app'),
     'Jeremeamia\\SuperClosure' => array($vendorDir . '/jeremeamia/SuperClosure/src'),
     'Imagine' => array($vendorDir . '/imagine/imagine/lib'),

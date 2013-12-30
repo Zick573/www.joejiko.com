@@ -10,7 +10,7 @@ class TeamController extends DefaultController {
     return View::make('team.join');
   }
 
-  public function missingMethod($method, $parameters=[])
+  public function missingMethod($parameters=[])
   {
     return Redirect::to('home');
   }

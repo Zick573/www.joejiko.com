@@ -122,6 +122,8 @@ class Router implements HttpKernelInterface, RouteFiltererInterface {
 		$this->events = $events;
 		$this->routes = new RouteCollection;
 		$this->container = $container ?: new Container;
+
+		$this->bind('_missing', function($v) { return explode('/', $v); });
 	}
 
 	/**
@@ -247,15 +249,17 @@ class Router implements HttpKernelInterface, RouteFiltererInterface {
 	 */
 	public function controller($uri, $controller, $names = array())
 	{
+		$prepended = $controller;
+
 		// First, we will check to see if a controller prefix has been registered in
 		// the route group. If it has, we will need to prefix it before trying to
 		// reflect into the class instance and pull out the method for routing.
 		if (count($this->groupStack) > 0)
 		{
-			$controller = $this->prependGroupUses($controller);
+			$prepended = $this->prependGroupUses($controller);
 		}
 
-		$routable = $this->getInspector()->getRoutable($controller, $uri);
+		$routable = $this->getInspector()->getRoutable($prepended, $uri);
 
 		// When a controller is routed using this method, we use Reflection to parse
 		// out all of the routable methods for the controller, then register each
@@ -506,7 +510,7 @@ class Router implements HttpKernelInterface, RouteFiltererInterface {
 	 * @param  string  $base
 	 * @param  string  $controller
 	 * @param  array   $options
-	 * @return void
+	 * @return Route
 	 */
 	protected function addResourceIndex($name, $base, $controller, $options)
 	{
@@ -522,7 +526,7 @@ class Router implements HttpKernelInterface, RouteFiltererInterface {
 	 * @param  string  $base
 	 * @param  string  $controller
 	 * @param  array   $options
-	 * @return void
+	 * @return Route
 	 */
 	protected function addResourceCreate($name, $base, $controller, $options)
 	{
@@ -538,7 +542,7 @@ class Router implements HttpKernelInterface, RouteFiltererInterface {
 	 * @param  string  $base
 	 * @param  string  $controller
 	 * @param  array   $options
-	 * @return void
+	 * @return Route
 	 */
 	protected function addResourceStore($name, $base, $controller, $options)
 	{
@@ -554,7 +558,7 @@ class Router implements HttpKernelInterface, RouteFiltererInterface {
 	 * @param  string  $base
 	 * @param  string  $controller
 	 * @param  array   $options
-	 * @return void
+	 * @return Route
 	 */
 	protected function addResourceShow($name, $base, $controller, $options)
 	{
@@ -570,7 +574,7 @@ class Router implements HttpKernelInterface, RouteFiltererInterface {
 	 * @param  string  $base
 	 * @param  string  $controller
 	 * @param  array   $options
-	 * @return void
+	 * @return Route
 	 */
 	protected function addResourceEdit($name, $base, $controller, $options)
 	{
@@ -602,7 +606,7 @@ class Router implements HttpKernelInterface, RouteFiltererInterface {
 	 * @param  string  $base
 	 * @param  string  $controller
 	 * @param  array   $options
-	 * @return void
+	 * @return Route
 	 */
 	protected function addPutResourceUpdate($name, $base, $controller, $options)
 	{
@@ -633,7 +637,7 @@ class Router implements HttpKernelInterface, RouteFiltererInterface {
 	 * @param  string  $base
 	 * @param  string  $controller
 	 * @param  array   $options
-	 * @return void
+	 * @return Route
 	 */
 	protected function addResourceDestroy($name, $base, $controller, $options)
 	{
@@ -847,7 +851,7 @@ class Router implements HttpKernelInterface, RouteFiltererInterface {
 	 * Add a controller based route action to the action array.
 	 *
 	 * @param  array|string  $action
-	 * @return void
+	 * @return array
 	 */
 	protected function getControllerAction($action)
 	{
@@ -1045,7 +1049,7 @@ class Router implements HttpKernelInterface, RouteFiltererInterface {
 	 * Register a new global filter with the router.
 	 *
 	 * @param  string  $filter
-	 * @param  mxied   $callback
+	 * @param  mixed   $callback
 	 * @return void
 	 */
 	protected function addGlobalFilter($filter, $callback)
@@ -1393,6 +1397,16 @@ class Router implements HttpKernelInterface, RouteFiltererInterface {
 	 *
 	 * @return \Illuminate\Routing\Route
 	 */
+	public function getCurrentRoute()
+	{
+		return $this->current();
+	}
+
+	/**
+	 * Get the currently dispatched route instance.
+	 *
+	 * @return \Illuminate\Routing\Route
+	 */
 	public function current()
 	{
 		return $this->current;
@@ -1405,7 +1419,7 @@ class Router implements HttpKernelInterface, RouteFiltererInterface {
 	 */
 	public function currentRouteName()
 	{
-		return $this->current()->getName();
+		return ($this->current()) ? $this->current()->getName() : null;
 	}
 
 	/**
@@ -1416,7 +1430,7 @@ class Router implements HttpKernelInterface, RouteFiltererInterface {
 	 */
 	public function currentRouteNamed($name)
 	{
-		return $this->current()->getName() == $name;
+		return ($this->current()) ? $this->current()->getName() == $name : false;
 	}
 
 	/**

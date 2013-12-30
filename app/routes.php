@@ -22,11 +22,13 @@ Route::group(array('prefix' => 'admin', 'before' => 'auth.admin'), function()
   // Route::controller('', 'AdminController');
   // Route::get('content', array('as' => 'admin.content', 'uses' => 'Admin\ContentController@getIndex'));
   # Deploy
-  Route::get('/', 'HomeController@getAdmin');
+  Route::get('twitter-archive', 'Admin\Post\TwitterArchiveController@index');
+  Route::post('twitter-archive', 'Admin\Post\TwitterArchiveController@dump');
   Route::controller('artwork', 'Admin\Post\ArtworkController');
   Route::controller('post', 'Admin\Post\PostController');
   Route::controller('terms', 'Admin\Post\TermController');
   Route::controller('deploy', 'Admin\DeployController');
+  Route::get('/', 'HomeController@getAdmin');
 
   # Content management
   Route::resource('content', 'Admin\ContentController');

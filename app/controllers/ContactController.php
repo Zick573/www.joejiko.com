@@ -40,7 +40,7 @@ class ContactController extends DefaultController {
     return View::make('contact');
   }
 
-  public function missingMethod($method, $parameters=[])
+  public function missingMethod($parameters=[])
   {
     return Redirect::to('contact');
   }
