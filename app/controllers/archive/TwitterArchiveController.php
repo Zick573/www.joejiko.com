@@ -6,22 +6,51 @@ class TwitterArchiveController extends \DefaultController {
   {
     if(Input::has('q')) return $this->searchQuery(Input::get('q'));
 
-    echo '<!doctype html><meta charset="utf-8">';
-    echo Form::open(['method' => 'GET']);
-    echo Form::text('q');
-    echo Form::button('search', ['type' => 'submit']);
-    echo Form::close();
-    return;
+    $result = DB::table('twitter_archive')
+      ->orderby('timestamp', 'desc')
+      ->take(250)
+      ->get();
+    $html = '<ul class="tweets">';
+    foreach($result as $row) {
+      $html .= '<li class="tweet">'
+      . '<span class="col text">'.$row->text.'</span><!--'
+      . '--><a class="col link-tweet" href="http://twitter.com/JoeJiko/status/'.$row->tweet_id.'">'
+      . '<time class="timestamp">'.date("Y-m-d", strtotime($row->timestamp)).'</time>'
+      . '</a>'
+      . '</li>';
+    }
+    $html .= '<li class="tweet end-of-tweets">Older tweets are currently unavailable.. trying <a href="#top">searching</a> instead?';
+    $html .= '</ul>';
+    return View::make('archive.index')->withContent($html);
   }
 
-  public function searchQuery($text)
+  public function filterYear()
   {
-    // SELECT * FROM jiko.twitter_archive where text like "%test%" order by abs(tweet_id) desc limit 20
-    $result = DB::table('twitter_archive')->whereRaw("MATCH(".$text.") AGAINST ('text')")->get();
-    foreach($result as $row) {
-      echo $row->text."<br>";
-    }
+    $sql = "SELECT tweet_id, text, timestamp FROM twitter_archive
+    WHERE  str_to_date(`timestamp`, '%Y-%m-%d %H:%i:%s+0000')
+    BETWEEN  '2008-01-01 00:00:00'
+    AND '2013-12-31 00:00:00'
+    ORDER BY str_to_date(`timestamp`, '%Y-%m-%d %H:%i:%s+0000') ASC
+    LIMIT 10";
+  }
 
-    return;
+  public function searchQuery($text, $html='')
+  {
+    $result = DB::table('twitter_archive')->whereRaw("MATCH(text) AGAINST ('".$text."')")->get();
+    $html .= '<header class="content-header"><h1 class="view-title">Twitter archive</h1>'
+    . '<h2 class="info-matches">'.count($result).' matches for <em>'.$text.'</em>&nbsp;</h2>'
+    . '<p class="info-total">of '.DB::table('twitter_archive')->count().' total tweets</p></header>';
+    $html .= '<ul class="tweets">';
+    foreach($result as $row) {
+      $html .= '<li class="tweet">'
+      . '<span class="col text">'.$row->text.'</span><!--'
+      . '--><a class="col link-tweet" href="http://twitter.com/JoeJiko/status/'.$row->tweet_id.'">'
+      . '<time class="timestamp">'.date("Y-m-d", strtotime($row->timestamp)).'</time>'
+      . '</a>'
+      . '</li>';
+    }
+    $html .= '</ul>';
+
+    return View::make('archive.index')->withContent($html);
   }
 }
