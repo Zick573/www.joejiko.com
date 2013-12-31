@@ -35,13 +35,15 @@
     </div>
     <div id="socialbtnwrap">
       <a id="jikofb" href="http://on.fb.me/REuClh" target="_blank">Like my artist page</a>
-      <a id="jikotw" href="http://jiko.us/12ozDqb" target="_blank">Tweet at me bro</a>
+      <a id="jikotw" href="http://jiko.us/193gD3l" target="_blank">Tweet at me bro</a>
     </div>
   </article>
   <article id="status">
 <!--    <h2><img src="/images/public/circle-question-mark.png"> Questions</h2> -->
     <h2 class="title">READ ME</h2>
-    <p class="text">"Updating things as I find the time. <a href="https://twitter.com/intent/tweet?text={{ urlencode("what're you working on @joejiko?") }}&hashtags=jjcom&related=joejiko">Ask me about it on Twitter</a><br> Psst.. move your mouse. <span class="hints">It's interactive</span>. "</p>
+    <p class="text">
+      "Updating things as I find the time. <a href="http://jiko.us/1dXYQu8" target="_blank">Ask me about it on Twitter</a><br> Psst.. move your mouse. <span class="hints">It's interactive</span>. "
+    </p>
   </article>
   <article id="accessories">
     <figure>

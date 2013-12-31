@@ -6,7 +6,7 @@
   <article class="base-article">
     <h1>Contact</h1>
     <h2>Other methods</h2>
-    <h3>Social profiles</h3>
+    <p>Social profiles</p>
     <ul>
       <li><a href="https://plus.google.com/110880509059057751100/posts" target="_blank">Google+</a></li>
       <li><a href="https://github.com/JoeJiko">GitHub</a></li>

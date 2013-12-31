@@ -2026,16 +2026,54 @@ figcaption {
 .mission-list .solve-problems {
   background-image: url(https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/pages/home/problem-solving.jpg); }
 
+.contact-message-wrap {
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.4);
+  background: #fff;
+  border: 1px solid #000;
+  padding: 2px;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s; }
+
+.contact-message-wrap .mask {
+  display: none;
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.4);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%; }
+.contact-message-wrap .message {
+  display: none;
+  background: #FFFFFF;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.4);
+  left: 25%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 50%; }
+
 .contact-message {
-  background: rgba(0, 0, 0, 0.1);
-  border: 1px solid purple;
   line-height: 1;
-  margin: 0 1rem; }
+  margin: 0; }
+
+.contact-message-wrap.sending {
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  transform-origin: 50% 50% 0;
+  -webkit-transform-origin: 50% 50% 0; }
+  .contact-message-wrap.sending .message {
+    display: block;
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform-origin: 50% 50% 0;
+    -webkit-transform-origin: 50% 50% 0; }
+  .contact-message-wrap.sending .mask {
+    display: block; }
 
 .message-title {
-  border-bottom: 1px solid;
-  margin: 0;
-  padding: .5rem; }
+  box-shadow: 0 -2px 0 inset;
+  padding: .5rem 0 .5rem 5px;
+  margin: 0 0 4px; }
 
 .message-recipients {
   background: none repeat scroll 0 0 #FFFFFF;
