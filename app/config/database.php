@@ -9,7 +9,7 @@ return array(
 			'host'      => 'localhost',
 			'database'  => 'dev',
 			'username'  => 'joejiko',
-			'password'  => '1',
+			'password'  => '3!ChrRYcxB',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => ''
