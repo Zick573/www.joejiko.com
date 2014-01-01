@@ -3,7 +3,7 @@ $app = new Illuminate\Foundation\Application;
 
 $env = $app->detectEnvironment([
   'pcm-local' => ['gojira'],
-  'local' => ['Jiko-PC'],
+  'local' => ['Jiko-PC', 'Jiko7-PC'],
   'staging' => ['staging.*'],
   'development' => ['198.20.249.169']
 ]);
