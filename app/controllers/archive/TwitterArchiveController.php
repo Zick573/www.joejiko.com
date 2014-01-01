@@ -36,7 +36,14 @@ class TwitterArchiveController extends \DefaultController {
 
   public function searchQuery($text, $html='')
   {
-    $result = DB::table('twitter_archive')->whereRaw("MATCH(text) AGAINST ('".$text."')")->get();
+    if(Input::has('sort')):
+      $result = DB::table('twitter_archive')
+        ->whereRaw("MATCH(text) AGAINST ('".$text."')")
+        ->orderBy( DB::raw("str_to_date(`timestamp`, '%Y-%m-%d %H:%i:%s+0000')"), 'asc')
+        ->get();
+    else:
+      $result = DB::table('twitter_archive')->whereRaw("MATCH(text) AGAINST ('".$text."')")->get();
+    endif;
     $html .= '<header class="content-header"><h1 class="view-title">Twitter archive</h1>'
     . '<h2 class="info-matches">'.count($result).' matches for <em>'.$text.'</em>&nbsp;</h2>'
     . '<p class="info-total">of '.DB::table('twitter_archive')->count().' total tweets</p></header>';
