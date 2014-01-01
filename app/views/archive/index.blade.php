@@ -5,7 +5,7 @@
 <meta name="twitter:creator" content="@joejiko">
 <meta name="twitter:title" content="Twitter Archive of @JoeJiko">
 <meta name="twitter:description" content="All tweets since the beginning of time. Search for whatever and see what I say about it.">
-<meta name="twitter:image" content="http://joejiko.com/blog/wp-content/uploads/2013/09/bg-jikoblog.jpg">
+<meta name="twitter:image" content="http://www.joejiko.com/blog/wp-content/uploads/2013/09/bg-jikoblog.jpg">
 <style>
   * { box-sizing: border-box; -moz-box-sizing: border-box;}
   html { background: url(https://si0.twimg.com/profile_background_images/819113113/f18097b7432a61cc1b306846dab17c16.jpeg) fixed right top #000; font-size: 100%; font-family: arial, sans-serif; }
