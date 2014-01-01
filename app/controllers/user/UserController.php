@@ -216,7 +216,7 @@ class UserController extends DefaultController {
 
     # oauth response
     try {
-      $hybridauth = new Hybrid_Auth;
+      $hybridauth = new Hybrid_Auth(Config::get('hybridauth'));
       $user = self::OAuthAttempt($hybridauth, $method);
       return self::getConnected();
 
@@ -249,7 +249,7 @@ class UserController extends DefaultController {
     try {
 
       # oauth cleanup
-      $oauth = new Hybrid_Auth;
+      $oauth = new Hybrid_Auth(Config::get('hybridauth'));
       if(count($oauth->getConnectedProviders()) > 0):
         // save session
         $session = $oauth->getSessionData();
