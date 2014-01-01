@@ -37,3 +37,4 @@
   </div>
   <footer class="app-footer"></footer>
 </div>
+@include('vendor.google.analytics')
