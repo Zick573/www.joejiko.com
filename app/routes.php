@@ -133,6 +133,8 @@ Route::group(['prefix' => 'thoughts'], function(){
     Route::get('stuff', 'ThoughtController@onStuff');
   });
   Route::get('popular', 'ThoughtController@index');
+});
+Route::group(['prefix' => 'thought'], function(){
   Route::any('create', 'ThoughtController@create');
 });
 Route::controller('posts', 'PostController');
