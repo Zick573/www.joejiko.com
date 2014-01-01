@@ -20,7 +20,7 @@ class QuestionController extends DefaultController {
     return View::make('question')->with('question', $question);
   }
 
-  public function missingMethod($method, $parameters=[])
+  public function missingMethod($parameters=[])
   {
     // missing
     return Redirect::to('questions');

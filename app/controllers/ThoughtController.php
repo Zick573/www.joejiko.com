@@ -87,7 +87,7 @@ class ThoughtController extends DefaultController {
     ));
   }
 
-  public function missingMethod($method, $parameters=[])
+  public function missingMethod($parameters=[])
   {
     // missing
     return Redirect::to('thoughts')->flash('bad_request', $parameters);

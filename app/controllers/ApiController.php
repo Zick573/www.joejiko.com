@@ -128,7 +128,7 @@ class ApiController extends BaseController {
     return Response::json(Question::orderBy('response_created_at', 'desc')->take($limit)->get());
   }
 
-  public function missingMethod($method, $parameters=[])
+  public function missingMethod($parameters=[])
   {
     // missing
     header("Content-type: application/json");

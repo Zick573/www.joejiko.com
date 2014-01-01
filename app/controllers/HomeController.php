@@ -71,7 +71,7 @@ class HomeController extends DefaultController {
     return View::make('pages.labs');
   }
 
-  public function missingMethod($method, $parameters=[])
+  public function missingMethod($parameters=[])
   {
     // missing
     return Redirect::to('home');
