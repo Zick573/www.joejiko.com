@@ -1,9 +1,12 @@
 <!doctype html>
 <meta charset="utf8">
+<meta property="og:url" content="http://www.joejiko.com/archive/twitter"/>
+<meta property="og:type" content="article"/>
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@jjcoms">
 <meta name="twitter:creator" content="@joejiko">
 <meta name="twitter:title" content="Twitter Archive of @JoeJiko">
+<meta name="og:description" content="All tweets since the beginning of time. Search for whatever and see what I say about it.">
 <meta name="twitter:description" content="All tweets since the beginning of time. Search for whatever and see what I say about it.">
 <meta name="twitter:image" content="http://www.joejiko.com/blog/wp-content/uploads/2013/09/bg-jikoblog.jpg">
 <style>
