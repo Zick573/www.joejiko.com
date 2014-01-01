@@ -31,10 +31,12 @@ Route::group(['prefix' => 'admin', 'before' => 'auth.admin'], function()
   Route::controller('post', 'Admin\Post\PostController');
   Route::controller('terms', 'Admin\Post\TermController');
   Route::controller('deploy', 'Admin\DeployController');
+
   Route::get('/', 'HomeController@getAdmin');
+  Route::get('test-mail', ['uses' => 'ContactController@send']);
 
   # Content management
-  Route::resource('content', 'Admin\ContentController');
+  // Route::resource('content', 'Admin\ContentController');
   Route::resource('questions', 'Admin\QuestionController');
 
   # Dashboard
@@ -57,7 +59,13 @@ Route::get('home', function(){ return Redirect::to('/'); });
 Route::controller('api', 'ApiController');
 Route::controller('oauth', 'OAuthController');
 Route::controller('books', 'BookController');
-Route::controller('contact', 'ContactController');
+
+Route::group(['prefix' => 'contact'], function() {
+  Route::get('/', ['uses' => 'ContactController@message']);
+  Route::get('other', ['uses' => 'ContactController@other']);
+  Route::any('message', ['uses' => 'ContactController@store']);
+});
+
 Route::controller('photos', 'PhotoController');
 Route::controller('questions', 'QuestionController');
 Route::get('question/{id}', array('as' => 'question', 'uses' => 'QuestionController@getOne'));

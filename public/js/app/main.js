@@ -127,6 +127,28 @@ define(["require","jquery"], function(require, $) {
               });
             }
 
+            if( $(document).find('button.message-send').length ) {
+              require(['app/contact/message'], function( Contact ) {
+                console.log("@contact message functions loaded");
+                $('button.message-send').on('click', function(evt){
+                  $('.contact-message-wrap').addClass('sending');
+                  var data = [];
+                  $('.contact-message').find('input, textarea').each(function(index, elem){
+                    data.push({"name": $(elem).prop('name'), "value": $(elem).prop('value')});
+                  });
+
+                  try {
+                  Contact.send.apply(this, [data]);
+                  } catch ( e ) {
+                    console.log(e);
+                  }
+
+                  evt.stopImmediatePropagation();
+                  evt.preventDefault();
+                });
+              });
+            }
+
             // load last
             require(["app/ui/_global/tooltip", "app/ui/_global/footer"], function(Tooltip, Footer){
               Tooltip.start();
