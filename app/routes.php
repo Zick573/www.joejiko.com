@@ -141,7 +141,7 @@ Route::controller('posts', 'PostController');
 Route::controller('thought', 'ThoughtController');
 
 Route::group(['prefix' => 'user'], function(){
-  Route::get('user', array('as' => 'user.index', 'uses' => 'UserController@getIndex'));
+  Route::get('tools/twitter-archive', 'User\Tools\TwitterArchiveController@show');
   Route::get('debug', array('as' => 'user.debug', 'uses' => 'UserController@getDebug'));
   Route::get('connect', array('as' => 'connect', 'uses' => 'UserController@getConnect'));
   Route::post('connect/email', array('as' => 'connect.email', 'uses' => 'UserController@doConnectEmail'));
@@ -151,6 +151,7 @@ Route::group(['prefix' => 'user'], function(){
   Route::get('connected/missing-required-info', array('as' => 'user.missing_required_info', 'uses' => 'UserController@getMissingInfo'));
   Route::get('disconnect', array('as' => "disconnect", 'uses' => 'UserController@getDisconnect'));
   Route::get('info', array('as' => 'profile', 'uses' => 'UserController@getInfo'));
+  Route::get('/', array('as' => 'user.index', 'uses' => 'UserController@getIndex'));
 });
 Route::get('web/clips', 'HomeController@getWeb');
 Route::get('test/{label}', 'TestController@getIndex');

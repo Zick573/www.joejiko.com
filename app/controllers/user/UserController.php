@@ -104,7 +104,8 @@ class UserController extends DefaultController {
   {
       # make sure email isn't already registered
       # by a different provider
-      if(!$user = User::where('email', $profile->email)->first()):
+      if(!$user = User::where('email', $profile->email)->first()
+        && trim($profile->email) !== ''):
         # insert user
         $user = new User;
         $user->email = $profile->email;
@@ -251,14 +252,23 @@ class UserController extends DefaultController {
       # oauth cleanup
       $oauth = new Hybrid_Auth(Config::get('hybridauth'));
       if(count($oauth->getConnectedProviders()) > 0):
-        // save session
-        $session = $oauth->getSessionData();
-        $store = AuthSession::create([
-          'user_id' => Auth::user()->id,
-          'session' => $session,
-          'type' => 'hybridauth'
-        ]);
+
+        try {
+
+          // save session
+          $session = $oauth->getSessionData();
+          $store = AuthSession::create([
+            'user_id' => Auth::user()->id,
+            'session' => $session,
+            'type' => 'hybridauth'
+          ]);
+
+        } catch (Exception $e) {
+          // do nothing
+        }
+
         $oauth->logoutAllProviders();
+
       endif;
 
       if(Auth::guest()):
