@@ -21,8 +21,9 @@
     </div>
     <div class="user-controls">
       <a class="user-nav-link" href="/team/join">Join the team <i class="batch" data-icon="&#61509;"></i></a>
-      <a class="user-nav-link" href="/user/info">Update contact info <i class="batch" data-icon="&#61645;"></i></a>
       <a class="user-nav-link" href="/thought/create">Post something <i class="batch" data-icon="&#61441;"></i></a>
+      <a class="user-nav-link" href="/user/tools/twitter-archive">Twitter Archive</a>
+      <a class="user-nav-link" href="/user/info">Update contact info <i class="batch" data-icon="&#61645;"></i></a>
       <a class="user-nav-link btn-disconnect" href="/user/disconnect">
         <i class="batch" data-icon="&#61545;"></i> Disconnect
       </a>

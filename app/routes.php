@@ -142,6 +142,7 @@ Route::controller('thought', 'ThoughtController');
 
 Route::group(['prefix' => 'user'], function(){
   Route::get('tools/twitter-archive', 'User\Tools\TwitterArchiveController@show');
+  Route::post('tools/twitter-archive', 'User\Tools\TwitterArchiveController@dump');
   Route::get('debug', array('as' => 'user.debug', 'uses' => 'UserController@getDebug'));
   Route::get('connect', array('as' => 'connect', 'uses' => 'UserController@getConnect'));
   Route::post('connect/email', array('as' => 'connect.email', 'uses' => 'UserController@doConnectEmail'));
