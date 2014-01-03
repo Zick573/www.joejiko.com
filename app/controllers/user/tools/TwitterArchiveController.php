@@ -200,7 +200,7 @@ class TwitterArchiveController extends \DefaultController {
 
   public function search($twitter_user_id)
   {
-    if(Input::has('q')) return $this->searchQuery(Input::get('q'));
+    if(Input::has('q')) return $this->searchQuery($twitter_user_id, Input::get('q'));
 
     if(Input::has('screen_name')) return $this->searchScreenName(Input::get('screen_name'));
 
@@ -316,7 +316,7 @@ class TwitterArchiveController extends \DefaultController {
     return View::make('user.tools.twitter-archive')->withContent($html);
   }
 
-  public function searchQuery($text, $html='')
+  public function searchQuery($twitter_user_id, $text, $html='')
   {
     if(Input::has('sort')):
       $result = DB::table('twitter_archive')
@@ -330,7 +330,7 @@ class TwitterArchiveController extends \DefaultController {
     endif;
     $html .= '<header class="content-header"><h1 class="view-title">Twitter archive</h1>'
     . '<h2 class="info-matches">'.count($result).' matches for <em>'.$text.'</em>&nbsp;</h2>'
-    . '<p class="info-total">of '.DB::table('twitter_archive')->count().' total tweets</p></header>';
+    . '<p class="info-total">of '.DB::table('twitter_archive')->where('twitter_user_id', $twitter_user_id)->count().' total tweets</p></header>';
     $html .= '<ul class="tweets">';
     foreach($result as $row) {
       $html .= '<li class="tweet">'
