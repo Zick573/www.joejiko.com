@@ -129,17 +129,7 @@ class UserController extends DefaultController {
   public function OAuthRegister(Hybrid_Provider_Adapter $provider, Hybrid_User_Profile $profile)
   {
 
-    $user_missing_email = isset($profile->email) ? true : false;
-
-    if( empty(trim($profile->email)) ) {
-
-      /**
-       * @todo store this user as not active
-       * until they add & verify an email.
-       */
-      $user_missing_email = true;
-
-    }
+    $user_missing_email = (isset($profile->email) && !empty($profile->email));
 
     if(!$user_missing_email) {
 
