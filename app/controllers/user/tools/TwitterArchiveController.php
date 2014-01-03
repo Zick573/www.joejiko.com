@@ -2,7 +2,7 @@
 
 use Keboola\Csv\CsvFile as CsvFile;
 use UserConnection;
-use Auth, DB, Form, Input, View;
+use Auth, Config, DB, Form, Input, Request, Session, View;
 
 class TwitterArchiveController extends \DefaultController {
 
@@ -17,8 +17,16 @@ class TwitterArchiveController extends \DefaultController {
     return View::make('user.tools.twitter-archive')->withContent($html);
   }
 
+  public function missingInfo()
+  {
+    Session::set('missing_email_checkpoint', true);
+    $html = View::make('user.tools.twitter-archive.update-email')->render();
+    return View::make('user.tools.twitter-archive')->withContent($html);
+  }
+
   public function connect()
   {
+    Session::put('connected_from_url', Request::url());
     $html = View::make('user.tools.twitter-archive.connect')->render();
     return View::make('user.tools.twitter-archive')->withContent($html);
   }
@@ -28,6 +36,17 @@ class TwitterArchiveController extends \DefaultController {
     // REMOVE ME
     // $user = Auth::loginUsingId(1);
     if(Auth::guest()) return $this->connect();
+
+    if(Auth::user()->status == 'limited') {
+      if(!Session::has('missing_email_checkpoint')) {
+        return $this->missingInfo();
+      }
+    }
+
+    $hybridauth = new \Hybrid_Auth(Config::get('hybridauth'));
+    $adapter = $hybridauth->authenticate("Twitter");
+    var_dump($adapter->getUserProfile());
+    exit();
 
     // check if user has a twitter account assigned to them
     if($twitter_user_id = UserConnection::where('user_id', Auth::user()->id)

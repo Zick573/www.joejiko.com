@@ -29,22 +29,32 @@ class UserController extends DefaultController {
 
   public function getConnected()
   {
+
     if(!Auth::check()):
-      // redirect to referring page (with error)
+
+      # redirect to referring page (with error)
       if(Session::has('connected_from_url')):
-        return Redirect::to(Session::get('connected_from_url'))->with('user_connect_status', "failed");
+        return Redirect::to(Session::get('connected_from_url'))
+          ->with('user_connect_status', "failed");
       endif;
 
-      // fall back on static connect page (with error)
+      # fall back on static connect page (with error)
       return Redirect::to('user/connect')->with('user_connect_status', "failed");
+
     endif;
 
-    // prompt for email
-    if(!isset($this->user->email) || is_null($this->user->email)):
+    # check for email (required)
+    if( !isset($this->user->email)
+        || is_null($this->user->email)
+        || empty($this->user->email)
+    ){
+
+      # prompt for email if it's missing
       Redirect::to('user/connected/missing-required-info');
-    endif;
 
-    // redirect to referring page (success)
+    }
+
+    # redirect to referring page (success)
     if(Session::has('connected_from_url')):
       return Redirect::to(Session::get('connected_from_url'))->with('user_connected', true);
     endif;
@@ -57,15 +67,30 @@ class UserController extends DefaultController {
     return View::make('user.register-email-disabled');
   }
 
+  /**
+   * [doConnectEmail description]
+   *
+   * @return [type] [description]
+   */
   public function doConnectEmail()
   {
-    if(!Auth::attempt(array('email' => Input::get('email'), 'password' => Input::get('passwd')), true)):
+    if(!Auth::attempt(
+        [
+          'email' => Input::get('email'),
+          'password' => Input::get('passwd')
+        ],
+        true
+      )
+    ){
+
       return View::make('user.connect')->with([
         'error' => [
           'INVALID_CREDS' => 'Invalid credentials. Try again, maybe?'
         ]
       ]);
-    endif;
+
+    }
+
     return self::getConnected();
   }
 
@@ -97,60 +122,100 @@ class UserController extends DefaultController {
 
   /**
    * [OAuthRegister description]
+   *
    * @param Hybrid_Provider_Adapter $provider [description]
    * @param [type]                  $info     [description]
    */
   public function OAuthRegister(Hybrid_Provider_Adapter $provider, Hybrid_User_Profile $profile)
   {
+
+    $user_missing_email = isset($profile->email);
+    if(empty(trim($profile->email))):
+
+      /**
+       * @todo store this user as not active
+       * until they add & verify an email.
+       */
+      $user_missing_email = true;
+
+    endif;
+
+    if(!$user_missing_email) {
+
       # make sure email isn't already registered
       # by a different provider
-      if(!$user = User::where('email', $profile->email)->first()
-        && trim($profile->email) !== ''):
-        # insert user
+      if(!$user = User::where('email', $profile->email)->first()) {
+
+        # insert user with provider info
         $user = new User;
         $user->email = $profile->email;
         $user->name = $profile->displayName;
         $user->save();
-      endif;
+      }
+    }
+
+    # user register attempt without email
+    else
+    {
+
+      # get user from from connected provider
+      # or create a new user
+      if($connection = UserConnection::where('provider_uid', $profile->identifier)->first()) {
+
+        $user = User::find($connection->user_id);
+
+      }
+
+      # create a limited/unverified user
+      else {
+        $user = new User;
+
+        # use random token for missing email
+        $user->email = md5(uniqid(rand(),true));
+        $user->status = "limited";
+        $user->name = $profile->displayName;
+        $user->save();
+      }
+    }
 
     // DB::transaction(function() use ($provider, $profile) {
-      $provider_id = AuthProvider::where('name', strtolower($provider->id))
-        ->firstOrFail()
-        ->pluck('id');
+    $provider_id = AuthProvider::where('name', strtolower($provider->id))
+      ->firstOrFail()
+      ->pluck('id');
 
-      # insert provider connection info
-      $connection = DB::table('user_connections')->insert([
-        'user_id' => $user->id,
-        'provider_name' => strtolower($provider->id),
-        'provider_uid' => $profile->identifier
-      ]);
+    # insert provider connection info
+    $connection = DB::table('user_connections')->insert([
+      'user_id' => $user->id,
+      'provider_name' => strtolower($provider->id),
+      'provider_uid' => $profile->identifier
+    ]);
 
-      # insert user info from provider
-      $info = DB::table('user_info')->insert([
-        'user_id' => $user->id,
-        'provider_id' => $provider_id,
-        'profile_url' => $profile->profileURL,
-        // 'website_url' => $profile->websiteURL,
-        'photo_url' => $profile->photoURL,
-        'display_name' => $profile->displayName,
-        'description' => $profile->description,
-        'first_name' => $profile->firstName,
-        'last_name' => $profile->lastName,
-        'gender' => $profile->gender,
-        'language' => $profile->language,
-        'age' => $profile->age,
-        'birth_day' => $profile->birthDay,
-        'birth_month' => $profile->birthMonth,
-        'birth_year' => $profile->birthYear,
-        'email' => $profile->email,
-        'email_verified' => $profile->emailVerified,
-        'phone' => $profile->phone,
-        'address' => $profile->address,
-        'country' => $profile->country,
-        'region' => $profile->region,
-        'city' => $profile->city,
-        'zip' => $profile->zip
-      ]);
+    # insert user info from provider
+    $info = DB::table('user_info')->insert([
+      'user_id' => $user->id,
+      'provider_id' => $provider_id,
+      'profile_url' => $profile->profileURL,
+      // 'website_url' => $profile->websiteURL,
+      'photo_url' => $profile->photoURL,
+      'display_name' => $profile->displayName,
+      'description' => $profile->description,
+      'first_name' => $profile->firstName,
+      'last_name' => $profile->lastName,
+      'gender' => $profile->gender,
+      'language' => $profile->language,
+      'age' => $profile->age,
+      'birth_day' => $profile->birthDay,
+      'birth_month' => $profile->birthMonth,
+      'birth_year' => $profile->birthYear,
+      'email' => $profile->email,
+      'email_verified' => $profile->emailVerified,
+      'phone' => $profile->phone,
+      'address' => $profile->address,
+      'country' => $profile->country,
+      'region' => $profile->region,
+      'city' => $profile->city,
+      'zip' => $profile->zip
+    ]);
     // }); // END transaction
     Session::put('oauth_register', true);
     return $user->id;
@@ -206,19 +271,28 @@ class UserController extends DefaultController {
   {
     # oauth callback
     if ("provider" == $method):
+
       try {
+
         Hybrid_Endpoint::process();
         return;
+
       } catch (Exception $e) {
+
         // redirect back to http://$_SERVER[HTTP_HOST]/user/connect
         return Redirect::route('hybridauth')->with('flash_notice', $e->getMessage());
+
       }
     endif;
 
     # oauth response
     try {
+
       $hybridauth = new Hybrid_Auth(Config::get('hybridauth'));
+
+      // register or login
       $user = self::OAuthAttempt($hybridauth, $method);
+
       return self::getConnected();
 
     } catch(Exception $e) {

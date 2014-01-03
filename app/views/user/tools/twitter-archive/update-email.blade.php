@@ -5,7 +5,7 @@
 <p>Twitter doesn't provide me with your email. Please enter it below:</p>
 
 {{ Form::open() }}
-{{ Form::text('email', ['type' => 'email']) }}
+{{ Form::text('email', '', ['type' => 'email']) }}
 {{ Form::button('Save', ['type' => 'submit']) }}
 {{ Form::close() }}
 

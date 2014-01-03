@@ -43,6 +43,17 @@ class AuthUserProvider implements UserProviderInterface {
   }
 
   /**
+   * [retrieveByAlias description]
+   *
+   * @param  [type] $identifier [description]
+   * @return [type]             [description]
+   */
+  public function retrieveByAlias($identifier=[])
+  {
+    return $this->createModel()->newQuery()->where($identifier);
+  }
+
+  /**
    * Retrieve a user by the given credentials.
    *
    * @param  array  $credentials
