@@ -326,6 +326,7 @@ class TwitterArchiveController extends \DefaultController {
     else:
       $result = DB::table('twitter_archive')
         ->whereRaw("MATCH(text) AGAINST ('".$text."')")
+        ->orderBy( DB::raw("str_to_date(`timestamp`, '%Y-%m-%d %H:%i:%s+0000')"), 'asc')
         ->get();
     endif;
     $html .= '<header class="content-header"><h1 class="view-title">Twitter archive</h1>'
