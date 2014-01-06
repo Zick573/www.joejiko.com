@@ -39,5 +39,3 @@ i[class^="icon-"] { font-style: normal;}
     {{ $totals }}
   </footer>
 </div>
-
-https://scontent-b-mia.xx.fbcdn.net/hphotos-ash3/1476316_10151777912256951_761801183_n.jpg
