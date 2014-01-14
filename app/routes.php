@@ -201,30 +201,42 @@ Route::group(['prefix' => 'thoughts'], function(){
   });
   Route::get('popular', 'ThoughtController@index');
 });
+
 Route::group(['prefix' => 'thought'], function(){
   Route::any('create', 'ThoughtController@create');
 });
+
 Route::controller('posts', 'PostController');
 Route::controller('thought', 'ThoughtController');
 
+/**
+ * User
+ */
 Route::group(['prefix' => 'user'], function(){
-  Route::get('tools/twitter-archive', 'User\Tools\TwitterArchiveController@show');
-  Route::post('tools/twitter-archive', 'User\Tools\TwitterArchiveController@dump');
-  Route::get('debug', array('as' => 'user.debug', 'uses' => 'UserController@getDebug'));
-  Route::get('connect', array('as' => 'connect', 'uses' => 'UserController@getConnect'));
-  Route::post('connect/email', array('as' => 'connect.email', 'uses' => 'UserController@doConnectEmail'));
-  Route::any('register/email', array('as' => 'register.email', 'uses' => 'UserController@doRegisterEmail'));
-  Route::get('connect/{action?}', array("as" => "hybridauth", 'uses' => 'UserController@doConnect'));
-  Route::get('connected', array('as' => 'connected', 'uses' => 'UserController@getConnected'));
-  Route::get('connected/missing-required-info', array('as' => 'user.missing_required_info', 'uses' => 'UserController@getMissingInfo'));
-  Route::get('disconnect', array('as' => "disconnect", 'uses' => 'UserController@getDisconnect'));
-  Route::get('info', array('as' => 'profile', 'uses' => 'UserController@getInfo'));
-  Route::get('/', array('as' => 'user.index', 'uses' => 'UserController@getIndex'));
+  Route::group(['prefix' => 'tools'], function() {
+    Route::get('twitter-archive', 'User\Tools\TwitterArchiveController@show');
+    Route::post('twitter-archive', 'User\Tools\TwitterArchiveController@dump');
+  });
+  Route::get('debug', 'UserController@debug');
+  Route::get('connect', 'UserController@connect');
+  Route::post('connect/email', 'UserController@connectWithEmail');
+  Route::get('connect/{action?}', 'UserController@connectWithOAuth');
+
+  Route::any('register/email', 'UserController@doRegisterEmail');
+
+  Route::get('connected', 'UserController@getConnected');
+  Route::get('connected/missing-required-info', 'UserController@getMissingInfo');
+
+  Route::get('disconnect', 'UserController@getDisconnect');
+  Route::get('info', 'UserController@getInfo');
+  Route::get('/', 'UserController@getIndex');
 });
+
 Route::get('web/clips', 'HomeController@getWeb');
 Route::get('test/{label}', 'TestController@getIndex');
 Route::post('/queue', function()
 {
   return Queue::marshal();
 });
-Route::get('/{slug}', array('uses' => 'ContentController@page'));
+
+Route::get('/{slug}', 'ContentController@page');

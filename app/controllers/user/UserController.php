@@ -22,14 +22,20 @@ class UserController extends DefaultController {
     return V::make('user.index');
   }
 
-  public function getInfo()
+  public function profile()
   {
     return V::make('user.info');
   }
 
-  public function userMissingInfo()
+  public function missingInfo()
   {
     return V::make('user.connected.missing_required');
+  }
+
+
+  public function connectWithOAuth()
+  {
+
   }
 
   public function connected()
@@ -82,7 +88,7 @@ class UserController extends DefaultController {
    *
    * @return [type] [description]
    */
-  public function doConnectEmail()
+  public function connectWithEmail()
   {
     if(!Auth::attempt(
         [
@@ -153,20 +159,23 @@ class UserController extends DefaultController {
       # get user from from connected provider
       # or create a new user
       if($connection = UserConnection::where('provider_uid', $profile->identifier)->first()) {
-
         $user = User::find($connection->user_id);
 
       }
 
-      # create a limited/unverified user
       else {
-        $user = new User;
+        # create a limited/unverified user
+        $user = User::create([
+          'email' => md5(uniqid(rand(),true)),
+          'status' => "limited",
+          'name' => $profile->displayName
+        ]);
 
         # use random token for missing email
-        $user->email = md5(uniqid(rand(),true));
-        $user->status = "limited";
-        $user->name = $profile->displayName;
-        $user->save();
+        // $user->email = md5(uniqid(rand(),true));
+        // $user->status = "limited";
+        // $user->name = $profile->displayName;
+        // $user->save();
       }
     }
 
@@ -179,11 +188,14 @@ class UserController extends DefaultController {
      * oauth connect
      * with $user, $provider, $profile
      */
-    $connection = DB::table('user_connections')->insert([
+    $connection = UserConnection::create([
       'user_id' => $user->id,
       'provider_name' => strtolower($provider->id),
       'provider_uid' => $profile->identifier
     ]);
+    // $connection = DB::table('user_connections')->insert([
+
+    // ]);
 
     /**
      * @todo event.fire
@@ -191,7 +203,7 @@ class UserController extends DefaultController {
      * with $provider, profile
      */
     # insert user info from provider
-    $info = DB::table('user_info')->insert([
+    $info = UserInfo::create([
       'user_id' => $user->id,
       'provider_id' => $provider_id,
       'profile_url' => $profile->profileURL,
@@ -216,6 +228,9 @@ class UserController extends DefaultController {
       'city' => $profile->city,
       'zip' => $profile->zip
     ]);
+    // $info = DB::table('user_info')->insert([
+
+    // ]);
     // }); // END transaction
     S::put('oauth_register', true);
     return $user->id;
