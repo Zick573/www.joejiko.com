@@ -1,13 +1,15 @@
 <?php namespace Controllers\User;
 
+  use Jiko\OAuth\OAuthUserProviderInterface;
+
   use Auth, BaseController, Form, Input, Redirect, View;
 
   class AuthController extends \BaseController {
-    protected $hybridauth;
+    protected $OAuth;
     protected $user;
 
-    public function __construct(){
-      $this->hybridauth = new Hybrid_Auth(app_path() . '/config/hybridauth.php');
+    public function __construct(OAuthUserProviderInterface $oauth){
+      $this->OAuth = $OAuth;
 
       if(Auth::check())
       {
@@ -18,7 +20,7 @@
 
     public function check(){
       try {
-        $auth = $this->hybridauth;
+        $auth = $this->OAuth;
         $connected_providers = $auth->getConnectedProviders();
       } catch(Exception $e) {
         Redirect::to('home')->withErrors(array('connect' => $e->getMessage()));

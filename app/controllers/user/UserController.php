@@ -1,70 +1,80 @@
 <?php
-class UserController extends DefaultController {
-  public function getIndex()
-  {
-    if(!Auth::check()):
-      return Redirect::to('user/connect')->with([
-        'message' => 'Please connect to continue..'
-      ]);
-    endif;
+use Jiko\OAuth\HybridOAuthUserInterface;
+use Input as I;
+use Redirect as R;
+use Session as S;
+use View as V;
 
-    return View::make('user.index');
+class UserController extends DefaultController {
+
+  public function __construct()
+  {
+    // if(!Auth::check()):
+    //   return R::to('user/connect')->with([
+    //     'message' => 'Please connect to continue..'
+    //   ]);
+    // endif;
+    $this->beforeFilter('auth', ['except' => ['connect', 'connected', 'disconnect']]);
+  }
+
+  public function index()
+  {
+    return V::make('user.index');
   }
 
   public function getInfo()
   {
-    if(!Auth::check()):
-      return Redirect::to('user/connect')->with([
-        'message' => 'Please connect to continue..'
-      ]);
-    endif;
-
-    return View::make('user.info');
+    return V::make('user.info');
   }
 
-  public function getMissingInfo()
+  public function userMissingInfo()
   {
-    return View::make('user.connected.missing_required');
+    return V::make('user.connected.missing_required');
   }
 
-  public function getConnected()
+  public function connected()
   {
 
-    if(!Auth::check()):
+    // if(!Auth::check()):
 
-      # redirect to referring page (with error)
-      if(Session::has('connected_from_url')):
-        return Redirect::to(Session::get('connected_from_url'))
-          ->with('user_connect_status', "failed");
-      endif;
+    //   # redirect to referring page (with error)
+    //   if(S::has('connected_from_url')):
+    //     return R::to(S::get('connected_from_url'))
+    //       ->with('user_connect_status', "failed");
+    //   endif;
 
-      # fall back on static connect page (with error)
-      return Redirect::to('user/connect')->with('user_connect_status', "failed");
+    //   # fall back on static connect page (with error)
+    //   return R::to('user/connect')->with('user_connect_status', "failed");
 
-    endif;
+    // endif;
 
     # check for email (required)
-    if( !isset($this->user->email)
-        || is_null($this->user->email)
-        || empty($this->user->email)
-    ){
+    /**
+     * @todo $this->user->validate()
+     */
+    // if( !isset($this->user->email)
+    //     || is_null($this->user->email)
+    //     || empty($this->user->email)
+    // ){
 
-      # prompt for email if it's missing
-      Redirect::to('user/connected/missing-required-info');
+    //   # prompt for email if it's missing
+    //   R::to('user/connected/missing-required-info');
 
-    }
+    // }
 
     # redirect to referring page (success)
-    if(Session::has('connected_from_url')):
-      return Redirect::to(Session::get('connected_from_url'))->with('user_connected', true);
+    if(S::has('connected_from_url')):
+      $r_to = S::get('connected_from_url');
+      $r_with = ['user_connected' => true];
+      return R::to($r_to)->with($r_with);
     endif;
 
-    return View::make('home')->with('user_connected', true);
+    return V::make('home')->with('user_connected', true);
   }
 
-  public function doRegisterEmail()
+  public function registerWithEmail()
   {
-    return View::make('user.register-email-disabled');
+    return V::make('user.register-email-disabled');
   }
 
   /**
@@ -76,14 +86,14 @@ class UserController extends DefaultController {
   {
     if(!Auth::attempt(
         [
-          'email' => Input::get('email'),
-          'password' => Input::get('passwd')
+          'email' => I::get('email'),
+          'password' => I::get('passwd')
         ],
         true
       )
     ){
 
-      return View::make('user.connect')->with([
+      return V::make('user.connect')->with([
         'error' => [
           'INVALID_CREDS' => 'Invalid credentials. Try again, maybe?'
         ]
@@ -96,17 +106,7 @@ class UserController extends DefaultController {
 
   public function OAuthValidateProvider($provider)
   {
-    $providers = Config::get('hybridauth.providers');
-
-    if(!array_key_exists(ucfirst($provider), $providers)):
-      throw new Exception('Auth provider not found in config.');
-    endif;
-
-    if(!$providers[ucfirst($provider)]["enabled"]):
-      throw new Exception("Connecting with $provider is disabled");
-    endif;
-
-    return true;
+    // moved
   }
 
   /**
@@ -115,9 +115,7 @@ class UserController extends DefaultController {
    */
   public function OAuthRestore(Hybrid_Auth $oauth, UserSession $session)
   {
-    $session = $session->where('user_id', Auth::user()->id)->first()->pluck('session');
-    $oauth->restoreSessionData( $session );
-    return count($oauth->getConnectedProviders());
+    // moved
   }
 
   /**
@@ -129,6 +127,9 @@ class UserController extends DefaultController {
   public function OAuthRegister(Hybrid_Provider_Adapter $provider, Hybrid_User_Profile $profile)
   {
 
+    /**
+     * @todo User->validate()
+     */
     $user_missing_email = (isset($profile->email) && !empty($profile->email));
 
     if(!$user_missing_email) {
@@ -170,17 +171,25 @@ class UserController extends DefaultController {
     }
 
     // DB::transaction(function() use ($provider, $profile) {
-    $provider_id = AuthProvider::where('name', strtolower($provider->id))
-      ->firstOrFail()
-      ->pluck('id');
+    $provider_id = AuthProvider::where('name', strtolower($provider->id))->firstOrFail()->pluck('id');
 
     # insert provider connection info
+    /**
+     * @todo event.fire
+     * oauth connect
+     * with $user, $provider, $profile
+     */
     $connection = DB::table('user_connections')->insert([
       'user_id' => $user->id,
       'provider_name' => strtolower($provider->id),
       'provider_uid' => $profile->identifier
     ]);
 
+    /**
+     * @todo event.fire
+     * user register
+     * with $provider, profile
+     */
     # insert user info from provider
     $info = DB::table('user_info')->insert([
       'user_id' => $user->id,
@@ -208,7 +217,7 @@ class UserController extends DefaultController {
       'zip' => $profile->zip
     ]);
     // }); // END transaction
-    Session::put('oauth_register', true);
+    S::put('oauth_register', true);
     return $user->id;
 
   }
@@ -249,7 +258,7 @@ class UserController extends DefaultController {
       'session' => $oauth->getSessionData()
     ]);
 
-    Session::put('oauth_loginusingid', true);
+    S::put('oauth_loginusingid', true);
     return Auth::user();
   }
 
@@ -271,7 +280,7 @@ class UserController extends DefaultController {
       } catch (Exception $e) {
 
         // redirect back to http://$_SERVER[HTTP_HOST]/user/connect
-        return Redirect::route('hybridauth')->with('flash_notice', $e->getMessage());
+        return R::route('hybridauth')->with('flash_notice', $e->getMessage());
 
       }
     endif;
@@ -288,7 +297,7 @@ class UserController extends DefaultController {
 
     } catch(Exception $e) {
 
-      return View::make('user.connect')->with(['error' => $e->getMessage()]);
+      return V::make('user.connect')->with(['error' => $e->getMessage()]);
 
     }
   }
@@ -300,10 +309,10 @@ class UserController extends DefaultController {
   public function getConnect()
   {
     if(!Auth::check()):
-      return View::make('user.connect');
+      return V::make('user.connect');
     endif;
 
-    return Redirect::to('user/connected');
+    return R::to('user/connected');
   }
 
   /**
@@ -314,6 +323,7 @@ class UserController extends DefaultController {
   {
     try {
 
+
       # oauth cleanup
       $oauth = new Hybrid_Auth(Config::get('hybridauth'));
       if(count($oauth->getConnectedProviders()) > 0):
@@ -322,7 +332,7 @@ class UserController extends DefaultController {
 
           // save session
           $session = $oauth->getSessionData();
-          $store = AuthSession::create([
+          $store = AuthS::create([
             'user_id' => Auth::user()->id,
             'session' => $session,
             'type' => 'hybridauth'
@@ -342,10 +352,10 @@ class UserController extends DefaultController {
 
       Auth::logout();
     } catch (Exception $e) {
-      return Redirect::route('home')->with('flash_notice', $e->getMessage());
+      return R::route('home')->with('flash_notice', $e->getMessage());
     }
 
-    return Redirect::route('home')->with('user_disconnected', true);
+    return R::route('home')->with('user_disconnected', true);
   }
 
   public function store()

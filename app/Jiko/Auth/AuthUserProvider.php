@@ -1,6 +1,8 @@
 <?php namespace Jiko\Auth;
 
-use Illuminate\Hashing\HasherInterface, Illuminate\Auth\UserProviderInterface, Illuminate\Auth\UserInterface;
+use Illuminate\Auth\UserInterface;
+use Illuminate\Auth\UserProviderInterface;
+use Illuminate\Hashing\HasherInterface;
 
 class AuthUserProvider implements UserProviderInterface {
 

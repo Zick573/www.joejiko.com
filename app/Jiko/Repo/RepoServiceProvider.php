@@ -18,7 +18,7 @@ class RepoServiceProvider extends ServiceProvider {
 
     $app->bind('Jiko\Repo\File\CloudFileInterface', function($app)
     {
-      $file = new GoogleDriveFile(
+      return new GoogleDriveFile(
         new File
       );
     });
@@ -37,6 +37,8 @@ class RepoServiceProvider extends ServiceProvider {
           new LaravelCache($app['cache'], 'posts', 10)
         );
       }
+
+      return $post;
     });
 
     $app->bind('Jiko\Repo\Tag\TagInterface', function($app)

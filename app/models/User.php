@@ -3,10 +3,16 @@ use Illuminate\Auth\UserInterface;
 use Illuminate\Auth\Reminders\RemindableInterface;
 
 class User extends Eloquent implements UserInterface, RemindableInterface {
+
   protected $hidden = array('password');
   protected $table = 'users';
   protected $hybridauth;
   protected $softDelete = true;
+
+  public function __construct(Jiko\OAuth\HybridOAuthUser $hybridauth)
+  {
+    $this->hybridauth = $hybridauth;
+  }
 
   public function getAuthIdentifier()
   {

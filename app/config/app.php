@@ -108,6 +108,7 @@ return array(
     'Illuminate\Workbench\WorkbenchServiceProvider',
 
     'Jiko\Auth\AuthServiceProvider',
+    'Jiko\OAuth\OAuthServiceProvider',
     'Jiko\Repo\RepoServiceProvider',
     'Jiko\Service\Form\FormServiceProvider',
     'Jiko\Service\Notification\NotificationServiceProvider',
