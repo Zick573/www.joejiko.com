@@ -2,35 +2,32 @@
 
 use Jiko\Repo\RepoAbstract;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Auth\UserInterface;
+use Illuminate\Auth\Reminders\RemindableInterface;
 
-class EloquentUser extends RepoAbstract implements UserInterface {
+class EloquentUser extends RepoAbstract implements UserInterface, RemindableInterface {
 
   protected $user;
 
-  public function __construct(Model $user, TagInterface $tag)
+  public function __construct(Model $user)
   {
     $this->user = $user;
-    $this->tag = $tag;
   }
 
-  public function byId($id)
+  public function connections()
   {
-    return $this->user->with('status')
-      ->with('author')
-      ->with('tags')
-      ->where('id', $id)
-      ->first();
+    return $this->hasOne('EloquentUserConnect');
+  }
+
+  public function profile()
+  {
+    return $this->hasOne('EloquentUserProfile');
   }
 
   public function create(array $data)
   {
     $user = $this->user->create([
-      'user_id' => $data['user_id'],
-      'status_id' => $data['status_id'],
-      'title' => $data['title'],
-      'slug' => $this->slug($data['title']),
-      'excerpt' => $data['excerpt'],
-      'content' => $data['content']
+
     ]);
 
     if(!$user) return false;
@@ -41,24 +38,33 @@ class EloquentUser extends RepoAbstract implements UserInterface {
   public function update(array $data)
   {
     $user = $this->user->find($data['id']);
-
-    $user->user_id = $data['user_id'];
-    $user->status_id = $data['status_id'];
-    $user->title = $data['title'];
-    $user->slug = $this->slug($data['title']);
-    $user->excerpt = $data['excerpt'];
-    $user->content = $data['content'];
     $user->save();
-
-    $this->syncTags($user, $data['tags']);
-
     return true;
   }
 
   public function totalUsers($all = false)
   {
-    if(!$all) return $this->user->where('status_id', 1)->count();
-
     return $this->user->count();
+  }
+
+  /**
+   * Auth\UserInterface
+   */
+  public function getAuthIdentifier()
+  {
+    return $this->user->id;
+  }
+
+  public function getAuthPassword()
+  {
+    return $this->user->password;
+  }
+
+  /**
+   * Auth\Reminders\RemindableInterface
+   */
+  public function getReminderEmail()
+  {
+    return $this->user->email;
   }
 }
