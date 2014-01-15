@@ -219,17 +219,15 @@ Route::group(['prefix' => 'user'], function(){
   });
   Route::get('debug', 'UserController@debug');
   Route::get('connect', 'UserController@connect');
-  Route::post('connect/email', 'UserController@connectWithEmail');
+  Route::any('connect/email', 'UserController@connectWithEmail');
   Route::get('connect/{action?}', 'UserController@connectWithOAuth');
 
-  Route::any('register/email', 'UserController@doRegisterEmail');
-
   Route::get('connected', 'UserController@getConnected');
-  Route::get('connected/missing-required-info', 'UserController@getMissingInfo');
+  Route::get('connected/missing-required-info', 'UserController@missingInfo');
 
-  Route::get('disconnect', 'UserController@getDisconnect');
-  Route::get('info', 'UserController@getInfo');
-  Route::get('/', 'UserController@getIndex');
+  Route::get('disconnect', 'UserController@disconnect');
+  Route::get('info', 'UserController@info');
+  Route::get('/', 'UserController@index');
 });
 
 Route::get('web/clips', 'HomeController@getWeb');

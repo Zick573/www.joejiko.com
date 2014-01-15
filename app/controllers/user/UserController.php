@@ -32,12 +32,6 @@ class UserController extends DefaultController {
     return V::make('user.connected.missing_required');
   }
 
-
-  public function connectWithOAuth()
-  {
-
-  }
-
   public function connected()
   {
 
@@ -277,57 +271,46 @@ class UserController extends DefaultController {
     return Auth::user();
   }
 
-  /**
-   * [doConnect description]
-   * @param  [type] $method [description]
-   * @return [type]         [description]
-   */
-  public function doConnect($method)
+  public function connectWithOAuth()
   {
     # oauth callback
-    if ("provider" == $method):
-
-      try {
-
-        Hybrid_Endpoint::process();
-        return;
-
-      } catch (Exception $e) {
-
-        // redirect back to http://$_SERVER[HTTP_HOST]/user/connect
-        return R::route('hybridauth')->with('flash_notice', $e->getMessage());
-
-      }
-    endif;
-
     # oauth response
-    try {
 
-      $hybridauth = new Hybrid_Auth(Config::get('hybridauth'));
+    # process data from oauth provider
+    // Hybrid_Endpoint::process();
 
-      // register or login
-      $user = self::OAuthAttempt($hybridauth, $method);
-
-      return self::getConnected();
-
-    } catch(Exception $e) {
-
-      return V::make('user.connect')->with(['error' => $e->getMessage()]);
-
-    }
+    # redirect to connect options with message
+    return V::make('user.connect')->with('flash_notice', 'Connect with OAuth failed.');
   }
 
   /**
    * /user/connect
+   *
    * Show connect options or redirect
    */
-  public function getConnect()
+  public function connect()
   {
+
+    if(Input::has('email'))
+    {
+      # connect with Email?
+      $this->connectWithEmail();
+    }
+
+    # connect with OAuth?
+    $this->connectWithOAuth();
+
+    # do we have a valid user?
     if(!Auth::check()):
+
+      # show connection options
       return V::make('user.connect');
+
     endif;
 
+    # user connected
     return R::to('user/connected');
+
   }
 
   /**
