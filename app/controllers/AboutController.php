@@ -15,4 +15,9 @@ class AboutController extends DefaultController
   {
     return View::make('pages.resume');
   }
+
+  public function resumePDF()
+  {
+    return View::make('pages.resumePDF');
+  }
 }

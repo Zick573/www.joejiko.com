@@ -147,6 +147,7 @@ Route::group(['prefix' => 'about'], function(){
 
   Route::get('me', ['as' => 'about/me', 'uses' => 'AboutController@me']);
   Route::get('privacy', ['as' => 'privacy', 'uses' => 'AboutController@privacy']);
+  Route::get('resume.pdf', 'AboutController@resumePDF');
   Route::get('resume', ['as' => 'resume', 'uses' => 'AboutController@resume']);
 
 });
