@@ -9,10 +9,36 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
   protected $oauth;
   protected $table = 'users';
   protected $softDelete = true;
+  protected static $rules = [
+    'id' => 'required'
+  ];
+  public $errors;
 
   public function __construct(Jiko\OAuth\OAuthUserInterface $oauth)
   {
     $this->oauth = $oauth;
+  }
+
+  public static function boot()
+  {
+    parent::boot();
+
+    static::creating(function($model)
+    {
+      return $model->validate()
+    });
+  }
+
+  public function validate()
+  {
+    $v = Validator::make($this->getAttributes(), static::$rules);
+
+    if($v->fails())
+    {
+      $this->errors = $v->messages();
+
+      return false;
+    }
   }
 
   public function getAuthIdentifier()
