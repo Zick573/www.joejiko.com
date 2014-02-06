@@ -1,94 +1,37 @@
 <?php
 /*
 |--------------------------------------------------------------------------
-| Application Routes
+| Experimental Routes
 |--------------------------------------------------------------------------
 */
-/** ------------------------------------------
-* Route model binding
-* ------------------------------------------
+Route::resource('inbox/sms', 'App\Inbox\SMSController');
+Route::group(['prefix' => 'archive'], function(){
+
+  Route::any('twitter', 'Archive\TwitterArchiveController@search');
+
+});
+Route::controller('oauth', 'OAuthController');
+Route::controller('books', 'BookController');
+
+/*
+|--------------------------------------------------------------------------
+| API Routes
+|--------------------------------------------------------------------------
 */
-// Route::model('user', 'User');
-// Route::model('comment', 'Comment');
-// Route::model('post', 'Post');
-// Route::model('role', 'Role');
-Route::post('inbox/sms', function(){
-  var_dump(Input::get());
+Route::group(array('prefix' => 'api/v1', 'before' => 'auth.basic'), function()
+{
+  Route::resource('thoughts', 'ThoughtsController');
 });
-Route::get('inbox/sms', function($count=4){
-  $sms = imap_open('{imap.gmail.com:993/imap/ssl}Personal/SMS', "joejiko@gmail.com", '$Goo2189$', OP_READONLY);
-  $date = date("Y-m-d", strtotime("-1 week"));
-  $emails = imap_search($sms, 'SINCE "'.$date.'"');
-  rsort($emails, 1);
-  $index=0; $output="";
-  foreach($emails as $email_number) {
-    if($index==$count) break;
-
-    $overview = imap_fetch_overview($sms, $email_number, 0);
-    $data = [
-      'date_received' => $overview[0]->date,
-      'from' => null,
-      'from_phone' => '',
-      'reply_to' => '',
-      'missing' => false
-    ];
-
-    try {
-      # parse subject
-      preg_match('/\[?(\([0-9]{3}\) [0-9]{3}\-[0-9]{4})\]?/', $overview[0]->subject, $matches);
-      if(!count($matches) > 1) throw new Exception('No match on subject.');
-      $data['from_phone'] = $matches[1];
-    } catch (Exception $e) {
-      $data['missing']['message'][] = $e->getMessage();
-      $data['missing']['subject'] = $overview[0]->subject;
-    }
-
-    try {
-      # parse sender
-      preg_match('/"([A-Za-z\" ]+)/', $overview[0]->from, $matches);
-      if(!count($matches) > 1) throw new Exception('No match on from.');
-      $data['from'] = $matches[1];
-    } catch (Exception $e) {
-      $data['missing']['message'][] = $e->getMessage();
-      $data['missing']['from'][] = $overview[0]->from;
-    }
-
-    try {
-      preg_match('/<(.*)>/', $overview[0]->from, $matches);
-      $data['reply_to'] = $matches[1];
-    } catch (Exception $e) {
-      $data['missing']['message'][] = $e->getMessage();
-      $data['missing']['from'][] = $overview[0]->from;
-    }
-    // $message = imap_fetchbody($sms, $email_number, "2");
-    $data['body'] = imap_body($sms, $email_number);
-
-    // var_dump(imap_body($sms, $email_number));
-    // var_dump(imap_fetchstructure($sms, $email_number));
-
-    $output .= View::make('sms.inbox.message')->with($data)->render();
-
-    $index++;
-  }
-  imap_close($sms);
-
-  $totals = "Displaying $count of ".count($emails)." SMS from the past 1 week";
-
-  return View::make('sms.inbox')->with([
-    'output' => $output,
-    'totals' => $totals
-  ]);
-});
-Route::group(['prefix' => 'steam'], function(){
-  Route::get('recently-played-games/{id?}', 'SteamController@recentlyPlayed');
-});
+Route::controller('api', 'ApiController');
 
 /** ------------------------------------------
 * Admin Routes
 * ------------------------------------------
 */
-Route::group(['prefix' => 'admin', 'before' => 'auth.admin'], function()
-{
+Route::group([
+  'prefix' => 'admin',
+  'before' => 'auth.admin'
+], function(){
   // Route::controller('', 'AdminController');
   // Route::get('content', array('as' => 'admin.content', 'uses' => 'Admin\ContentController@getIndex'));
   # Deploy
@@ -110,34 +53,59 @@ Route::group(['prefix' => 'admin', 'before' => 'auth.admin'], function()
   // Route::controller('/', 'AdminDashboardController');
 });
 
-Route::group(['prefix' => 'archive'], function(){
-
-  Route::any('twitter', 'Archive\TwitterArchiveController@search');
-
+/*
+|--------------------------------------------------------------------------
+| Application Routes
+|--------------------------------------------------------------------------
+*/
+Route::bind('questions', function($value, $route){
+  return Question::find($value);
 });
 
-/** API **/
-Route::group(array('prefix' => 'api/v1', 'before' => 'auth.basic'), function()
-{
-  Route::resource('thoughts', 'ThoughtsController');
-});
-/** **/
-Route::get('home', function(){ return Redirect::to('/'); });
-Route::controller('api', 'ApiController');
-Route::controller('oauth', 'OAuthController');
-Route::controller('books', 'BookController');
+/**
+ * Artwork *
+ */
+Route::get('artwork', array('as' => 'artwork', 'uses' => 'HomeController@getArtwork'));
 
+/**
+ * Contact *
+ */
 Route::group(['prefix' => 'contact'], function() {
   Route::get('/', ['uses' => 'ContactController@message']);
   Route::get('other', ['uses' => 'ContactController@other']);
   Route::any('message', ['uses' => 'ContactController@store']);
 });
 
-Route::controller('photos', 'PhotoController');
-Route::controller('questions', 'QuestionController');
-Route::get('question/{id}', array('as' => 'question', 'uses' => 'QuestionController@getOne'));
-Route::get('artwork', array('as' => 'artwork', 'uses' => 'HomeController@getArtwork'));
+/**
+ * Photos *
+ */
 
+/**
+ * Thoughts *
+ */
+
+/**
+ * Questions/Ask *
+ */
+Route::group(['prefix' => 'questions'], function() {
+  Route::get('ask', 'QuestionController@create');
+  Route::post('ask', 'QuestionController@store');
+});
+Route::resource('questions', 'QuestionController');
+Route::get('question/{questions}', 'QuestionController@show');
+
+// Primary navigation
+
+// Gaming/Steam
+Route::group(['prefix' => 'steam'], function(){
+  Route::get('recently-played-games/{id?}', 'SteamController@recentlyPlayed');
+});
+
+// Route::get('home', function(){ return Redirect::to('/'); });
+
+Route::controller('photos', 'PhotoController');
+
+// Gaming
 Route::group(['prefix' => 'gaming'], function(){
   Route::get('/', array('as' => 'gaming', 'uses' => 'GamingController@index'));
   Route::get('friends/{key}', array('as' => 'gaming/friend', 'uses' => 'GamingController@friend'));

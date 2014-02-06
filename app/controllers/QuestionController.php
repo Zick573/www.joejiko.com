@@ -1,23 +1,29 @@
 <?php
 class QuestionController extends DefaultController {
-  public function getIndex()
+  public function index()
   {
     $questions = Question::where('status', '=', '1')
       ->take(25)
       ->orderBy('id', 'desc')
       ->get();
-    return View::make('questions')->with('questions', $questions);
+    return View::make('questions')
+      ->withQuestions($questions);
   }
 
-  public function getAsk()
+  public function store()
+  {
+    return 'store';
+  }
+
+  public function create()
   {
     return View::make('questions.ask');
   }
 
-  public function getOne($id)
+  public function show(\Question $question)
   {
-    $question = Question::find($id);
-    return View::make('question')->with('question', $question);
+    return View::make('question')
+      ->withQuestion($question);
   }
 
   public function missingMethod($parameters=[])

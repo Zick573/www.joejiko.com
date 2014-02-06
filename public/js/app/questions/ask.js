@@ -39,6 +39,7 @@ define(["jquery", "app/ui/_global/modal"], function($, Modal){
     }
     $parent.addClass('ask--valid');
     $(".no").hide('slow');
+    return true;
   }
 
   function askModalCallback(context)

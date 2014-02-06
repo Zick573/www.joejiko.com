@@ -30,7 +30,7 @@ i[class^="icon-"] { font-style: normal;}
 </style>
 <div class="app">
   <header class="app-header">
-    <h1>★</h1>
+    <h1>★ <a href="/">Home</a></h1>
   </header>
   <div class="sms">
     {{ $output }}
