@@ -5,19 +5,18 @@ use Illuminate\Auth\Reminders\RemindableInterface;
 class User extends Eloquent implements UserInterface, RemindableInterface {
 
   protected $guarded = ['id', 'password'];
+  protected $fillable = ['email', 'name', 'location', 'role', 'status'];
   protected $hidden = ['password'];
   protected $oauth;
   protected $table = 'users';
   protected $softDelete = true;
-  protected static $rules = [
-    'id' => 'required'
-  ];
+  protected static $rules = [];
   public $errors;
 
-  public function __construct(Jiko\OAuth\OAuthUserInterface $oauth)
-  {
-    $this->oauth = $oauth;
-  }
+  // public function __construct(Jiko\OAuth\OAuthUserInterface $oauth)
+  // {
+  //   $this->oauth = $oauth;
+  // }
 
   public static function boot()
   {
@@ -25,7 +24,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 
     static::creating(function($model)
     {
-      return $model->validate()
+      return $model->validate();
     });
   }
 
@@ -36,9 +35,13 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
     if($v->fails())
     {
       $this->errors = $v->messages();
-
       return false;
     }
+  }
+
+  public function connection()
+  {
+    return $this->hasOne('UserConnection');
   }
 
   public function getAuthIdentifier()

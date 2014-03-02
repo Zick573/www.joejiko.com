@@ -94,14 +94,13 @@
     width: 100%;
 }
 .steam-widget-title {
-    background-color: purple;
-    color: #fff;
+    color: #800080;
     font-size: .9rem;
     margin: 0;
     padding: .25rem;
 }
 .steam-widget .feed {
-    padding: 5px;
+    padding: 0 5px;
 }
 .steam-widget .steam-game {
     position: relative;
@@ -116,7 +115,9 @@
     width: 100%;
 }
 .steam-widget .footer {
-    background-color: rgba(0, 0, 0, .1);
+    // background-color: rgba(0, 0, 0, .1);
+    font-size: 10px;
+    padding: 5px 0;
 }
 /* shared */
 .steam-game { cursor: pointer; }

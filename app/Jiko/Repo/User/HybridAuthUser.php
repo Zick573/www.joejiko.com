@@ -1,23 +1,51 @@
 <?php namespace Jiko\Repo\User;
 
 use Hybrid_Auth;
+use Hybrid_User_profile;
 use Jiko\Repo\RepoAbstract;
+use Jiko\OAuth\OAuthUserInterface;
 use Illuminate\Database\Eloquent\Model;
 
 class HybridAuthUser implements OAuthUserInterface, UserInterface {
 
   protected $user;
+  protected $connection;
   protected $hybridauth;
 
-  public function __construct(Model $user, Hybrid_Auth $hybridauth)
+  public function __construct(Model $user, Hybrid_Auth $hybridauth, Model $connection)
   {
     $this->user = $user;
+    $this->connection = $connection;
     $this->hybridauth = $hybridauth;
+  }
+
+  public function getUserProfile()
+  {
+    if($providers = $this->hybridauth->getConnectedProviders()){
+
+      $provider = array_shift($providers);
+      $adapter = $this->hybridauth->authenticate($provider);
+      $profile = $adapter->getUserProfile();
+      $profile->provider_name = $provider;
+      return $profile;
+    }
+
+    return false;
+  }
+
+  public function attempt(array $credentials)
+  {
+
+  }
+
+  public function store()
+  {
+
   }
 
   public function check()
   {
-    $this->hybridauth->getConnectedProviders();
+    return $this->hybridauth->getConnectedProviders();
   }
 
   /**
@@ -33,11 +61,21 @@ class HybridAuthUser implements OAuthUserInterface, UserInterface {
       # authenticate provider
       $adapter = $this->hybridauth->authenticate($provider_name);
 
+      $provider_uid = $adapter->getUserProfile()->identifier;
+
       # check for user info in local database
-      $this->user->getConnection('provider', $provider_id);
+      $connection = $this->connection;
+      if($user_id = $connection::where('provider_uid', $provider_uid)->pluck('user_id')):
+        if($user = $this->user->find($user_id)){
+          if(!$user->info()) {
+            $this->updateInfo($user, $provider_name, $adapter->getUserProfile());
+          }
+          return $user;
+        }
+      endif;
 
       # register new user
-      $this->register($provider_name, $adapter->getUserProfile());
+      $credentials = $this->register($provider_name, $adapter->getUserProfile());
 
       return $this->user->attempt($credentials);
 
@@ -96,25 +134,28 @@ class HybridAuthUser implements OAuthUserInterface, UserInterface {
     }
 
     # create user entry
-    $this->user->create([
+    $info = [
       'email' => $profile_email == false ? $profile_hash : $profile_email,
       'name' => $profile->displayName,
       'location' => sprintf("%s, %s, %s", $profile->city, $profile->region, $profile->country),
       'role' => 1,
       'status' => $profile_email == false ? 'limited' : null
-    ]);
+    ];
+    $user = $this->user->create($info);
 
     # create reference to provider connection
-    $this->user->connection->create([
+    $connection = [
       'user_id' => $this->user->id,
       'provider_name' => $provider_name,
       'provider_uid' => $profile->identifier
-    ]);
+    ];
+    $user->connection()->create($connection);
 
     # create profile with info from connection
-    $this->user->profile->create([
-      'user_id' => $this->user->id,
-      'provider_id' => $provider_id,
+    $info = [
+      'user_id' => $user->id,
+      'provider_name' => $provider_name,
+      'provider_uid' => $profile->identifier,
       'profile_url' => $profile->profileURL,
       'website_url' => $profile->webSiteURL,
       'photo_url' => $profile->photoURL,
@@ -136,9 +177,10 @@ class HybridAuthUser implements OAuthUserInterface, UserInterface {
       'region' => $profile->region,
       'city' => $profile->city,
       'zip' => $profile->zip
-    ]);
+    ];
+    $user->info()->create($info);
 
-    return $this->user->id;
+    return $user->id;
   }
 
   public function storeSession()

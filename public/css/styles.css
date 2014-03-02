@@ -974,8 +974,6 @@ ul {
   margin-right: 1%; }
 
 .site-sidebar {
-  background-size: 150%;
-  background-image: url(https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/artwork/jiko-face-3.jpg);
   background-repeat: no-repeat;
   background-position: left bottom;
   background-color: #dcdcdc;
@@ -1302,12 +1300,14 @@ ul {
   margin-top: -8px; }
 
 #artboard {
-  background: url("https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/artboard/1/bg-gradientplatform.png") no-repeat scroll 0 4px transparent;
   height: 525px;
   position: relative;
+  text-align: left; }
+
+.wrap_art {
   width: 950px;
-  text-align: left;
-  margin: 0 auto 20px; }
+  margin: 0 auto;
+  position: relative; }
 
 #introduction {
   width: 306px;
@@ -1346,7 +1346,7 @@ ul {
   z-index: 100; }
 
 #status {
-  background: url("https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/artboard/1/status-update.png") no-repeat scroll 0 0 transparent;
+  background: url("https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/artboard/1/status-update-2.png") no-repeat scroll 0 0 transparent;
   height: 324px;
   overflow: hidden;
   padding: 60px 30px 60px;
@@ -1959,14 +1959,12 @@ a#jikotw:hover {
   text-align: right; }
 
 #table-edge {
-  background: none repeat scroll 0 0 #222222;
+  background: #222222;
   border-top: 1px solid #999999;
-  bottom: -4px;
-  box-shadow: 0 3px 5px #111111;
-  height: 5px;
-  left: 3px;
+  bottom: 0;
+  height: 92px;
   position: absolute;
-  width: 932px; }
+  width: 100%; }
 
 figure {
   margin: 0;
@@ -1986,6 +1984,9 @@ figcaption {
   position: absolute;
   top: 11px;
   z-index: 110; }
+
+.andy, .wolfmoon, .charizard {
+  cursor: pointer; }
 
 .mission-list {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
@@ -2191,14 +2192,13 @@ figcaption {
   width: 100%; }
 
 .steam-widget-title {
-  background-color: purple;
-  color: #fff;
+  color: #800080;
   font-size: .9rem;
   margin: 0;
   padding: .25rem; }
 
 .steam-widget .feed {
-  padding: 5px; }
+  padding: 0 5px; }
 
 .steam-widget .steam-game {
   position: relative; }
@@ -2217,7 +2217,8 @@ figcaption {
   width: 100%; }
 
 .steam-widget .footer {
-  background-color: rgba(0, 0, 0, 0.1); }
+  font-size: 10px;
+  padding: 5px 0; }
 
 /* shared */
 .steam-game {
@@ -2516,6 +2517,18 @@ figcaption {
   text-align: center;
   top: 20px;
   width: 120px; }
+
+.modal--sending .sending-msg {
+  display: block;
+  padding: 0 15px 15px; }
+.modal--sending .ask .question-wrap {
+  display: none; }
+
+.modal--sent .sent-msg {
+  display: block;
+  padding: 0 15px 15px; }
+.modal--sent .ask .question-wrap {
+  display: none; }
 
 .music .feed {
   min-height: 400px;

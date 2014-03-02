@@ -16,6 +16,13 @@ class RepoServiceProvider extends ServiceProvider {
   {
     $app = $this->app;
 
+    $app->bind('Jiko\Repo\Amazon\WishlistInterface', function($app)
+    {
+      return new ScraperWishlist(
+        new Wishlist
+      );
+    });
+
     $app->bind('Jiko\Repo\File\CloudFileInterface', function($app)
     {
       return new GoogleDriveFile(
@@ -41,14 +48,6 @@ class RepoServiceProvider extends ServiceProvider {
       return $post;
     });
 
-    $app->bind('Jiko\Repo\Tag\TagInterface', function($app)
-    {
-      return new EloquentTag(
-        new Tag,
-        new LaravelCache($app['cache'], 'tags', 10)
-      );
-    });
-
     $app->bind('Jiko\Repo\Status\StatusInterface', function($app)
     {
       return new EloquentStatus(
@@ -56,17 +55,18 @@ class RepoServiceProvider extends ServiceProvider {
       );
     });
 
-    $app->bind('Jiko\Repo\Amazon\WishlistInterface', function($app)
-    {
-      return new ScraperWishlist(
-        new Wishlist
-      );
-    });
-
     $app->bind('Jiko\Repo\Steam\SteamInterface', function($app)
     {
       return new RecentlyPlayedGames(
         new Steam
+      );
+    });
+
+    $app->bind('Jiko\Repo\Tag\TagInterface', function($app)
+    {
+      return new EloquentTag(
+        new Tag,
+        new LaravelCache($app['cache'], 'tags', 10)
       );
     });
   }

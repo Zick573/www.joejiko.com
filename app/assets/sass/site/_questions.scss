@@ -91,3 +91,13 @@
     top: 20px;
     width: 120px;
 }
+
+// states
+.modal--sending {
+    .sending-msg { display: block; padding: 0 15px 15px;}
+    .ask .question-wrap { display: none; }
+}
+.modal--sent {
+    .sent-msg { display: block; padding: 0 15px 15px;}
+    .ask .question-wrap { display: none; }
+}

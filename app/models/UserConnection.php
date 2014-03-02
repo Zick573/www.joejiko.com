@@ -1,7 +1,7 @@
 <?php
 class UserConnection extends Eloquent {
 
-  protected $guarded = array('user_id');
+  protected $fillable = ['user_id', 'provider_name', 'provider_uid'];
   protected $primaryKey = 'user_id';
   protected $table = 'user_connections';
   public $timestamps = true;

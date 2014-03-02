@@ -35,17 +35,17 @@
 
     <p>I pay attention to brands like Google, Facebook, and Twitter and stay tuned to updates on technology such as PHP, CSS, Javascript/jQuery.</p>
 
-    <p>If you'd like to find out more, I invite you to <a href="/blog">read my blog</a>.</p>
+    <p>If you'd like to find out more, I invite you to <a href="/blog" class="base-a btn-inline">read my blog</a>.</p>
   </div>
 
   <h2>Ready to talk?</h2>
   <p class="action-p">
-    <a class="base-a" href="/contact/message">Send me a message</a> with my contact form or <a href="/contact/quote">request a new project</a>
+    <a class="base-a btn-inline" href="/contact/message">Send me a message</a> with my contact form or <a href="/contact/quote" class="base-a btn-inline">request a new project</a>
   </p>
 
   <h2>Need more convincing?</h2>
   <p class="action-p">
-    <a class="base-a" href="/about/resume">Browse my Résumé</a>
+    <a class="base-a btn-inline" href="/about/resume">Browse my Résumé</a>
   </p>
 </article>
 @stop

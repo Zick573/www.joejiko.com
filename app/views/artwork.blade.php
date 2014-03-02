@@ -2,6 +2,9 @@
 @section('page.title')
   Artwork. Pokehumans. Iron man christmas comic. Grumpszilla.
 @stop
+@section('body.sidebar')
+<a class="btn-request-art" href="#request">Request artwork</a>
+@stop
 @section('content')
 <article class="artwork">
   <header>

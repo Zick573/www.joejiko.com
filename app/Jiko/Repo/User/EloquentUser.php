@@ -26,13 +26,9 @@ class EloquentUser extends RepoAbstract implements UserInterface, RemindableInte
 
   public function create(array $data)
   {
-    $user = $this->user->create([
 
-    ]);
-
-    if(!$user) return false;
-
-    return true;
+    $user = $this->user->create($data);
+    return $user;
   }
 
   public function update(array $data)

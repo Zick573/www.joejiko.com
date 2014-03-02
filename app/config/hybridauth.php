@@ -2,15 +2,18 @@
 
 return array(
 
-  "base_url"   => 'http://'.$_SERVER['HTTP_HOST']."/user/connect/provider",
+  "debug_mode" => true,
+  "debug_file" => app_path().'\storage\logs\hybridauth.txt',
+
+  "base_url"   =>  Request::root()."/user/connect/provider",
 
   "providers"  => array (
 
     "Google"     => array(
       "enabled"    => true,
       "keys"       => array( "id" => "29103454985.apps.googleusercontent.com", "secret" => "p4tbDiXaL9_fCSGOGgRD01TJ" ),
-      "scope" =>  "https://www.googleapis.com/auth/userinfo.profile ". // optional
-                  "https://www.googleapis.com/auth/userinfo.email", // optional
+      "scope" =>  "https://www.googleapis.com/auth/plus.login ". // optional
+                  "https://www.googleapis.com/auth/plus.profile.emails.read", // optional
       "access_type" => "offline", // optional
       "approval_prompt" => "force" //optional
       ),
@@ -37,7 +40,16 @@ return array(
 
     "Tumblr" => array( "enabled" => false, "keys" => array()),
 
-    "Steam Community" => array( "enabled" => false, "keys" => array())
+    "Steam Community" => array( "enabled" => false, "keys" => []),
+
+    "TwitchTV" => [
+      'enabled' => true,
+      'keys' => [
+        "id" => "f91l572aesk8byv4aa5mt8q392zn5fb",
+        'secret' => '31g60pzr2e713b4qmxnl1d7c60ldafa',
+        'redirect_uri' => 'local.joejiko.com/user/connect/twitchtv'
+      ]
+    ]
 
   ),
 );

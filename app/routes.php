@@ -18,8 +18,10 @@ Route::controller('books', 'BookController');
 | API Routes
 |--------------------------------------------------------------------------
 */
-Route::group(array('prefix' => 'api/v1', 'before' => 'auth.basic'), function()
-{
+Route::group([
+  'prefix' => 'api/v1',
+  'before' => 'auth.basic'
+], function(){
   Route::resource('thoughts', 'ThoughtsController');
 });
 Route::controller('api', 'ApiController');
@@ -60,6 +62,10 @@ Route::group([
 */
 Route::bind('questions', function($value, $route){
   return Question::find($value);
+});
+
+Route::bind('auth_provider', function($value, $route){
+  return AuthProvider::where('name', $value)->firstOrFail();
 });
 
 /**
@@ -186,15 +192,18 @@ Route::group(['prefix' => 'user'], function(){
     Route::post('twitter-archive', 'User\Tools\TwitterArchiveController@dump');
   });
   Route::get('debug', 'UserController@debug');
+  Route::get('connect/provider', 'UserController@connectWithProvider');
+  Route::get('connect/{auth_provider}', 'UserController@connectWithProvider');
   Route::get('connect', 'UserController@connect');
   Route::any('connect/email', 'UserController@connectWithEmail');
-  Route::get('connect/{action?}', 'UserController@connectWithOAuth');
+  // Route::get('connect/{action?}', 'UserController@connectWithOAuth');
 
-  Route::get('connected', 'UserController@getConnected');
+  Route::get('connected', 'UserController@connected');
   Route::get('connected/missing-required-info', 'UserController@missingInfo');
 
   Route::get('disconnect', 'UserController@disconnect');
   Route::get('info', 'UserController@info');
+  Route::get('info/import', 'UserController@infoImport');
   Route::get('/', 'UserController@index');
 });
 

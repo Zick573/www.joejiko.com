@@ -1,4 +1,52 @@
 define(["jquery", "app/ui/_global/modal"], function($, Modal){
+
+  function handleQuestionSubmit(evt){
+    var context = $(this).parents('.modal-ask');
+    var $txtQuestion = context.find('.question-textarea');
+
+    if(!questionIsValid($txtQuestion)){
+      $('.no').fadeIn('fast');
+      return false;
+    }
+
+    // hold a sec..
+    context.addClass('modal--sending');
+
+    // submit
+    var jqxhr = $.post(
+      "/questions/ask",
+      {
+        question: $txtQuestion.prop("value"),
+        ask: true
+      },
+      function(html){
+        // @todo ask another question
+        context.removeClass('modal--sending')
+          .addClass('modal--sent');
+        // @todo resize modal?
+        // @todo timed close?
+    });
+    jqxhr.error(function(err){
+      context.removeClass('modal--sending');
+      alert(err);
+    });
+
+    evt.preventDefault();
+    // bubbly
+    evt.stopImmediatePropagation();
+  }
+
+  function handleQuestionEntry(evt)
+  {
+    displayCharacterCount($(this).prop('value').length);
+    questionIsValid($(this));
+    evt.stopPropagation();
+  }
+
+  // binding
+  $(document).on('keyup change', '.modal-ask .question-textarea', handleQuestionEntry);
+  $(document).on('click', '.modal-ask .btn-question-submit', handleQuestionSubmit);
+
   function isValid(text)
   {
     // ends with ? and > 40 characters
@@ -44,40 +92,12 @@ define(["jquery", "app/ui/_global/modal"], function($, Modal){
 
   function askModalCallback(context)
   {
+    var $txtQuestion, $btnQuestionSend;
     var jqxhr = $.get('/api/ui?name=questions/ask', function(html){
       context.empty().append(html);
     });
-    jqxhr.done(function(){ context.trigger('loaded'); });
-
-    // var btnSubmit = context.find('.btn-question-submit'),
-    //     txtQuestion = context.find('.question-textarea');
-    $(document).on('keyup change', '.question-textarea', function(evt){
-      displayCharacterCount($(this).prop('value').length);
-      questionIsValid($(this));
-    });
-
-    $(document).on('click', '.btn-question-submit', function(evt){
-      evt.preventDefault();
-
-      var txtQuestion = $(document).find('.question-textarea');
-
-      if(!questionIsValid(txtQuestion)){
-        $('.no').fadeIn('fast');
-        return false;
-      }
-
-      // submit
-      $.post(
-        "/questions/ask",
-        {
-          question: txtQuestion.prop("value"),
-          ask: true
-        },
-        function(html){
-          // @todo ask another question
-          // @todo resize modal?
-          // @todo timed close?
-      });
+    jqxhr.done(function(){
+      context.trigger('loaded');
     });
   }
 

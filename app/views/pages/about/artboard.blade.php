@@ -1,4 +1,5 @@
 <section id="artboard">
+<div class="wrap_art">
   <div id="hints">show hints</div>
   <article id="posters">
   <img alt="godzilla zelda pirates and naruto posters" src="{{ cdn_img() }}artboard/1/background-posters.png" />
@@ -76,5 +77,6 @@
       <figcaption hidden>wacom intuos4 pen tablet for drawing</figcaption>
     </figure>
   </article>
+</div>
   <div id="table-edge"></div>
 </section>

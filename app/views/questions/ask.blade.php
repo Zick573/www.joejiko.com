@@ -22,9 +22,17 @@
       </div>
     </div>
   </form>
-  {{-- Step 2: Identity and subscription options --}}
-  @include('questions.ask.after')
-
-  {{-- Final: Thanks for submitting --}}
+  <div class="sending-msg" hidden>
+    <h2>Wait a bit.. I'm sending your question.</h2>
+  </div>
+  <div class="sent-msg" hidden>
+  @if(Auth::guest())
+  {{-- Identity and subscription options --}}
+  @include('questions.ask.sent-anon')
+  @else
+  {{-- Thanks for submitting --}}
+  @include('questons.ask.sent-from-user')
   @include('questions.ask.thanks')
+  @endif
+  </div>
 @stop

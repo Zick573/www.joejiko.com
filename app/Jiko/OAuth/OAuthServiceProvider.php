@@ -1,6 +1,7 @@
 <?php namespace Jiko\OAuth;
 
-use Hybrid_Auth;
+use User, UserConnection, Hybrid_Auth;
+use Jiko\Repo\User\HybridAuthUser;
 use Illuminate\Support\ServiceProvider;
 
 class OAuthServiceProvider extends ServiceProvider {
@@ -11,7 +12,11 @@ class OAuthServiceProvider extends ServiceProvider {
 
     $app->bind('Jiko\OAuth\OAuthUserInterface', function($app)
     {
-      return new HybridOAuthUser(new Hybrid_Auth(app_path() . '/config/hybridauth.php'));
+      return new HybridAuthUser(
+        new User,
+        new Hybrid_Auth(app_path() . '/config/hybridauth.php'),
+        new UserConnection
+      );
     });
   }
 

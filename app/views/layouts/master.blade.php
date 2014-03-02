@@ -39,7 +39,8 @@ Leave your console open maybe?
    @include('layouts.master.header')
   </header>
   <div class="main-view">
-    <aside class="site-sidebar">
+    {{-- @Todo: move to config --}}
+    <aside class="site-sidebar" style="background-image:url({{ cdn() }}/img/artwork/jiko-face-3.jpg); background-size: 150%;">
       <nav class="sidebar-nav-y">
         <!-- inline-block grids are my new favorite thing -->
         <a href="//plus.google.com/110880509059057751100?rel=author" title="Joe Jiko on Google Plus" target="_blank">
@@ -57,7 +58,9 @@ Leave your console open maybe?
         --><a href="#"><i class="icon-placeholder"></i></a>
       </nav><!--
       --><div class="sidebar-module-wrapper">
+      @section('body.sidebar')
       @include('layouts.master.sidebar')
+      @show
       </div>
     </aside><aside class="site-sidebar-holder">&nbsp;</aside><!--
     --><div class="main" id="main">

@@ -1,35 +1,67 @@
 <?php
-use Jiko\OAuth\HybridOAuthUserInterface;
-use Input as I;
-use Redirect as R;
-use Session as S;
-use View as V;
+use Jiko\OAuth\OAuthUserInterface;
 
 class UserController extends DefaultController {
 
-  public function __construct()
+  public function __construct(OAuthUserInterface $hybridAuth)
   {
-    // if(!Auth::check()):
-    //   return R::to('user/connect')->with([
-    //     'message' => 'Please connect to continue..'
-    //   ]);
-    // endif;
-    $this->beforeFilter('auth', ['except' => ['connect', 'connected', 'disconnect']]);
+    $this->hybridAuth = $hybridAuth;
+    $this->beforeFilter('auth', [
+      'except' => [
+        'connect',
+        'connectWithProvider',
+        'connected',
+        'disconnect'
+      ]
+    ]);
   }
 
   public function index()
   {
-    return V::make('user.index');
+    return \View::make('user.index');
   }
 
-  public function profile()
+  public function infoImport()
   {
-    return V::make('user.info');
+    $profile = $this->hybridAuth->getUserProfile();
+    $prepared = [
+      'provider_name' => strtolower($profile->provider_name),
+      'provider_uid' => $profile->identifier,
+      'profile_url' => $profile->profileURL,
+      'website_url' => $profile->webSiteURL,
+      'photo_url' => $profile->photoURL,
+      'display_name' => $profile->displayName,
+      'description' => $profile->description,
+      'first_name' => $profile->firstName,
+      'last_name' => $profile->lastName,
+      'gender' => $profile->gender,
+      'language' => $profile->language,
+      'age' => $profile->age,
+      'birth_day' => $profile->birthDay,
+      'birth_month' => $profile->birthMonth,
+      'birth_year' => $profile->birthYear,
+      'email' => $profile->email,
+      'email_verified' => $profile->emailVerified,
+      'phone' => $profile->phone,
+      'address' => $profile->address,
+      'country' => $profile->country,
+      'region' => $profile->region,
+      'city' => $profile->city,
+      'zip' => $profile->zip
+    ];
+    Auth::user()->info()->create($prepared);
+
+    return Redirect::to('user/info');
+  }
+
+  public function info()
+  {
+    return \View::make('user.info');
   }
 
   public function missingInfo()
   {
-    return V::make('user.connected.missing_required');
+    return \View::make('user.connected.missing_required');
   }
 
   public function connected()
@@ -38,13 +70,13 @@ class UserController extends DefaultController {
     // if(!Auth::check()):
 
     //   # redirect to referring page (with error)
-    //   if(S::has('connected_from_url')):
-    //     return R::to(S::get('connected_from_url'))
+    //   if(Session::has('connected_from_url')):
+    //     return Redirect::to(Session::get('connected_from_url'))
     //       ->with('user_connect_status', "failed");
     //   endif;
 
     //   # fall back on static connect page (with error)
-    //   return R::to('user/connect')->with('user_connect_status', "failed");
+    //   return Redirect::to('user/connect')->with('user_connect_status', "failed");
 
     // endif;
 
@@ -58,23 +90,23 @@ class UserController extends DefaultController {
     // ){
 
     //   # prompt for email if it's missing
-    //   R::to('user/connected/missing-required-info');
+    //   Redirect::to('user/connected/missing-required-info');
 
     // }
 
     # redirect to referring page (success)
-    if(S::has('connected_from_url')):
-      $r_to = S::get('connected_from_url');
+    if(\Session::has('connected_from_url')):
+      $r_to = \Session::get('connected_from_url');
       $r_with = ['user_connected' => true];
-      return R::to($r_to)->with($r_with);
+      return \Redirect::to($r_to)->with($r_with);
     endif;
 
-    return V::make('home')->with('user_connected', true);
+    return \Redirect::to('/')->with('user_connected', true);
   }
 
   public function registerWithEmail()
   {
-    return V::make('user.register-email-disabled');
+    return \View::make('user.register-email-disabled');
   }
 
   /**
@@ -84,16 +116,16 @@ class UserController extends DefaultController {
    */
   public function connectWithEmail()
   {
-    if(!Auth::attempt(
+    if(!\Auth::attempt(
         [
-          'email' => I::get('email'),
-          'password' => I::get('passwd')
+          'email' => \Input::get('email'),
+          'password' => \Input::get('passwd')
         ],
         true
       )
     ){
 
-      return V::make('user.connect')->with([
+      return \View::make('user.connect')->with([
         'error' => [
           'INVALID_CREDS' => 'Invalid credentials. Try again, maybe?'
         ]
@@ -102,6 +134,34 @@ class UserController extends DefaultController {
     }
 
     return self::getConnected();
+  }
+
+  public function connectWithProvider($provider=null, $action='')
+  {
+    if(Input::get('error')) {
+      dd(Input::all());
+    }
+
+    if(is_null($provider)) {
+      try {
+
+        # OAuth pass
+        Hybrid_Endpoint::process();
+
+      }
+      catch ( \Exception $e ) {
+        echo "Error at Hybrid_Endpoint process (UserController@connectWithProvider): $e";
+      }
+      return;
+    }
+
+    $provider_id = is_object($provider) ? $provider->name : null;
+
+    # connect user
+    $user = $this->hybridAuth->connect($provider_id);
+    \Auth::login($user);
+
+    return Redirect::to('user/connected');
   }
 
   public function OAuthValidateProvider($provider)
@@ -132,18 +192,16 @@ class UserController extends DefaultController {
      */
     $user_missing_email = (isset($profile->email) && !empty($profile->email));
 
+    /**
+     * @todo DB transaction
+     * User, UserConnection should be created at the same time
+     */
     if(!$user_missing_email) {
-
-      # make sure email isn't already registered
-      # by a different provider
-      if(!$user = User::where('email', $profile->email)->first()) {
-
         # insert user with provider info
-        $user = new User;
+        $user = new \User;
         $user->email = $profile->email;
         $user->name = $profile->displayName;
         $user->save();
-      }
     }
 
     # user register attempt without email
@@ -152,29 +210,23 @@ class UserController extends DefaultController {
 
       # get user from from connected provider
       # or create a new user
-      if($connection = UserConnection::where('provider_uid', $profile->identifier)->first()) {
-        $user = User::find($connection->user_id);
+      if($connection = \UserConnection::where('provider_uid', $profile->identifier)->first()) {
+        $user = \User::find($connection->user_id);
 
       }
 
       else {
         # create a limited/unverified user
-        $user = User::create([
+        $user = \User::create([
           'email' => md5(uniqid(rand(),true)),
           'status' => "limited",
           'name' => $profile->displayName
         ]);
-
-        # use random token for missing email
-        // $user->email = md5(uniqid(rand(),true));
-        // $user->status = "limited";
-        // $user->name = $profile->displayName;
-        // $user->save();
       }
     }
 
     // DB::transaction(function() use ($provider, $profile) {
-    $provider_id = AuthProvider::where('name', strtolower($provider->id))->firstOrFail()->pluck('id');
+    $provider_id = \AuthProvider::where('name', strtolower($provider->id))->firstOrFail()->pluck('id');
 
     # insert provider connection info
     /**
@@ -182,7 +234,7 @@ class UserController extends DefaultController {
      * oauth connect
      * with $user, $provider, $profile
      */
-    $connection = UserConnection::create([
+    $connection = \UserConnection::create([
       'user_id' => $user->id,
       'provider_name' => strtolower($provider->id),
       'provider_uid' => $profile->identifier
@@ -197,7 +249,7 @@ class UserController extends DefaultController {
      * with $provider, profile
      */
     # insert user info from provider
-    $info = UserInfo::create([
+    $info = \UserInfo::create([
       'user_id' => $user->id,
       'provider_id' => $provider_id,
       'profile_url' => $profile->profileURL,
@@ -226,7 +278,7 @@ class UserController extends DefaultController {
 
     // ]);
     // }); // END transaction
-    S::put('oauth_register', true);
+    \Session::put('oauth_register', true);
     return $user->id;
 
   }
@@ -238,7 +290,7 @@ class UserController extends DefaultController {
     # actual OAuth attempt
     $provider = $oauth->authenticate($credentials);
     if(!$provider instanceof Hybrid_Provider_Adapter):
-      throw new Exception('Not a valid oauth provider.');
+      throw new \Exception('Not a valid oauth provider.');
     endif;
 
     $profile = $provider->getUserProfile();
@@ -246,28 +298,28 @@ class UserController extends DefaultController {
       'provider_name' => strtolower($provider->id),
       'provider_uid' => $profile->identifier
     ];
-    $uid = UserConnection::where('provider_name', $credentials['provider_name'])
+    $uid = \UserConnection::where('provider_name', $credentials['provider_name'])
       ->where('provider_uid', $credentials['provider_uid'])
       ->pluck('user_id');
 
     # attempt to register the OAuth user
     if(!$uid):
-      $uid = self::OAuthRegister($provider, $profile);
+      $uid = static::OAuthRegister($provider, $profile);
     endif;
 
     # log in with site ID
-    Auth::loginUsingId($uid);
-    if(!Auth::check()):
-      throw new Exception('Connection failed.. or something');
+    \Auth::loginUsingId($uid);
+    if(!\Auth::check()):
+      throw new \Exception('Connection failed.. or something');
     endif;
 
     // store session
-    $authsession = DB::table('auth_sessions')->insert([
-      'user_id' => Auth::user()->id,
+    $authsession = \DB::table('auth_sessions')->insert([
+      'user_id' => \Auth::user()->id,
       'session' => $oauth->getSessionData()
     ]);
 
-    S::put('oauth_loginusingid', true);
+    Session::put('oauth_loginusingid', true);
     return Auth::user();
   }
 
@@ -280,7 +332,7 @@ class UserController extends DefaultController {
     // Hybrid_Endpoint::process();
 
     # redirect to connect options with message
-    return V::make('user.connect')->with('flash_notice', 'Connect with OAuth failed.');
+    return View::make('user.connect')->with('flash_notice', 'Connect with OAuth failed.');
   }
 
   /**
@@ -304,12 +356,12 @@ class UserController extends DefaultController {
     if(!Auth::check()):
 
       # show connection options
-      return V::make('user.connect');
+      return View::make('user.connect');
 
     endif;
 
     # user connected
-    return R::to('user/connected');
+    return Redirect::to('user/connected');
 
   }
 
@@ -317,7 +369,7 @@ class UserController extends DefaultController {
    * /user/disconnect
    * disconnect/logout user and redirect
    */
-  public function getDisconnect()
+  public function disconnect()
   {
     try {
 
@@ -330,7 +382,7 @@ class UserController extends DefaultController {
 
           // save session
           $session = $oauth->getSessionData();
-          $store = AuthS::create([
+          $store = AuthSession::create([
             'user_id' => Auth::user()->id,
             'session' => $session,
             'type' => 'hybridauth'
@@ -350,10 +402,10 @@ class UserController extends DefaultController {
 
       Auth::logout();
     } catch (Exception $e) {
-      return R::route('home')->with('flash_notice', $e->getMessage());
+      return Redirect::route('home')->with('flash_notice', $e->getMessage());
     }
 
-    return R::route('home')->with('user_disconnected', true);
+    return Redirect::route('home')->with('user_disconnected', true);
   }
 
   public function store()
