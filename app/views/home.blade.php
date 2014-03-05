@@ -7,6 +7,22 @@
 @stop
 @section('content')
 <article class="home-article limit-width--reading">
+    {{--*/
+      $twitch = json_decode(file_get_contents("https://api.twitch.tv/kraken/streams/joejiko?client_id=f91l572aesk8byv4aa5mt8q392zn5fb"));
+      $twitch_status = !is_null($twitch->stream) ? "online" : "offline";
+    /*--}}
+@if($twitch_status == "online")
+<style>
+#live_embed_player_flash { width: 100%; height: 600px; position: relative; z-index: 0;}
+</style>
+<object type="application/x-shockwave-flash" id="live_embed_player_flash" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=joejiko" bgcolor="#000000">
+  <param name="allowFullScreen" value="true" />
+  <param name="allowScriptAccess" value="always" />
+  <param name="allowNetworking" value="all" />
+  <param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf" />
+  <param name="flashvars" value="hostname=www.twitch.tv&channel=joejiko&auto_play=true&start_volume=25" />
+</object>
+@endif
   <h1>"<em>Cute is a word for things that can't kill you</em>"</h1>
   @include('pages.about.artboard')
   <h2>I don't make websites.</h2>
@@ -50,7 +66,19 @@
 </article>
 @stop
 @section('content.sidebar')
-  <h2>more stuff here</h2>
+  <h3>Gaming</h3>
+  <div class="twitch" style="background: #fff; margin: 0 0 10px; border: 3px solid #6441a5;">
+    <a href="http://jiko.us/1mUFmfl" target="_blank" style="display: block;">
+      <img
+        src="https://googledrive.com/host/0B_9a_WMIXbTtdEM1aTZaMm1sTVU/GlitchIcon_purple50.png"
+        alt="Twitch.tv"
+        style="display: inline-block; vertical-align: middle;">
+      <span class="title" style="font-size: 10px;">Visit Twitch channel &rarr;</span>
+    </a>
+    <span class="status status-{{ $twitch_status }}" style="display: block; text-align: center; font-size: 12px; line-height: 20px;">
+      [status: {{ $twitch_status }}]
+    </span>
+  </div>
   <div class="steam-widget" data-config='"limit":3, "widget":true, "name":"steam recently played"'>
     <h3 class="steam-widget-title">Recently played games</h3>
     <div class="feed">

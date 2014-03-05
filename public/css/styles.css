@@ -881,6 +881,45 @@ ul {
   .modal-link:hover {
     color: #004E77; }
 
+.user-nav:hover {
+  opacity: 1; }
+
+.mod-connect {
+  position: relative;
+  display: inline-block;
+  z-index: 900; }
+  .mod-connect .connect-overlay {
+    display: none; }
+  .mod-connect:hover .connect-overlay {
+    display: block;
+    background: #fff;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: -50px;
+    right: 0;
+    padding: 10px;
+    width: 250px; }
+    .mod-connect:hover .connect-overlay [class*="btn-connect-"] {
+      display: block;
+      margin-bottom: 2px; }
+    .mod-connect:hover .connect-overlay .a-register-email {
+      background: #ccc;
+      color: #222; }
+  .mod-connect:hover:hover .btn-user-connect {
+    visibility: hidden; }
+
+.connect-overlay .privacy, .connect-overlay .intro {
+  font-size: 12.5px;
+  text-align: center; }
+.connect-overlay .intro {
+  margin: 0 0 8px; }
+.connect-overlay .privacy {
+  color: #666;
+  margin-bottom: 0; }
+  .connect-overlay .privacy a {
+    color: #222;
+    border-bottom: 1px dashed #111; }
+
 .main-view {
   overflow: hidden; }
 

@@ -201,3 +201,49 @@
   color: #999;
   &:hover { color: #004E77; }
 }
+.user-nav:hover { opacity: 1; }
+.mod-connect {
+  position: relative;
+  display: inline-block;
+  z-index: 900;
+  .connect-overlay { display: none; }
+  &:hover {
+    .connect-overlay {
+      display: block;
+      background: #fff;
+      box-shadow: 0 10px 5px rgba(0, 0, 0, 0.4);
+      position: absolute;
+      top: -50px;
+      right: 0;
+      padding: 10px;
+      width: 250px;
+
+      [class*="btn-connect-"] {
+        display: block;
+        margin-bottom: 2px;
+      }
+
+      .a-register-email {
+        background: #ccc;
+        color: #222;
+      }
+    }
+
+    &:hover {
+      .btn-user-connect { visibility: hidden; }
+    }
+  }
+}
+
+.connect-overlay {
+  .privacy, .intro {
+    font-size: 12.5px;
+    text-align: center;
+  }
+  .intro { margin: 0 0 8px;}
+  .privacy {
+    color: #666;
+    margin-bottom: 0;
+    a { color: #222; border-bottom: 1px dashed #111; }
+  }
+}

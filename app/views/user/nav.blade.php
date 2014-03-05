@@ -39,6 +39,18 @@
 @else
   Hello lurker!
   <a class="user-nav-link btn-purple" href="/team/join"><i class="batch" data-icon="&#61509;"></i> Join the team</a> or
-  <a class="user-nav-link btn-green btn-user-connect" href="/user/connect"><i class="batch" data-icon="&#xF046;"></i> connect</a>
+  <div class="mod-connect">
+    <a class="user-nav-link btn-green btn-user-connect" href="/user/connect"><i class="batch" data-icon="&#xF046;"></i> connect</a>
+    <div class="connect-overlay">
+      <p class="intro">Connect with Google, Twitter, or Facebook to gain access to special pages and features on JoeJiko.com</p>
+      <a href="/user/connect/google" class="btn-connect-g"><i class="sign-in-google"></i> Google</a>
+      <a href="/user/connect/facebook" class="btn-connect-f"><i class="sign-in-facebook"></i> Facebook</a>
+      <a href="/user/connect/twitter" class="btn-connect-t"><i class="sign-in-twitter"></i> Twitter</a>
+      <p class="privacy">
+        Nothing will ever be posted to your accounts without your permission! This site does not automatically post.<br>
+        <a href="/about/privacy">read the privacy policy</a>
+      </p>
+    </div>
+  </div>
 @endif
 </div>
