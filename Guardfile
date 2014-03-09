@@ -1,5 +1,5 @@
 guard :concat, :type => "css", :files => %w[styles], :input_dir => "public/css", :output => "public/css/styles.min"
-guard :concat, :type => "css", :files => %w[styles], :input_dir => "public/css", :output => "public/css/styles.min"
+guard :concat, :type => "css", :files => %w[master], :input_dir => "public/css", :output => "public/css/styles-master.min"
 guard :concat, :type => "js", :files => %w[main], :input_dir => "public/js", :output => "public/js/app/scripts.min"
 
 module ::Guard

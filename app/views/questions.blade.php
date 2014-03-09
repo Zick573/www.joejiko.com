@@ -1,16 +1,13 @@
-@extends('layouts.master')
+@extends('layouts.master-2')
 @section('page.title')
   Ask a stupid question, get a smart answer!
 @stop
-
-@section('content.header')
-  <a class="btn btn-green btn-ask" data-trigger="modal" data-modal-name="ask">Ask a question</a>
-@stop
-
 @section('content.sidebar')
 @stop
 
 @section('content')
+  @include('questions.ask-inline')
+  <!-- <a class="btn btn-green btn-ask" data-trigger="modal" data-modal-name="ask">Ask a question</a> -->
   <header class="limit-width--reading">
     <h1 class="inline">Questions</h1>
     {{ Form::open(array('class' => 'inline')) }}

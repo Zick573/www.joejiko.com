@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('layouts.master-2')
 @section('page.title')
   @if(isset($question))
     {{ $question->text }}
@@ -51,12 +51,5 @@
   @else
   <h2>No data.</h2>
   @endif
-@stop
-
-@section('scripts.footer')
-  <script>
-    require(['questions'], function(Questions){
-      Questions.start();
-    });
-  </script>
+  <div class="limit-width--reading"><a class="btn btn-green btn-ask" data-trigger="modal" data-modal-name="ask">Ask a question</a></div>
 @stop

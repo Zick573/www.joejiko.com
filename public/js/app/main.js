@@ -5,6 +5,7 @@ define(["require","jquery"], function(require, $) {
   }
   var _appui = {
     app: $('.app'),
+    app_loading: $('.app-loading-msg'),
     main: $('.main'),
     mainSidebar: $('.main-sidebar'),
     sidebar: $('.site-sidebar')
@@ -12,6 +13,10 @@ define(["require","jquery"], function(require, $) {
 
   function alertMessage() {
     alert($(this).attr('data-message'));
+  }
+
+  function loadingMessage(msg) {
+    _appui.app_loading.empty().append(msg);
   }
 
   function ready() {
@@ -67,15 +72,10 @@ define(["require","jquery"], function(require, $) {
         var $app_loading_msg = $(document).find('.app-loading-msg');
         console.log($app_loading_msg.length);
         // load ui
-        $app_loading_msg
-          .empty()
-          .append('Building UI');
+        loadingMessage('Building UI');
         resize();
 
-        $app_loading_msg
-          .empty()
-          .append('Accessing fuctions');
-        ready();
+       loadingMessage('Registering events');
 
         // alerts
         $(document).on('click', '[data-trigger]', handleTrigger);
@@ -84,6 +84,7 @@ define(["require","jquery"], function(require, $) {
         $(window).on('resize', handleResize);
         $(document).on('resizeViews', resize);
 
+        loadingMessage('Accessing core functions');
         // do this last
         require(
           [
@@ -131,7 +132,7 @@ define(["require","jquery"], function(require, $) {
               });
             }
 
-            if( $(document).find('.questions').length ) {
+            if( $(document).find('.questions').length || $(document).find('.btn-ask').length ) {
               require(['app/questions/main'], function( Question ) {
                 console.log( JSON.stringify(Question) );
               });
@@ -160,10 +161,13 @@ define(["require","jquery"], function(require, $) {
             }
 
             // load last
-            require(["app/ui/_global/tooltip", "app/ui/_global/footer"], function(Tooltip, Footer){
+            loadingMessage('loading tooltips, footer');
+            require(["app/ui/_global/tooltip", "app/ui/_global/sidebar", "app/ui/_global/footer"], function(Tooltip, Sidebar, Footer){
               Tooltip.start();
+              Sidebar.start();
               Footer.start();
             });
+            ready();
         });
       });
     }

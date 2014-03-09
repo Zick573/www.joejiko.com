@@ -297,3 +297,12 @@
    ========================================================================== */
 
 .modal--sending {}
+
+/** inline form **/
+.form-ask-inline {
+  max-width: 45rem;
+  margin: 0 auto;
+  .ask-header { background: none; }
+  .ask-h { line-height: 1; color: #222; }
+  .help-intro { color: #222; }
+}

@@ -33,7 +33,7 @@ requirejs.onError = function (err) {
 };
 
 require(["require/domReady!"], function() {
-  require(["app/scripts.min"], function(App){
+  require(["app/main"], function(App){
     App.start();
   });
 });

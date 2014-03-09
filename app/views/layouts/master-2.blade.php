@@ -54,28 +54,12 @@ Leave your console open maybe?
   <div class="main-view">
     {{-- @Todo: move to config --}}
     {{--<aside class="site-sidebar" style="background-image:url({{ cdn() }}/img/artwork/jiko-face-3.jpg); background-size: 150%;">--}}
-    <aside class="site-sidebar" style="background-image:url(http://distilleryimage8.ak.instagram.com/3148ece6a24e11e394fa12bd164c5014_8.jpg); background-size: cover;">
+    <aside class="site-sidebar" style="background-image:url({{ bgi_site_sidebar() }}); background-size: cover;">
       <div class="sidebar-module-wrapper">
       @section('body.sidebar')
       @include('layouts.master.sidebar')
       @show
-      </div><!--
-      --><nav class="sidebar-nav-y">
-        <!-- inline-block grids are my new favorite thing -->
-        <a href="//plus.google.com/110880509059057751100?rel=author" title="Joe Jiko on Google Plus" target="_blank">
-          <i class="icon-50 icon-g"></i>
-        </a><!--
-        --><a href="//jiko.us/12ozDqb" target="_blank" title="@JoeJiko on Twitter">
-          <i class="icon-50 icon-tw"></i>
-        </a><!--
-        --><a href="//on.fb.me/REuClh" target="_blank" class="Joe Jiko on Facebook">
-          <i class="icon-50 icon-fb"></i>
-        </a><!--
-        --><a href="//jiko.us/Wx5y3G" class="@JoeJiko on Instagram" target="_blank">
-          <i class="icon-50 icon-ig"></i>
-        </a><!--
-        --><a href="#"><i class="icon-placeholder"></i></a>
-      </nav>
+      </div>
     </aside><aside class="site-sidebar-holder">&nbsp;</aside><!--
     --><div class="main" id="main">
       @if(Session::has('flash_notice'))

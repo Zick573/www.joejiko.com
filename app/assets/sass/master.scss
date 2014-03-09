@@ -15,7 +15,7 @@ $break-xlarge: 1400px;
 @import "global/grid";
 // @import "global/header";
 @import "master2/header";
-@import "global/search";
+@import "master2/search";
 @import "master2/user";
 @import "master2/main";
 @import "global/modal";
@@ -29,6 +29,7 @@ $break-xlarge: 1400px;
 @import "site/music-tracker";
 @import "site/thoughts";
 
+@import "master2/states";
 @import "experiments/zoom";
 
 /* lists */

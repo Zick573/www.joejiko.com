@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('layouts.master-2')
 @section('page.title')
   Photos worth a thousand words. What do they say to you?
 @stop

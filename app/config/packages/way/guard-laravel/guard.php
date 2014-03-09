@@ -76,7 +76,7 @@ return array(
   | you'd simply add `array('buttons')` (the extension may be left off).
   |
   */
-  'css_concat' => array('styles'),
+  'css_concat' => array('styles, master'),
   'guard_options' => array(
       'sass' => array(
           'compass' => true

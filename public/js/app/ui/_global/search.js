@@ -37,18 +37,20 @@ define(["jquery", "app/ui/_global/modal"], function($, Modal){
     if($search.is(":focus")){
       if(evt.keyCode === 13)
       {
-        // enter pressed
+        console.log("search or something..");
       }
 
       // $('.main-article').css('opacity', '.1');
-      if(!$(document).find('.search-results').length){
-        Modal.open({
-          html: '<div class="search-results"><div class="loading"><span class="loading-message">Searching...</a></div> <p>haha.. <strong>not really</strong>.</p><p>Use Google :|</p></div>'
-          // @todo replace with actual callback
-          // callback: searchModalCallback
-        });
-        // _appui.mainView.animate({scrollTop: 0}, 200);
-        // _appui.content.prepend('<div class="search-results">Searching...</div>');
+      function will_never_run() {
+        if(!$(document).find('.search-results').length){
+          Modal.open({
+            html: '<div class="search-results"><div class="loading"><span class="loading-message">Searching...</a></div> <p>haha.. <strong>not really</strong>.</p><p>Use Google :|</p></div>'
+            // @todo replace with actual callback
+            // callback: searchModalCallback
+          });
+          // _appui.mainView.animate({scrollTop: 0}, 200);
+          // _appui.content.prepend('<div class="search-results">Searching...</div>');
+        }
       }
     }
   }
