@@ -11,6 +11,7 @@ define(["jquery", "app/ui/_global/modal"], function($, Modal){
   active = false,
   results = {
     cleanup: function() {
+      toggle();
       var $searchResults = $(document).find('.search-results');
       if($searchResults.length){
         // console.log("@search.results cleanup");
@@ -30,7 +31,7 @@ define(["jquery", "app/ui/_global/modal"], function($, Modal){
     if(evt.keyCode === 27)
     {
       // cleanup
-      results.cleanup();
+      return results.cleanup();
     }
 
     if($search.is(":focus")){

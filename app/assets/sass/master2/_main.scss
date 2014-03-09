@@ -1,0 +1,250 @@
+.main-view {
+    overflow: hidden;
+}
+.site-sidebar, .site-sidebar-holder, .main, .main-article, .main-sidebar {
+    display: inline-block;
+    vertical-align: top;
+}
+.site-sidebar, .site-sidebar-holder, .main, .main-article {
+  min-height: 100%;
+}
+.main {
+    width: 76%;
+    opacity: 1;
+    overflow: auto;
+    padding: 60px 0 8rem 0;
+    position: relative;
+    transition: all 1s;
+    @media screen and (max-width: $break-medium) {
+        padding-left: 70px;
+        width: 100%;
+    }
+}
+.main-header {
+    background: rgba(239, 239, 239, .95);
+    height: 60px;
+    position: fixed;
+    left: 24%;
+    top: 60px;
+    width: 1155px;
+    > .btn {
+      max-height: 40px;
+      font-size: 1rem;
+    }
+    @media screen and (max-width: $break-medium) {
+        right: 0;
+        width: 94%;
+    }
+}
+.main-content {
+    a, &:visited {
+        color: #004E77;
+        &:hover, &:active {
+            color: #009900; }
+    }
+}
+.main-article {
+    line-height: 2;
+    width: 100%;
+    max-width: 920px;
+    padding-bottom: 10rem;
+    @media screen and (max-width: $break-medium) {
+        width: 100%;
+    }
+}
+.main-sidebar {
+    // width: 30%; where did i decide this?
+    //
+    background: #DCDCDC;
+    position: fixed;
+    right: 16px;
+    top: 60px;
+    width: 289px;
+    &:hover {
+      overflow-y: auto;
+      padding-right: 10px;
+      right: 0;
+      width: 305px;
+    }
+    &:after {
+      content: "";
+      display: block;
+      margin-bottom: 60px;
+    }
+    @media screen and (max-width: $break-xlarge) {
+        display: none;
+    }
+}
+// .main-sidebar { width: 20%; }
+.main-footer {
+    background: rgba(0,0,0,.1);
+    bottom: 0;
+    height: 4rem;
+    position: fixed;
+    right: 1%;
+    text-align: center;
+    width: 75%;
+    &:hover {
+        background: rgba(0,0,0,1);
+    }
+    @media screen and (max-width: $break-medium) {
+        right: 0;
+        width: 94%;
+    }
+}
+.limit-width--reading {
+    max-width: 35rem;
+}
+.site-sidebar-holder {
+    width: 24%;
+    margin-right: 1%;
+}
+.site-sidebar {
+    background: {
+        repeat: no-repeat;
+        position: left bottom;
+        color: #dcdcdc;}
+    margin: {
+        right: 1%;}
+    /*padding: 0 0 0 20px;*/
+    border: {
+        right: 60px solid rgba(0, 0, 0, 0.1);}
+    position: fixed;
+    width: 24%;
+    z-index: 99; /* below header */
+    // &:hover {
+    //     // width: 50%;
+    //     .sidebar-module-wrapper {
+    //         overflow: auto;
+    //     }
+    // }
+    .sidebar-module-wrapper {
+        background: rgba(0,0,0,.1);
+        display: inline-block;
+        opacity: .8;
+        overflow: hidden;
+        padding-left: 5px;
+        height: 100%;
+        width: 100%;
+        &:hover {
+            opacity: 1;
+            overflow: auto;
+            .sidebar-module {
+                background: rgba(255, 255, 255, .9);
+            }
+        }
+        @media screen and (max-width: $break-medium) {
+            display: none;
+        }
+    }
+    .sidebar-module {
+        background: none repeat scroll 0 0 rgba(0, 0, 0, 0.1);
+        margin-bottom: 10px;
+        padding: 10px;
+        min-width: 280px;
+        width: 100%;
+        display: inline-block;
+    }
+    .sidebar-module:first-of-type {
+      margin-top: 10px;
+    }
+    .sidebar-module:last-of-type {
+      margin-bottom: 10px;
+    }
+}
+.site-sidebar-holder, .site-sidebar {
+    @media screen and (max-width: $break-medium) {
+        width: 60px;
+    }
+}
+.sidebar-nav-y {
+    // display: inline-block;
+    width: 60px;
+    // margin-left: -60px;
+    padding: 5px;
+    vertical-align: top;
+    position: absolute;
+    top: 60px;
+    right: -60px;
+    .icon-50 { margin-bottom: 2px; }
+    i {
+        opacity: .8;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+// user.connect
+.buttons-grid {
+    background: rgba(50, 0, 75, 0.1);
+    border-radius: 3px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.15) inset;
+    display: inline-block;
+    margin: 0;
+    padding: 0 2rem 4rem;
+    text-align: center;
+    vertical-align: top;
+    width: 55%;
+}
+.expects-3 .button-col {
+    display: inline-block;
+    width: 33.33%;
+}
+.connect-sidebar {
+    display: inline-block;
+    opacity: .6;
+    padding: .5rem 0 0 1rem;
+    vertical-align: top;
+    width: 45%;
+    transition: all 1s;
+    &:hover {
+        opacity: 1;
+    }
+}
+.modal-content {
+    .buttons-grid {
+        width: 100%;
+        padding-bottom: 0;
+    }
+    .button-col {
+        margin-bottom: 1rem;
+    }
+    .connect-sidebar {
+        background: rgba(50, 0, 75, .3);
+        box-shadow: 0 2px 0 rgba(0, 0, 0, .4) inset;
+        display: block;
+        margin: 0 auto;
+        opacity: 1;
+        padding: 1rem 0;
+        text-align: center;
+        width: 100%;
+    }
+}
+.alt-signup-title {
+  margin: 0;
+}
+
+.existing-member-message {
+  margin: 0 0 .5rem;
+}
+
+.existing-member {
+  margin: 1rem 0;
+}
+
+.user-connect .modal-content-wrap {
+    max-width: 480px;
+}
+.use-site-credentials {
+    font-size: 1rem;
+    margin-top: 0;
+}
+.lbl-connect {
+    display: inline-block;
+    width: 40%;
+}
+.input-connect {
+    display: inline-block;
+    width: 60%;
+}

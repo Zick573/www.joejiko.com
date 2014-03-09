@@ -1,0 +1,78 @@
+$cdn: "https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28";
+$cdn_img: "https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/img/shared";
+$break-small: 320px;
+$break-medium-small: 800px;
+$break-medium: 1000px;
+$break-large: 1200px;
+$break-xlarge: 1400px;
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+@import "global/partials/fonts";
+@import "global/partials/icons";
+@import "global/partials/buttons";
+
+@import "global/base";
+@import "global/grid";
+// @import "global/header";
+@import "master2/header";
+@import "global/search";
+@import "master2/user";
+@import "master2/main";
+@import "global/modal";
+@import "global/footer";
+
+@import "site/artwork";
+@import "site/home";
+@import "site/contact";
+@import "site/gaming";
+@import "site/questions";
+@import "site/music-tracker";
+@import "site/thoughts";
+
+@import "experiments/zoom";
+
+/* lists */
+.list-diamonds span:before {
+    color: purple;
+    content: "◆ ";
+}
+
+/* WHOA */
+.module-link { color: #333; }
+.module-link:hover { color: #222; }
+.edge-triangle {
+    width: 120px;
+    height: 120px;
+    background: #dcdcdc;
+    display: block;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: -60px;
+    left: -91px;
+}
+.loading {position: relative; width: 100%; min-width: 48px; min-height: 48px; background: url(#{$cdn_img}/global/load/239_48.gif) no-repeat center top; border-radius: 50%; padding: 48px 0 0;}
+.loading-message { text-align: center; }
+// .modal--active {
+//     .site-logo {
+//         height: 50%;
+//         width: 50%;
+//         padding: 5%;
+//     }
+//     .diamondMask {
+//       top: -35%;
+//     }
+//     .diamond {
+//         top: -110px;
+//     }
+// }
+
+// .menu--active {
+//     .site-logo {
+//         height: 100%;
+//         width: 100%;
+//         padding: 10%;
+//     }
+// }
+
+@import "global/partials/overrides";

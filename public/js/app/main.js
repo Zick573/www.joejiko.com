@@ -64,7 +64,17 @@ define(["require","jquery"], function(require, $) {
     start: function(){
       $.event.trigger({type: "app.start"});
       $(document).ready(function(){
+        var $app_loading_msg = $(document).find('.app-loading-msg');
+        console.log($app_loading_msg.length);
+        // load ui
+        $app_loading_msg
+          .empty()
+          .append('Building UI');
         resize();
+
+        $app_loading_msg
+          .empty()
+          .append('Accessing fuctions');
         ready();
 
         // alerts

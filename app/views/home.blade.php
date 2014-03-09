@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('layouts.master-2')
 @section('page.title')
   Joe Jiko Web & Design &mdash; Documentation of my life, thoughts, and obsessions.
 @stop

@@ -1,0 +1,251 @@
+.user-nav {
+    // cursor: pointer;
+    background: #efefef;
+    line-height: 1;
+    opacity: 0.8;
+    position: absolute;
+    text-align: right;
+    top: 60px;
+    left: 24%;
+    min-height: 60px;
+    // padding-left: 710px;
+    width: 1154px;
+    z-index: 15;
+    &:hover {
+      opacity: 1;
+    }
+}
+.user-status {
+  padding-top: 2px;
+  text-align: left;
+  .control-triggers {
+    margin: 0 0 0 auto;
+    padding: 5px 10px 0 5px;
+    position: relative;
+    width: 180px;
+  }
+}
+.user-status-link {
+  color: rgba(50, 0, 75, .9);
+  &:hover {
+    color: rgba(50, 0, 75, 1);
+  }
+  &:active {
+    color: rgba(50, 0, 75, .6);
+  }
+}
+.control-triggers {
+  .admin-nav-link,
+  .team-nav-link {
+    position: absolute;
+    text-align: right;
+    &:hover {
+      background: #fff;
+    }
+  }
+  .team-nav-link {
+      left: -58px;
+      top: 35px;
+      transform: rotate(-5deg);
+      width: 46px;
+  }
+  .admin-nav-link {
+    left: -65px;
+    top: 7px;
+    transform: rotate(5deg);
+    width: 55px;
+  }
+}
+.user-status-photo {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+.user-controls {
+  box-shadow: 0 1px 1px rgba(0,0,0,.4);
+  display: none;
+  padding: 2px;
+  min-width: 300px;
+  position: relative;
+  background: #fff;
+  transition: all 1s;
+  visibility: hidden;
+}
+
+.user-module:hover {
+  .control-triggers {
+    background: #fff;
+    border-bottom: 5px solid #fff;
+  }
+  .user-controls {
+    display: inline-block;
+    visibility: visible;
+    // box-shadow: 0 2px 2px rgba(0,0,0,.8);
+  }
+}
+
+.user-nav-link {
+  display: block;
+  line-height: 2;
+  padding: 5px 10px;
+  color: #800080;
+  position: relative;
+  z-index: 5;
+  .batch { width: 2rem; text-align: center; }
+  &:hover {
+    background: rgba(0, 0, 0, .1);
+    color: rgba(50, 0, 75, .9);
+  }
+  &:active {
+    background: (0, 0, 0, .3);
+    color: rgba(50, 0, 75, .6);
+  }
+}
+
+.user-module {
+  .btn-green, .btn-purple { display: inline-block; margin: 5px 5px 0 0; }
+  .btn-red { padding: 5px 10px; box-shadow: none; }
+  .btn-disconnect {
+    background: #eee;
+    margin: 1rem auto .5rem;
+    padding: 0;
+    max-width: 140px;
+    min-width: 7rem;
+    text-align: center;
+    .batch {
+      width: auto;
+    }
+    &:hover {
+      background: #f00;
+      color: #fff;
+    }
+  }
+}
+.user-module-triangle {
+    background: #fff;
+    display: block;
+    height: 20px;
+    left: 48%;
+    position: absolute;
+    top: -10px;
+    transform: rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    width: 20px;
+}
+
+.user-nav .team-controls {
+    padding-top: 34px;
+    position: absolute;
+    left: .5rem;
+    top: 0;
+}
+.team-nav-link {
+    color: #222222;
+    font-weight: bold;
+    &:hover {
+      color: #004E77;
+    }
+}
+.user-nav .admin-controls {
+    padding-top: 34px;
+    position: absolute;
+    right: .5rem;
+    top: 0;
+}
+.admin-nav-link {
+    color: #222222;
+    font-weight: bold;
+    &:hover {
+      color: #f00;
+    }
+}
+.user-info-section {
+    padding: 0 0 1rem;
+}
+.user-info-label {
+  color: rgba(0,0,0,.5);
+}
+.user-info-input {
+    background: rgba(255, 255, 255, .8);
+    border: 1px solid rgba(0,0,0,.4);
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5) inset;
+    padding: .5rem;
+}
+.user-disconnected .modal-content, .user-connected .modal-content {
+    padding: 2rem;
+}
+.user-disconnected .modal-content-wrap, .user-connected .modal-content-wrap {
+    max-width: 480px;
+    text-align: center;
+}
+.btn-user-disconnect {
+    background: #ccc;
+    &:hover {
+        background: #ff0000;
+    }
+}
+.user-connect-email .modal-content-wrap {
+    max-width: 480px;
+}
+.modal-form {
+  text-align: left;
+  padding-bottom: 1rem;
+}
+.modal-input {
+  display: block;
+  width: 100%;
+  padding: .5rem;
+  margin-bottom: 1rem;
+}
+.modal-link {
+  color: #999;
+  &:hover { color: #004E77; }
+}
+.user-nav:hover { opacity: 1; }
+.mod-connect {
+  position: relative;
+  display: inline-block;
+  z-index: 900;
+  .connect-overlay { display: none; }
+  &:hover {
+    .connect-overlay {
+      display: block;
+      background: #fff;
+      box-shadow: 0 10px 5px rgba(0, 0, 0, 0.4);
+      position: absolute;
+      top: -50px;
+      right: 0;
+      padding: 10px;
+      width: 250px;
+
+      [class*="btn-connect-"] {
+        display: block;
+        margin-bottom: 2px;
+      }
+
+      .a-register-email {
+        background: #ccc;
+        color: #222;
+      }
+    }
+
+    &:hover {
+      .btn-user-connect { visibility: hidden; }
+    }
+  }
+}
+
+.connect-overlay {
+  .privacy, .intro {
+    font-size: 12.5px;
+    text-align: center;
+  }
+  .intro { margin: 0 0 8px;}
+  .privacy {
+    color: #666;
+    margin-bottom: 0;
+    a { color: #222; border-bottom: 1px dashed #111; }
+  }
+}
