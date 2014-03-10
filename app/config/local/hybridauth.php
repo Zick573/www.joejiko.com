@@ -2,7 +2,7 @@
 
 return array(
 
-  "debug_mode" => false,
+  "debug_mode" => true,
   "debug_file" => app_path().'\storage\logs\hybridauth.txt',
 
   "base_url"   =>  Request::root()."/user/connect/provider",
