@@ -127,7 +127,9 @@ class HybridAuthUser implements OAuthUserInterface, UserInterface {
      * until they add their email & verify it.
      */
     $profile_email = $profile->email;
-
+    if(is_array($profile->email)) {
+      $profile->email = join(',', $profile->email);
+    }
     if(!isset($profile->email) || is_null($profile->email) || trim($profile->email) == "") {
       $profile_email = false;
       $profile_hash = md5(uniqid(rand(),true));
