@@ -14,15 +14,15 @@
  *
  * @category   Mockery
  * @package    Mockery
- * @copyright  Copyright (c) 2010 Pádraic Brady (http://blog.astrumfutura.com)
+ * @copyright  Copyright (c) 2010-2014 Pádraic Brady (http://blog.astrumfutura.com)
  * @license    http://github.com/padraic/mockery/blob/master/LICENSE New BSD License
  */
- 
+
 namespace Mockery\Adapter\Phpunit;
 
 class TestListener implements \PHPUnit_Framework_TestListener
 {
-    
+
     /**
      * After each test, perform Mockery verification tasks and cleanup the
      * statically stored Mockery container for the next test.
@@ -32,8 +32,7 @@ class TestListener implements \PHPUnit_Framework_TestListener
      */
     public function endTest(\PHPUnit_Framework_Test $test, $time)
     {
-        try
-        {
+        try {
             $container = \Mockery::getContainer();
             if ($container != null) {
                 $expectation_count = $container->mockery_getExpectationCount();
@@ -45,12 +44,12 @@ class TestListener implements \PHPUnit_Framework_TestListener
             $result->addError($test, $e, $time);
         }
     }
-    
-	/**
-	 * Add Mockery files to PHPUnit's blacklist so they don't showup on coverage reports 
-	 */
-    public function startTestSuite(\PHPUnit_Framework_TestSuite $suite) {
-		
+
+    /**
+     * Add Mockery files to PHPUnit's blacklist so they don't showup on coverage reports
+     */
+    public function startTestSuite(\PHPUnit_Framework_TestSuite $suite)
+    {
         if (class_exists('\\PHP_CodeCoverage_Filter')
         && method_exists('\\PHP_CodeCoverage_Filter', 'getInstance')) {
             \PHP_CodeCoverage_Filter::getInstance()->addDirectoryToBlacklist(
@@ -70,6 +69,8 @@ class TestListener implements \PHPUnit_Framework_TestListener
     public function addIncompleteTest(\PHPUnit_Framework_Test $test, \Exception $e, $time) {}
 
     public function addSkippedTest(\PHPUnit_Framework_Test $test, \Exception $e, $time) {}
+
+    public function addRiskyTest(\PHPUnit_Framework_Test $test, \Exception $e, $time) {}
 
 
     public function endTestSuite(\PHPUnit_Framework_TestSuite $suite) {}

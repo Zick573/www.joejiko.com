@@ -15,7 +15,7 @@
  * @category   Mockery
  * @package    Mockery
  * @subpackage UnitTests
- * @copyright  Copyright (c) 2010 Pádraic Brady (http://blog.astrumfutura.com)
+ * @copyright  Copyright (c) 2010-2014 Pádraic Brady (http://blog.astrumfutura.com)
  * @license    http://github.com/padraic/mockery/blob/master/LICENSE New BSD License
  */
 
@@ -24,7 +24,7 @@ class ExpectationTest extends PHPUnit_Framework_TestCase
 
     public function setup ()
     {
-        $this->container = new \Mockery\Container;
+        $this->container = new \Mockery\Container(\Mockery::getDefaultGenerator(), \Mockery::getDefaultLoader());
         $this->mock = $this->container->mock('foo');
     }
 
@@ -210,6 +210,24 @@ class ExpectationTest extends PHPUnit_Framework_TestCase
     {
         $this->mock->shouldReceive('foo')->withArgs(array(1, 2));
         $this->mock->foo(1, 2);
+    }
+
+    /**
+     * @expectedException \Mockery\Exception
+     */
+    public function testExpectsArgumentsArrayThrowsExceptionIfPassedEmptyArray()
+    {
+        $this->mock->shouldReceive('foo')->withArgs(array());
+        $this->mock->foo(1, 2);
+    }
+
+    /**
+     * @expectedException \Mockery\Exception
+     */
+    public function testExpectsArgumentsArrayThrowsExceptionIfNoArgumentsPassed()
+    {
+        $this->mock->shouldReceive('foo')->with();
+        $this->mock->foo(1);
     }
 
     /**
@@ -762,7 +780,7 @@ class ExpectationTest extends PHPUnit_Framework_TestCase
 
     public function testByDefaultOperatesFromMockConstruction()
     {
-        $container = new \Mockery\Container;
+        $container = new \Mockery\Container(\Mockery::getDefaultGenerator(), \Mockery::getDefaultLoader());
         $mock = $container->mock('f', array('foo'=>'rfoo','bar'=>'rbar','baz'=>'rbaz'))->byDefault();
         $mock->shouldReceive('foo')->andReturn('foobar');
         $this->assertEquals('foobar', $mock->foo());
@@ -773,7 +791,7 @@ class ExpectationTest extends PHPUnit_Framework_TestCase
 
     public function testByDefaultOnAMockDoesSquatWithoutExpectations()
     {
-        $container = new \Mockery\Container;
+        $container = new \Mockery\Container(\Mockery::getDefaultGenerator(), \Mockery::getDefaultLoader());
         $mock = $container->mock('f')->byDefault();
     }
 
@@ -1700,7 +1718,7 @@ class ExpectationTest extends PHPUnit_Framework_TestCase
     /**
      * @expectedException PHPUnit_Framework_Error_Warning
      * @runInSeparateProcess
-    */
+     */
     public function testPregMatchThrowsDelimiterWarningWithXdebugScreamTurnedOn()
     {
         if (!extension_loaded('xdebug')) {

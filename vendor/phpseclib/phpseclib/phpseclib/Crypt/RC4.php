@@ -104,11 +104,11 @@ class Crypt_RC4 extends Crypt_Base
     /**
      * Block Length of the cipher
      *
-     * RC4 is a stream cipher 
+     * RC4 is a stream cipher
      * so we the block_size to 0
      *
      * @see Crypt_Base::block_size
-     * @var Integer 
+     * @var Integer
      * @access private
      */
     var $block_size = 0;
@@ -131,7 +131,6 @@ class Crypt_RC4 extends Crypt_Base
      * @access private
      */
     var $const_namespace = 'RC4';
-
 
     /**
      * The mcrypt specific name of the cipher
@@ -242,7 +241,7 @@ class Crypt_RC4 extends Crypt_Base
      * Decrypts a message.
      *
      * $this->decrypt($this->encrypt($plaintext)) == $this->encrypt($this->encrypt($plaintext)).
-     * Atleast if the continuous buffer is disabled.
+     * At least if the continuous buffer is disabled.
      *
      * @see Crypt_Base::encrypt()
      * @see Crypt_RC4::_crypt()
@@ -332,4 +331,3 @@ class Crypt_RC4 extends Crypt_Base
         return $text;
     }
 }
-

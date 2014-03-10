@@ -171,7 +171,7 @@ public static function run() {
 $report = Cron::run();
 ```
 
-**NOTE**: The **run** method call must be the last function call after adding jobs, setting the interval and database logging and the other function calls.
+**NOTE**: The **run** method call has to be the last function call after adding jobs, setting the interval, deactivating database logging and the other function calls.
 
 ---
 
@@ -350,7 +350,7 @@ Cron is designed to work out of the box without configuration. To enable this be
 
 #### Set methods
 
-You can use the Cron set methods (e.g. setDatabaseLogging, setRunInterval) to change the behaviour. This changes are temporary and the set methods must be called every time before running the **run** method. 
+You can use the Cron set methods (e.g. setDatabaseLogging, setRunInterval) to change the behaviour. This changes are temporary and the set methods has to be called every time before running the **run** method. 
 
 #### Config file
 
@@ -388,7 +388,7 @@ Route::get('/cron/run/c68pd2s4e363221a3064e8807da20s1sf', function () {
 });
 ```
 
-And that is the Cron magic. Now we have to ensure that this route is called in an interval. This can be done with renting an own (virtual) server or with an online cronjob service. In both cases Google knows many good providers.
+And that is the Cron magic. Now we have to ensure that this route is called in an interval. This can be done with renting an own (virtual) server or with an online cronjob service. In both cases Google knows many good providers. An online cronjob service overview can be found at http://www.cronjobservices.com/
 
 To configure a `wget` web request by using `crontab -e` or a control panel software (e.g. cPanel or Plesk) on an own (virtual) server use the following code:
 
@@ -409,12 +409,17 @@ The starting five asterisks are the cron expressions. We want to start our Cron 
 <a name="changelog"></a>
 ## Changelog
 
-### 12/11/2013 - v0.9.4
+### 2014/02/11 - v0.9.5
+* Bug fixing release
+* Fixing bug with PSR0 Autoloading
+* Fixing time bug - if a job took more than one minute for execution the following jobs were not handled
+
+### 2013/11/12 - v0.9.4
 * Added Laravel logging facilities - by default Cron will log to Laravel now
-* Added Exceptions - Cron will throw InvalidArgumentExceptions and UnexpectedValueException now
+* Added Exceptions - Cron will throw InvalidArgumentExceptions and UnexpectedValueExceptions now
 * Minor bug fixes
 
-### 01/11/2013 - v0.9.3
+### 2013/11/01 - v0.9.3
 * Added facade for Cron - you can use `Cron` instead of `\Liebig\Cron\Cron` now
 * Added facade test cases
 
@@ -424,7 +429,7 @@ The starting five asterisks are the cron expressions. We want to start our Cron 
 
 The MIT License (MIT)
 
-Copyright (c) 2013 Marc Liebig
+Copyright (c) 2014 Marc Liebig
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

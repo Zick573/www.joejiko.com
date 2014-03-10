@@ -242,13 +242,13 @@ class Math_BigInteger
      *
      * Here's an example:
      * <code>
-     * &lt;?php
+     * <?php
      *    include('Math/BigInteger.php');
      *
      *    $a = new Math_BigInteger('0x32', 16); // 50 in base-16
      *
      *    echo $a->toString(); // outputs 50
-     * ?&gt;
+     * ?>
      * </code>
      *
      * @param optional $x base-10 number or base-$base number if $base set.
@@ -3283,7 +3283,7 @@ class Math_BigInteger
      * Checks a numer to see if it's prime
      *
      * Assuming the $t parameter is not set, this function has an error rate of 2**-80.  The main motivation for the
-     * $t parameter is distributability.  Math_BigInteger::randomPrime() can be distributed accross multiple pageloads
+     * $t parameter is distributability.  Math_BigInteger::randomPrime() can be distributed across multiple pageloads
      * on a website instead of just one.
      *
      * @param optional Integer $t

@@ -3,7 +3,7 @@
 /*
  * This file is part of the Assetic package, an OpenSky project.
  *
- * (c) 2010-2013 OpenSky Project Inc
+ * (c) 2010-2014 OpenSky Project Inc
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -43,22 +43,22 @@ class ScssphpFilter implements DependencyExtractorInterface
 
     public function filterLoad(AssetInterface $asset)
     {
-        $lc = new \scssc();
+        $sc = new \scssc();
         if ($this->compass) {
-            new \scss_compass($lc);
+            new \scss_compass($sc);
         }
         if ($dir = $asset->getSourceDirectory()) {
-            $lc->addImportPath($dir);
+            $sc->addImportPath($dir);
         }
         foreach ($this->importPaths as $path) {
-            $lc->addImportPath($path);
+            $sc->addImportPath($path);
         }
 
         foreach($this->customFunctions as $name=>$callable){
-            $lc->registerFunction($name,$callable);
+            $sc->registerFunction($name,$callable);
         }
 
-        $asset->setContent($lc->compile($asset->getContent()));
+        $asset->setContent($sc->compile($asset->getContent()));
     }
 
     public function setImportPaths(array $paths)

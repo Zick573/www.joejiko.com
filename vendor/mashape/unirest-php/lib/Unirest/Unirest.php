@@ -5,9 +5,19 @@
 
     class Unirest
     {
+			 
+				private static $verifyPeer = true;
 
     		private static $socketTimeout = null;
 				private static $defaultHeaders = array();
+
+				/**
+			  * Verify SSL peer
+			  * @param bool $enabled enable SSL verification, by default is true
+			  */
+			  public static function verifyPeer($enabled) {
+						Unirest::$verifyPeer = $enabled;
+				}
 
 				/**
 				 * Set a timeout
@@ -103,6 +113,37 @@
 						return Unirest::request(HttpMethod::PATCH, $url, $body, $headers, $username, $password);
 				}
 
+				/**
+				 * Prepares a file for upload. To be used inside the parameters declaration for a request.
+				 * @param string $path The file path
+				 */
+				public static function file($path) {
+						if (function_exists("curl_file_create")) {
+								return curl_file_create($path);
+						} else {
+								return "@" . $path;
+						}
+				}
+
+				/**
+         * This function is useful for serializing multidimensional arrays, and avoid getting
+         * the "Array to string conversion" notice
+         */
+				private static function http_build_query_for_curl( $arrays, &$new = array(), $prefix = null ) {
+				    if ( is_object( $arrays ) ) {
+				        $arrays = get_object_vars( $arrays );
+				    }
+
+				    foreach ( $arrays AS $key => $value ) {
+				        $k = isset( $prefix ) ? $prefix . '[' . $key . ']' : $key;
+				        if ( is_array( $value ) OR is_object( $value )  ) {
+				            Unirest::http_build_query_for_curl( $value, $new, $k );
+				        } else {
+				            $new[$k] = $value;
+				        }
+				    }
+				}
+
         /**
          * Send a cURL request
          * @param string $httpMethod HTTP method to use (based off \Unirest\HttpMethod constants)
@@ -130,19 +171,21 @@
 
 						$ch = curl_init();
 						if ($httpMethod != HttpMethod::GET) {
-								curl_setopt ($ch, CURLOPT_CUSTOMREQUEST, $httpMethod);
-								curl_setopt ($ch, CURLOPT_POSTFIELDS, $body);
+              curl_setopt ($ch, CURLOPT_CUSTOMREQUEST, $httpMethod);
+              if( is_array($body) || $body instanceof Traversable ) {
+                  Unirest::http_build_query_for_curl($body, $postBody);
+                  curl_setopt ($ch, CURLOPT_POSTFIELDS, $postBody);
+              } else {
+                  curl_setopt ($ch, CURLOPT_POSTFIELDS, $body);
+              }
 						} else if (is_array($body)) {
 								if (strpos($url,'?') !== false) {
 									$url .= "&";
 								} else {
 									$url .= "?";
 								}
-							
-								foreach ($body as $parameter => $val) {
-									$url .= $parameter . "=" . $val . "&";
-								}
-								$url = substr($url, 0, strlen($url) - 1);
+								Unirest::http_build_query_for_curl($body, $postBody);
+								$url .= http_build_query($postBody);
 						}
 					
 						curl_setopt ($ch, CURLOPT_URL, Unirest::encodeUrl($url));
@@ -151,7 +194,7 @@
 						curl_setopt ($ch, CURLOPT_MAXREDIRS, 10);
 						curl_setopt ($ch, CURLOPT_HTTPHEADER, $lowercaseHeaders);
 						curl_setopt ($ch, CURLOPT_HEADER, true);
-						curl_setopt ($ch, CURLOPT_SSL_VERIFYPEER, true);
+						curl_setopt ($ch, CURLOPT_SSL_VERIFYPEER, Unirest::$verifyPeer);
 						curl_setopt ($ch, CURLOPT_ENCODING, ""); // If an empty string, "", is set, a header containing all supported encoding types is sent.
 						if (Unirest::$socketTimeout != null) {
 								curl_setopt ($ch, CURLOPT_TIMEOUT, Unirest::$socketTimeout);
@@ -176,6 +219,18 @@
 						return new HttpResponse($httpCode, $body, $header);
         }
 
+        private static function getArrayFromQuerystring($querystring) {
+        		$pairs = explode("&", $querystring);
+        		$vars = array();
+    				foreach ($pairs as $pair) {
+    						$nv = explode("=", $pair);
+    						$name = $nv[0];
+        				$value = $nv[1];
+        				$vars[$name] = $value;
+    				}
+    				return $vars;
+        }
+
         /**
          * Ensure that a URL is encoded and safe to use with cURL
          * @param  string $url URL to encode
@@ -192,8 +247,7 @@
             $query = (isset($url_parsed['query']) ? $url_parsed['query'] : null);
 
             if ($query != null) {
-                parse_str($url_parsed['query'], $query_parsed);
-                $query = '?' . http_build_query($query_parsed);
+                $query = '?' . http_build_query(Unirest::getArrayFromQuerystring($url_parsed['query']));
             }
             
             if ($port && $port[0] != ":")

@@ -14,7 +14,7 @@
  *
  * @category   Mockery
  * @package    Mockery
- * @copyright  Copyright (c) 2010 Pádraic Brady (http://blog.astrumfutura.com)
+ * @copyright  Copyright (c) 2010-2014 Pádraic Brady (http://blog.astrumfutura.com)
  * @license    http://github.com/padraic/mockery/blob/master/LICENSE New BSD License
  */
 
@@ -22,7 +22,7 @@ namespace Mockery\Matcher;
 
 class HasKey extends MatcherAbstract
 {
-    
+
     /**
      * Check if the actual value matches the expected.
      *
@@ -33,7 +33,7 @@ class HasKey extends MatcherAbstract
     {
         return in_array($this->_expected, array_keys($actual));
     }
-    
+
     /**
      * Return a string representation of this Matcher
      *
@@ -44,5 +44,5 @@ class HasKey extends MatcherAbstract
         $return = '<HasKey[' . (string) $this->_expected . ']>';
         return $return;
     }
-    
+
 }

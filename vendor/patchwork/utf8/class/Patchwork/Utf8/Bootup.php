@@ -48,7 +48,7 @@ class Bootup
                 user_error('php.ini settings: Please disable mbstring.func_overload', E_USER_WARNING);
             }
 
-            mb_regex_encoding('UTF-8');
+            if (function_exists('mb_regex_encoding')) mb_regex_encoding('UTF-8');
             ini_set('mbstring.script_encoding', 'pass');
 
             if ('utf-8' !== strtolower(mb_internal_encoding()))
@@ -166,28 +166,41 @@ class Bootup
         }
     }
 
-    static function filterRequestUri()
+    static function filterRequestUri($uri = null, $exit = true)
     {
+        if (! isset($uri))
+        {
+            if (! isset($_SERVER['REQUEST_URI'])) return;
+            else $uri = $_SERVER['REQUEST_URI'];
+        }
+
         // Ensures the URL is well formed UTF-8
         // When not, assumes Windows-1252 and redirects to the corresponding UTF-8 encoded URL
 
-        if (isset($_SERVER['REQUEST_URI']) && !preg_match('//u', urldecode($a = $_SERVER['REQUEST_URI'])))
+        if (! preg_match('//u', urldecode($uri)))
         {
-            if ($a === u::utf8_decode($a))
+            $uri = preg_replace_callback(
+                '/[\x80-\xFF]+/',
+                function($m) {return urlencode($m[0]);},
+                $uri
+            );
+
+            $uri = preg_replace_callback(
+                '/(?:%[89A-F][0-9A-F])+/i',
+                function($m) {return urlencode(u::utf8_encode(urldecode($m[0])));},
+                $uri
+            );
+
+            if ($exit)
             {
-                $a = preg_replace_callback(
-                    '/(?:%[89A-F][0-9A-F])+/i',
-                    function($m) {return urlencode(u::utf8_encode(urldecode($m[0])));},
-                    $a
-                );
+                header('HTTP/1.1 301 Moved Permanently');
+                header('Location: ' . $uri);
+
+                exit; // TODO: remove this in 1.2 (BC)
             }
-            else $a = '/';
-
-            header('HTTP/1.1 301 Moved Permanently');
-            header('Location: ' . $a);
-
-            exit;
         }
+
+        return $uri;
     }
 
     static function filterRequestInputs($normalization_form = 4 /* n::NFC */, $leading_combining = '◌')

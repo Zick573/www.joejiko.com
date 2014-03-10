@@ -14,7 +14,7 @@
  *
  * @category   Mockery
  * @package    Mockery
- * @copyright  Copyright (c) 2010 Pádraic Brady (http://blog.astrumfutura.com)
+ * @copyright  Copyright (c) 2010-2014 Pádraic Brady (http://blog.astrumfutura.com)
  * @license    http://github.com/padraic/mockery/blob/master/LICENSE New BSD License
  */
 
@@ -22,7 +22,7 @@ namespace Mockery\Matcher;
 
 class Any extends MatcherAbstract
 {
-    
+
     /**
      * Check if the actual value matches the expected.
      *
@@ -33,7 +33,7 @@ class Any extends MatcherAbstract
     {
         return true;
     }
-    
+
     /**
      * Return a string representation of this Matcher
      *
@@ -43,5 +43,5 @@ class Any extends MatcherAbstract
     {
         return '<Any>';
     }
-    
+
 }

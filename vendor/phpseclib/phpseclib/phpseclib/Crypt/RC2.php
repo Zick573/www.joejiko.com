@@ -333,7 +333,7 @@ class Crypt_RC2 extends Crypt_Base
      *
      * - CRYPT_RC2_MODE_OFB
      *
-     * If not explictly set, CRYPT_RC2_MODE_CBC will be used.
+     * If not explicitly set, CRYPT_RC2_MODE_CBC will be used.
      *
      * @see Crypt_Base::Crypt_Base()
      * @param optional Integer $mode
@@ -651,4 +651,3 @@ class Crypt_RC2 extends Crypt_Base
         $this->inline_crypt = $lambda_functions[$code_hash];
     }
 }
-

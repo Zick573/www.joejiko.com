@@ -16,6 +16,50 @@ class UnirestTest extends UnitTestCase
   	$this->assertEqual("thefosk", $args->nick);
   }
 
+  public function testGetMultidimensionalArray()
+  {
+    $response = Unirest::get("http://httpbin.org/get", array( "Accept" => "application/json" ),
+                            array('key'=>'value','items'=>array('item1','item2')));
+
+    $this->assertEqual(200, $response->code);
+
+    $args = $response->body->args;
+
+    $this->assertEqual("value", $args->key);
+    $this->assertEqual("item1", $args->{"items%5B0%5D"});
+    $this->assertEqual("item2", $args->{"items%5B1%5D"});
+  }
+
+  public function testGetWithDots()
+  {
+    $response = Unirest::get("http://httpbin.org/get", array( "Accept" => "application/json" ),
+                            array(
+                              "user.name" => "Mark",
+                              "nick" => "thefosk"
+                            ));
+
+    $this->assertEqual(200, $response->code);
+
+    $args = $response->body->args;
+    $this->assertEqual("Mark", $args->{"user.name"});
+    $this->assertEqual("thefosk", $args->nick);
+  }
+
+  public function testGetWithDots2()
+  {
+    $response = Unirest::get("http://httpbin.org/get", array( "Accept" => "application/json" ),
+                            array(
+                              "user.name" => "Mark Bond",
+                              "nick" => "thefosk"
+                            ));
+
+    $this->assertEqual(200, $response->code);
+    
+    $args = $response->body->args;
+    $this->assertEqual("Mark+Bond", $args->{"user.name"});
+    $this->assertEqual("thefosk", $args->nick);
+  }
+
   public function testPost()
   {
   	$response = Unirest::post("http://httpbin.org/post", array( "Accept" => "application/json" ),
@@ -29,6 +73,68 @@ class UnirestTest extends UnitTestCase
   	$form = $response->body->form;
   	$this->assertEqual("Mark", $form->name);
   	$this->assertEqual("thefosk", $form->nick);
+  }
+
+  public function testPostWithDots()
+  {
+    $response = Unirest::post("http://httpbin.org/post", array( "Accept" => "application/json" ),
+                            array(
+                              "user.name" => "Mark",
+                              "nick" => "thefosk"
+                            ));
+
+    $this->assertEqual(200, $response->code);
+
+    $form = $response->body->form;
+    $this->assertEqual("Mark", $form->{"user.name"});
+    $this->assertEqual("thefosk", $form->nick);
+  }
+
+    public function testRawPost()
+    {
+        $response = Unirest::post("http://httpbin.org/post", array( "Accept" => "application/json" ),
+            json_encode(array(
+                "author" => "Sam Sullivan"
+            )));
+
+        $this->assertEqual(200, $response->code);
+
+        $json = $response->body->json;
+        $this->assertEqual("Sam Sullivan", $json->author);
+    }
+
+  public function testUpload() {
+
+    var_dump(file_get_contents(dirname(__FILE__) . "/test_upload.txt"));
+
+    $response = Unirest::post("http://httpbin.org/post", array( "Accept" => "application/json" ),
+      array(
+ "name" => "Mark",
+        "file" => Unirest::file(dirname(__FILE__) . "/test_upload.txt")
+      )
+    );
+    $this->assertEqual(200, $response->code);
+
+    $files = $response->body->files;
+    var_dump($response->body);
+    var_dump($files);
+    $this->assertEqual("This is a test", $files->file);
+
+    $form = $response->body->form;
+    $this->assertEqual("Mark", $form->name);
+  }
+
+  public function testPostMultidimensionalArray()
+  {
+    $response = Unirest::post("http://httpbin.org/post", array( "Accept" => "application/json" ),
+                            array('key'=>'value','items'=>array('item1','item2')));
+
+    $this->assertEqual(200, $response->code);
+
+    $form = $response->body->form;
+    $this->assertEqual("value", $form->key);
+    $this->assertEqual("item1", $form->{"items[0]"});
+    $this->assertEqual("item2", $form->{"items[1]"});
   }
 
   public function testPut()
@@ -80,6 +186,8 @@ class UnirestTest extends UnitTestCase
 
   	$this->expectException();
   	$response = Unirest::get("http://httpbin.org/delay/3");
+
+    Unirest::timeout(null); // Cleaning timeout for the other tests
   }
 
   public function testTimeoutSuccess()
@@ -88,6 +196,8 @@ class UnirestTest extends UnitTestCase
 
   	$response = Unirest::get("http://httpbin.org/delay/1");
   	$this->assertEqual(200, $response->code);
+
+    Unirest::timeout(null); // Cleaning timeout for the other tests
   }
 
    public function testDefaultHeader()
@@ -100,7 +210,6 @@ class UnirestTest extends UnitTestCase
   	$properties = get_object_vars($headers);
   	$this->assertTrue(array_key_exists("Hello", $properties));
 		$this->assertEqual("custom", $headers->Hello);
-
 		$response = Unirest::get("http://httpbin.org/get");
 
 		$this->assertEqual(200, $response->code);
@@ -108,7 +217,6 @@ class UnirestTest extends UnitTestCase
   	$properties = get_object_vars($headers);
   	$this->assertTrue(array_key_exists("Hello", $properties));
 		$this->assertEqual("custom", $headers->Hello);
-
 		Unirest::clearDefaultHeaders();
 		$response = Unirest::get("http://httpbin.org/get");
 

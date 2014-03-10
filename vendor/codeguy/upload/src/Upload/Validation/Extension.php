@@ -44,7 +44,7 @@ namespace Upload\Validation;
 class Extension extends \Upload\Validation\Base
 {
     /**
-     * Array of cceptable file extensions without leading dots
+     * Array of acceptable file extensions without leading dots
      * @var array
      */
     protected $allowedExtensions;
@@ -68,11 +68,7 @@ class Extension extends \Upload\Validation\Base
             $allowedExtensions = array($allowedExtensions);
         }
 
-        array_filter($allowedExtensions, function ($val) {
-            return strtolower($val);
-        });
-
-        $this->allowedExtensions = $allowedExtensions;
+        $this->allowedExtensions = array_map('strtolower', $allowedExtensions);
     }
 
     /**

@@ -17,7 +17,7 @@ use Symfony\Component\Process\Exception\ProcessTimedOutException;
 use Symfony\Component\Process\Exception\RuntimeException;
 
 /**
- * Process is a thin wrapper around proc_* functions to ease
+ * Process is a thin wrapper around proc_* functions to easily
  * start independent PHP processes.
  *
  * @author Fabien Potencier <fabien@symfony.com>
@@ -251,6 +251,13 @@ class Process
         $this->status = self::STATUS_STARTED;
 
         $this->processPipes->unblock();
+
+        if ($this->tty) {
+            $this->status = self::STATUS_TERMINATED;
+
+            return;
+        }
+
         $this->processPipes->write(false, $this->stdin);
         $this->updateStatus(false);
         $this->checkTimeout();
@@ -723,7 +730,7 @@ class Process
     }
 
     /**
-     * Gets the process timeout.
+     * Gets the process timeout (max. runtime).
      *
      * @return float|null The timeout in seconds or null if it's disabled
      */
@@ -733,9 +740,9 @@ class Process
     }
 
     /**
-     * Gets the process idle timeout.
+     * Gets the process idle timeout (max. time since last output).
      *
-     * @return float|null
+     * @return float|null The timeout in seconds or null if it's disabled
      */
     public function getIdleTimeout()
     {
@@ -743,7 +750,7 @@ class Process
     }
 
     /**
-     * Sets the process timeout.
+     * Sets the process timeout (max. runtime).
      *
      * To disable the timeout, set this value to null.
      *
@@ -761,9 +768,11 @@ class Process
     }
 
     /**
-     * Sets the process idle timeout.
+     * Sets the process idle timeout (max. time since last output).
      *
-     * @param integer|float|null $timeout
+     * To disable the timeout, set this value to null.
+     *
+     * @param integer|float|null $timeout The timeout in seconds
      *
      * @return self The current Process instance.
      *
@@ -791,7 +800,7 @@ class Process
     }
 
     /**
-     * Checks if  the TTY mode is enabled.
+     * Checks if the TTY mode is enabled.
      *
      * @return Boolean true if the TTY mode is enabled, false otherwise
      */
@@ -856,7 +865,9 @@ class Process
     public function setEnv(array $env)
     {
         // Process can not handle env values that are arrays
-        $env = array_filter($env, function ($value) { if (!is_array($value)) { return true; } });
+        $env = array_filter($env, function ($value) {
+            return !is_array($value);
+        });
 
         $this->env = array();
         foreach ($env as $key => $value) {
@@ -984,7 +995,7 @@ class Process
             throw new ProcessTimedOutException($this, ProcessTimedOutException::TYPE_GENERAL);
         }
 
-        if (0 < $this->idleTimeout && $this->idleTimeout < microtime(true) - $this->lastOutputTime) {
+        if (null !== $this->idleTimeout && $this->idleTimeout < microtime(true) - $this->lastOutputTime) {
             $this->stop(0);
 
             throw new ProcessTimedOutException($this, ProcessTimedOutException::TYPE_IDLE);
@@ -998,7 +1009,7 @@ class Process
      */
     private function getDescriptors()
     {
-        $this->processPipes = new ProcessPipes($this->useFileHandles);
+        $this->processPipes = new ProcessPipes($this->useFileHandles, $this->tty);
         $descriptors = $this->processPipes->getDescriptors();
 
         if (!$this->useFileHandles && $this->enhanceSigchildCompatibility && $this->isSigchildEnabled()) {
@@ -1074,6 +1085,10 @@ class Process
             return self::$sigchild;
         }
 
+        if (!function_exists('phpinfo')) {
+            return self::$sigchild = false;
+        }
+
         ob_start();
         phpinfo(INFO_GENERAL);
 
@@ -1104,6 +1119,7 @@ class Process
      * Reads pipes, executes callback.
      *
      * @param Boolean $blocking Whether to use blocking calls or not.
+     * @param Boolean $close    Whether to close file handles or not.
      */
     private function readPipes($blocking, $close)
     {
