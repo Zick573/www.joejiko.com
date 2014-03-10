@@ -75,9 +75,8 @@ class HybridAuthUser implements OAuthUserInterface, UserInterface {
       endif;
 
       # register new user
-      $credentials = $this->register($provider_name, $adapter->getUserProfile());
-
-      return $this->user->attempt($credentials);
+      $user_id = $this->register($provider_name, $adapter->getUserProfile());
+      return $this->user->find($user_id);
 
     } catch ( Exception $e ) {
 
@@ -128,9 +127,24 @@ class HybridAuthUser implements OAuthUserInterface, UserInterface {
      */
     $profile_email = $profile->email;
 
-    if(!isset($profile->email) || is_null($profile->email) || trim($profile->email) == "") {
-      $profile_email = false;
-      $profile_hash = md5(uniqid(rand(),true));
+    if(is_array($profile_email)) {
+      // use first value
+      foreach($profile_email as $index => $email) {
+        $profile_email = $email->value;
+        break;
+      }
+    }
+    else {
+      if(!isset($profile->email) || is_null($profile->email) || trim($profile->email) == "") {
+        $profile_email = false;
+        // $profile_hash = md5(uniqid(rand(),true));
+        $profile_hash = null;
+      }
+    }
+
+    if(is_array($profile->region))
+    {
+      $profile->region = $profile->region[0]->value;
     }
 
     # create user entry
@@ -151,13 +165,16 @@ class HybridAuthUser implements OAuthUserInterface, UserInterface {
     ];
     $user->connection()->create($connection);
 
+    $website_url = is_array($profile->webSiteURL) ? json_encode($profile->webSiteURL) : $profile->webSiteURL;
+    $profile_email = is_array($profile->email) ? json_encode($profile->email) : $profile->email;
+
     # create profile with info from connection
     $info = [
       'user_id' => $user->id,
       'provider_name' => $provider_name,
       'provider_uid' => $profile->identifier,
       'profile_url' => $profile->profileURL,
-      'website_url' => $profile->webSiteURL,
+      'website_url' => $website_url,
       'photo_url' => $profile->photoURL,
       'display_name' => $profile->displayName,
       'description' => $profile->description,
@@ -169,7 +186,7 @@ class HybridAuthUser implements OAuthUserInterface, UserInterface {
       'birth_day' => $profile->birthDay,
       'birth_month' => $profile->birthMonth,
       'birth_year' => $profile->birthYear,
-      'email' => $profile->email,
+      'email' => $profile_email,
       'email_verified' => $profile->emailVerified,
       'phone' => $profile->phone,
       'address' => $profile->address,
@@ -179,7 +196,6 @@ class HybridAuthUser implements OAuthUserInterface, UserInterface {
       'zip' => $profile->zip
     ];
     $user->info()->create($info);
-
     return $user->id;
   }
 

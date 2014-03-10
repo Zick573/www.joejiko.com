@@ -186,7 +186,6 @@ class UserController extends DefaultController {
    */
   public function OAuthRegister(Hybrid_Provider_Adapter $provider, Hybrid_User_Profile $profile)
   {
-
     /**
      * @todo User->validate()
      */
