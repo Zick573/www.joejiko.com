@@ -12,7 +12,7 @@
     <a class="site-nav-link" href="/artwork">
       <i data-icon="&#xF139;" class="batch"></i> My Art
     </a>
-    <a class="site-nav-link" href="{{{ URL::to('web/clips') }}}">
+    <a class="site-nav-link" href="http://jiko.us/1h5EJLO" target="_blank">
       <i data-icon="&#xF10E;" class="batch"></i> Bookmarks
     </a>
     <a class="site-nav-link" href="{{{ URL::to('contact') }}}">

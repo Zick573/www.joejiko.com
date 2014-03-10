@@ -71,15 +71,16 @@ Route::bind('auth_provider', function($value, $route){
 /**
  * Artwork *
  */
-Route::get('artwork', array('as' => 'artwork', 'uses' => 'HomeController@getArtwork'));
+Route::get('artwork', 'HomeController@artwork');
 
 /**
  * Contact *
  */
 Route::group(['prefix' => 'contact'], function() {
-  Route::get('/', ['uses' => 'ContactController@message']);
-  Route::get('other', ['uses' => 'ContactController@other']);
-  Route::any('message', ['uses' => 'ContactController@store']);
+  Route::get('/', 'ContactController@message');
+  Route::get('message', 'ContactController@message');
+  Route::post('message', 'ContactController@store');
+  Route::get('other', 'ContactController@other');
 });
 
 /**
@@ -98,6 +99,9 @@ Route::group(['prefix' => 'questions'], function() {
   Route::post('ask', 'QuestionController@store');
 });
 Route::resource('questions', 'QuestionController');
+Route::get('q/{questions}-{question_title?}', 'QuestionController@show');
+Route::get('q/{questions}', 'QuestionController@show');
+Route::get('question/{questions}-{question_title?}', 'QuestionController@show');
 Route::get('question/{questions}', 'QuestionController@show');
 
 // Primary navigation
@@ -124,37 +128,9 @@ Route::group(['prefix' => 'about'], function(){
   Route::get('resume', ['as' => 'resume', 'uses' => 'AboutController@resume']);
 
 });
-Route::get('labs', array('as' => 'pages.labs', 'uses' => 'HomeController@getLabs'));
-Route::get('more', array('as' => 'pages.more', 'uses' => 'HomeController@getMore'));
-Route::get('music', array('as' => 'music', 'uses' => 'MusicController@getIndex'));
-
-// Route::get('subscribe', array('as' => 'pages.subscribe', 'uses' => 'HomeController@getSubscribe'));
-// Route::get('subscribe', function() {
-//   View::make('forms.subscribe');
-// });
-// Route::post('subscribe', function() {
-  // if(Input::has('email')){
-  //   try {
-  //     $api = new Mailchimp\MCAPI(Config::get('mailchimp.api_key'));
-  //     $retval = $api->listSubscribe( Config::get('mailchimp.list_ids.default'), Input::get('email'));
-
-  //     if ($api->errorCode){
-  //       echo "Unable to load listSubscribe()!\n";
-  //       echo "\tCode=".$api->errorCode."\n";
-  //       echo "\tMsg=".$api->errorMessage."\n";
-  //     } else {
-  //         echo "Subscribed - look for the confirmation email!\n";
-  //     }
-  //   } catch( Exception $e) {
-  //     echo "Something went wrong. \n".$e->getMessage();
-  //   }
-  // }
-  // else
-  // {
-  //   echo "Email is required";
-  // }
-// });
-
+Route::get('labs', 'HomeController@labs');
+Route::get('more', 'HomeController@more');
+Route::get('music', 'MusicController@index');
 Route::get('/', array('as' => 'home', 'uses' => 'HomeController@getIndex'));
 
 Route::group(['prefix' => 'support'], function(){
@@ -213,5 +189,36 @@ Route::post('/queue', function()
 {
   return Queue::marshal();
 });
+Route::pattern('external_route', '.*');
+Route::get('http://{external_route}', function($url){
+  header('location: '.sprintf("http://%s", $url));
+  exit();
+});
+Route::get('{slug}', 'ContentController@page');
 
-Route::get('/{slug}', 'ContentController@page');
+// Route::get('subscribe', array('as' => 'pages.subscribe', 'uses' => 'HomeController@getSubscribe'));
+// Route::get('subscribe', function() {
+//   View::make('forms.subscribe');
+// });
+// Route::post('subscribe', function() {
+  // if(Input::has('email')){
+  //   try {
+  //     $api = new Mailchimp\MCAPI(Config::get('mailchimp.api_key'));
+  //     $retval = $api->listSubscribe( Config::get('mailchimp.list_ids.default'), Input::get('email'));
+
+  //     if ($api->errorCode){
+  //       echo "Unable to load listSubscribe()!\n";
+  //       echo "\tCode=".$api->errorCode."\n";
+  //       echo "\tMsg=".$api->errorMessage."\n";
+  //     } else {
+  //         echo "Subscribed - look for the confirmation email!\n";
+  //     }
+  //   } catch( Exception $e) {
+  //     echo "Something went wrong. \n".$e->getMessage();
+  //   }
+  // }
+  // else
+  // {
+  //   echo "Email is required";
+  // }
+// });

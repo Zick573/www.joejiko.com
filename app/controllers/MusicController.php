@@ -15,7 +15,7 @@ class MusicController extends DefaultController {
         'stats' => $data->stats
       );
   }
-  public function getIndex()
+  public function index()
   {
     // ajax request
     if( array_key_exists('HTTP_X_REQUESTED_WITH', $_SERVER)
@@ -33,6 +33,6 @@ class MusicController extends DefaultController {
     endif;
 
     $data = self::tracker();
-    return View::make('music.tracker')->with($data);
+    $this->layout->content = View::make('music.tracker')->with($data);
   }
 }

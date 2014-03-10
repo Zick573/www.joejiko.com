@@ -8,6 +8,7 @@ use Jiko\Repo\Tag\EloquentTag;
 use Jiko\Service\Cache\LaravelCache;
 use Jiko\Repo\Status\EloquentStatus;
 use Jiko\Repo\Post\CacheDecorator;
+use Jiko\Repo\Page\EloquentPage;
 use Jiko\Repo\Post\EloquentPost;
 use Illuminate\Support\ServiceProvider;
 
@@ -27,6 +28,13 @@ class RepoServiceProvider extends ServiceProvider {
     {
       return new GoogleDriveFile(
         new File
+      );
+    });
+
+    $app->bind('Jiko\Repo\Page\PageInterface', function($app)
+    {
+      return new EloquentPage(
+        new Page
       );
     });
 

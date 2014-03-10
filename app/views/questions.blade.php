@@ -23,7 +23,7 @@
     <meta itemprop="articleSection" content="Questions">
     <header class="question-header">
       <h2 itemprop="headline" class="question-text">
-        <a href="/question/{{ $question->id }}">
+        <a href="/question/{{ $question->id }}-{{ Str::slug($question->text) }}">
           {{ $question->text }}
         </a>
       </h2>

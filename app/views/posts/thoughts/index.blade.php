@@ -1,4 +1,3 @@
-@extends('layouts.master')
 @section('page.title')
 I think..
 @stop

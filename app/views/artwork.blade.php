@@ -1,4 +1,3 @@
-@extends('layouts.master-2')
 @section('page.title')
   Artwork. Pokehumans. Iron man christmas comic. Grumpszilla.
 @stop

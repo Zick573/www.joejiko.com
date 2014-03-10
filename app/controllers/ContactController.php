@@ -67,12 +67,12 @@ class ContactController extends DefaultController {
 
   public function other()
   {
-    return View::make('contact.other');
+    $this->layout->content = View::make('contact.other');
   }
 
   public function message()
   {
-    return View::make('contact');
+    $this->layout->content = View::make('contact');
   }
 
   public function missingMethod($parameters=[])

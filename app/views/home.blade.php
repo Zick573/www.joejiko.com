@@ -43,7 +43,7 @@
   <h2>Who am I?</h2>
   <div class="base-content">
     <p class="base-p">
-      My name is Joe Jiko. I’m a <a href="/about/resume#web">web developer</a> &amp; <a href="/about/resume#design">graphic designer</a> living in Florida. I’ve been around the Web professionally since 2002! All of my code is enthusiastically, expertly hand-written&mdash;I use <a href="http://www.sublimetext.com/" target="_blank">Sublime Text 2</a>&mdash;and delicately planned from start to finish.
+      My name is Joe Jiko. I’m a <a href="/about/resume#web">web developer</a> &amp; <a href="/about/resume#design">graphic designer</a> living in Florida. I’ve been around the Web professionally since 2002! All of my code is enthusiastically, expertly hand-written&mdash;I use <a href="http://jiko.us/1nb9pCQ" target="_blank">Sublime Text 2</a>&mdash;and delicately planned from start to finish.
     </p>
     <p class="base-p">
       Less seriously, I like a lot of other things too. To include a few: <a href="/artwork">art</a>, <a href="/gaming">videogames</a>, and reading.

@@ -4,6 +4,7 @@ class DefaultController extends BaseController
   protected $user;
   protected $errors = array();
   private $gcdn_base = "https://googledrive.com/host/0B_9a_WMIXbTtNVhHd1J0WDZHd28/";
+  protected $layout = 'layouts.master-2';
   public function __construct(){
     # set user
     $this->user = (Auth::check()) ? Auth::user() : NULL;

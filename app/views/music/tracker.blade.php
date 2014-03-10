@@ -1,8 +1,8 @@
-@extends('layouts.master')
 @section('page.title')
   Music tracker
 @stop
 @section('content')
+<div class="base-article">
 <h1>Music</h1>
 <h2>&ldquo;If music be the food of love, play on.&rdquo; &mdash; William Shakespeare</h2>
 <article class="music-tracker">
@@ -30,4 +30,5 @@
     </footer>
   </section>
 </article>
+</div>
 @stop

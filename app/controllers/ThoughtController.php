@@ -21,7 +21,7 @@ class ThoughtController extends DefaultController {
   {
     // where type=thoughts
     // $posts = $this->post->orderBy('created_at', 'desc')->get();
-    return View::make('posts.thoughts.index')->with(array(
+    $this->layout->content = View::make('posts.thoughts.index')->with(array(
       'posts' => Post::thoughts()->recent()->get()
     ));
   }

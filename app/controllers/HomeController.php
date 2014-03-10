@@ -33,22 +33,22 @@ class HomeController extends DefaultController {
     return View::make('admin.index');
   }
 
-  public function getArtwork()
+  public function artwork()
   {
-    return View::make('artwork')->with(array(
+    $this->layout->content = View::make('artwork')->with(array(
       'artworks' => Post::artwork()->get()
     ));
   }
 
-  public function getMore()
+  public function more()
   {
-    return View::make('pages.more');
+    $this->layout->content = View::make('pages.more');
   }
 
   public function getMusic()
   {
     $tracks = Music::all();
-    return View::make('pages.music');
+    $this->layout->content = View::make('pages.music');
   }
 
   public function getSubscribe()
@@ -68,7 +68,7 @@ class HomeController extends DefaultController {
 
   public function getLabs()
   {
-    return View::make('pages.labs');
+    $this->layout->content = View::make('pages.labs');
   }
 
   public function missingMethod($parameters=[])
