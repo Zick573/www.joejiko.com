@@ -47,7 +47,7 @@ return array(
       'keys' => [
         "id" => "f91l572aesk8byv4aa5mt8q392zn5fb",
         'secret' => '31g60pzr2e713b4qmxnl1d7c60ldafa',
-        'redirect_uri' => 'local.joejiko.com/user/connect/twitchtv'
+        'redirect_uri' => 'www.joejiko.com/user/connect/twitchtv'
       ]
     ]
 

@@ -1,4 +1,3 @@
-@extends('layouts.master')
 @section('page.title')
   @if (!Auth::guest() && Auth::user()->isTeam())
     Welcome Jikosian! (Team Jiko)

@@ -2,12 +2,12 @@
 class TeamController extends DefaultController {
   public function getIndex()
   {
-    return View::make('team.index');
+    $this->layout->content = View::make('team.index');
   }
 
   public function getJoin()
   {
-    return View::make('team.join');
+    $this->layout->content = View::make('team.join');
   }
 
   public function missingMethod($parameters=[])

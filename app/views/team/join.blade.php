@@ -1,5 +1,3 @@
-@extends('layouts.master')
-
 @section('page.title')
   Join the team! #smartculture
 @stop
