@@ -30,7 +30,7 @@
   @include('questions.ask.sent-anon')
   @else
   {{-- Thanks for submitting --}}
-  @include('questons.ask.sent-from-user')
+  @include('questions.ask.sent-from-user')
   @include('questions.ask.thanks')
   @endif
   </div>
